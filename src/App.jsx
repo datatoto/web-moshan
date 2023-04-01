@@ -1,19 +1,18 @@
 import "./App.css";
 
 import { Canvas } from "@react-three/fiber";
-import { Environment, OrbitControls } from "@react-three/drei";
-import { Suspense } from "react";
-import { Model } from "./Ground";
+import Moshan from "./Moshan";
+
+import { Environment, Stats } from "@react-three/drei";
 
 function App() {
   return (
     <div className="App">
-      <Canvas>
-        <Suspense fallback={null}>
-          <Model />
-          <OrbitControls />
-          <Environment preset="sunset" background />
-        </Suspense>
+      <Canvas shadows>
+        <ambientLight intensity={0.5} />
+        <Moshan />
+        <Stats showPanel={0} className="stats" />
+        <Environment files="background.hdr" background />
       </Canvas>
     </div>
   );
