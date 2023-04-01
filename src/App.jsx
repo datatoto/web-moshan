@@ -1,20 +1,27 @@
 import "./App.css";
 
 import { Canvas } from "@react-three/fiber";
+import { Environment, Stats } from "@react-three/drei";
+import { useControls } from "leva";
+
 import Moshan from "./Moshan";
 
-import { Environment, Stats } from "@react-three/drei";
+function GuiControl() {
+  const { toggleMap, toggleView } = useControls({ Map: false, FPV: true });
+}
 
 function App() {
   return (
-    <div className="App">
-      <Canvas shadows>
-        <ambientLight intensity={0.5} />
-        <Moshan />
-        <Stats showPanel={0} className="stats" />
-        <Environment files="background.hdr" background />
-      </Canvas>
-    </div>
+    <>
+      <GuiControl />
+      <div className="App">
+        <Canvas shadows>
+          <Moshan />
+          <Stats showPanel={0} className="stats" />
+          <Environment files="background.hdr" background />
+        </Canvas>
+      </div>
+    </>
   );
 }
 
