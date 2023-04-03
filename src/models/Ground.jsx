@@ -9,8034 +9,8034 @@ import { useGLTF } from '@react-three/drei'
 export function Ground(props) {
   const { nodes, materials } = useGLTF('/ground.glb')
   return (
-    <group {...props} dispose={null} position={[0, -10, 0 ]} >
-      <mesh geometry={nodes.古建_房子20.geometry} material={materials['JN_building_001_UV01_Fin.003']} position={[765.13, 100.46, -1451.88]} rotation={[Math.PI, -1.48, Math.PI]} scale={13.93} />
-      <mesh geometry={nodes.古建_房子20005.geometry} material={materials['JN_building_001_UV01_Fin.003']} position={[767.01, 100.46, -1424.77]} rotation={[0, 0.03, 0]} scale={13.93} />
-      <mesh geometry={nodes.古建_房子20006.geometry} material={materials['JN_building_001_UV01_Fin.003']} position={[769.78, 100.46, -1424.68]} rotation={[0, 0.03, 0]} scale={13.93} />
-      <mesh geometry={nodes.古建_房子20001.geometry} material={materials['JN_building_001_UV01_Fin.003']} position={[753.97, 100.51, -1426.07]} rotation={[0, 0.03, 0]} scale={13.93} />
-      <mesh geometry={nodes.古建_房子20002.geometry} material={materials['JN_building_001_UV01_Fin.003']} position={[751.18, 100.51, -1426.21]} rotation={[0, 0.03, 0]} scale={13.93} />
-      <mesh geometry={nodes.古建_房子20003.geometry} material={materials['JN_building_001_UV01_Fin.003']} position={[739.82, 100.55, -1427.27]} rotation={[0, 0.03, 0]} scale={13.93} />
-      <mesh geometry={nodes.古建_房子20004.geometry} material={materials['JN_building_001_UV01_Fin.003']} position={[737.15, 100.55, -1427.42]} rotation={[0, 0.03, 0]} scale={13.93} />
-      <mesh geometry={nodes.古建_房子20007.geometry} material={materials['JN_building_001_UV01_Fin.003']} position={[765.13, 100.91, -1451.88]} rotation={[Math.PI, -1.48, Math.PI]} scale={13.93} />
-      <mesh geometry={nodes.研究区域002.geometry} material={materials.地面} position={[0, -3.49, 0]} />
-      <mesh geometry={nodes.研究区域003.geometry} material={materials.地面} />
-      <mesh geometry={nodes.公路001.geometry} material={materials['材质.003']} position={[0, 1.25, 0]} />
-      <mesh geometry={nodes.人行道001.geometry} material={materials['材质.004']} position={[-305.65, 1853.03, -935.67]} scale={137.98} />
-      <mesh geometry={nodes.平面.geometry} material={materials['材质.005']} position={[0, 6.66, 0]} scale={-2237.69} />
-      <group position={[437.5, 34, 1606.25]} scale={4}>
+    <group {...props} dispose={null}>
+      <mesh geometry={nodes.古建_房子20.geometry} material={materials['JN_building_001_UV01_Fin.003']} position={[287.49, 39.3, -35.43]} rotation={[Math.PI, -1.48, Math.PI]} scale={13.93} />
+      <mesh geometry={nodes.古建_房子20005.geometry} material={materials['JN_building_001_UV01_Fin.003']} position={[289.37, 39.3, -8.32]} rotation={[0, 0.03, 0]} scale={13.93} />
+      <mesh geometry={nodes.古建_房子20006.geometry} material={materials['JN_building_001_UV01_Fin.003']} position={[292.13, 39.3, -8.23]} rotation={[0, 0.03, 0]} scale={13.93} />
+      <mesh geometry={nodes.古建_房子20001.geometry} material={materials['JN_building_001_UV01_Fin.003']} position={[276.32, 39.35, -9.62]} rotation={[0, 0.03, 0]} scale={13.93} />
+      <mesh geometry={nodes.古建_房子20002.geometry} material={materials['JN_building_001_UV01_Fin.003']} position={[273.53, 39.35, -9.76]} rotation={[0, 0.03, 0]} scale={13.93} />
+      <mesh geometry={nodes.古建_房子20003.geometry} material={materials['JN_building_001_UV01_Fin.003']} position={[262.18, 39.39, -10.82]} rotation={[0, 0.03, 0]} scale={13.93} />
+      <mesh geometry={nodes.古建_房子20004.geometry} material={materials['JN_building_001_UV01_Fin.003']} position={[259.51, 39.39, -10.97]} rotation={[0, 0.03, 0]} scale={13.93} />
+      <mesh geometry={nodes.古建_房子20007.geometry} material={materials['JN_building_001_UV01_Fin.003']} position={[287.49, 39.75, -35.43]} rotation={[Math.PI, -1.48, Math.PI]} scale={13.93} />
+      <mesh geometry={nodes.研究区域002.geometry} material={materials.地面} position={[-477.65, -64.65, 1416.45]} />
+      <mesh geometry={nodes.研究区域003.geometry} material={materials.地面} position={[-477.65, -61.16, 1416.45]} />
+      <mesh geometry={nodes.公路001.geometry} material={materials['材质.003']} position={[-0.58, -0.06, -0.76]} />
+      <mesh geometry={nodes.人行道001.geometry} material={materials['材质.004']} position={[-783.3, 1792.37, 480.78]} scale={137.98} />
+      <mesh geometry={nodes.平面.geometry} material={materials['材质.005']} position={[-477.65, -54.5, 1416.45]} scale={-2237.69} />
+      <group position={[-40.15, -27.16, 3022.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[415.63, 75.94, -1509.38]} scale={4}>
+      <group position={[-62.02, 14.78, -92.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1593.75, 28.63, -1203.13]} scale={4}>
+      <group position={[1116.1, -32.54, 213.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[0, 55, -1612.5]} scale={4}>
+      <group position={[-477.65, -6.16, -196.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[28.13, 23.96, -1359.38]} scale={4}>
+      <group position={[-449.52, -37.2, 57.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[434.38, 67.31, -1528.13]} scale={4}>
+      <group position={[-43.27, 6.15, -111.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[368.75, 14.25, -1825]} scale={4}>
+      <group position={[-108.9, -46.91, -408.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1634.38, 51.75, -1446.88]} scale={4}>
+      <group position={[1156.73, -9.41, -30.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[700, 16, 1018.75]} scale={4}>
+      <group position={[222.35, -45.16, 2435.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1825, 51, -1431.25]} scale={4}>
+      <group position={[1347.35, -10.16, -14.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1609.38, 50.25, -1437.5]} scale={4}>
+      <group position={[1131.73, -10.91, -21.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[328.13, 6, -1925]} scale={4}>
+      <group position={[-42.61, -49.36, 1598.64]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[712.5, 12, 106.25]} scale={4}>
+      <group position={[234.85, -49.16, 1522.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1387.5, 40, 1181.25]} scale={4}>
+      <group position={[-1865.15, -21.16, 2597.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-193.75, 22.13, -1490.63]} scale={4}>
+      <group position={[-671.4, -39.04, -74.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[587.5, 9.25, -1803.13]} scale={4}>
+      <group position={[109.85, -51.91, -386.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[415.63, 9.56, -1809.38]} scale={4}>
+      <group position={[-62.02, -51.6, -392.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[531.25, 43.13, -1334.38]} scale={4}>
+      <group position={[53.6, -18.04, 82.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[962.5, 35, -1543.75]} scale={4}>
+      <group position={[484.85, -26.16, -127.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[812.5, 39, -1212.5]} scale={4}>
+      <group position={[334.85, -22.16, 203.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-987.5, 7, -318.75]} scale={4}>
+      <group position={[-1465.15, -54.16, 1097.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[28.13, 22.56, -1346.88]} scale={4}>
+      <group position={[-449.52, -38.6, 69.57]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[387.5, 22, 868.75]} scale={4}>
+      <group position={[-90.15, -39.16, 2285.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1768.75, 49, -1343.75]} scale={4}>
+      <group position={[1291.1, -12.16, 72.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2006.25, 17.88, -1284.38]} scale={4}>
+      <group position={[1528.6, -43.29, 132.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1721.88, 26.25, -1159.38]} scale={4}>
+      <group position={[1244.23, -34.91, 257.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[537.5, 56.25, -1453.13]} scale={4}>
+      <group position={[59.85, -4.91, -36.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1315.63, 77.19, -1409.38]} scale={4}>
+      <group position={[837.98, 16.03, 7.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[437.5, 45.25, -1609.38]} scale={4}>
+      <group position={[-40.15, -15.91, -192.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[181.25, 31.25, -1315.63]} scale={4}>
+      <group position={[-296.4, -29.91, 100.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-537.5, 19, 1156.25]} scale={4}>
+      <group position={[-1015.15, -42.16, 2572.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1112.5, 19, 418.75]} scale={4}>
+      <group position={[-1590.15, -42.16, 1835.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[393.75, 8.25, -1853.13]} scale={4}>
+      <group position={[-83.9, -52.91, -436.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[925, 99, 1818.75]} scale={4}>
+      <group position={[447.35, 37.84, 3235.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[418.75, 14.75, -1765.63]} scale={4}>
+      <group position={[-58.9, -46.41, -349.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1125, 58.25, -1359.38]} scale={4}>
+      <group position={[647.35, -2.91, 57.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[993.75, 49, -1500]} scale={4}>
+      <group position={[516.1, -12.16, -83.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[868.75, 70.88, -1453.13]} scale={4}>
+      <group position={[391.1, 9.71, -36.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1350, 14, 556.25]} scale={4}>
+      <group position={[872.35, -47.16, 1972.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-87.5, 6.25, -1840.63]} scale={4}>
+      <group position={[-23.91, -43.8, 395.6]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[371.88, 6, -1931.25]} scale={4}>
+      <group position={[1.14, -49.36, 1592.39]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1862.5, 10, 1156.25]} scale={4}>
+      <group position={[-2340.15, -51.16, 2572.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1037.5, 34, 818.75]} scale={4}>
+      <group position={[559.85, -27.16, 2235.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1562.5, 7, -118.75]} scale={4}>
+      <group position={[1084.85, -54.16, 1297.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[509.38, 37.38, -1312.5]} scale={4}>
+      <group position={[31.73, -23.79, 103.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-131.25, 13.76, -1759.38]} scale={4}>
+      <group position={[-608.9, -47.4, -342.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[125, 35, 2031.25]} scale={4}>
+      <group position={[-352.65, -26.16, 3447.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[834.38, 12.75, -1778.13]} scale={4}>
+      <group position={[356.73, -48.41, -361.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[715.63, 89.25, -1418.75]} scale={4}>
+      <group position={[237.98, 28.09, -2.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-162.5, 10, 143.75]} scale={4}>
+      <group position={[-640.15, -51.16, 1560.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[171.88, 61.75, -1456.25]} scale={4}>
+      <group position={[-305.77, 0.59, -39.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[400, 18, 706.25]} scale={4}>
+      <group position={[-77.65, -43.16, 2122.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[168.75, 33.63, -1759.38]} scale={4}>
+      <group position={[-308.9, -27.54, -342.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1403.13, 58.75, -1268.75]} scale={4}>
+      <group position={[925.48, -2.41, 147.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1462.5, 11, -68.75]} scale={4}>
+      <group position={[984.85, -50.16, 1347.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-912.5, 15, 806.25]} scale={4}>
+      <group position={[-1390.15, -46.16, 2222.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1225, 22, -643.75]} scale={4}>
+      <group position={[747.35, -39.16, 772.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1106.25, 7.38, -1703.13]} scale={4}>
+      <group position={[628.6, -53.79, -286.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-175, 15, 693.75]} scale={4}>
+      <group position={[-652.65, -46.16, 2110.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[150, 81, -1515.63]} scale={4}>
+      <group position={[-327.65, 19.84, -99.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1778.13, 5.81, -1684.38]} scale={4}>
+      <group position={[656.44, -6.23, 3149.88]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[275, 13, 343.75]} scale={4}>
+      <group position={[-202.65, -48.16, 1760.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1950, 24, -1284.38]} scale={4}>
+      <group position={[1472.35, -37.16, 132.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1593.75, 41, -1268.75]} scale={4}>
+      <group position={[1116.1, -20.16, 147.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[803.13, 17.68, -1737.5]} scale={4}>
+      <group position={[325.48, -43.48, -321.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-46.88, 5.81, -1834.38]} scale={4}>
+      <group position={[16.72, -44.24, 401.85]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[462.5, 65, 1693.75]} scale={4}>
+      <group position={[-15.15, 3.84, 3110.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[243.75, 14.5, -1825]} scale={4}>
+      <group position={[-233.9, -46.66, -408.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[403.13, 78, -1531.25]} scale={4}>
+      <group position={[-74.52, 16.84, -114.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-562.5, 14, -693.75]} scale={4}>
+      <group position={[-1040.15, -47.16, 722.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1031.25, 7.5, -1706.25]} scale={4}>
+      <group position={[553.6, -53.66, -289.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1246.88, 30.5, -1490.63]} scale={4}>
+      <group position={[769.23, -30.66, -74.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1740.63, 29.25, -1193.75]} scale={4}>
+      <group position={[1262.98, -31.91, 222.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[171.88, 45.81, -1421.88]} scale={4}>
+      <group position={[-305.77, -15.35, -5.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1387.5, 50, -1471.88]} scale={4}>
+      <group position={[909.85, -11.16, -55.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1737.5, 31.5, -1215.63]} scale={4}>
+      <group position={[1259.85, -29.66, 200.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1431.25, 5.75, -1671.88]} scale={4}>
+      <group position={[953.6, -55.41, -255.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[484.38, 29.75, -1259.38]} scale={4}>
+      <group position={[6.73, -31.41, 157.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1309.38, 61.5, -1453.13]} scale={4}>
+      <group position={[831.73, 0.34, -36.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1906.25, 13, -1131.25]} scale={4}>
+      <group position={[1428.6, -48.16, 285.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1512.5, 31.75, -1553.13]} scale={4}>
+      <group position={[1034.85, -29.41, -136.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1709.38, 19.25, -1615.63]} scale={4}>
+      <group position={[1231.73, -41.91, -199.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-121.88, 10.5, -1800]} scale={4}>
+      <group position={[-599.52, -50.66, -383.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-912.5, 10, -568.75]} scale={4}>
+      <group position={[-1390.15, -51.16, 847.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[825, 15, -1778.13]} scale={4}>
+      <group position={[347.35, -46.16, -361.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[196.88, 10.63, -1837.5]} scale={4}>
+      <group position={[-280.77, -50.54, -421.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-259.38, 10.19, -1409.38]} scale={4}>
+      <group position={[-737.02, -50.97, 7.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1612.5, 54.5, -1412.5]} scale={4}>
+      <group position={[1134.85, -6.66, 3.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[437.5, 51.25, -1584.38]} scale={4}>
+      <group position={[-40.15, -9.91, -167.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-128.13, 12.8, -1771.88]} scale={4}>
+      <group position={[-605.77, -48.36, -355.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1109.38, 50.48, -1390.63]} scale={4}>
+      <group position={[631.73, -10.68, 25.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[575, 52.5, -1459.38]} scale={4}>
+      <group position={[97.35, -8.66, -42.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-140.63, 22, -1181.25]} scale={4}>
+      <group position={[-618.27, -39.16, 235.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[640.63, 42.38, -1275]} scale={4}>
+      <group position={[162.98, -18.79, 141.45]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[831.25, 42.75, -1234.38]} scale={4}>
+      <group position={[353.6, -18.41, 182.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1134.38, 28.25, -1146.88]} scale={4}>
+      <group position={[656.73, -32.91, 269.57]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-231.25, 18.26, -1181.25]} scale={4}>
+      <group position={[-708.9, -42.9, 235.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-750, 20, 381.25]} scale={4}>
+      <group position={[-1227.65, -41.16, 1797.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1234.38, 65.88, -1400]} scale={4}>
+      <group position={[756.73, 4.71, 16.45]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-212.5, 9, 1031.25]} scale={4}>
+      <group position={[-690.15, -52.16, 2447.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1253.13, 50, -1456.25]} scale={4}>
+      <group position={[775.48, -11.16, -39.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[828.13, 92, -1431.25]} scale={4}>
+      <group position={[350.48, 30.84, -14.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1609.38, 50, -1318.75]} scale={4}>
+      <group position={[1131.73, -11.16, 97.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-293.75, 5.75, -1740.63]} scale={4}>
+      <group position={[-743.89, -50.06, -280.06]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[53.13, 22.69, -1321.88]} scale={4}>
+      <group position={[-424.52, -38.47, 94.57]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1203.13, 29.75, -1162.5]} scale={4}>
+      <group position={[725.48, -31.41, 253.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[737.5, 20, -43.75]} scale={4}>
+      <group position={[259.85, -41.16, 1372.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[131.25, 6, -1868.75]} scale={4}>
+      <group position={[-366.58, -47.7, -398.15]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1037.5, 20, 281.25]} scale={4}>
+      <group position={[-1515.15, -41.16, 1697.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[943.75, 34.5, -1184.38]} scale={4}>
+      <group position={[466.1, -26.66, 232.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-250, 35, 1831.25]} scale={4}>
+      <group position={[-727.65, -26.16, 3247.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[362.5, 18, -706.25]} scale={4}>
+      <group position={[-115.15, -43.16, 710.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1103.13, 39, -1471.88]} scale={4}>
+      <group position={[625.48, -22.16, -55.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[150, 84, -1525]} scale={4}>
+      <group position={[-327.65, 22.84, -108.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1525, 22, 1756.25]} scale={4}>
+      <group position={[-2002.65, -39.16, 3172.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[725, 54, -1281.25]} scale={4}>
+      <group position={[247.35, -7.16, 135.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-12.5, 19.5, -1353.13]} scale={4}>
+      <group position={[-490.15, -41.66, 63.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[396.88, 25.5, -1203.13]} scale={4}>
+      <group position={[-80.77, -35.66, 213.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1300, 76.5, -1412.5]} scale={4}>
+      <group position={[822.35, 15.34, 3.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-525, 74, 1456.25]} scale={4}>
+      <group position={[-1002.65, 12.84, 2872.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-143.75, 14.3, -1746.88]} scale={4}>
+      <group position={[-621.4, -46.86, -330.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1112.5, 35, -1237.5]} scale={4}>
+      <group position={[634.85, -26.16, 178.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[259.38, 78.44, -1665.63]} scale={4}>
+      <group position={[-218.27, 17.28, -249.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[721.88, 91.44, -1434.38]} scale={4}>
+      <group position={[244.23, 30.28, -17.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[103.13, 6, -1900]} scale={4}>
+      <group position={[-377.4, -49.57, 1577.77]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1712.5, 8, 2031.25]} scale={4}>
+      <group position={[-2190.15, -53.16, 3447.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-300, 14.25, -1146.88]} scale={4}>
+      <group position={[-777.65, -46.91, 269.57]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[34.38, 22, -1750]} scale={4}>
+      <group position={[-443.27, -39.16, -333.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-425, 19, -718.75]} scale={4}>
+      <group position={[-902.65, -42.16, 697.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-53.13, 19.25, -1278.13]} scale={4}>
+      <group position={[-530.77, -41.91, 138.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-262.5, 23, 2168.75]} scale={4}>
+      <group position={[-740.15, -38.16, 3585.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[493.75, 9.5, -1856.25]} scale={4}>
+      <group position={[16.1, -51.66, -439.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1881.25, 44, -1356.25]} scale={4}>
+      <group position={[1403.6, -17.16, 60.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1134.38, 47.75, -1396.88]} scale={4}>
+      <group position={[656.73, -13.41, 19.57]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[403.13, 29.5, -1228.13]} scale={4}>
+      <group position={[-74.52, -31.66, 188.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[643.75, 45.5, -1562.5]} scale={4}>
+      <group position={[166.1, -15.66, -146.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[896.88, 5, -1784.38]} scale={4}>
+      <group position={[526.14, -44.94, 1739.26]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[646.88, 37.25, -1593.75]} scale={4}>
+      <group position={[169.23, -23.91, -177.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[937.5, 59.01, -1287.5]} scale={4}>
+      <group position={[459.85, -2.15, 128.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[896.88, 14, -1718.75]} scale={4}>
+      <group position={[419.23, -47.16, -302.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1750, 15, 1931.25]} scale={4}>
+      <group position={[-2227.65, -46.16, 3347.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[875, 18.5, -1678.13]} scale={4}>
+      <group position={[397.35, -42.66, -261.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1718.75, 54, -1468.75]} scale={4}>
+      <group position={[1241.1, -7.16, -52.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[512.5, 24, -956.25]} scale={4}>
+      <group position={[34.85, -37.16, 460.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1062.5, 5.75, -1721.88]} scale={4}>
+      <group position={[-1877.02, 16.79, 2925.67]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1200, 21, 1243.75]} scale={4}>
+      <group position={[722.35, -40.16, 2660.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1300, 22.25, -1590.63]} scale={4}>
+      <group position={[822.35, -38.91, -174.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[153.13, 6.67, -1840.63]} scale={4}>
+      <group position={[-324.52, -54.49, -424.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1056.25, 24.25, -1625]} scale={4}>
+      <group position={[578.6, -36.91, -208.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1931.25, 20.5, -1531.25]} scale={4}>
+      <group position={[1453.6, -40.66, -114.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-962.5, 41, 581.25]} scale={4}>
+      <group position={[-1440.15, -20.16, 1997.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-775, 11, -206.25]} scale={4}>
+      <group position={[-1252.65, -50.16, 1210.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1600, 20, 1206.25]} scale={4}>
+      <group position={[1122.35, -41.16, 2622.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-71.88, 20.75, -1381.25]} scale={4}>
+      <group position={[-549.52, -40.41, 35.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-218.75, 21.5, -1493.75]} scale={4}>
+      <group position={[-696.4, -39.66, -77.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1687.5, 6, 106.25]} scale={4}>
+      <group position={[1209.85, -55.16, 1522.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1600, 41.5, -1275]} scale={4}>
+      <group position={[1122.35, -19.66, 141.45]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1562.5, 12, 2131.25]} scale={4}>
+      <group position={[-2040.15, -49.16, 3547.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[837.5, 72, -1312.5]} scale={4}>
+      <group position={[359.85, 10.84, 103.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-2100, 9, 1043.75]} scale={4}>
+      <group position={[-2577.65, -52.16, 2460.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[565.63, 38.25, -1553.13]} scale={4}>
+      <group position={[87.98, -22.91, -136.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[837.5, 42, -1231.25]} scale={4}>
+      <group position={[359.85, -19.16, 185.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1187.5, 39, 1056.25]} scale={4}>
+      <group position={[709.85, -22.16, 2472.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[331.25, 23.5, -1156.25]} scale={4}>
+      <group position={[-146.4, -37.66, 260.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[556.25, 28, -1228.13]} scale={4}>
+      <group position={[78.6, -33.16, 188.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-53.13, 16.25, -1293.75]} scale={4}>
+      <group position={[-530.77, -44.91, 122.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1703.13, 41.06, -1265.63]} scale={4}>
+      <group position={[1225.48, -20.1, 150.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1125, 37.25, -1240.63]} scale={4}>
+      <group position={[647.35, -23.91, 175.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[962.5, 22, 1306.25]} scale={4}>
+      <group position={[484.85, -39.16, 2722.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-50, 67, 1556.25]} scale={4}>
+      <group position={[-527.65, 5.84, 2972.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1290.63, 22.75, -1593.75]} scale={4}>
+      <group position={[812.98, -38.41, -177.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[887.5, 48, 718.75]} scale={4}>
+      <group position={[409.85, -13.16, 2135.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1025, 5, -306.25]} scale={4}>
+      <group position={[-1470.61, -51.21, 1059.37]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-675, 17, 1018.75]} scale={4}>
+      <group position={[-1152.65, -44.16, 2435.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[6.25, 53.5, -1637.5]} scale={4}>
+      <group position={[-471.4, -7.66, -221.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[284.38, 8.75, -1893.75]} scale={4}>
+      <group position={[-193.27, -52.41, -477.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[306.25, 41.39, -1353.13]} scale={4}>
+      <group position={[-171.4, -19.77, 63.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[646.88, 27.63, -1662.5]} scale={4}>
+      <group position={[169.23, -33.54, -246.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[75, 46, -1456.25]} scale={4}>
+      <group position={[-402.65, -15.16, -39.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1475, 19, -618.75]} scale={4}>
+      <group position={[997.35, -42.16, 797.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-700, 17, 631.25]} scale={4}>
+      <group position={[-1177.65, -44.16, 2047.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[303.13, 7.13, -1900]} scale={4}>
+      <group position={[-174.52, -54.04, -483.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[818.75, 26.75, -1662.5]} scale={4}>
+      <group position={[341.1, -34.41, -246.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1437.5, 20, 1993.75]} scale={4}>
+      <group position={[-1915.15, -41.16, 3410.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[937.5, 22, 1193.75]} scale={4}>
+      <group position={[459.85, -39.16, 2610.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1390.63, 46.25, -1228.13]} scale={4}>
+      <group position={[912.98, -14.91, 188.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1887.5, 15, -1056.25]} scale={4}>
+      <group position={[1409.85, -46.16, 360.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[475, 14.5, -1759.38]} scale={4}>
+      <group position={[-2.65, -46.66, -342.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-71.88, 15.63, -1325]} scale={4}>
+      <group position={[-549.52, -45.54, 91.45]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[275, 29, 531.25]} scale={4}>
+      <group position={[-202.65, -32.16, 1947.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-268.75, 7.75, -1750]} scale={4}>
+      <group position={[-746.4, -53.41, -333.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2015.63, 16.75, -1284.38]} scale={4}>
+      <group position={[1537.98, -44.41, 132.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1550, 33, 693.75]} scale={4}>
+      <group position={[1072.35, -28.16, 2110.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-246.88, 6, -1806.25]} scale={4}>
+      <group position={[283.13, -31.62, 345.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-125, 20, -1284.38]} scale={4}>
+      <group position={[-602.65, -41.16, 132.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2050, 12, 1943.75]} scale={4}>
+      <group position={[1572.35, -49.16, 3360.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[790.63, 18.5, -1771.88]} scale={4}>
+      <group position={[312.98, -42.66, -355.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1475, 11, -68.75]} scale={4}>
+      <group position={[997.35, -50.16, 1347.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1693.75, 55.75, -1353.13]} scale={4}>
+      <group position={[1216.1, -5.41, 63.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[946.88, 37, -1218.75]} scale={4}>
+      <group position={[469.23, -24.16, 197.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[615.63, 35, -1578.13]} scale={4}>
+      <group position={[137.98, -26.16, -161.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[603.13, 60.5, -1409.38]} scale={4}>
+      <group position={[125.48, -0.66, 7.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1575, 48, -1443.75]} scale={4}>
+      <group position={[1097.35, -13.16, -27.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[637.5, 29, -1168.75]} scale={4}>
+      <group position={[159.85, -32.16, 247.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-46.88, 34, -1484.38]} scale={4}>
+      <group position={[-524.52, -27.16, -67.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1300, 12, 931.25]} scale={4}>
+      <group position={[-1777.65, -49.16, 2347.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-162.5, 22, -1393.75]} scale={4}>
+      <group position={[-640.15, -39.16, 22.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[25, 11.18, -1812.5]} scale={4}>
+      <group position={[-452.65, -49.98, -396.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[825, 16, 1306.25]} scale={4}>
+      <group position={[347.35, -45.16, 2722.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-150, 13, -806.25]} scale={4}>
+      <group position={[-627.65, -48.16, 610.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1743.75, 23.75, -1140.63]} scale={4}>
+      <group position={[1266.1, -37.41, 275.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[556.25, 28, -1225]} scale={4}>
+      <group position={[78.6, -33.16, 191.45]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1996.88, 35.15, -1337.5]} scale={4}>
+      <group position={[1519.23, -26.02, 78.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-2062.5, 11, 1056.25]} scale={4}>
+      <group position={[-2540.15, -50.16, 2472.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[940.63, 27.5, -1581.25]} scale={4}>
+      <group position={[462.98, -33.66, -164.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[75, 55, -1687.5]} scale={4}>
+      <group position={[-402.65, -6.16, -271.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1040.63, 47.25, -1487.5]} scale={4}>
+      <group position={[562.98, -13.91, -71.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[225, 11, -1843.75]} scale={4}>
+      <group position={[-252.65, -50.16, -427.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1737.5, 24, -1143.75]} scale={4}>
+      <group position={[1259.85, -37.16, 272.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[468.75, 54.5, -1543.75]} scale={4}>
+      <group position={[-8.9, -6.66, -127.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1325, 70, -1306.25]} scale={4}>
+      <group position={[847.35, 8.84, 110.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-46.88, 43.5, -1606.25]} scale={4}>
+      <group position={[-524.52, -17.66, -189.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-134.38, 30.75, -1534.38]} scale={4}>
+      <group position={[-612.02, -30.41, -117.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1503.13, 21, -1625]} scale={4}>
+      <group position={[1025.48, -40.16, -208.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[684.38, 74.14, -1468.75]} scale={4}>
+      <group position={[206.73, 12.97, -52.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1462.5, 11, 493.75]} scale={4}>
+      <group position={[984.85, -50.16, 1910.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1471.88, 54.75, -1259.38]} scale={4}>
+      <group position={[994.23, -6.41, 157.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[825, 66.25, -1303.13]} scale={4}>
+      <group position={[347.35, 5.09, 113.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1471.88, 67.5, -1418.75]} scale={4}>
+      <group position={[994.23, 6.34, -2.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1775, 10, -456.25]} scale={4}>
+      <group position={[1297.35, -51.16, 960.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[137.5, 54, 1756.25]} scale={4}>
+      <group position={[-340.15, -7.16, 3172.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-271.88, 10.75, -1387.5]} scale={4}>
+      <group position={[-749.52, -50.41, 28.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[887.5, 14, 31.25]} scale={4}>
+      <group position={[409.85, -47.16, 1447.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1446.88, 45.5, -1221.88]} scale={4}>
+      <group position={[969.23, -15.66, 194.57]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1862.5, 23, 1218.75]} scale={4}>
+      <group position={[-2340.15, -38.16, 2635.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-825, 23, 381.25]} scale={4}>
+      <group position={[-1302.65, -38.16, 1797.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-862.5, 17, -518.75]} scale={4}>
+      <group position={[-1340.15, -44.16, 897.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1296.88, 68, -1293.75]} scale={4}>
+      <group position={[819.23, 6.84, 122.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[996.88, 68.06, -1403.13]} scale={4}>
+      <group position={[519.23, 6.9, 13.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[246.88, 29, -1187.5]} scale={4}>
+      <group position={[-230.77, -32.16, 228.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[500, 52, 1668.75]} scale={4}>
+      <group position={[22.35, -9.16, 3085.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1350, 69, 1556.25]} scale={4}>
+      <group position={[-1827.65, 7.84, 2972.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1384.38, 32, -1131.25]} scale={4}>
+      <group position={[906.73, -29.16, 285.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-850, 32, 1156.25]} scale={4}>
+      <group position={[-1327.65, -29.16, 2572.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-300, 32, 1893.75]} scale={4}>
+      <group position={[-777.65, -29.16, 3310.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[531.25, 30.75, -1628.13]} scale={4}>
+      <group position={[53.6, -30.41, -211.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[21.88, 40.5, -1493.75]} scale={4}>
+      <group position={[-455.77, -20.66, -77.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-93.75, 7.75, -1825]} scale={4}>
+      <group position={[-571.4, -53.41, -408.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1050, 22, -806.25]} scale={4}>
+      <group position={[572.35, -39.16, 610.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[278.13, 24.5, -1275]} scale={4}>
+      <group position={[-199.52, -36.66, 141.45]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[350, 35.75, -1309.38]} scale={4}>
+      <group position={[-127.65, -25.41, 107.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[384.38, 8, -1868.75]} scale={4}>
+      <group position={[-93.27, -53.16, -452.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1537.5, 40, 1581.25]} scale={4}>
+      <group position={[-2015.15, -21.16, 2997.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[337.5, 12, 18.75]} scale={4}>
+      <group position={[-140.15, -49.16, 1435.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[759.38, 82.25, -1340.63]} scale={4}>
+      <group position={[281.73, 21.09, 75.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1325, 22, 518.75]} scale={4}>
+      <group position={[-1802.65, -39.16, 1935.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[562.5, 5, -1878.13]} scale={4}>
+      <group position={[191.76, -44.94, 1645.51]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[612.5, 17, -118.75]} scale={4}>
+      <group position={[134.85, -44.16, 1297.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[103.13, 80.44, -1615.63]} scale={4}>
+      <group position={[-374.52, 19.28, -199.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2056.25, 22.15, -1318.75]} scale={4}>
+      <group position={[1578.6, -39.01, 97.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-78.13, 13, -1737.5]} scale={4}>
+      <group position={[-555.77, -48.16, -321.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1887.5, 39, -1331.25]} scale={4}>
+      <group position={[1409.85, -22.16, 85.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1696.88, 29, -1206.25]} scale={4}>
+      <group position={[1219.23, -32.16, 210.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[462.5, 21, -31.25]} scale={4}>
+      <group position={[-15.15, -40.16, 1385.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1743.75, 43, -1303.13]} scale={4}>
+      <group position={[1266.1, -18.16, 113.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1121.88, 29.25, -1540.63]} scale={4}>
+      <group position={[644.23, -31.91, -124.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[937.5, 19, -993.75]} scale={4}>
+      <group position={[459.85, -42.16, 422.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-218.75, 6, -1853.13]} scale={4}>
+      <group position={[311.26, -31.62, 298.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-62.5, 11, 1093.75]} scale={4}>
+      <group position={[-540.15, -50.16, 2510.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1525, 17, 456.25]} scale={4}>
+      <group position={[-2002.65, -44.16, 1872.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-40.63, 16, -1356.25]} scale={4}>
+      <group position={[-518.27, -45.16, 60.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-209.38, 17.5, -1381.25]} scale={4}>
+      <group position={[-687.02, -43.66, 35.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[625, 39, 1643.75]} scale={4}>
+      <group position={[147.35, -22.16, 3060.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[609.38, 6.75, -1821.88]} scale={4}>
+      <group position={[131.73, -54.41, -405.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2034.38, 23.94, -1328.13]} scale={4}>
+      <group position={[1556.73, -37.22, 88.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1437.5, 6, 68.75]} scale={4}>
+      <group position={[-1920.15, -47.12, 1592.5]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1715.63, 34.5, -1234.38]} scale={4}>
+      <group position={[1237.98, -26.66, 182.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1775, 35.75, -1528.13]} scale={4}>
+      <group position={[1297.35, -25.41, -111.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1968.75, 38.22, -1337.5]} scale={4}>
+      <group position={[1491.1, -22.94, 78.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1212.5, 19, -1631.25]} scale={4}>
+      <group position={[734.85, -42.16, -214.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[240.63, 25.75, -1253.13]} scale={4}>
+      <group position={[-237.02, -35.41, 163.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1275, 13, -456.25]} scale={4}>
+      <group position={[797.35, -48.16, 960.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[175, 97.5, -1596.88]} scale={4}>
+      <group position={[-302.65, 36.34, -180.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2025, 16.75, -1609.38]} scale={4}>
+      <group position={[1547.35, -44.41, -192.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[37.5, 21, -1259.38]} scale={4}>
+      <group position={[-440.15, -40.16, 157.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1640.63, 59.25, -1375]} scale={4}>
+      <group position={[1162.98, -1.91, 41.45]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1412.5, 34, -1556.25]} scale={4}>
+      <group position={[934.85, -27.16, -139.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1287.5, 16, 2043.75]} scale={4}>
+      <group position={[-1765.15, -45.16, 3460.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[734.38, 89.06, -1365.63]} scale={4}>
+      <group position={[256.73, 27.9, 50.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1000, 12, 118.75]} scale={4}>
+      <group position={[522.35, -49.16, 1535.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[950, 21, 343.75]} scale={4}>
+      <group position={[472.35, -40.16, 1760.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[750, 17.75, -1790.63]} scale={4}>
+      <group position={[272.35, -43.41, -374.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1028.13, 12, -1681.25]} scale={4}>
+      <group position={[550.48, -49.16, -264.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-612.5, 15, -418.75]} scale={4}>
+      <group position={[-1090.15, -46.16, 997.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[550, 16, 906.25]} scale={4}>
+      <group position={[72.35, -45.16, 2322.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1837.5, 20, -1581.25]} scale={4}>
+      <group position={[1359.85, -41.16, -164.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1050, 22, 981.25]} scale={4}>
+      <group position={[-1527.65, -39.16, 2397.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[787.5, 26, 1093.75]} scale={4}>
+      <group position={[309.85, -35.16, 2510.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1259.38, 29.25, -1503.13]} scale={4}>
+      <group position={[781.73, -31.91, -86.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[93.75, 38.25, -1728.13]} scale={4}>
+      <group position={[-383.9, -22.91, -311.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[712.5, 19, 1518.75]} scale={4}>
+      <group position={[234.85, -42.16, 2935.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[659.38, 74.25, -1412.5]} scale={4}>
+      <group position={[181.73, 13.09, 3.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1034.38, 58, -1318.75]} scale={4}>
+      <group position={[556.73, -3.16, 97.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2100, 27.75, -1446.88]} scale={4}>
+      <group position={[1622.35, -33.41, -30.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[337.5, 63, -1668.75]} scale={4}>
+      <group position={[-140.15, 1.84, -252.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[937.5, 10, -1762.5]} scale={4}>
+      <group position={[459.85, -51.16, -346.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-175, 6, -1837.5]} scale={4}>
+      <group position={[-111.41, -44.05, 398.72]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-612.5, 12, 456.25]} scale={4}>
+      <group position={[-1090.15, -49.16, 1872.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1846.88, 22.56, -1565.63]} scale={4}>
+      <group position={[1369.23, -38.6, -149.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1006.25, 22, -1640.63]} scale={4}>
+      <group position={[528.6, -39.16, -224.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1131.25, 54.25, -1284.38]} scale={4}>
+      <group position={[653.6, -6.91, 132.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[568.75, 49.13, -1478.13]} scale={4}>
+      <group position={[91.1, -12.04, -61.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[109.38, 6, -1878.13]} scale={4}>
+      <group position={[-371.15, -49.57, 1599.64]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1318.75, 5, -1731.25]} scale={4}>
+      <group position={[-1618.66, 22.63, 2916.56]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[243.75, 31, -1778.13]} scale={4}>
+      <group position={[-233.9, -30.16, -361.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1928.13, 4.5, -1603.13]} scale={4}>
+      <group position={[805.29, 27.13, 3233.77]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-925, 11, 218.75]} scale={4}>
+      <group position={[-1402.65, -50.16, 1635.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1665.63, 55.5, -1456.25]} scale={4}>
+      <group position={[1187.98, -5.66, -39.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[446.88, 65.56, -1496.88]} scale={4}>
+      <group position={[-30.77, 4.4, -80.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1956.25, 13.5, -1575]} scale={4}>
+      <group position={[1478.6, -47.66, -158.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1400, 22, -868.75]} scale={4}>
+      <group position={[922.35, -39.16, 547.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[112.5, 16, -693.75]} scale={4}>
+      <group position={[-365.15, -45.16, 722.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1471.88, 31.25, -1556.25]} scale={4}>
+      <group position={[994.23, -29.91, -139.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1350, 68, -1431.25]} scale={4}>
+      <group position={[872.35, 6.84, -14.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-337.5, 29, 1781.25]} scale={4}>
+      <group position={[-815.15, -32.16, 3197.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1956.25, 42.38, -1428.13]} scale={4}>
+      <group position={[1478.6, -18.79, -11.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[137.5, 18.71, -1165.63]} scale={4}>
+      <group position={[-340.15, -42.45, 250.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-87.5, 14, 68.75]} scale={4}>
+      <group position={[-565.15, -47.16, 1485.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[75, 16, 418.75]} scale={4}>
+      <group position={[-402.65, -45.16, 1835.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[806.25, 4.25, -1846.88]} scale={4}>
+      <group position={[435.51, -45.69, 1676.76]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[646.88, 37.25, -1243.75]} scale={4}>
+      <group position={[169.23, -23.91, 172.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1918.75, 5.25, -1621.88]} scale={4}>
+      <group position={[797.07, 17.7, 3212.38]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1940.63, 45.5, -1362.5]} scale={4}>
+      <group position={[1462.98, -15.66, 53.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[881.25, 77, -1421.88]} scale={4}>
+      <group position={[403.6, 15.84, -5.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1600, 39, 1793.75]} scale={4}>
+      <group position={[1122.35, -22.16, 3210.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-2112.5, 14, 1393.75]} scale={4}>
+      <group position={[-2590.15, -47.16, 2810.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1303.13, 76.5, -1412.5]} scale={4}>
+      <group position={[825.48, 15.34, 3.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1490.63, 36, -1531.25]} scale={4}>
+      <group position={[1012.98, -25.16, -114.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1587.5, 37, 1743.75]} scale={4}>
+      <group position={[1109.85, -24.16, 3160.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[800, 8, -368.75]} scale={4}>
+      <group position={[322.35, -53.16, 1047.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[175, 18.25, -1134.38]} scale={4}>
+      <group position={[-302.65, -42.91, 282.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1709.38, 57.25, -1459.38]} scale={4}>
+      <group position={[1231.73, -3.91, -42.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[715.63, 76.63, -1512.5]} scale={4}>
+      <group position={[237.98, 15.46, -96.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[665.63, 54.06, -1556.25]} scale={4}>
+      <group position={[187.98, -7.1, -139.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2037.5, 45.5, -1409.38]} scale={4}>
+      <group position={[1559.85, -15.66, 7.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1737.5, 33, 1506.25]} scale={4}>
+      <group position={[-2215.15, -28.16, 2922.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1062.5, 92, 1806.25]} scale={4}>
+      <group position={[584.85, 30.84, 3222.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1965.63, 42.44, -1428.13]} scale={4}>
+      <group position={[1487.98, -18.72, -11.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-159.38, 34, -1568.75]} scale={4}>
+      <group position={[-637.02, -27.16, -152.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1790.63, 30.75, -1243.75]} scale={4}>
+      <group position={[1312.98, -30.41, 172.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[962.5, 50.5, -1487.5]} scale={4}>
+      <group position={[484.85, -10.66, -71.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1212.5, 17, 718.75]} scale={4}>
+      <group position={[-1690.15, -44.16, 2135.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1659.38, 15, -1621.88]} scale={4}>
+      <group position={[1181.73, -46.16, -205.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1900, 17, -1218.75]} scale={4}>
+      <group position={[1422.35, -44.16, 197.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-137.5, 37, 1793.75]} scale={4}>
+      <group position={[-615.15, -24.16, 3210.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[799.71, 98.34, -1438.09]} scale={4}>
+      <group position={[322.07, 37.18, -21.64]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[321.88, 90.5, -1531.25]} scale={4}>
+      <group position={[-155.77, 29.34, -114.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1046.88, 36.88, -1250]} scale={4}>
+      <group position={[569.23, -24.29, 166.45]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1000, 9, -1725]} scale={4}>
+      <group position={[522.35, -52.16, -308.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[321.88, 83.5, -1609.38]} scale={4}>
+      <group position={[-155.77, 22.34, -192.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[637.5, 35, -1243.75]} scale={4}>
+      <group position={[159.85, -26.16, 172.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2031.25, 34.75, -1365.63]} scale={4}>
+      <group position={[1553.6, -26.41, 50.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[784.38, 18.75, -1787.5]} scale={4}>
+      <group position={[306.73, -42.41, -371.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1250, 20, -893.75]} scale={4}>
+      <group position={[772.35, -41.16, 522.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1018.75, 6.25, -1737.5]} scale={4}>
+      <group position={[-1917.3, 19.23, 2912.03]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-31.25, 14.5, -1775]} scale={4}>
+      <group position={[-508.9, -46.66, -358.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1075, 26, -1612.5]} scale={4}>
+      <group position={[597.35, -35.16, -196.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1971.88, 3.94, -1603.13]} scale={4}>
+      <group position={[850.19, 27.25, 3231.13]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1465.63, 8.5, -1662.5]} scale={4}>
+      <group position={[987.98, -52.66, -246.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[25, 30, 1981.25]} scale={4}>
+      <group position={[-452.65, -31.16, 3397.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[843.75, 41, -1225]} scale={4}>
+      <group position={[366.1, -20.16, 191.45]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-165.63, 18.75, -1690.63]} scale={4}>
+      <group position={[-643.27, -42.41, -274.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1668.75, 14.38, -1634.38]} scale={4}>
+      <group position={[1191.1, -46.79, -217.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[18.75, 62.5, -1606.25]} scale={4}>
+      <group position={[-458.9, 1.34, -189.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-134.38, 20.13, -1275]} scale={4}>
+      <group position={[-612.02, -41.04, 141.45]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-293.75, 14.13, -1340.63]} scale={4}>
+      <group position={[-771.4, -47.04, 75.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[184.38, 38.5, -1396.88]} scale={4}>
+      <group position={[-293.27, -22.66, 19.57]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2000, 10, 1268.75]} scale={4}>
+      <group position={[1522.35, -51.16, 2685.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[234.38, 26, -1256.25]} scale={4}>
+      <group position={[-243.27, -35.16, 160.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1575, 24, 281.25]} scale={4}>
+      <group position={[-2052.65, -37.16, 1697.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1903.13, 35, -1306.25]} scale={4}>
+      <group position={[1425.48, -26.16, 110.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1800, 13, 1893.75]} scale={4}>
+      <group position={[-2277.65, -48.16, 3310.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1521.88, 20, -1631.25]} scale={4}>
+      <group position={[1044.23, -41.16, -214.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2012.5, 12, 1856.25]} scale={4}>
+      <group position={[1534.85, -49.16, 3272.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2087.5, 19, -1287.5]} scale={4}>
+      <group position={[1609.85, -42.16, 128.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[468.75, 22.38, -1178.13]} scale={4}>
+      <group position={[-8.9, -38.79, 238.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-109.38, 20.94, -1153.13]} scale={4}>
+      <group position={[-587.02, -40.22, 263.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[615.63, 6, -1868.75]} scale={4}>
+      <group position={[244.89, -43.94, 1654.89]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1046.88, 49.13, -1462.5]} scale={4}>
+      <group position={[569.23, -12.04, -46.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[712.5, 26, 831.25]} scale={4}>
+      <group position={[234.85, -35.16, 2247.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1800, 39, 668.75]} scale={4}>
+      <group position={[1322.35, -22.16, 2085.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[296.88, 41.77, -1359.38]} scale={4}>
+      <group position={[-180.77, -19.39, 57.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-278.13, 17.69, -1665.63]} scale={4}>
+      <group position={[-755.77, -43.47, -249.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[868.75, 20.5, -1668.75]} scale={4}>
+      <group position={[391.1, -40.66, -252.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1750, 9, -418.75]} scale={4}>
+      <group position={[1272.35, -52.16, 997.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[896.88, 51.75, -1506.25]} scale={4}>
+      <group position={[419.23, -9.41, -89.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-750, 14, -443.75]} scale={4}>
+      <group position={[-1227.65, -47.16, 972.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[300, 15, -218.75]} scale={4}>
+      <group position={[-177.65, -46.16, 1197.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[237.5, 100, -1578.13]} scale={4}>
+      <group position={[-240.15, 38.84, -161.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-87.5, 28.25, -1446.88]} scale={4}>
+      <group position={[-565.15, -32.91, -30.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1962.5, 8, 1793.75]} scale={4}>
+      <group position={[-2440.15, -53.16, 3210.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[175, 29, -956.25]} scale={4}>
+      <group position={[-302.65, -32.16, 460.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1087.5, 20, 468.75]} scale={4}>
+      <group position={[609.85, -41.16, 1885.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1612.5, 24, 1768.75]} scale={4}>
+      <group position={[-2090.15, -37.16, 3185.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-800, 31, 1256.25]} scale={4}>
+      <group position={[-1277.65, -30.16, 2672.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-209.38, 18, -1375]} scale={4}>
+      <group position={[-687.02, -43.16, 41.45]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[453.13, 64.75, -1475]} scale={4}>
+      <group position={[-24.52, 3.59, -58.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1725, 16, 1181.25]} scale={4}>
+      <group position={[1247.35, -45.16, 2597.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[387.5, 20, -1768.75]} scale={4}>
+      <group position={[-90.15, -41.16, -352.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1559.38, 57.75, -1356.25]} scale={4}>
+      <group position={[1081.73, -3.41, 60.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1287.5, 38, 1581.25]} scale={4}>
+      <group position={[809.85, -23.16, 2997.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[971.88, 67.69, -1396.88]} scale={4}>
+      <group position={[494.23, 6.53, 19.57]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1237.5, 23, 506.25]} scale={4}>
+      <group position={[-1715.15, -38.16, 1922.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1971.88, 44.75, -1365.63]} scale={4}>
+      <group position={[1494.23, -16.41, 50.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[928.13, 29.75, -1146.88]} scale={4}>
+      <group position={[450.48, -31.41, 269.57]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[46.88, 67.31, -1634.38]} scale={4}>
+      <group position={[-430.77, 6.15, -217.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1637.5, 15, 1356.25]} scale={4}>
+      <group position={[1159.85, -46.16, 2772.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[843.75, 91.25, -1378.13]} scale={4}>
+      <group position={[366.1, 30.09, 38.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1331.25, 64, -1281.25]} scale={4}>
+      <group position={[853.6, 2.84, 135.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[950, 73.5, -1353.13]} scale={4}>
+      <group position={[472.35, 12.34, 63.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2075, 19, -1287.5]} scale={4}>
+      <group position={[1597.35, -42.16, 128.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[46.88, 13.75, -1143.75]} scale={4}>
+      <group position={[-430.77, -47.41, 272.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1512.5, 23, 793.75]} scale={4}>
+      <group position={[1034.85, -38.16, 2210.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1000, 6, -1743.75]} scale={0.48}>
+      <group position={[522.35, -55.16, -327.3]} scale={0.48}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1431.25, 24.13, -1603.13]} scale={4}>
+      <group position={[953.6, -37.04, -186.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[212.5, 97, -1543.75]} scale={4}>
+      <group position={[-265.15, 35.84, -127.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1875, 15, 1618.75]} scale={4}>
+      <group position={[1397.35, -46.16, 3035.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-153.13, 23, -1453.13]} scale={4}>
+      <group position={[-630.77, -38.16, -36.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[478.13, 20.69, -1140.63]} scale={4}>
+      <group position={[0.48, -40.47, 275.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[71.88, 15.94, -1778.13]} scale={4}>
+      <group position={[-405.77, -45.22, -361.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-281.25, 10, -1393.75]} scale={4}>
+      <group position={[-758.9, -51.16, 22.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1037.5, 43, 1606.25]} scale={4}>
+      <group position={[-1515.15, -18.16, 3022.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1937.5, 11, 693.75]} scale={4}>
+      <group position={[-2415.15, -50.16, 2110.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-284.38, 5.75, -1737.5]} scale={4}>
+      <group position={[-734.52, -50.06, -276.94]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[900, 25, 868.75]} scale={4}>
+      <group position={[422.35, -36.16, 2285.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-2375, 5, 2056.25]} scale={4}>
+      <group position={[-2852.65, -56.16, 3472.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-171.88, 17.5, -1696.88]} scale={4}>
+      <group position={[-649.52, -43.66, -280.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[75, 26, -831.25]} scale={4}>
+      <group position={[-402.65, -35.16, 585.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1925, 20, 406.25]} scale={4}>
+      <group position={[-2402.65, -41.16, 1822.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1100, 48, 768.75]} scale={4}>
+      <group position={[622.35, -13.16, 2185.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-162.5, 30, 2068.75]} scale={4}>
+      <group position={[-640.15, -31.16, 3485.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1950, 12, -1131.25]} scale={4}>
+      <group position={[1472.35, -49.16, 285.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1121.88, 6.06, -1715.63]} scale={4}>
+      <group position={[-1816.51, 19.87, 2934.49]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1812.5, 7, 43.75]} scale={4}>
+      <group position={[1297.6, -49.51, 1478.89]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2053.13, 28.25, -1503.13]} scale={4}>
+      <group position={[1575.48, -32.91, -86.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[325, 15, -918.75]} scale={4}>
+      <group position={[-152.65, -46.16, 497.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[612.5, 25.75, -1646.88]} scale={4}>
+      <group position={[134.85, -35.41, -230.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[362.5, 14, 1031.25]} scale={4}>
+      <group position={[-115.15, -47.16, 2447.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1843.75, 18.75, -1587.5]} scale={4}>
+      <group position={[1366.1, -42.41, -171.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1459.38, 36.31, -1534.38]} scale={4}>
+      <group position={[981.73, -24.85, -117.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[825, 22, 468.75]} scale={4}>
+      <group position={[347.35, -39.16, 1885.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[418.75, 49, -1381.25]} scale={4}>
+      <group position={[-58.9, -12.16, 35.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1537.5, 18, -1068.75]} scale={4}>
+      <group position={[1059.85, -43.16, 347.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1462.5, 53.25, -1459.38]} scale={4}>
+      <group position={[984.85, -7.91, -42.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[550, 27.25, -1209.38]} scale={4}>
+      <group position={[72.35, -33.91, 207.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[528.13, 22, -1659.38]} scale={4}>
+      <group position={[50.48, -39.16, -242.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-75, 25, -768.75]} scale={4}>
+      <group position={[-552.65, -36.16, 647.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1775, 60, 1368.75]} scale={4}>
+      <group position={[-2252.65, -1.16, 2785.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1309.38, 76.5, -1412.5]} scale={4}>
+      <group position={[831.73, 15.34, 3.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-762.5, 14, -456.25]} scale={4}>
+      <group position={[-1240.15, -47.16, 960.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[340.63, 70.25, -1446.88]} scale={4}>
+      <group position={[-137.02, 9.09, -30.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[150, 31.5, -1384.38]} scale={4}>
+      <group position={[-327.65, -29.66, 32.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[53.13, 14, -1796.88]} scale={4}>
+      <group position={[-424.52, -47.16, -380.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[162.5, 15, -593.75]} scale={4}>
+      <group position={[-315.15, -46.16, 822.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1512.5, 47, 2068.75]} scale={4}>
+      <group position={[1034.85, -14.16, 3485.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[81.25, 24.5, -1290.63]} scale={4}>
+      <group position={[-396.4, -36.66, 125.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1493.75, 24.63, -1140.63]} scale={4}>
+      <group position={[1016.1, -36.54, 275.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[650, 16, -868.75]} scale={4}>
+      <group position={[172.35, -45.16, 547.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-268.75, 14, -1456.25]} scale={4}>
+      <group position={[-746.4, -47.16, -39.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[87.5, 68, -1656.25]} scale={4}>
+      <group position={[-390.15, 6.84, -239.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1700, 23, 1718.75]} scale={4}>
+      <group position={[-2177.65, -38.16, 3135.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[184.38, 82, -1509.38]} scale={4}>
+      <group position={[-293.27, 20.84, -92.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1018.75, 9.75, -1700]} scale={4}>
+      <group position={[541.1, -51.41, -283.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1584.38, 31.25, -1556.25]} scale={4}>
+      <group position={[1106.73, -29.91, -139.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1050, 28, -906.25]} scale={4}>
+      <group position={[572.35, -33.16, 510.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1525, 48, -1462.5]} scale={4}>
+      <group position={[1047.35, -13.16, -46.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1125, 25, 568.75]} scale={4}>
+      <group position={[-1602.65, -36.16, 1985.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1650, 29, -1218.75]} scale={4}>
+      <group position={[1172.35, -32.16, 197.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[218.75, 55.5, -1712.5]} scale={4}>
+      <group position={[-258.9, -5.66, -296.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1731.25, 45, -1496.88]} scale={4}>
+      <group position={[1253.6, -16.16, -80.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-300, 16, -1243.75]} scale={4}>
+      <group position={[-777.65, -45.16, 172.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[209.38, 27.44, -1784.38]} scale={4}>
+      <group position={[-268.27, -33.72, -367.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1512.5, 25, 781.25]} scale={4}>
+      <group position={[1034.85, -36.16, 2197.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[287.5, 18, -643.75]} scale={4}>
+      <group position={[-190.15, -43.16, 772.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1325, 35, 918.75]} scale={4}>
+      <group position={[847.35, -26.16, 2335.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1331.25, 5.75, -1709.38]} scale={4}>
+      <group position={[-1608.48, 14.21, 2938.49]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[15.63, 18.75, -1240.63]} scale={4}>
+      <group position={[-462.02, -42.41, 175.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1700, 10, 168.75]} scale={4}>
+      <group position={[1222.35, -51.16, 1585.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[975, 36, 1406.25]} scale={4}>
+      <group position={[497.35, -25.16, 2822.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[850, 61, -1531.25]} scale={4}>
+      <group position={[372.35, -0.16, -114.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-84.38, 18.75, -1215.63]} scale={4}>
+      <group position={[-562.02, -42.41, 200.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[437.5, 69, -1456.25]} scale={4}>
+      <group position={[-40.15, 7.84, -39.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-81.25, 13, -1756.25]} scale={4}>
+      <group position={[-558.9, -48.16, -339.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[321.88, 66.75, -1668.75]} scale={4}>
+      <group position={[-155.77, 5.59, -252.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-2362.5, 10, 968.75]} scale={4}>
+      <group position={[-2840.15, -51.16, 2385.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[100, 14.75, -1790.63]} scale={4}>
+      <group position={[-377.65, -46.41, -374.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-125, 6, 1043.75]} scale={4}>
+      <group position={[-602.65, -55.16, 2460.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-184.38, 31.5, -1581.25]} scale={4}>
+      <group position={[-662.02, -29.66, -164.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1312.5, 15, 93.75]} scale={4}>
+      <group position={[-1790.15, -46.16, 1510.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1425, 32, 2181.25]} scale={4}>
+      <group position={[947.35, -29.16, 3597.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[787.5, 110, 1881.25]} scale={4}>
+      <group position={[309.85, 48.84, 3297.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[250, 6, -1956.25]} scale={4}>
+      <group position={[-230.53, -49.57, 1521.52]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1675, 25, -1043.75]} scale={4}>
+      <group position={[1197.35, -36.16, 372.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1384.38, 71.75, -1421.88]} scale={4}>
+      <group position={[906.73, 10.59, -5.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-118.75, 14.13, -1740.63]} scale={4}>
+      <group position={[-596.4, -47.04, -324.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1093.75, 29.5, -1156.25]} scale={4}>
+      <group position={[616.1, -31.66, 260.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[934.38, 51.75, -1265.63]} scale={4}>
+      <group position={[456.73, -9.41, 150.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1096.88, 6, -1756.25]} scale={4}>
+      <group position={[172.25, -43.69, 1137.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1200, 38.28, -1440.63]} scale={4}>
+      <group position={[722.35, -22.88, -24.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2012.5, 23, 606.25]} scale={4}>
+      <group position={[1534.85, -38.16, 2022.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[437.5, 88, 1743.75]} scale={4}>
+      <group position={[-40.15, 26.84, 3160.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[675, 22, -1737.5]} scale={4}>
+      <group position={[197.35, -39.16, -321.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1800, 16, 1206.25]} scale={4}>
+      <group position={[1322.35, -45.16, 2622.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[425, 17, -1753.13]} scale={4}>
+      <group position={[-52.65, -44.16, -336.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[62.5, 31, -1387.5]} scale={4}>
+      <group position={[-415.15, -30.16, 28.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1868.75, 39.5, -1453.13]} scale={4}>
+      <group position={[1391.1, -21.66, -36.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[71.88, 54.63, -1687.5]} scale={4}>
+      <group position={[-405.77, -6.54, -271.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1046.88, 52.75, -1440.63]} scale={4}>
+      <group position={[569.23, -8.41, -24.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[321.88, 83, -1612.5]} scale={4}>
+      <group position={[-155.77, 21.84, -196.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1371.88, 32.5, -1137.5]} scale={4}>
+      <group position={[894.23, -28.66, 278.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[650, 56, -1328.13]} scale={4}>
+      <group position={[172.35, -5.16, 88.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2037.5, 31.25, -1559.38]} scale={4}>
+      <group position={[1559.85, -29.91, -142.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1384.38, 5, -1728.13]} scale={4}>
+      <group position={[-1553, 29.48, 2921.4]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1350, 33, -1171.88]} scale={4}>
+      <group position={[872.35, -28.16, 244.57]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[640.63, 25.5, -1703.13]} scale={4}>
+      <group position={[162.98, -35.66, -286.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[165.63, 8.25, -1831.25]} scale={4}>
+      <group position={[-312.02, -52.91, -414.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[234.38, 18.81, -1809.38]} scale={4}>
+      <group position={[-243.27, -42.35, -392.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[440.63, 5.5, -1900]} scale={4}>
+      <group position={[69.89, -49.86, 1623.64]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[621.88, 31.5, -1243.75]} scale={4}>
+      <group position={[144.23, -29.66, 172.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[375, 30, -1743.75]} scale={4}>
+      <group position={[-102.65, -31.16, -327.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-12.5, 16, 706.25]} scale={4}>
+      <group position={[-490.15, -45.16, 2122.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[75, 8.5, -1853.13]} scale={4}>
+      <group position={[-402.65, -52.66, -436.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-215.63, 18.75, -1318.75]} scale={4}>
+      <group position={[-693.27, -42.41, 97.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1300, 36, 818.75]} scale={4}>
+      <group position={[822.35, -25.16, 2235.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-687.5, 27, 2081.25]} scale={4}>
+      <group position={[-1165.15, -34.16, 3497.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[637.5, 86, 1768.75]} scale={4}>
+      <group position={[159.85, 24.84, 3185.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1578.13, 6, -1681.25]} scale={4}>
+      <group position={[-1359.25, 30.48, 2968.27]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[84.38, 70.19, -1528.13]} scale={4}>
+      <group position={[-393.27, 9.03, -111.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1443.75, 27.5, -1581.25]} scale={4}>
+      <group position={[966.1, -33.66, -164.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-84.38, 17.5, -1318.75]} scale={4}>
+      <group position={[-562.02, -43.66, 97.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[903.13, 5.5, -1800]} scale={4}>
+      <group position={[532.39, -49.86, 1723.64]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1871.88, 22.25, -1568.75]} scale={4}>
+      <group position={[1394.23, -38.91, -152.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[184.38, 37.5, -1393.75]} scale={4}>
+      <group position={[-293.27, -23.66, 22.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[81.25, 14.38, -1790.63]} scale={4}>
+      <group position={[-396.4, -46.79, -374.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-312.5, 12, -1618.75]} scale={4}>
+      <group position={[-790.15, -49.16, -202.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[387.5, 18, -693.75]} scale={4}>
+      <group position={[-90.15, -43.16, 722.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1275, 6, -1718.75]} scale={4}>
+      <group position={[-1661.66, 22.73, 2930.17]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-93.75, 6.25, -1862.5]} scale={4}>
+      <group position={[-30.16, -43.8, 373.72]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-500, 30, 1756.25]} scale={4}>
+      <group position={[-977.65, -31.16, 3172.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-46.88, 18, -1231.25]} scale={4}>
+      <group position={[-524.52, -43.16, 185.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1937.5, 17, 1756.25]} scale={4}>
+      <group position={[1459.85, -44.16, 3172.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1534.38, 38.5, -1206.25]} scale={4}>
+      <group position={[1056.73, -22.66, 210.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[834.38, 76.81, -1490.63]} scale={4}>
+      <group position={[356.73, 15.65, -74.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[637.5, 6, -1868.75]} scale={4}>
+      <group position={[-290.11, -44.48, 1048.15]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[100, 14, 81.25]} scale={4}>
+      <group position={[-377.65, -47.16, 1497.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1487.5, 23.5, -1596.88]} scale={4}>
+      <group position={[1009.85, -37.66, -180.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1403.13, 24.63, -1600]} scale={4}>
+      <group position={[925.48, -36.54, -183.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[150, 9, 406.25]} scale={4}>
+      <group position={[-327.65, -52.16, 1822.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1012.5, 10, -118.75]} scale={4}>
+      <group position={[534.85, -51.16, 1297.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[937.5, 64, -1303.13]} scale={4}>
+      <group position={[459.85, 2.84, 113.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-287.5, 30, 2006.25]} scale={4}>
+      <group position={[-765.15, -31.16, 3422.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-118.75, 33.5, -1543.75]} scale={4}>
+      <group position={[-596.4, -27.66, -127.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1225, 6, -43.75]} scale={4}>
+      <group position={[752.56, -54.77, 1291.25]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[915.63, 29.31, -1146.88]} scale={4}>
+      <group position={[437.98, -31.85, 269.57]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1350, 5.5, -1712.5]} scale={4}>
+      <group position={[-1586.4, 13.29, 2931.9]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1575, 28.5, -1140.63]} scale={4}>
+      <group position={[1097.35, -32.66, 275.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-575, 15, -506.25]} scale={4}>
+      <group position={[-1052.65, -46.16, 910.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1275, 21, -906.25]} scale={4}>
+      <group position={[797.35, -40.16, 510.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2018.75, 6.5, -1625]} scale={4}>
+      <group position={[900.21, 16.52, 3224.36]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1106.25, 38, -1484.38]} scale={4}>
+      <group position={[628.6, -23.16, -67.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-337.5, 56, 1431.25]} scale={4}>
+      <group position={[-815.15, -5.16, 2847.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[143.75, 86.5, -1537.5]} scale={4}>
+      <group position={[-333.9, 25.34, -121.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-2037.5, 14, 406.25]} scale={4}>
+      <group position={[-2515.15, -47.16, 1822.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[150, 19.75, -1190.63]} scale={4}>
+      <group position={[-327.65, -41.41, 225.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1578.13, 41.88, -1487.5]} scale={4}>
+      <group position={[1100.48, -19.29, -71.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[943.75, 69.25, -1400]} scale={4}>
+      <group position={[466.1, 8.09, 16.45]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-131.25, 24.5, -1437.5]} scale={4}>
+      <group position={[-608.9, -36.66, -21.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-159.38, 7.31, -1828.13]} scale={4}>
+      <group position={[-637.02, -53.85, -411.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-212.5, 5, -1796.88]} scale={4}>
+      <group position={[-148.91, -45.05, 439.35]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1562.5, 24, 1131.25]} scale={4}>
+      <group position={[-2040.15, -37.16, 2547.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[737.5, 14, -493.75]} scale={4}>
+      <group position={[259.85, -47.16, 922.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[712.5, 30, -1156.25]} scale={4}>
+      <group position={[234.85, -31.16, 260.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1300, 16, -268.75]} scale={4}>
+      <group position={[822.35, -45.16, 1147.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1818.75, 25.75, -1196.88]} scale={4}>
+      <group position={[1341.1, -35.41, 219.57]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[278.13, 49.25, -1384.38]} scale={4}>
+      <group position={[-199.52, -11.91, 32.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[84.38, 14.88, -1787.5]} scale={4}>
+      <group position={[-393.27, -46.29, -371.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[790.63, 22, -1703.13]} scale={4}>
+      <group position={[312.98, -39.16, -286.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[362.5, 21, -1140.63]} scale={4}>
+      <group position={[-115.15, -40.16, 275.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[540.63, 25.75, -1190.63]} scale={4}>
+      <group position={[62.98, -35.41, 225.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1525, 16, -568.75]} scale={4}>
+      <group position={[1047.35, -45.16, 847.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-84.38, 27.5, -1656.25]} scale={4}>
+      <group position={[-562.02, -33.66, -239.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1750, 23.5, -1137.5]} scale={4}>
+      <group position={[1272.35, -37.66, 278.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[812.5, 25, -918.75]} scale={4}>
+      <group position={[334.85, -36.16, 497.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1000, 49.75, -1271.88]} scale={4}>
+      <group position={[522.35, -11.41, 144.57]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[568.75, 18.5, -1678.13]} scale={4}>
+      <group position={[91.1, -42.66, -261.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[337.5, 23, -581.25]} scale={4}>
+      <group position={[-140.15, -38.16, 835.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1790.63, 37.75, -1306.25]} scale={4}>
+      <group position={[1312.98, -23.41, 110.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[300, 28, -1300]} scale={4}>
+      <group position={[-177.65, -33.16, 116.45]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[237.5, 13, 1006.25]} scale={4}>
+      <group position={[-240.15, -48.16, 2422.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1440.63, 6.25, -1668.75]} scale={4}>
+      <group position={[962.98, -54.91, -252.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-109.38, 24, -1406.25]} scale={4}>
+      <group position={[-587.02, -37.16, 10.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-287.5, 14, -1018.75]} scale={4}>
+      <group position={[-765.15, -47.16, 397.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[962.5, 10, -1740.63]} scale={4}>
+      <group position={[484.85, -51.16, -324.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[431.25, 33, -1256.25]} scale={4}>
+      <group position={[-46.4, -28.16, 160.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-212.5, 5, 1006.25]} scale={4}>
+      <group position={[-690.15, -56.16, 2422.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[553.13, 29.81, -1621.88]} scale={4}>
+      <group position={[75.48, -31.35, -205.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1143.75, 31.75, -1450]} scale={4}>
+      <group position={[666.1, -29.41, -33.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1700, 15, 806.25]} scale={4}>
+      <group position={[-2177.65, -46.16, 2222.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[184.38, 68.25, -1678.13]} scale={4}>
+      <group position={[-293.27, 7.09, -261.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-125, 31, 1306.25]} scale={4}>
+      <group position={[-602.65, -30.16, 2722.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2043.75, 45.75, -1446.88]} scale={4}>
+      <group position={[1566.1, -15.41, -30.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1150, 29.75, -1178.13]} scale={4}>
+      <group position={[672.35, -31.41, 238.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[471.88, 15.06, -1753.13]} scale={4}>
+      <group position={[-5.77, -46.1, -336.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[37.5, 14, -481.25]} scale={4}>
+      <group position={[-440.15, -47.16, 935.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[209.38, 9.87, -1850]} scale={4}>
+      <group position={[-268.27, -51.29, -433.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1740.63, 51.75, -1365.63]} scale={4}>
+      <group position={[1262.98, -9.41, 50.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1606.25, 57, -1381.25]} scale={4}>
+      <group position={[1128.6, -4.16, 35.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[415.63, 27.25, -1725]} scale={4}>
+      <group position={[-62.02, -33.91, -308.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[168.75, 21.5, -1206.25]} scale={4}>
+      <group position={[-308.9, -39.66, 210.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[562.5, 52.73, -1384.38]} scale={4}>
+      <group position={[84.85, -8.43, 32.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1037.5, 129, 1906.25]} scale={4}>
+      <group position={[559.85, 67.84, 3322.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1875, 22, 918.75]} scale={4}>
+      <group position={[-2352.65, -39.16, 2335.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[900, 22, 406.25]} scale={4}>
+      <group position={[422.35, -39.16, 1822.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[797.04, 99.08, -1405.84]} scale={4}>
+      <group position={[319.4, 37.92, 10.6]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1225, 23, 1181.25]} scale={4}>
+      <group position={[747.35, -38.16, 2597.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[350, 28, 1406.25]} scale={4}>
+      <group position={[-127.65, -33.16, 2822.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-121.88, 21.81, -1203.13]} scale={4}>
+      <group position={[-599.52, -39.35, 213.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1162.5, 21, 831.25]} scale={4}>
+      <group position={[-1640.15, -40.16, 2247.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1009.38, 13.25, -1681.25]} scale={4}>
+      <group position={[531.73, -47.91, -264.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1650, 34.75, -1246.88]} scale={4}>
+      <group position={[1172.35, -26.41, 169.57]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[850, 15, -18.75]} scale={4}>
+      <group position={[372.35, -46.16, 1397.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[562.5, 19, -331.25]} scale={4}>
+      <group position={[84.85, -42.16, 1085.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2134.38, 7, -1278.13]} scale={4}>
+      <group position={[1656.73, -54.16, 138.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[506.25, 6.13, -1878.13]} scale={4}>
+      <group position={[135.51, -43.81, 1645.51]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-2212.5, 23, 256.25]} scale={4}>
+      <group position={[-2690.15, -38.16, 1672.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1087.5, 56.25, -1384.38]} scale={4}>
+      <group position={[609.85, -4.91, 32.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[312.5, 32, 456.25]} scale={4}>
+      <group position={[-165.15, -29.16, 1872.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-2125, 32, 243.75]} scale={4}>
+      <group position={[-2602.65, -29.16, 1660.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1762.5, 11, 1968.75]} scale={4}>
+      <group position={[-2240.15, -50.16, 3385.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[590.63, 6, -1871.88]} scale={4}>
+      <group position={[219.89, -43.94, 1651.76]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1940.63, 13.38, -1137.5]} scale={4}>
+      <group position={[1462.98, -47.79, 278.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-240.63, 16.59, -1687.5]} scale={4}>
+      <group position={[-718.27, -44.57, -271.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1737.5, 14, 768.75]} scale={4}>
+      <group position={[-2215.15, -47.16, 2185.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[862.5, 86, -1356.25]} scale={0.31}>
+      <group position={[384.85, 24.84, 60.2]} scale={0.31}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[662.5, 73.5, -1387.5]} scale={4}>
+      <group position={[184.85, 12.34, 28.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1312.5, 7, -43.75]} scale={4}>
+      <group position={[834.85, -54.16, 1372.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-950, 37, 606.25]} scale={4}>
+      <group position={[-1427.65, -24.16, 2022.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1384.38, 56.76, -1453.13]} scale={4}>
+      <group position={[906.73, -4.4, -36.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1028.13, 43.88, -1525]} scale={4}>
+      <group position={[550.48, -17.29, -108.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2012.5, 46, 693.75]} scale={4}>
+      <group position={[1534.85, -15.16, 2110.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1109.38, 49.5, -1393.75]} scale={4}>
+      <group position={[631.73, -11.66, 22.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1996.88, 44.5, -1456.25]} scale={4}>
+      <group position={[1519.23, -16.66, -39.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[237.5, 22, 543.75]} scale={4}>
+      <group position={[-240.15, -39.16, 1960.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[425, 42.5, -1346.88]} scale={4}>
+      <group position={[-52.65, -18.66, 69.57]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1350, 51, 1643.75]} scale={4}>
+      <group position={[872.35, -10.16, 3060.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[690.63, 13.75, -1787.5]} scale={4}>
+      <group position={[212.98, -47.41, -371.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1712.5, 16, 606.25]} scale={4}>
+      <group position={[-2190.15, -45.16, 2022.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[725, 32, 1418.75]} scale={4}>
+      <group position={[247.35, -29.16, 2835.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1571.88, 46, -1456.25]} scale={4}>
+      <group position={[1094.23, -15.16, -39.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2137.5, 19.75, -1390.63]} scale={4}>
+      <group position={[1659.85, -41.41, 25.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-21.88, 49, -1606.25]} scale={4}>
+      <group position={[-499.52, -12.16, -189.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[462.5, 62.5, -1428.13]} scale={4}>
+      <group position={[-15.15, 1.34, -11.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-2050, 32, 331.25]} scale={4}>
+      <group position={[-2527.65, -29.16, 1747.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[275, 12, -843.75]} scale={4}>
+      <group position={[-202.65, -49.16, 572.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[809.38, 46.75, -1253.13]} scale={4}>
+      <group position={[331.73, -14.41, 163.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[815.63, 16.63, -1787.5]} scale={4}>
+      <group position={[337.98, -44.54, -371.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[312.5, 25, -1243.75]} scale={4}>
+      <group position={[-165.15, -36.16, 172.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[675, 46, -1587.5]} scale={4}>
+      <group position={[197.35, -15.16, -171.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[931.25, 8, -1768.75]} scale={4}>
+      <group position={[453.6, -53.16, -352.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[421.88, 36.25, -1293.75]} scale={4}>
+      <group position={[-55.77, -24.91, 122.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1475, 52, 1556.25]} scale={4}>
+      <group position={[-1952.65, -9.16, 2972.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1265.63, 76.19, -1390.63]} scale={4}>
+      <group position={[787.98, 15.03, 25.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1640.63, 24.75, -1196.88]} scale={4}>
+      <group position={[1162.98, -36.41, 219.57]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1012.5, 28.25, -1134.38]} scale={4}>
+      <group position={[534.85, -32.91, 282.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1971.88, 13, -1231.25]} scale={4}>
+      <group position={[1494.23, -48.16, 185.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-2000, 8, 581.25]} scale={4}>
+      <group position={[-2477.65, -53.16, 1997.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1096.88, 40.56, -1459.38]} scale={4}>
+      <group position={[619.23, -20.6, -42.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1662.5, 21, 1031.25]} scale={4}>
+      <group position={[-2140.15, -40.16, 2447.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1350, 20, 581.25]} scale={4}>
+      <group position={[-1827.65, -41.16, 1997.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1443.75, 75.25, -1321.88]} scale={4}>
+      <group position={[966.1, 14.09, 94.57]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[900, 14, -793.75]} scale={4}>
+      <group position={[422.35, -47.16, 622.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[353.13, 64.5, -1646.88]} scale={4}>
+      <group position={[-124.52, 3.34, -230.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[553.13, 8.38, -1850]} scale={4}>
+      <group position={[75.48, -52.79, -433.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1915.63, 17, -1240.63]} scale={4}>
+      <group position={[1437.98, -44.16, 175.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1656.25, 60.5, -1368.75]} scale={4}>
+      <group position={[1178.6, -0.66, 47.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1056.25, 30.5, -1206.25]} scale={4}>
+      <group position={[578.6, -30.66, 210.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1693.75, 29.38, -1209.38]} scale={4}>
+      <group position={[1216.1, -31.79, 207.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[206.25, 96, -1618.75]} scale={4}>
+      <group position={[-271.4, 34.84, -202.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[953.13, 55.5, -1453.13]} scale={4}>
+      <group position={[475.48, -5.66, -36.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[75, 24, -1284.38]} scale={4}>
+      <group position={[-402.65, -37.16, 132.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[712.5, 55.83, -1290.63]} scale={4}>
+      <group position={[234.85, -5.34, 125.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[93.75, 40.75, -1721.88]} scale={4}>
+      <group position={[-383.9, -20.41, -305.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[390.63, 82.75, -1512.5]} scale={4}>
+      <group position={[-87.02, 21.59, -96.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[106.25, 16.63, -1784.38]} scale={4}>
+      <group position={[-371.4, -44.54, -367.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1587.5, 6.75, -1671.88]} scale={4}>
+      <group position={[-1349.87, 31.23, 2977.65]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1512.5, 25, 1718.75]} scale={4}>
+      <group position={[-1990.15, -36.16, 3135.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-475, 10, -418.75]} scale={4}>
+      <group position={[-952.65, -51.16, 997.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1293.75, 15.5, -1675]} scale={4}>
+      <group position={[816.1, -45.66, -258.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[715.63, 63.56, -1309.38]} scale={4}>
+      <group position={[237.98, 2.4, 107.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[321.88, 84.31, -1603.13]} scale={4}>
+      <group position={[-155.77, 23.15, -186.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1278.13, 78.75, -1387.5]} scale={4}>
+      <group position={[800.48, 17.59, 28.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[387.5, 104, 1781.25]} scale={4}>
+      <group position={[-90.15, 42.84, 3197.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[893.75, 31.38, -1171.88]} scale={4}>
+      <group position={[416.1, -29.79, 244.57]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-112.5, 32, 1868.75]} scale={4}>
+      <group position={[-590.15, -29.16, 3285.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[62.5, 24, -818.75]} scale={4}>
+      <group position={[-415.15, -37.16, 597.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[537.5, 12, 131.25]} scale={4}>
+      <group position={[59.85, -49.16, 1547.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-243.75, 24.98, -1587.5]} scale={4}>
+      <group position={[-721.4, -36.18, -171.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1412.5, 40.5, -1515.63]} scale={4}>
+      <group position={[934.85, -20.66, -99.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[678.13, 58.75, -1312.5]} scale={4}>
+      <group position={[200.48, -2.41, 103.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[553.13, 12.5, -1771.88]} scale={4}>
+      <group position={[75.48, -48.66, -355.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[203.13, 22.75, -1156.25]} scale={4}>
+      <group position={[-274.52, -38.41, 260.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1178.13, 28.19, -1153.13]} scale={4}>
+      <group position={[700.48, -32.97, 263.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-362.5, 4, -943.75]} scale={4}>
+      <group position={[-801.04, -55.54, 536.69]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-146.88, 20.25, -1137.5]} scale={4}>
+      <group position={[-624.52, -40.91, 278.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1318.75, 22.5, -1581.25]} scale={4}>
+      <group position={[841.1, -38.66, -164.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1881.25, 14.5, -1593.75]} scale={4}>
+      <group position={[1403.6, -46.66, -177.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[137.5, 90, -1593.75]} scale={4}>
+      <group position={[-340.15, 28.84, -177.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[600, 15, -793.75]} scale={4}>
+      <group position={[122.35, -46.16, 622.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2090.63, 21.75, -1328.13]} scale={4}>
+      <group position={[1612.98, -39.41, 88.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-925, 30, 1606.25]} scale={4}>
+      <group position={[-1402.65, -31.16, 3022.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1581.25, 9.5, -1656.25]} scale={4}>
+      <group position={[1103.6, -51.66, -239.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[6.25, 6, -1843.75]} scale={4}>
+      <group position={[-471.4, -55.16, -427.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[253.13, 23.75, -1796.88]} scale={4}>
+      <group position={[-224.52, -37.41, -380.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1212.5, 69.5, -1315.63]} scale={4}>
+      <group position={[734.85, 8.34, 100.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[962.5, 60.25, -1303.13]} scale={4}>
+      <group position={[484.85, -0.91, 113.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[953.13, 55.75, -1281.25]} scale={4}>
+      <group position={[475.48, -5.41, 135.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[92.38, 82.28, -1598.23]} scale={4}>
+      <group position={[-385.27, 21.12, -181.78]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[287.5, 82, -1650]} scale={4}>
+      <group position={[-190.15, 20.84, -233.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1812.5, 27, -1550]} scale={4}>
+      <group position={[1334.85, -34.16, -133.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-2012.5, 12, 1143.75]} scale={4}>
+      <group position={[-2490.15, -49.16, 2560.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[12.5, 32, 1956.25]} scale={4}>
+      <group position={[-465.15, -29.16, 3372.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-500, 12, 1056.25]} scale={4}>
+      <group position={[-977.65, -49.16, 2472.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-2250, 15, 1243.75]} scale={4}>
+      <group position={[-2727.65, -46.16, 2660.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[837.5, 46.5, -1253.13]} scale={4}>
+      <group position={[359.85, -14.66, 163.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[350, 85, -1490.63]} scale={4}>
+      <group position={[-127.65, 23.84, -74.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1956.25, 15.83, -1250]} scale={4}>
+      <group position={[1478.6, -45.33, 166.45]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[437.5, 65.5, -1437.5]} scale={4}>
+      <group position={[-40.15, 4.34, -21.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1375, 19.5, -1640.63]} scale={4}>
+      <group position={[897.35, -41.66, -224.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2078.13, 32.69, -1465.63]} scale={4}>
+      <group position={[1600.48, -28.47, -49.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[212.5, 101.75, -1578.13]} scale={4}>
+      <group position={[-265.15, 40.59, -161.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-375, 26, 1956.25]} scale={4}>
+      <group position={[-852.65, -35.16, 3372.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[693.75, 48.75, -1587.5]} scale={4}>
+      <group position={[216.1, -12.41, -171.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1421.88, 46.13, -1225]} scale={4}>
+      <group position={[944.23, -15.04, 191.45]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-712.5, 23, -631.25]} scale={4}>
+      <group position={[-1190.15, -38.16, 785.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-625, 10, 681.25]} scale={4}>
+      <group position={[-1102.65, -51.16, 2097.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1315.63, 64.25, -1446.88]} scale={4}>
+      <group position={[837.98, 3.09, -30.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1709.38, 61.25, -1431.25]} scale={4}>
+      <group position={[1231.73, 0.09, -14.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-65.63, 14.81, -1771.88]} scale={4}>
+      <group position={[-543.27, -46.35, -355.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-575, 45, 1343.75]} scale={4}>
+      <group position={[-1052.65, -16.16, 2760.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1375, 86.5, -1365.63]} scale={4}>
+      <group position={[897.35, 25.34, 50.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[762.5, 56.5, -1590.63]} scale={4}>
+      <group position={[284.85, -4.66, -174.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[956.25, 49, -1493.75]} scale={4}>
+      <group position={[478.6, -12.16, -77.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[87.5, 28, 2093.75]} scale={4}>
+      <group position={[-390.15, -33.16, 3510.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1109.38, 42.69, -1415.63]} scale={4}>
+      <group position={[631.73, -18.47, 0.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[34.38, 54.13, -1525]} scale={4}>
+      <group position={[-443.27, -7.04, -108.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[415.63, 45.63, -1637.5]} scale={4}>
+      <group position={[-62.02, -15.54, -221.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1800, 21.5, -1137.5]} scale={4}>
+      <group position={[1322.35, -39.66, 278.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[975, 18, -1656.25]} scale={4}>
+      <group position={[497.35, -43.16, -239.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[115.63, 85.88, -1600]} scale={4}>
+      <group position={[-362.02, 24.71, -183.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[306.25, 55.25, -1400]} scale={4}>
+      <group position={[-171.4, -5.91, 16.45]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[787.5, 11, -293.75]} scale={4}>
+      <group position={[309.85, -50.16, 1122.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[450, 5, -1918.75]} scale={4}>
+      <group position={[79.26, -50.36, 1604.89]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1028.13, 34, -1587.5]} scale={4}>
+      <group position={[550.48, -27.16, -171.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2025, 14.5, -1612.5]} scale={4}>
+      <group position={[901.18, 37.36, 3268.41]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-87.5, 15, 393.75]} scale={4}>
+      <group position={[-565.15, -46.16, 1810.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1628.13, 10.75, -1628.13]} scale={4}>
+      <group position={[1150.48, -50.41, -211.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-78.13, 38.81, -1540.63]} scale={4}>
+      <group position={[-555.77, -22.35, -124.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[0, 20, -718.75]} scale={4}>
+      <group position={[-477.65, -41.16, 697.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-137.5, 24.5, -1659.38]} scale={4}>
+      <group position={[-615.15, -36.66, -242.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[937.5, 14, -1743.75]} scale={4}>
+      <group position={[459.85, -47.16, -327.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1400, 54, 681.25]} scale={4}>
+      <group position={[922.35, -7.16, 2097.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1450, 55, -1262.5]} scale={4}>
+      <group position={[972.35, -6.16, 153.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[337.5, 6, -1968.75]} scale={4}>
+      <group position={[-378.03, -46.63, 1193.39]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1268.75, 26, -1543.75]} scale={4}>
+      <group position={[791.1, -35.16, -127.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1562.5, 16, 943.75]} scale={4}>
+      <group position={[-2040.15, -45.16, 2360.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2084.38, 29.44, -1471.88]} scale={4}>
+      <group position={[1606.73, -31.72, -55.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[687.5, 18, -93.75]} scale={4}>
+      <group position={[209.85, -43.16, 1322.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1650, 28, 343.75]} scale={4}>
+      <group position={[-2127.65, -33.16, 1760.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[750, 17, 368.75]} scale={4}>
+      <group position={[272.35, -44.16, 1785.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-37.5, 14, -993.75]} scale={4}>
+      <group position={[-515.15, -47.16, 422.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1237.5, 6, -1725]} scale={4}>
+      <group position={[-1699.74, 26.49, 2924.03]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1218.75, 37.97, -1453.13]} scale={4}>
+      <group position={[741.1, -23.19, -36.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-43.75, 14.25, -1734.38]} scale={4}>
+      <group position={[-521.4, -46.91, -317.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-268.75, 10.75, -1421.88]} scale={4}>
+      <group position={[-746.4, -50.41, -5.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1387.5, 34, -1537.5]} scale={4}>
+      <group position={[909.85, -27.16, -121.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1071.88, 30.44, -1171.88]} scale={4}>
+      <group position={[594.23, -30.72, 244.57]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[287.5, 68.5, -1684.38]} scale={4}>
+      <group position={[-190.15, 7.34, -267.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[940.63, 52.25, -1478.13]} scale={4}>
+      <group position={[462.98, -8.91, -61.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2028.13, 18.75, -1606.25]} scale={4}>
+      <group position={[1550.48, -42.41, -189.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[196.88, 67.75, -1681.25]} scale={4}>
+      <group position={[-280.77, 6.59, -264.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-196.88, 4.25, -1781.25]} scale={4}>
+      <group position={[-133.28, -45.8, 454.97]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[396.88, 41, -1337.5]} scale={4}>
+      <group position={[-80.77, -20.16, 78.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1478.13, 57, -1265.63]} scale={4}>
+      <group position={[1000.48, -4.16, 150.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[84.38, 64, -1509.38]} scale={4}>
+      <group position={[-393.27, 2.84, -92.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1559.38, 27.5, -1134.38]} scale={4}>
+      <group position={[1081.73, -33.66, 282.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[950, 56.5, -1446.88]} scale={4}>
+      <group position={[472.35, -4.66, -30.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[450, 11, 1156.25]} scale={4}>
+      <group position={[-27.65, -50.16, 2572.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1106.25, 41.5, -1425]} scale={4}>
+      <group position={[628.6, -19.66, -8.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[500, 30.5, -1275]} scale={4}>
+      <group position={[22.35, -30.66, 141.45]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[784.38, 81.75, -1531.25]} scale={4}>
+      <group position={[306.73, 20.59, -114.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[271.88, 28.88, -1162.5]} scale={4}>
+      <group position={[-205.77, -32.29, 253.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-6.25, 20, -1259.38]} scale={4}>
+      <group position={[-483.9, -41.16, 157.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2021.88, 32.25, -1543.75]} scale={4}>
+      <group position={[1544.23, -28.91, -127.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1221.88, 28.5, -1481.25]} scale={4}>
+      <group position={[744.23, -32.66, -64.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[406.25, 46.75, -1371.88]} scale={4}>
+      <group position={[-71.4, -14.41, 44.57]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1828.13, 34.5, -1506.25]} scale={4}>
+      <group position={[1350.48, -26.66, -89.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1440.63, 29.13, -1137.5]} scale={4}>
+      <group position={[962.98, -32.04, 278.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-68.75, 17, -1193.75]} scale={4}>
+      <group position={[-546.4, -44.16, 222.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[437.5, 22.5, -1137.5]} scale={4}>
+      <group position={[-40.15, -38.66, 278.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[100, 9, 981.25]} scale={4}>
+      <group position={[-377.65, -52.16, 2397.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[665.63, 40.25, -1246.88]} scale={4}>
+      <group position={[187.98, -20.91, 169.57]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[306.25, 42.91, -1362.5]} scale={4}>
+      <group position={[-171.4, -18.25, 53.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1687.5, 22, 1743.75]} scale={4}>
+      <group position={[-2165.15, -39.16, 3160.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[675, 19, 1481.25]} scale={4}>
+      <group position={[197.35, -42.16, 2897.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[637.5, 19, 293.75]} scale={4}>
+      <group position={[159.85, -42.16, 1710.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[915.63, 33.25, -1184.38]} scale={4}>
+      <group position={[437.98, -27.91, 232.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-96.88, 20.25, -1200]} scale={4}>
+      <group position={[-574.52, -40.91, 216.45]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1325, 73, -1318.75]} scale={4}>
+      <group position={[847.35, 11.84, 97.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1175, 10, 43.75]} scale={4}>
+      <group position={[697.35, -51.16, 1460.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-2175, 10, 193.75]} scale={4}>
+      <group position={[-2652.65, -51.16, 1610.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1706.25, 53.5, -1350]} scale={4}>
+      <group position={[1228.6, -7.66, 66.45]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[568.75, 28.5, -1256.25]} scale={4}>
+      <group position={[91.1, -32.66, 160.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1159.38, 64.75, -1343.75]} scale={4}>
+      <group position={[681.73, 3.59, 72.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[925, 35.5, -1209.38]} scale={4}>
+      <group position={[447.35, -25.66, 207.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-500, 16, 1156.25]} scale={4}>
+      <group position={[-977.65, -45.16, 2572.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1087.5, 23, 1218.75]} scale={4}>
+      <group position={[609.85, -38.16, 2635.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-53.13, 18, -1231.25]} scale={4}>
+      <group position={[-530.77, -43.16, 185.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[937.5, 57, -1281.25]} scale={4}>
+      <group position={[459.85, -4.16, 135.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[653.13, 32.19, -1190.63]} scale={4}>
+      <group position={[175.48, -28.97, 225.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1543.75, 57.13, -1415.63]} scale={4}>
+      <group position={[1066.1, -4.04, 0.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1040.63, 6, -1759.38]} scale={4}>
+      <group position={[119.26, -40.75, 1133.03]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1296.88, 25.75, -1546.88]} scale={4}>
+      <group position={[819.23, -35.41, -130.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1850, 18, 1606.25]} scale={4}>
+      <group position={[-2327.65, -43.16, 3022.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2037.5, 10, 1868.75]} scale={4}>
+      <group position={[1559.85, -51.16, 3285.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-600, 23, 1893.75]} scale={4}>
+      <group position={[-1077.65, -38.16, 3310.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1856.25, 21.5, -1200]} scale={4}>
+      <group position={[1378.6, -39.66, 216.45]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-100, 14.5, -1715.63]} scale={4}>
+      <group position={[-577.65, -46.66, -299.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1862.5, 46.15, -1356.25]} scale={4}>
+      <group position={[1384.85, -15.02, 60.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[481.25, 23, -1203.13]} scale={4}>
+      <group position={[3.6, -38.16, 213.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[265.63, 21.5, -1803.13]} scale={4}>
+      <group position={[-212.02, -39.66, -386.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-275, 35, 1643.75]} scale={4}>
+      <group position={[-752.65, -26.16, 3060.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1415.63, 46.38, -1225]} scale={4}>
+      <group position={[937.98, -14.79, 191.45]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1200, 15, 556.25]} scale={4}>
+      <group position={[722.35, -46.16, 1972.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1418.75, 32.13, -1565.63]} scale={4}>
+      <group position={[941.1, -29.04, -149.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-109.38, 35.88, -1587.5]} scale={4}>
+      <group position={[-587.02, -25.29, -171.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1128.13, 32.25, -1481.25]} scale={4}>
+      <group position={[650.48, -28.91, -64.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[225, 11, -743.75]} scale={4}>
+      <group position={[-252.65, -50.16, 672.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1431.25, 37.5, -1537.5]} scale={4}>
+      <group position={[953.6, -23.66, -121.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-259.38, 13.5, -1150]} scale={4}>
+      <group position={[-737.02, -47.66, 266.45]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1596.88, 29.5, -1556.25]} scale={4}>
+      <group position={[1119.23, -31.66, -139.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[840.63, 91.3, -1412.5]} scale={4}>
+      <group position={[362.98, 30.14, 3.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[459.38, 64.63, -1450]} scale={4}>
+      <group position={[-18.27, 3.46, -33.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1068.75, 52, -1296.88]} scale={4}>
+      <group position={[591.1, -9.16, 119.57]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1981.25, 37, -1496.88]} scale={4}>
+      <group position={[1503.6, -24.16, -80.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[509.38, 44.75, -1343.75]} scale={4}>
+      <group position={[31.73, -16.41, 72.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[587.5, 21, 1356.25]} scale={4}>
+      <group position={[109.85, -40.16, 2772.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[615.63, 50.75, -1343.75]} scale={4}>
+      <group position={[137.98, -10.41, 72.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[759.38, 35.5, -1184.38]} scale={4}>
+      <group position={[281.73, -25.66, 232.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[384.38, 59, -1418.75]} scale={4}>
+      <group position={[-93.27, -2.16, -2.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[737.5, 40, -1637.5]} scale={4}>
+      <group position={[259.85, -21.16, -221.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-53.13, 26, -1693.75]} scale={4}>
+      <group position={[-530.77, -35.16, -277.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1762.5, 32, -1243.75]} scale={4}>
+      <group position={[1284.85, -29.16, 172.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-637.5, 9, 756.25]} scale={4}>
+      <group position={[-1115.15, -52.16, 2172.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-146.88, 21.75, -1168.75]} scale={4}>
+      <group position={[-624.52, -39.41, 247.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[290.63, 91.25, -1503.13]} scale={4}>
+      <group position={[-187.02, 30.09, -86.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-271.88, 6.81, -1715.63]} scale={4}>
+      <group position={[-749.52, -54.35, -299.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[918.75, 60, -1287.5]} scale={4}>
+      <group position={[441.1, -1.16, 128.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1625, 45.75, -1296.88]} scale={4}>
+      <group position={[1147.35, -15.41, 119.57]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[37.5, 7, 1068.75]} scale={4}>
+      <group position={[-440.15, -54.16, 2485.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1600, 10, 481.25]} scale={4}>
+      <group position={[1122.35, -51.16, 1897.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[871.88, 21.94, -1659.38]} scale={4}>
+      <group position={[394.23, -39.22, -242.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[903.13, 69.75, -1309.38]} scale={4}>
+      <group position={[425.48, 8.59, 107.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[950, 23, 1156.25]} scale={4}>
+      <group position={[472.35, -38.16, 2572.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1025, 40, 2193.75]} scale={4}>
+      <group position={[547.35, -21.16, 3610.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[993.75, 41, -1531.25]} scale={4}>
+      <group position={[516.1, -20.16, -114.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-75, 23.75, -1403.13]} scale={4}>
+      <group position={[-552.65, -37.41, 13.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[100, 6, -1903.13]} scale={4}>
+      <group position={[-415.31, -30.34, -320.81]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[218.75, 56, -1431.25]} scale={4}>
+      <group position={[-258.9, -5.16, -14.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1093.75, 29.13, -1146.88]} scale={4}>
+      <group position={[616.1, -32.04, 269.57]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-75, 14.5, -1775]} scale={4}>
+      <group position={[-552.65, -46.66, -358.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1503.13, 53.19, -1453.13]} scale={4}>
+      <group position={[1025.48, -7.97, -36.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1537.5, 45, 943.75]} scale={4}>
+      <group position={[1059.85, -16.16, 2360.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[821.88, 60.75, -1559.38]} scale={4}>
+      <group position={[344.23, -0.41, -142.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1481.25, 64.25, -1287.5]} scale={4}>
+      <group position={[1003.6, 3.09, 128.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[875, 16, -818.75]} scale={4}>
+      <group position={[397.35, -45.16, 597.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[987.5, 21, 1068.75]} scale={4}>
+      <group position={[509.85, -40.16, 2485.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1937.5, 19, 1268.75]} scale={4}>
+      <group position={[-2415.15, -42.16, 2685.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-762.5, 22, 1181.25]} scale={4}>
+      <group position={[-1240.15, -39.16, 2597.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-134.38, 6, -1865.63]} scale={4}>
+      <group position={[-70.78, -44.05, 370.6]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-256.25, 8.75, -1753.13]} scale={4}>
+      <group position={[-733.9, -52.41, -336.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-278.13, 12.88, -1362.5]} scale={4}>
+      <group position={[-755.77, -48.29, 53.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1337.5, 41, -1490.63]} scale={4}>
+      <group position={[859.85, -20.16, -74.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[425, 33.75, -1265.63]} scale={4}>
+      <group position={[-52.65, -27.41, 150.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-125, 10, 1093.75]} scale={4}>
+      <group position={[-602.65, -51.16, 2510.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1162.5, 19.5, -1562.5]} scale={4}>
+      <group position={[684.85, -41.66, -146.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-75, 21, -1381.25]} scale={4}>
+      <group position={[-552.65, -40.16, 35.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1725, 23, 468.75]} scale={4}>
+      <group position={[-2202.65, -38.16, 1885.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[853.13, 11.31, -1753.13]} scale={4}>
+      <group position={[375.48, -49.85, -336.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[731.25, 51, -1268.75]} scale={4}>
+      <group position={[253.6, -10.16, 147.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1237.5, 15, 743.75]} scale={4}>
+      <group position={[-1715.15, -46.16, 2160.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1865.63, 40.75, -1450]} scale={4}>
+      <group position={[1387.98, -20.41, -33.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1231.25, 19.63, -1621.88]} scale={4}>
+      <group position={[753.6, -41.54, -205.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[315.63, 27.38, -1287.5]} scale={4}>
+      <group position={[-162.02, -33.79, 128.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[978.13, 36.75, -1218.75]} scale={4}>
+      <group position={[500.48, -24.41, 197.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-184.38, 26.5, -1534.38]} scale={4}>
+      <group position={[-662.02, -34.66, -117.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1087.5, 29, -1134.38]} scale={4}>
+      <group position={[609.85, -32.16, 282.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1353.13, 65.5, -1437.5]} scale={4}>
+      <group position={[875.48, 4.34, -21.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[734.38, 44.13, -1237.5]} scale={4}>
+      <group position={[256.73, -17.04, 178.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1165.63, 60.25, -1287.5]} scale={4}>
+      <group position={[687.98, -0.91, 128.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[796.88, 30, -1653.13]} scale={4}>
+      <group position={[319.23, -31.16, -236.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[90.63, 81, -1559.38]} scale={4}>
+      <group position={[-387.02, 19.84, -142.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[596.88, 50.06, -1478.13]} scale={4}>
+      <group position={[119.23, -11.1, -61.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1053.13, 63.75, -1356.25]} scale={4}>
+      <group position={[575.48, 2.59, 60.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[40.63, 67, -1556.25]} scale={4}>
+      <group position={[-437.02, 5.84, -139.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[90.63, 81, -1559.38]} scale={4}>
+      <group position={[-387.02, 19.84, -142.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1400, 32, 1718.75]} scale={4}>
+      <group position={[-1877.65, -29.16, 3135.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1681.25, 60.72, -1425]} scale={4}>
+      <group position={[1203.6, -0.45, -8.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1165.63, 24.75, -1496.88]} scale={4}>
+      <group position={[687.98, -36.41, -80.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1634.38, 21, -1165.63]} scale={4}>
+      <group position={[1156.73, -40.16, 250.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[381.25, 7.88, -1871.88]} scale={4}>
+      <group position={[-96.4, -53.29, -455.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[328.13, 6, -1881.25]} scale={4}>
+      <group position={[-149.52, -55.16, -464.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1775, 14.5, -1612.5]} scale={4}>
+      <group position={[1297.35, -46.66, -196.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[962.5, 71.5, -1362.5]} scale={4}>
+      <group position={[484.85, 10.34, 53.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[821.88, 35.5, -1178.13]} scale={4}>
+      <group position={[344.23, -25.66, 238.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-278.13, 6.25, -1715.63]} scale={4}>
+      <group position={[-755.77, -54.91, -299.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1925, 16, 1643.75]} scale={4}>
+      <group position={[1447.35, -45.16, 3060.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[456.25, 35.75, -1300]} scale={4}>
+      <group position={[-21.4, -25.41, 116.45]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1862.5, 17.75, -1590.63]} scale={4}>
+      <group position={[1384.85, -43.41, -174.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[743.75, 26.5, -1693.75]} scale={4}>
+      <group position={[266.1, -34.66, -277.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[962.5, 16, -531.25]} scale={4}>
+      <group position={[484.85, -45.16, 885.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1050, 36, 1681.25]} scale={4}>
+      <group position={[-1527.65, -25.16, 3097.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[75, 20, -956.25]} scale={4}>
+      <group position={[-402.65, -41.16, 460.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[0, 25.25, -1396.88]} scale={4}>
+      <group position={[-477.65, -35.91, 19.57]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-200, 10, 406.25]} scale={4}>
+      <group position={[-677.65, -51.16, 1822.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-115.63, 13.19, -1759.38]} scale={4}>
+      <group position={[-593.27, -47.97, -342.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[687.5, 58, -1303.13]} scale={4}>
+      <group position={[209.85, -3.16, 113.32]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[343.75, 32, -1293.75]} scale={4}>
+      <group position={[-133.9, -29.16, 122.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1556.25, 44.5, -1468.75]} scale={4}>
+      <group position={[1078.6, -16.66, -52.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1662.5, 16, 1256.25]} scale={4}>
+      <group position={[1184.85, -45.16, 2672.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[340.63, 69, -1443.75]} scale={4}>
+      <group position={[-137.02, 7.84, -27.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1337.5, 23, 143.75]} scale={4}>
+      <group position={[-1815.15, -38.16, 1560.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-34.38, 30.25, -1462.5]} scale={4}>
+      <group position={[-512.02, -30.91, -46.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1425, 57.85, -1453.13]} scale={4}>
+      <group position={[947.35, -3.31, -36.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-134.38, 21.81, -1221.88]} scale={4}>
+      <group position={[-612.02, -39.35, 194.57]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[378.13, 48.81, -1690.63]} scale={4}>
+      <group position={[-99.52, -12.35, -274.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1368.75, 19.13, -1621.88]} scale={4}>
+      <group position={[891.1, -42.04, -205.43]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1162.5, 25, -781.25]} scale={4}>
+      <group position={[684.85, -36.16, 635.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1315.63, 22.75, -1568.75]} scale={4}>
+      <group position={[837.98, -38.41, -152.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[81.25, 23.13, -1259.38]} scale={4}>
+      <group position={[-396.4, -38.04, 157.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[150, 48, -1715.63]} scale={4}>
+      <group position={[-327.65, -13.16, -299.18]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1318.75, 72.38, -1315.63]} scale={4}>
+      <group position={[841.1, 11.21, 100.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[759.38, 94.2, -1503.13]} scale={4}>
+      <group position={[281.73, 33.04, -86.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1887.5, 10, 281.25]} scale={4}>
+      <group position={[1409.85, -51.16, 1697.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1787.5, 57, 281.25]} scale={4}>
+      <group position={[-2265.15, -4.16, 1697.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[550, 12, -1825]} scale={4}>
+      <group position={[72.35, -49.16, -408.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[993.75, 63, -1337.5]} scale={4}>
+      <group position={[516.1, 1.84, 78.95]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[809.38, 58, -1575]} scale={4}>
+      <group position={[331.73, -3.16, -158.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[837.5, 12, 1218.75]} scale={4}>
+      <group position={[359.85, -49.16, 2635.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1262.5, 10, -193.75]} scale={4}>
+      <group position={[784.85, -51.16, 1222.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-262.5, 13, -118.75]} scale={4}>
+      <group position={[-740.15, -48.16, 1297.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[387.5, 14, 393.75]} scale={4}>
+      <group position={[-90.15, -47.16, 1810.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[162.5, 26, 2143.75]} scale={4}>
+      <group position={[-315.15, -35.16, 3560.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2112.5, 21, -1481.25]} scale={4}>
+      <group position={[1634.85, -40.16, -64.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[740.63, 80.75, -1340.63]} scale={4}>
+      <group position={[262.98, 19.59, 75.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1578.13, 33.25, -1550]} scale={4}>
+      <group position={[1100.48, -27.91, -133.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-178.13, 12.5, -1728.13]} scale={4}>
+      <group position={[-655.77, -48.66, -311.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[721.88, 59.91, -1568.75]} scale={4}>
+      <group position={[244.23, -1.25, -152.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[437.5, 33.25, -1259.38]} scale={4}>
+      <group position={[-40.15, -27.91, 157.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-231.25, 20.5, -1675]} scale={4}>
+      <group position={[-708.9, -40.66, -258.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1356.25, 76, -1331.25]} scale={4}>
+      <group position={[878.6, 14.84, 85.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[346.88, 6, -1956.25]} scale={4}>
+      <group position={[-368.65, -46.63, 1205.89]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1200, 70, -1340.63]} scale={4}>
+      <group position={[722.35, 8.84, 75.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1700, 28, -1193.75]} scale={4}>
+      <group position={[1222.35, -33.16, 222.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-625, 13, -393.75]} scale={4}>
+      <group position={[-1102.65, -48.16, 1022.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-106.25, 13, -1743.75]} scale={4}>
+      <group position={[-583.9, -48.16, -327.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1125, 17, -93.75]} scale={4}>
+      <group position={[647.35, -44.16, 1322.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-90.63, 39.5, -1568.75]} scale={4}>
+      <group position={[-568.27, -21.66, -152.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[878.13, 29.75, -1140.63]} scale={4}>
+      <group position={[400.48, -31.41, 275.82]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1818.75, 20.38, -1134.38]} scale={4}>
+      <group position={[1341.1, -40.79, 282.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1575, 42, -1487.5]} scale={4}>
+      <group position={[1097.35, -19.16, -71.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[800, 60, 2031.25]} scale={4}>
+      <group position={[322.35, -1.16, 3447.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[25, 32.75, -1428.13]} scale={4}>
+      <group position={[-452.65, -28.41, -11.68]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1550, 31, -1575]} scale={4}>
+      <group position={[1072.35, -30.16, -158.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1850, 23.5, -1559.38]} scale={4}>
+      <group position={[1372.35, -37.66, -142.93]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2018.75, 31.38, -1346.88]} scale={4}>
+      <group position={[1541.1, -29.79, 69.57]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[237.5, 54, 1618.75]} scale={4}>
+      <group position={[-240.15, -7.16, 3035.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1515.63, 34.25, -1543.75]} scale={4}>
+      <group position={[1037.98, -26.91, -127.3]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[762.5, 38, 1606.25]} scale={4}>
+      <group position={[284.85, -23.16, 3022.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1800, 22, 1106.25]} scale={4}>
+      <group position={[1322.35, -39.16, 2522.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-1412.5, 24, 1843.75]} scale={4}>
+      <group position={[-1890.15, -37.16, 3260.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-2012.5, 9, 756.25]} scale={4}>
+      <group position={[-2490.15, -52.16, 2172.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[684.38, 6, -1878.13]} scale={4}>
+      <group position={[313.64, -43.94, 1645.51]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1996.88, 14.5, -1246.88]} scale={4}>
+      <group position={[1519.23, -46.66, 169.57]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[600, 32.5, -1284.38]} scale={4}>
+      <group position={[122.35, -28.66, 132.07]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[775, 60, -1581.25]} scale={4}>
+      <group position={[297.35, -1.16, -164.8]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[806.25, 16.86, -1750]} scale={4}>
+      <group position={[328.6, -44.31, -333.55]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[1421.88, 52.5, -1462.5]} scale={4}>
+      <group position={[944.23, -8.66, -46.05]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-221.88, 6, -1856.25]} scale={4}>
+      <group position={[-158.28, -44.05, 379.97]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[2056.25, 8.42, -1256.25]} scale={4}>
+      <group position={[1578.6, -52.74, 160.2]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[368.75, 38.5, -1318.75]} scale={4}>
+      <group position={[-108.9, -22.66, 97.7]} scale={4}>
         <mesh geometry={nodes.AM113_002_Quercus004.geometry} material={materials['AM113_002_Quercus_Trunk.002']} />
         <mesh geometry={nodes.AM113_002_Quercus004_1.geometry} material={materials['AM113_002_Quercus.002']} />
       </group>
-      <group position={[-206.25, 16.5, -1431.25]} scale={4}>
+      <group position={[-683.9, -44.66, -14.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[990.63, 31.69, -1165.63]} scale={4}>
+      <group position={[512.98, -29.47, 250.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[675, 38, -1218.75]} scale={4}>
+      <group position={[197.35, -23.16, 197.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[803.13, 22, -1693.75]} scale={4}>
+      <group position={[325.48, -39.16, -277.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[375, 35, 1556.25]} scale={4}>
+      <group position={[-102.65, -26.16, 2972.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-90.63, 23, -1393.75]} scale={4}>
+      <group position={[-568.27, -38.16, 22.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[203.13, 32.38, -1312.5]} scale={4}>
+      <group position={[-274.52, -28.79, 103.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[396.88, 33.75, -1268.75]} scale={4}>
+      <group position={[-80.77, -27.41, 147.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-281.25, 16.13, -1484.38]} scale={4}>
+      <group position={[-758.9, -45.04, -67.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[493.75, 30, -1268.75]} scale={4}>
+      <group position={[16.1, -31.16, 147.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1650, 40.75, -1503.13]} scale={4}>
+      <group position={[1172.35, -20.41, -86.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[825, 36.75, -1190.63]} scale={4}>
+      <group position={[347.35, -24.41, 225.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1231.25, 67.75, -1390.63]} scale={4}>
+      <group position={[753.6, 6.59, 25.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1809.38, 5.38, -1675]} scale={4}>
+      <group position={[688.65, -4.72, 3158.49]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1500, 38, -1190.63]} scale={4}>
+      <group position={[1022.35, -23.16, 225.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1850, 23, -1562.5]} scale={4}>
+      <group position={[1372.35, -38.16, -146.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1128.13, 14.25, -1634.38]} scale={4}>
+      <group position={[650.48, -46.91, -217.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1468.75, 55.5, -1453.13]} scale={4}>
+      <group position={[991.1, -5.66, -36.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[600, 31, -1275]} scale={4}>
+      <group position={[122.35, -30.16, 141.45]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1587.5, 41.75, -1484.38]} scale={4}>
+      <group position={[1109.85, -19.41, -67.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1775, 11, 1681.25]} scale={4}>
+      <group position={[1297.35, -50.16, 3097.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[368.75, 40.5, -1331.25]} scale={4}>
+      <group position={[-108.9, -20.66, 85.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1000, 15, -468.75]} scale={4}>
+      <group position={[522.35, -46.16, 947.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1481.25, 72, -1406.25]} scale={4}>
+      <group position={[1003.6, 10.84, 10.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1878.13, 21.5, -1565.63]} scale={4}>
+      <group position={[1400.48, -39.66, -149.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1365.63, 19.25, -1618.75]} scale={4}>
+      <group position={[887.98, -41.91, -202.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2012.5, 8, 1606.25]} scale={4}>
+      <group position={[1534.85, -53.16, 3022.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1037.5, 41, -1550]} scale={4}>
+      <group position={[559.85, -20.16, -133.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1475, 35, 743.75]} scale={4}>
+      <group position={[997.35, -26.16, 2160.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1043.75, 7.5, -1706.25]} scale={4}>
+      <group position={[566.1, -53.66, -289.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-228.13, 18.44, -1478.13]} scale={4}>
+      <group position={[-705.77, -42.72, -61.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1500, 24, 1118.75]} scale={4}>
+      <group position={[-1977.65, -37.16, 2535.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-84.38, 28, -1653.13]} scale={4}>
+      <group position={[-562.02, -33.16, -236.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1537.5, 80, 1943.75]} scale={4}>
+      <group position={[1059.85, 18.84, 3360.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-165.63, 20.25, -1684.38]} scale={4}>
+      <group position={[-643.27, -40.91, -267.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1212.5, 23, 1193.75]} scale={4}>
+      <group position={[734.85, -38.16, 2610.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[87.5, 13, 331.25]} scale={4}>
+      <group position={[-390.15, -48.16, 1747.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-887.5, 48, 1481.25]} scale={4}>
+      <group position={[-1365.15, -13.16, 2897.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[112.5, 13, 68.75]} scale={4}>
+      <group position={[-365.15, -48.16, 1485.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[543.75, 50.5, -1375]} scale={4}>
+      <group position={[66.1, -10.66, 41.45]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1056.25, 46.5, -1281.25]} scale={4}>
+      <group position={[578.6, -14.66, 135.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-3.13, 52.25, -1556.25]} scale={4}>
+      <group position={[-480.77, -8.91, -139.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[487.5, 20, -431.25]} scale={4}>
+      <group position={[9.85, -41.16, 985.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1803.13, 31, -1534.38]} scale={4}>
+      <group position={[1325.48, -30.16, -117.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[815.63, 81.75, -1506.25]} scale={4}>
+      <group position={[337.98, 20.59, -89.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1740.63, 36, -1253.13]} scale={4}>
+      <group position={[1262.98, -25.16, 163.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[212.5, 11, -706.25]} scale={4}>
+      <group position={[-265.15, -50.16, 710.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-93.75, 13, -1737.5]} scale={4}>
+      <group position={[-571.4, -48.16, -321.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1962.5, 10, 681.25]} scale={4}>
+      <group position={[-2440.15, -51.16, 2097.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[159.38, 88.25, -1621.88]} scale={4}>
+      <group position={[-318.27, 27.09, -205.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1131.25, 28.75, -1153.13]} scale={4}>
+      <group position={[653.6, -32.41, 263.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-375, 27, 1893.75]} scale={4}>
+      <group position={[-852.65, -34.16, 3310.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[493.75, 14, -1775]} scale={4}>
+      <group position={[16.1, -47.16, -358.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[896.88, 40, -1571.88]} scale={4}>
+      <group position={[419.23, -21.16, -155.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1834.38, 54.6, -1384.38]} scale={4}>
+      <group position={[1356.73, -6.56, 32.07]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-12.5, 15, -1318.75]} scale={4}>
+      <group position={[-490.15, -46.16, 97.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-81.25, 13.75, -1725]} scale={4}>
+      <group position={[-558.9, -47.41, -308.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2059.38, 36.22, -1375]} scale={4}>
+      <group position={[1581.73, -24.94, 41.45]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-787.5, 22, 456.25]} scale={4}>
+      <group position={[-1265.15, -39.16, 1872.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2056.25, 18.78, -1296.88]} scale={4}>
+      <group position={[1578.6, -42.38, 119.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[75, 10, 268.75]} scale={4}>
+      <group position={[-402.65, -51.16, 1685.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[712.5, 12, 1181.25]} scale={4}>
+      <group position={[234.85, -49.16, 2597.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1550, 58, 1531.25]} scale={4}>
+      <group position={[-2027.65, -3.16, 2947.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1112.5, 38, 243.75]} scale={4}>
+      <group position={[-1590.15, -23.16, 1660.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1543.75, 6.25, -1678.13]} scale={4}>
+      <group position={[730.38, 12.27, 3447.99]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1765.63, 37.25, -1521.88]} scale={4}>
+      <group position={[1287.98, -23.91, -105.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[887.5, 27, 1518.75]} scale={4}>
+      <group position={[409.85, -34.16, 2935.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[987.5, 30.75, -1153.13]} scale={4}>
+      <group position={[509.85, -30.41, 263.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1625, 13, 2018.75]} scale={4}>
+      <group position={[-2102.65, -48.16, 3435.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1225, 15, 2118.75]} scale={4}>
+      <group position={[-1702.65, -46.16, 3535.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-65.63, 5.63, -1837.5]} scale={4}>
+      <group position={[-2.03, -44.43, 398.72]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[978.13, 68.5, -1365.63]} scale={4}>
+      <group position={[500.48, 7.34, 50.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[396.88, 27.25, -1737.5]} scale={4}>
+      <group position={[-80.77, -33.91, -321.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[418.75, 8.5, -1850]} scale={4}>
+      <group position={[-58.9, -52.66, -433.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1950, 38, -1456.25]} scale={4}>
+      <group position={[1472.35, -23.16, -39.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1025, 7.25, -1715.63]} scale={4}>
+      <group position={[547.35, -53.91, -299.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[18.75, 13.5, -1159.38]} scale={4}>
+      <group position={[-458.9, -47.66, 257.07]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1612.5, 23, 993.75]} scale={4}>
+      <group position={[-2090.15, -38.16, 2410.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[434.38, 41.5, -1340.63]} scale={4}>
+      <group position={[-43.27, -19.66, 75.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1428.13, 5, -1693.75]} scale={4}>
+      <group position={[-1509.25, -5.73, 2955.77]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1737.5, 68, 1331.25]} scale={4}>
+      <group position={[-2215.15, 6.84, 2747.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-15.63, 51.19, -1596.88]} scale={4}>
+      <group position={[-493.27, -9.97, -180.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1356.25, 57.5, -1262.5]} scale={4}>
+      <group position={[878.6, -3.66, 153.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1825, 57, -1393.75]} scale={4}>
+      <group position={[1347.35, -4.16, 22.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-175, 30, 1943.75]} scale={4}>
+      <group position={[-652.65, -31.16, 3360.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[787.5, 67, -1306.25]} scale={4}>
+      <group position={[309.85, 5.84, 110.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1493.75, 22.5, -1606.25]} scale={4}>
+      <group position={[1016.1, -38.66, -189.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[871.88, 5, -1809.38]} scale={4}>
+      <group position={[501.14, -44.94, 1714.26]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-25, 17, -881.25]} scale={4}>
+      <group position={[-502.65, -44.16, 535.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1859.38, 32.31, -1290.63]} scale={4}>
+      <group position={[1381.73, -28.85, 125.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[318.75, 89.75, -1503.13]} scale={4}>
+      <group position={[-158.9, 28.59, -86.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-28.13, 20, -1256.25]} scale={4}>
+      <group position={[-505.77, -41.16, 160.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1212.5, 18, 868.75]} scale={4}>
+      <group position={[-1690.15, -43.16, 2285.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1737.5, 11, 656.25]} scale={4}>
+      <group position={[-2215.15, -50.16, 2072.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[90.63, 21, -1221.88]} scale={4}>
+      <group position={[-387.02, -40.16, 194.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1687.5, 59, -1390.63]} scale={4}>
+      <group position={[1209.85, -2.16, 25.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-134.38, 20.81, -1321.88]} scale={4}>
+      <group position={[-612.02, -40.35, 94.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[462.5, 17.5, -1734.38]} scale={4}>
+      <group position={[-15.15, -43.66, -317.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[525, 40.5, -1571.88]} scale={4}>
+      <group position={[47.35, -20.66, -155.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1581.25, 35, -1237.5]} scale={4}>
+      <group position={[1103.6, -26.16, 178.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[834.38, 23.75, -1671.88]} scale={4}>
+      <group position={[356.73, -37.41, -255.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1887.5, 21, 1856.25]} scale={4}>
+      <group position={[1409.85, -40.16, 3272.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1200, 120, 1893.75]} scale={4}>
+      <group position={[722.35, 58.84, 3310.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[340.63, 88.75, -1515.63]} scale={4}>
+      <group position={[-137.02, 27.59, -99.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[975, 23.5, -1628.13]} scale={4}>
+      <group position={[497.35, -37.66, -211.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1800, 19, 1793.75]} scale={4}>
+      <group position={[1322.35, -42.16, 3210.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1268.75, 80, -1356.25]} scale={4}>
+      <group position={[791.1, 18.84, 60.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1784.38, 34.25, -1531.25]} scale={4}>
+      <group position={[1306.73, -26.91, -114.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1900, 19, 481.25]} scale={4}>
+      <group position={[1422.35, -42.16, 1897.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2003.13, 14.75, -1262.5]} scale={4}>
+      <group position={[1525.48, -46.41, 153.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1306.25, 57.25, -1259.38]} scale={4}>
+      <group position={[828.6, -3.91, 157.07]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[362.5, 11.1, -1843.75]} scale={4}>
+      <group position={[-115.15, -50.06, -427.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[275, 70.5, -1684.38]} scale={4}>
+      <group position={[-202.65, 9.34, -267.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[771.88, 101.7, -1471.88]} scale={4}>
+      <group position={[294.23, 38.05, -71.85]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-600, 22, -581.25]} scale={4}>
+      <group position={[-1077.65, -39.16, 835.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[706.25, 13.5, -1793.75]} scale={4}>
+      <group position={[228.6, -47.66, -377.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[868.75, 28, -1640.63]} scale={4}>
+      <group position={[391.1, -33.16, -224.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[112.5, 53.25, -1459.38]} scale={4}>
+      <group position={[-365.15, -7.91, -42.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[771.88, 92.62, -1509.38]} scale={4}>
+      <group position={[294.23, 31.46, -92.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[750, 31.5, -1662.5]} scale={4}>
+      <group position={[272.35, -29.66, -246.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[518.75, 38.63, -1315.63]} scale={4}>
+      <group position={[41.1, -22.54, 100.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2187.5, 22, 731.25]} scale={4}>
+      <group position={[1709.85, -39.16, 2147.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-537.5, 12, 968.75]} scale={4}>
+      <group position={[-1015.15, -49.16, 2385.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-612.5, 59, 1531.25]} scale={4}>
+      <group position={[-1090.15, -2.16, 2947.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[925, 16.5, -1671.88]} scale={4}>
+      <group position={[447.35, -44.66, -255.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1450, 6.5, -1671.88]} scale={4}>
+      <group position={[-1484.23, -12.79, 2978.53]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[200, 11, 268.75]} scale={4}>
+      <group position={[-277.65, -50.16, 1685.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1340.63, 66.5, -1296.88]} scale={4}>
+      <group position={[862.98, 5.34, 119.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[834.38, 93.5, -1403.13]} scale={4}>
+      <group position={[356.73, 32.34, 13.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1312.5, 19, 581.25]} scale={4}>
+      <group position={[834.85, -42.16, 1997.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[765.63, 52.38, -1600]} scale={4}>
+      <group position={[287.98, -8.79, -183.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[234.38, 28.56, -1171.88]} scale={4}>
+      <group position={[-243.27, -32.6, 244.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[812.5, 32, 768.75]} scale={4}>
+      <group position={[334.85, -29.16, 2185.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1800, 15, 1118.75]} scale={4}>
+      <group position={[-2277.65, -46.16, 2535.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[925, 74.75, -1390.63]} scale={4}>
+      <group position={[447.35, 13.59, 25.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1856.25, 19.25, -1171.88]} scale={4}>
+      <group position={[1378.6, -41.91, 244.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-675, 22, -643.75]} scale={4}>
+      <group position={[-1152.65, -39.16, 772.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1650, 11, -181.25]} scale={4}>
+      <group position={[1172.35, -50.16, 1235.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[178.13, 35.5, -1387.5]} scale={4}>
+      <group position={[-299.52, -25.66, 28.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-212.5, 6, -1871.88]} scale={4}>
+      <group position={[-148.91, -44.05, 364.35]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1475, 6, 106.25]} scale={4}>
+      <group position={[864.2, -51.59, 1799.75]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1362.5, 32.5, -1137.5]} scale={4}>
+      <group position={[884.85, -28.66, 278.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[309.38, 24.75, -1234.38]} scale={4}>
+      <group position={[-168.27, -36.41, 182.07]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[853.13, 67.13, -1500]} scale={4}>
+      <group position={[375.48, 5.96, -83.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1356.25, 33.5, -1156.25]} scale={4}>
+      <group position={[878.6, -27.66, 260.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1050, 29, -1006.25]} scale={4}>
+      <group position={[572.35, -32.16, 410.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[575, 13, 1118.75]} scale={4}>
+      <group position={[97.35, -48.16, 2535.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[815.63, 68.94, -1309.38]} scale={4}>
+      <group position={[337.98, 7.78, 107.07]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[425, 33.25, -1259.38]} scale={4}>
+      <group position={[-52.65, -27.91, 157.07]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[375, 79, 1881.25]} scale={4}>
+      <group position={[-102.65, 17.84, 3297.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1575, 12, -1650]} scale={4}>
+      <group position={[1097.35, -49.16, -233.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1450, 5.75, -1715.63]} scale={4}>
+      <group position={[-1487.37, -4.98, 2933.9]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-118.75, 34.75, -1596.88]} scale={4}>
+      <group position={[-596.4, -26.41, -180.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1350, 20, 1956.25]} scale={4}>
+      <group position={[-1827.65, -41.16, 3372.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[615.63, 29.25, -1203.13]} scale={4}>
+      <group position={[137.98, -31.91, 213.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1787.5, 13, 1906.25]} scale={4}>
+      <group position={[-2265.15, -48.16, 3322.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1812.5, 11, -993.75]} scale={4}>
+      <group position={[1334.85, -50.16, 422.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[843.75, 68, -1303.13]} scale={4}>
+      <group position={[366.1, 6.84, 113.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1934.38, 35.31, -1465.63]} scale={4}>
+      <group position={[1456.73, -25.85, -49.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[800, 16.75, -1796.88]} scale={4}>
+      <group position={[322.35, -44.41, -380.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[121.88, 20.75, -1215.63]} scale={4}>
+      <group position={[-355.77, -40.41, 200.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[325, 19, -681.25]} scale={4}>
+      <group position={[-152.65, -42.16, 735.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1162.5, 23, 568.75]} scale={4}>
+      <group position={[-1640.15, -38.16, 1985.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-162.5, 20, -1293.75]} scale={4}>
+      <group position={[-640.15, -41.16, 122.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1396.88, 34.5, -1153.13]} scale={4}>
+      <group position={[919.23, -26.66, 263.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2071.88, 21.88, -1325]} scale={4}>
+      <group position={[1594.23, -39.29, 91.45]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[678.13, 38.25, -1615.63]} scale={4}>
+      <group position={[200.48, -22.91, -199.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1346.88, 30.63, -1512.5]} scale={4}>
+      <group position={[869.23, -30.54, -96.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[906.25, 51.25, -1500]} scale={4}>
+      <group position={[428.6, -9.91, -83.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1837.5, 5, 93.75]} scale={4}>
+      <group position={[-2333.69, -39.69, 1584.64]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[631.25, 20.5, -1737.5]} scale={4}>
+      <group position={[153.6, -40.66, -321.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2053.13, 43.5, -1406.25]} scale={4}>
+      <group position={[1575.48, -17.66, 10.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[468.75, 19.88, -1721.88]} scale={4}>
+      <group position={[-8.9, -41.29, -305.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-37.5, 16, -543.75]} scale={4}>
+      <group position={[-515.15, -45.16, 872.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[940.63, 42.75, -1521.88]} scale={4}>
+      <group position={[462.98, -18.41, -105.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1412.5, 39.5, -1525]} scale={4}>
+      <group position={[934.85, -21.66, -108.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[290.63, 12.69, -1859.38]} scale={4}>
+      <group position={[-187.02, -48.47, -442.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1646.88, 59, -1359.38]} scale={4}>
+      <group position={[1169.23, -2.16, 57.07]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1321.88, 20.31, -1665.63]} scale={4}>
+      <group position={[844.23, -40.85, -249.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-234.38, 5.75, -1803.13]} scale={4}>
+      <group position={[-170.78, -44.3, 433.1]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[368.75, 22.5, -1784.38]} scale={4}>
+      <group position={[-108.9, -38.66, -367.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1896.88, 16.5, -1562.5]} scale={4}>
+      <group position={[1419.23, -44.66, -146.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[653.13, 25.63, -1712.5]} scale={4}>
+      <group position={[175.48, -35.54, -296.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1462.5, 9, -193.75]} scale={4}>
+      <group position={[984.85, -52.16, 1222.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[512.5, 29, 468.75]} scale={4}>
+      <group position={[34.85, -32.16, 1885.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1825, 6, -743.75]} scale={4}>
+      <group position={[1323.15, -53.93, 688.08]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[187.5, 43.5, -1737.5]} scale={4}>
+      <group position={[-290.15, -17.66, -321.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1796.88, 57, -1406.25]} scale={4}>
+      <group position={[1319.23, -4.16, 10.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1440.63, 41.75, -1506.25]} scale={4}>
+      <group position={[962.98, -19.41, -89.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1862.5, 33, -1481.25]} scale={4}>
+      <group position={[1384.85, -28.16, -64.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[325, 13, -856.25]} scale={4}>
+      <group position={[-152.65, -48.16, 560.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1662.5, 37, -1256.25]} scale={4}>
+      <group position={[1184.85, -24.16, 160.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1162.5, 13, -1634.38]} scale={4}>
+      <group position={[684.85, -48.16, -217.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1453.13, 35.31, -1540.63]} scale={4}>
+      <group position={[975.48, -25.85, -124.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1246.88, 32.75, -1181.25]} scale={4}>
+      <group position={[769.23, -28.41, 235.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[637.5, 41.5, -1275]} scale={4}>
+      <group position={[159.85, -19.66, 141.45]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1500, 70.25, -1403.13]} scale={4}>
+      <group position={[1022.35, 9.09, 13.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-275, 45, 1518.75]} scale={4}>
+      <group position={[-752.65, -16.16, 2935.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1868.75, 18, -1181.25]} scale={4}>
+      <group position={[1391.1, -43.16, 235.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[553.13, 31.06, -1271.88]} scale={4}>
+      <group position={[75.48, -30.1, 144.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[725, 29, 781.25]} scale={4}>
+      <group position={[247.35, -32.16, 2197.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[940.63, 49.69, -1490.63]} scale={4}>
+      <group position={[462.98, -11.47, -74.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[356.25, 68.5, -1618.75]} scale={4}>
+      <group position={[-121.4, 7.34, -202.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1059.38, 39.26, -1559.38]} scale={4}>
+      <group position={[581.73, -21.9, -142.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1453.13, 83.25, -1356.25]} scale={4}>
+      <group position={[975.48, 22.09, 60.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1250, 15, 406.25]} scale={4}>
+      <group position={[772.35, -46.16, 1822.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1365.63, 82.75, -1396.88]} scale={4}>
+      <group position={[887.98, 21.59, 19.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1453.13, 62, -1281.25]} scale={4}>
+      <group position={[975.48, 0.84, 135.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[900, 15, -831.25]} scale={4}>
+      <group position={[422.35, -46.16, 585.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1500, 5, 843.75]} scale={4}>
+      <group position={[-1977.65, -56.16, 2260.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-2137.5, 6, 618.75]} scale={4}>
+      <group position={[-2615.15, -55.16, 2035.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1384.38, 19.75, -1656.25]} scale={4}>
+      <group position={[906.73, -41.41, -239.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1237.5, 21, 543.75]} scale={4}>
+      <group position={[-1715.15, -40.16, 1960.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[700, 12, 1193.75]} scale={4}>
+      <group position={[222.35, -49.16, 2610.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1068.75, 45.28, -1462.5]} scale={4}>
+      <group position={[591.1, -15.88, -46.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[987.5, 17, -668.75]} scale={4}>
+      <group position={[509.85, -44.16, 747.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-43.75, 37.13, -1496.88]} scale={4}>
+      <group position={[-521.4, -24.04, -80.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1550, 57, 2018.75]} scale={4}>
+      <group position={[1072.35, -4.16, 3435.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[893.75, 78, -1331.25]} scale={4}>
+      <group position={[416.1, 16.84, 85.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1059.38, 46.13, -1487.5]} scale={4}>
+      <group position={[581.73, -15.04, -71.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1637.5, 9.5, -1634.38]} scale={4}>
+      <group position={[1159.85, -51.66, -217.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-184.38, 25.63, -1525]} scale={4}>
+      <group position={[-662.02, -35.54, -108.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1100, 31, -1200]} scale={4}>
+      <group position={[622.35, -30.16, 216.45]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-43.75, 46, -1575]} scale={4}>
+      <group position={[-521.4, -15.16, -158.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[131.25, 71.63, -1653.13]} scale={4}>
+      <group position={[-346.4, 10.46, -236.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-200, 6, -1903.13]} scale={4}>
+      <group position={[-136.41, -44.05, 333.1]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[87.5, 32.75, -1396.88]} scale={4}>
+      <group position={[-390.15, -28.41, 19.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1209.38, 70.75, -1331.25]} scale={4}>
+      <group position={[731.73, 9.59, 85.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2006.25, 45.25, -1459.38]} scale={4}>
+      <group position={[1528.6, -15.91, -42.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1425, 14, -368.75]} scale={4}>
+      <group position={[947.35, -47.16, 1047.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1621.88, 23.75, -1190.63]} scale={4}>
+      <group position={[1144.23, -37.41, 225.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1009.38, 7.56, -1728.13]} scale={4}>
+      <group position={[531.73, -53.6, -311.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[25, 55.25, -1659.38]} scale={4}>
+      <group position={[-452.65, -5.91, -242.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[765.63, 4.75, -1843.75]} scale={4}>
+      <group position={[462.44, -48.25, 1569.51]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[675, 41, -1603.13]} scale={4}>
+      <group position={[197.35, -20.16, -186.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[246.88, 90.38, -1512.5]} scale={4}>
+      <group position={[-230.77, 29.21, -96.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1281.25, 35, -1493.75]} scale={4}>
+      <group position={[803.6, -26.16, -77.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[171.88, 36.25, -1753.13]} scale={4}>
+      <group position={[-305.77, -24.91, -336.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1200, 16, 518.75]} scale={4}>
+      <group position={[722.35, -45.16, 1935.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[337.5, 82, -1568.75]} scale={4}>
+      <group position={[-140.15, 20.84, -152.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1965.63, 4, -1609.38]} scale={4}>
+      <group position={[838.16, 20.93, 3218.08]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[931.25, 17.88, -1665.63]} scale={4}>
+      <group position={[453.6, -43.29, -249.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-712.5, 17, -481.25]} scale={4}>
+      <group position={[-1190.15, -44.16, 935.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2031.25, 21.75, -1312.5]} scale={4}>
+      <group position={[1553.6, -39.41, 103.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-3.13, 39.5, -1496.88]} scale={4}>
+      <group position={[-480.77, -21.66, -80.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[253.13, 93.5, -1615.63]} scale={4}>
+      <group position={[-224.52, 32.34, -199.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[175, 7, -1881.25]} scale={4}>
+      <group position={[-305.53, -48.57, 1596.52]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1262.5, 53, -1456.25]} scale={4}>
+      <group position={[784.85, -8.16, -39.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1900, 46, 681.25]} scale={4}>
+      <group position={[1422.35, -15.16, 2097.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[896.88, 15.63, -1687.5]} scale={4}>
+      <group position={[419.23, -45.54, -271.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1950, 26, 881.25]} scale={4}>
+      <group position={[1472.35, -35.16, 2297.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[900, 13.75, -1734.38]} scale={4}>
+      <group position={[422.35, -47.41, -317.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-400, 19, 1156.25]} scale={4}>
+      <group position={[-877.65, -42.16, 2572.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1618.75, 53.69, -1337.5]} scale={4}>
+      <group position={[1141.1, -7.47, 78.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1337.5, 18, -418.75]} scale={4}>
+      <group position={[859.85, -43.16, 997.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1575, 31, 1093.75]} scale={4}>
+      <group position={[1097.35, -30.16, 2510.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1375, 19, 1981.25]} scale={4}>
+      <group position={[-1852.65, -42.16, 3397.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[496.88, 12, -1803.13]} scale={4}>
+      <group position={[19.23, -49.16, -386.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[993.75, 5, -1768.75]} scale={4}>
+      <group position={[-1943.62, 29.48, 2880.77]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1512.5, 10, 418.75]} scale={4}>
+      <group position={[1034.85, -51.16, 1835.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-2287.5, 15, 356.25]} scale={4}>
+      <group position={[-2765.15, -46.16, 1772.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1893.75, 49.13, -1390.63]} scale={4}>
+      <group position={[1416.1, -12.04, 25.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1012.5, 13, -431.25]} scale={4}>
+      <group position={[-1490.15, -48.16, 985.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[312.5, 98, 1756.25]} scale={4}>
+      <group position={[-165.15, 36.84, 3172.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[275, 47.5, -1734.38]} scale={4}>
+      <group position={[-202.65, -13.66, -317.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[71.88, 53.19, -1690.63]} scale={4}>
+      <group position={[-405.77, -7.97, -274.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1537.5, 7, -131.25]} scale={4}>
+      <group position={[1059.85, -54.16, 1285.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[462.5, 22, -1165.63]} scale={4}>
+      <group position={[-15.15, -39.16, 250.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1243.75, 41.5, -1225]} scale={4}>
+      <group position={[766.1, -19.66, 191.45]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1365.63, 5, -1718.75]} scale={4}>
+      <group position={[-1569.38, 13.07, 2920.78]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[556.25, 12.5, -1800]} scale={4}>
+      <group position={[78.6, -48.66, -383.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-140.63, 14.75, -1731.25]} scale={4}>
+      <group position={[-618.27, -46.41, -314.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-96.88, 18.5, -1331.25]} scale={4}>
+      <group position={[-574.52, -42.66, 85.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2071.88, 39, -1434.38]} scale={4}>
+      <group position={[1594.23, -22.16, -17.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1109.38, 28.5, -1137.5]} scale={4}>
+      <group position={[631.73, -32.66, 278.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1062.5, 52, -1431.25]} scale={4}>
+      <group position={[584.85, -9.16, -14.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[600, 114, 1843.75]} scale={4}>
+      <group position={[122.35, 52.84, 3260.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1018.75, 34.5, -1225]} scale={4}>
+      <group position={[541.1, -26.66, 191.45]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1731.25, 39, -1265.63]} scale={4}>
+      <group position={[1253.6, -22.16, 150.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[425, 6, -1934.38]} scale={4}>
+      <group position={[54.26, -49.36, 1589.26]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1596.88, 11.31, -1640.63]} scale={4}>
+      <group position={[1119.23, -49.85, -224.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[37.5, 24.5, -1353.13]} scale={4}>
+      <group position={[-440.15, -36.66, 63.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[459.38, 12.5, -1843.75]} scale={4}>
+      <group position={[-18.27, -48.66, -427.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-81.25, 28, -1656.25]} scale={4}>
+      <group position={[-558.9, -33.16, -239.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1434.38, 63.13, -1437.5]} scale={4}>
+      <group position={[956.73, 1.96, -21.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1093.75, 5.5, -1737.5]} scale={4}>
+      <group position={[-1849.7, 22.23, 2914.37]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-562.5, 15, 1018.75]} scale={4}>
+      <group position={[-1040.15, -46.16, 2435.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[906.25, 31, -1168.75]} scale={4}>
+      <group position={[428.6, -30.16, 247.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1412.5, 39, 1593.75]} scale={4}>
+      <group position={[934.85, -22.16, 3010.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-118.75, 17.38, -1703.13]} scale={4}>
+      <group position={[-596.4, -43.79, -286.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1762.5, 19, 1793.75]} scale={4}>
+      <group position={[1284.85, -42.16, 3210.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1593.75, 5.13, -1696.88]} scale={4}>
+      <group position={[780.38, 26.77, 3429.24]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-134.38, 11, -1793.75]} scale={4}>
+      <group position={[-612.02, -50.16, -377.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-2012.5, 10, 1731.25]} scale={4}>
+      <group position={[-2490.15, -51.16, 3147.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[212.5, 88, -1518.75]} scale={4}>
+      <group position={[-265.15, 26.84, -102.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[887.5, 83.5, -1359.38]} scale={4}>
+      <group position={[409.85, 22.34, 57.07]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[465.63, 43.25, -1609.38]} scale={4}>
+      <group position={[-12.02, -17.91, -192.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[881.25, 82, -1343.75]} scale={4}>
+      <group position={[403.6, 20.84, 72.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2103.13, 28, -1368.75]} scale={4}>
+      <group position={[1625.48, -33.16, 47.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1559.38, 48.25, -1271.88]} scale={4}>
+      <group position={[1081.73, -12.91, 144.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[81.25, 48, -1459.38]} scale={4}>
+      <group position={[-396.4, -13.16, -42.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-9.38, 21.94, -1371.88]} scale={4}>
+      <group position={[-487.02, -39.22, 44.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[775, 18, 1318.75]} scale={4}>
+      <group position={[297.35, -43.16, 2735.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[396.88, 68.5, -1440.63]} scale={4}>
+      <group position={[-80.77, 7.34, -24.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[856.25, 46.75, -1250]} scale={4}>
+      <group position={[378.6, -14.41, 166.45]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1365.63, 76, -1331.25]} scale={4}>
+      <group position={[887.98, 14.84, 85.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1437.5, 5, -1706.25]} scale={4}>
+      <group position={[-1499.87, -5.73, 2943.27]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1881.25, 29, -1490.63]} scale={4}>
+      <group position={[1403.6, -32.16, -74.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1584.38, 26.88, -1137.5]} scale={4}>
+      <group position={[1106.73, -34.29, 278.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[871.88, 6, -1775]} scale={4}>
+      <group position={[501.14, -43.94, 1748.64]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[381.25, 17.5, -1793.75]} scale={4}>
+      <group position={[-96.4, -43.66, -377.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-625, 16, -668.75]} scale={4}>
+      <group position={[-1102.65, -45.16, 747.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-225, 12, 343.75]} scale={4}>
+      <group position={[-702.65, -49.16, 1760.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-28.13, 13.25, -1143.75]} scale={4}>
+      <group position={[-505.77, -47.91, 272.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-125, 21, -643.75]} scale={4}>
+      <group position={[-602.65, -40.16, 772.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[218.75, 68.5, -1465.63]} scale={4}>
+      <group position={[-258.9, 7.34, -49.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1700, 22, 768.75]} scale={4}>
+      <group position={[1222.35, -39.16, 2185.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[528.13, 15, -1715.63]} scale={4}>
+      <group position={[50.48, -46.16, -299.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1896.88, 23.5, -1515.63]} scale={4}>
+      <group position={[1419.23, -37.66, -99.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1806.25, 35, -1518.75]} scale={4}>
+      <group position={[1328.6, -26.16, -102.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[615.63, 48.84, -1506.25]} scale={4}>
+      <group position={[137.98, -12.33, -89.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1987.5, 13, 1168.75]} scale={4}>
+      <group position={[-2465.15, -48.16, 2585.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-215.63, 30.25, -1618.75]} scale={4}>
+      <group position={[-693.27, -30.91, -202.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1990.63, 30.5, -1543.75]} scale={4}>
+      <group position={[1512.98, -30.66, -127.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[768.75, 8.13, -1828.13]} scale={4}>
+      <group position={[454.17, -45.08, 1603.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-215.63, 17.75, -1171.88]} scale={4}>
+      <group position={[-693.27, -43.41, 244.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[743.75, 5.5, -1837.5]} scale={4}>
+      <group position={[373.01, -44.44, 1686.14]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-512.5, 6, -856.25]} scale={4}>
+      <group position={[-869.24, -51.37, 545.25]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[271.88, 28, -1184.38]} scale={4}>
+      <group position={[-205.77, -33.16, 232.07]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1043.75, 39.88, -1562.5]} scale={4}>
+      <group position={[566.1, -21.28, -146.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[250, 33, -1771.88]} scale={4}>
+      <group position={[-227.65, -28.16, -355.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[940.63, 75, -1353.13]} scale={4}>
+      <group position={[462.98, 13.84, 63.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[775, 44, 2093.75]} scale={4}>
+      <group position={[297.35, -17.16, 3510.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1062.5, 27, 906.25]} scale={4}>
+      <group position={[584.85, -34.16, 2322.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1875, 41, 2018.75]} scale={4}>
+      <group position={[1397.35, -20.16, 3435.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-262.5, 12, -893.75]} scale={4}>
+      <group position={[-740.15, -49.16, 522.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[600, 17, -556.25]} scale={4}>
+      <group position={[122.35, -44.16, 860.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[831.25, 20.5, -1693.75]} scale={4}>
+      <group position={[353.6, -40.66, -277.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[12.5, 29, 1981.25]} scale={4}>
+      <group position={[-465.15, -32.16, 3397.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1612.5, 36, -1256.25]} scale={4}>
+      <group position={[1134.85, -25.16, 160.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1459.38, 27.56, -1578.13]} scale={4}>
+      <group position={[981.73, -33.6, -161.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[87.5, 14, 1193.75]} scale={4}>
+      <group position={[-390.15, -47.16, 2610.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1475, 5, -1696.88]} scale={4}>
+      <group position={[-1459.23, -14.29, 2953.53]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1443.75, 32.75, -1153.13]} scale={4}>
+      <group position={[966.1, -28.41, 263.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1759.38, 48.31, -1340.63]} scale={4}>
+      <group position={[1281.73, -12.85, 75.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1837.5, 12, -1056.25]} scale={4}>
+      <group position={[1359.85, -49.16, 360.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1284.38, 37.25, -1203.13]} scale={4}>
+      <group position={[806.73, -23.91, 213.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[346.88, 11.25, -1840.63]} scale={4}>
+      <group position={[-130.77, -49.91, -424.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-2287.5, 5, 431.25]} scale={4}>
+      <group position={[-2765.15, -56.16, 1847.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1750, 6, 1481.25]} scale={4}>
+      <group position={[1272.35, -55.16, 2897.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1925, 11, 1143.75]} scale={4}>
+      <group position={[-2402.65, -50.16, 2560.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[559.38, 14, -1731.25]} scale={4}>
+      <group position={[81.73, -47.16, -314.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[356.25, 87.13, -1503.13]} scale={4}>
+      <group position={[-121.4, 25.96, -86.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[837.5, 19, 81.25]} scale={4}>
+      <group position={[359.85, -42.16, 1497.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1562.5, 51.5, -1303.13]} scale={4}>
+      <group position={[1084.85, -9.66, 113.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-87.5, 28.75, -1453.13]} scale={4}>
+      <group position={[-565.15, -32.41, -36.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[500, 21, -793.75]} scale={4}>
+      <group position={[22.35, -40.16, 622.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1275, 28, 1856.25]} scale={4}>
+      <group position={[-1752.65, -33.16, 3272.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[875, 27, -1093.75]} scale={0.04}>
+      <group position={[397.35, -34.16, 322.7]} scale={0.04}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-937.5, 50, 1481.25]} scale={4}>
+      <group position={[-1415.15, -11.16, 2897.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1662.5, 53, 1493.75]} scale={4}>
+      <group position={[-2140.15, -8.16, 2910.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[575, 17, -656.25]} scale={4}>
+      <group position={[97.35, -44.16, 760.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[987.5, 11, 93.75]} scale={4}>
+      <group position={[509.85, -50.16, 1510.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1415.63, 55.19, -1459.38]} scale={4}>
+      <group position={[937.98, -5.97, -42.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[121.88, 84, -1612.5]} scale={4}>
+      <group position={[-355.77, 22.84, -196.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1456.25, 22.75, -1609.38]} scale={4}>
+      <group position={[978.6, -38.41, -192.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1437.5, 22, 1831.25]} scale={4}>
+      <group position={[-1915.15, -39.16, 3247.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[606.25, 59.37, -1437.5]} scale={4}>
+      <group position={[128.6, -1.79, -21.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[815.63, 36.25, -1628.13]} scale={4}>
+      <group position={[337.98, -24.91, -211.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[571.88, 55, -1443.75]} scale={4}>
+      <group position={[94.23, -6.16, -27.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[312.5, 29, 1368.75]} scale={4}>
+      <group position={[-165.15, -32.16, 2785.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[368.75, 57.5, -1662.5]} scale={4}>
+      <group position={[-108.9, -3.66, -246.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2053.13, 22.31, -1328.13]} scale={4}>
+      <group position={[1575.48, -38.85, 88.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1087.5, 45, 1431.25]} scale={4}>
+      <group position={[609.85, -16.16, 2847.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[478.13, 38, -1318.75]} scale={4}>
+      <group position={[0.48, -23.16, 97.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1553.13, 6.75, -1671.88]} scale={4}>
+      <group position={[739.75, 12.77, 3454.24]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-887.5, 37, 1256.25]} scale={4}>
+      <group position={[-1365.15, -24.16, 2672.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1325, 16, -281.25]} scale={4}>
+      <group position={[847.35, -45.16, 1135.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[909.38, 6, -1815.63]} scale={4}>
+      <group position={[538.64, -43.94, 1708.01]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1287.5, 33, 1706.25]} scale={4}>
+      <group position={[-1765.15, -28.16, 3122.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[96.88, 43.63, -1437.5]} scale={4}>
+      <group position={[-380.77, -17.54, -21.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[875, 59.5, -1496.88]} scale={4}>
+      <group position={[397.35, -1.66, -80.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[28.13, 20.25, -1259.38]} scale={4}>
+      <group position={[-449.52, -40.91, 157.07]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1828.13, 26.65, -1212.5]} scale={4}>
+      <group position={[1350.48, -34.51, 203.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2150, 25, 756.25]} scale={4}>
+      <group position={[1672.35, -36.16, 2172.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1746.88, 37.63, -1525]} scale={4}>
+      <group position={[1269.23, -23.54, -108.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[350, 6.25, -1878.13]} scale={4}>
+      <group position={[-365.53, -46.38, 1284.02]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[706.25, 32.63, -1665.63]} scale={4}>
+      <group position={[228.6, -28.54, -249.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1275, 21, -1643.75]} scale={4}>
+      <group position={[797.35, -40.16, -227.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1384.38, 46.75, -1481.25]} scale={4}>
+      <group position={[906.73, -14.41, -64.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[162.5, 12.25, -1809.38]} scale={4}>
+      <group position={[-315.15, -48.91, -392.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[303.13, 41.93, -1359.38]} scale={4}>
+      <group position={[-174.52, -19.23, 57.07]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-262.5, 17.5, -1484.38]} scale={4}>
+      <group position={[-740.15, -43.66, -67.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1793.75, 37, -1303.13]} scale={4}>
+      <group position={[1316.1, -24.16, 113.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-62.5, 15, 831.25]} scale={4}>
+      <group position={[-540.15, -46.16, 2247.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-193.75, 20.63, -1478.13]} scale={4}>
+      <group position={[-671.4, -40.54, -61.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[775, 33, -1162.5]} scale={4}>
+      <group position={[297.35, -28.16, 253.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[100, 66, -1503.13]} scale={4}>
+      <group position={[-377.65, 4.84, -86.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-275, 12, -131.25]} scale={4}>
+      <group position={[-752.65, -49.16, 1285.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[562.5, 21, -406.25]} scale={4}>
+      <group position={[84.85, -40.16, 1010.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-84.38, 13, -1740.63]} scale={4}>
+      <group position={[-562.02, -48.16, -324.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1756.25, 48.25, -1478.13]} scale={4}>
+      <group position={[1278.6, -12.91, -61.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[993.75, 5.5, -1743.75]} scale={4}>
+      <group position={[-1952.19, 2.47, 2940.07]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[862.5, 97, 1806.25]} scale={4}>
+      <group position={[384.85, 35.84, 3222.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1700, 22, 1006.25]} scale={4}>
+      <group position={[-2177.65, -39.16, 2422.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[153.13, 43.25, -1731.25]} scale={4}>
+      <group position={[-324.52, -17.91, -314.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[284.38, 44.5, -1740.63]} scale={4}>
+      <group position={[-193.27, -16.66, -324.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1731.25, 6, -1718.75]} scale={4}>
+      <group position={[912.49, 28.1, 3399.04]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[331.25, 62.5, -1425]} scale={4}>
+      <group position={[-146.4, 1.34, -8.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-78.13, 24.5, -1412.5]} scale={4}>
+      <group position={[-555.77, -36.66, 3.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1956.25, 16.88, -1565.63]} scale={4}>
+      <group position={[1478.6, -44.29, -149.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-825, 27, 1731.25]} scale={4}>
+      <group position={[-1302.65, -34.16, 3147.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-2362.5, 11, 406.25]} scale={4}>
+      <group position={[-2840.15, -50.16, 1822.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-178.13, 20.94, -1396.88]} scale={4}>
+      <group position={[-655.77, -40.22, 19.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1815.63, 56.14, -1378.13]} scale={4}>
+      <group position={[1337.98, -5.02, 38.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[65.63, 76.81, -1603.13]} scale={4}>
+      <group position={[-412.02, 15.65, -186.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1268.75, 5.75, -1696.88]} scale={4}>
+      <group position={[-1670.18, 15.06, 2949.9]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-62.5, 9, 231.25]} scale={4}>
+      <group position={[-540.15, -52.16, 1647.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[512.5, 20, -181.25]} scale={4}>
+      <group position={[34.85, -41.16, 1235.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1087.5, 27, -943.75]} scale={4}>
+      <group position={[609.85, -34.16, 472.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[525, 20, -1043.75]} scale={4}>
+      <group position={[47.35, -41.16, 372.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[450, 49, 1993.75]} scale={4}>
+      <group position={[-27.65, -12.16, 3410.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[443.75, 19.38, -1734.38]} scale={4}>
+      <group position={[-33.9, -41.79, -317.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[525, 11, 1256.25]} scale={4}>
+      <group position={[47.35, -50.16, 2672.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1450, 11, -68.75]} scale={4}>
+      <group position={[972.35, -50.16, 1347.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1650, 11, 868.75]} scale={4}>
+      <group position={[-2127.65, -50.16, 2285.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-109.38, 25.5, -1425]} scale={4}>
+      <group position={[-587.02, -35.66, -8.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1487.5, 20, 1068.75]} scale={4}>
+      <group position={[-1965.15, -41.16, 2485.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[178.13, 58.5, -1446.88]} scale={4}>
+      <group position={[-299.52, -2.66, -30.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[659.38, 70.25, -1365.63]} scale={4}>
+      <group position={[181.73, 9.09, 50.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[443.75, 67.63, -1453.13]} scale={4}>
+      <group position={[-33.9, 6.46, -36.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1928.13, 12.51, -1159.38]} scale={4}>
+      <group position={[1450.48, -48.65, 257.07]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[690.63, 27.19, -1140.63]} scale={4}>
+      <group position={[212.98, -33.97, 275.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1362.5, 25, 206.25]} scale={4}>
+      <group position={[-1840.15, -36.16, 1622.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-225, 8, 1018.75]} scale={4}>
+      <group position={[-702.65, -53.16, 2435.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[475, 18, 706.25]} scale={4}>
+      <group position={[-2.65, -43.16, 2122.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[706, 80.93, -1469.27]} scale={4}>
+      <group position={[228.36, 19.77, -52.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1528.13, 45.5, -1231.25]} scale={4}>
+      <group position={[1050.48, -15.66, 185.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[543.75, 30.75, -1265.63]} scale={4}>
+      <group position={[66.1, -30.41, 150.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1009.38, 19, -1650]} scale={4}>
+      <group position={[531.73, -42.16, -233.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1287.5, 29, 1793.75]} scale={4}>
+      <group position={[-1765.15, -32.16, 3210.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1625, 24, 343.75]} scale={4}>
+      <group position={[-2102.65, -37.16, 1760.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-203.13, 17.94, -1290.63]} scale={4}>
+      <group position={[-680.77, -43.22, 125.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-131.25, 16.75, -1709.38]} scale={4}>
+      <group position={[-608.9, -44.41, -292.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[184.38, 34.57, -1343.75]} scale={4}>
+      <group position={[-293.27, -26.59, 72.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-962.5, 13, 381.25]} scale={4}>
+      <group position={[-1440.15, -48.16, 1797.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-275, 16, -1481.25]} scale={4}>
+      <group position={[-752.65, -45.16, -64.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-206.25, 31, -1606.25]} scale={4}>
+      <group position={[-683.9, -30.16, -189.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[346.88, 22, -1153.13]} scale={4}>
+      <group position={[-130.77, -39.16, 263.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[96.88, 78.25, -1543.75]} scale={4}>
+      <group position={[-380.77, 17.09, -127.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[834.38, 37.25, -1196.88]} scale={4}>
+      <group position={[356.73, -23.91, 219.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[406.25, 5.63, -1903.13]} scale={4}>
+      <group position={[35.51, -49.74, 1620.51]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1137.5, 19, 793.75]} scale={4}>
+      <group position={[-1615.15, -42.16, 2210.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[675, 63, 2006.25]} scale={4}>
+      <group position={[197.35, 1.84, 3422.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-46.88, 14.5, -1175]} scale={4}>
+      <group position={[-524.52, -46.66, 241.45]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[668.75, 66, -1340.63]} scale={4}>
+      <group position={[191.1, 4.84, 75.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1021.88, 10.25, -1693.75]} scale={4}>
+      <group position={[544.23, -50.91, -277.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[290.63, 37.25, -1759.38]} scale={4}>
+      <group position={[-187.02, -23.91, -342.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[115.63, 28.75, -1378.13]} scale={4}>
+      <group position={[-362.02, -32.41, 38.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1725, 26, 1068.75]} scale={4}>
+      <group position={[1247.35, -35.16, 2485.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1118.75, 57.25, -1365.63]} scale={4}>
+      <group position={[641.1, -3.91, 50.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1934.38, 10.5, -1178.13]} scale={4}>
+      <group position={[1456.73, -50.66, 238.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-825, 25, 2193.75]} scale={4}>
+      <group position={[-1302.65, -36.16, 3610.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[271.88, 83.63, -1650]} scale={4}>
+      <group position={[-205.77, 22.46, -233.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[212.5, 25.94, -1237.5]} scale={4}>
+      <group position={[-265.15, -35.23, 178.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1471.88, 32.38, -1162.5]} scale={4}>
+      <group position={[994.23, -28.79, 253.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1903.13, 9.5, -1584.38]} scale={4}>
+      <group position={[1425.48, -51.66, -167.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-162.5, 12, 81.25]} scale={4}>
+      <group position={[-640.15, -49.16, 1497.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[937.5, 20, -943.75]} scale={4}>
+      <group position={[459.85, -41.16, 472.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-193.75, 16, -1706.25]} scale={4}>
+      <group position={[-671.4, -45.16, -289.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1887.5, 20, 1843.75]} scale={4}>
+      <group position={[1409.85, -41.16, 3260.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1850, 44, -1443.75]} scale={4}>
+      <group position={[1372.35, -17.16, -27.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1571.88, 30.5, -1181.25]} scale={4}>
+      <group position={[1094.23, -30.66, 235.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2087.5, 13, -1268.75]} scale={4}>
+      <group position={[1609.85, -48.16, 147.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[403.13, 7.5, -1862.5]} scale={4}>
+      <group position={[-74.52, -53.66, -446.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[912.5, 10, -131.25]} scale={4}>
+      <group position={[434.85, -51.16, 1285.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1484.38, 35.25, -1534.38]} scale={4}>
+      <group position={[1006.73, -25.91, -117.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1893.75, 45, -1425]} scale={4}>
+      <group position={[1416.1, -16.16, -8.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1434.38, 14, -1643.75]} scale={4}>
+      <group position={[956.73, -47.16, -227.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[643.75, 27.5, -1650]} scale={4}>
+      <group position={[166.1, -33.66, -233.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1587.5, 15, 431.25]} scale={4}>
+      <group position={[-2065.15, -46.16, 1847.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1693.75, 54.5, -1468.75]} scale={4}>
+      <group position={[1216.1, -6.66, -52.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1506.25, 38.25, -1525]} scale={4}>
+      <group position={[1028.6, -22.91, -108.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-500, 35, 1331.25]} scale={4}>
+      <group position={[-977.65, -26.16, 2747.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[512.5, 38, 593.75]} scale={4}>
+      <group position={[34.85, -23.16, 2010.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-81.25, 30.5, -1640.63]} scale={4}>
+      <group position={[-558.9, -30.66, -224.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[312.5, 28, 443.75]} scale={4}>
+      <group position={[-165.15, -33.16, 1860.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1206.25, 17.5, -1615.63]} scale={4}>
+      <group position={[728.6, -43.66, -199.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[762.5, 17, 68.75]} scale={4}>
+      <group position={[284.85, -44.16, 1485.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[568.75, 13.5, -1743.75]} scale={4}>
+      <group position={[91.1, -47.66, -327.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1287.5, 30.5, -1162.5]} scale={4}>
+      <group position={[809.85, -30.66, 253.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-75, 25, -1418.75]} scale={4}>
+      <group position={[-552.65, -36.16, -2.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1600, 29, 1643.75]} scale={4}>
+      <group position={[-2077.65, -32.16, 3060.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1275, 81, -1362.5]} scale={4}>
+      <group position={[797.35, 19.84, 53.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-175, 10.75, -1759.38]} scale={4}>
+      <group position={[-652.65, -50.41, -342.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[500, 26, -1668.75]} scale={4}>
+      <group position={[22.35, -35.16, -252.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1200, 60.75, -1384.38]} scale={4}>
+      <group position={[722.35, -0.41, 32.07]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1475, 6, 831.25]} scale={4}>
+      <group position={[-1952.65, -55.16, 2247.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1000, 21, 943.75]} scale={4}>
+      <group position={[522.35, -40.16, 2360.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[665.99, 66.72, -1441.55]} scale={4}>
+      <group position={[188.35, 5.56, -25.1]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-225, 18.16, -1287.5]} scale={4}>
+      <group position={[-702.65, -43, 128.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[653.13, 6, -1871.88]} scale={4}>
+      <group position={[282.39, -43.94, 1651.76]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[518.75, 35.5, -1615.63]} scale={4}>
+      <group position={[41.1, -25.66, -199.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1500, 26, 1731.25]} scale={4}>
+      <group position={[-1977.65, -35.16, 3147.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[396.88, 55.75, -1406.25]} scale={4}>
+      <group position={[-80.77, -5.41, 10.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-362.5, 10, -1006.25]} scale={4}>
+      <group position={[-840.15, -51.16, 410.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[668.75, 28.63, -1159.38]} scale={4}>
+      <group position={[191.1, -32.54, 257.07]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-293.75, 14.5, -1271.88]} scale={4}>
+      <group position={[-771.4, -46.66, 144.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1568.75, 42.5, -1481.25]} scale={4}>
+      <group position={[1091.1, -18.66, -64.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[865.63, 22.13, -1662.5]} scale={4}>
+      <group position={[387.98, -39.04, -246.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2025, 23, 606.25]} scale={4}>
+      <group position={[1547.35, -38.16, 2022.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1637.5, 13, 1493.75]} scale={4}>
+      <group position={[1159.85, -48.16, 2910.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[871.88, 16.75, -1690.63]} scale={4}>
+      <group position={[394.23, -44.41, -274.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1262.5, 30, 1818.75]} scale={4}>
+      <group position={[-1740.15, -31.16, 3235.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-209.38, 5.81, -1821.88]} scale={4}>
+      <group position={[-145.78, -44.24, 414.35]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[375, 55.5, -1665.63]} scale={4}>
+      <group position={[-102.65, -5.66, -249.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-34.38, 32.75, -1475]} scale={4}>
+      <group position={[-512.02, -28.41, -58.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2093.75, 21.5, -1331.25]} scale={4}>
+      <group position={[1616.1, -39.66, 85.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1250, 6, -1743.75]} scale={4}>
+      <group position={[-1687.37, 30.48, 2905.77]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-62.5, 29, -1450]} scale={4}>
+      <group position={[-540.15, -32.16, -33.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1271.88, 75.94, -1403.13]} scale={4}>
+      <group position={[794.23, 14.78, 13.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1762.5, 26, 2156.25]} scale={4}>
+      <group position={[1284.85, -35.16, 3572.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[784.38, 29.5, -1659.38]} scale={4}>
+      <group position={[306.73, -31.66, -242.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-600, 73, 1468.75]} scale={4}>
+      <group position={[-1077.65, 11.84, 2885.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1100, 107, 1843.75]} scale={4}>
+      <group position={[622.35, 45.84, 3260.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1675, 5.75, -1715.63]} scale={4}>
+      <group position={[861.63, 22.81, 3410.49]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2046.88, 32.88, -1496.88]} scale={4}>
+      <group position={[1569.23, -28.29, -80.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1234.38, 74.19, -1359.38]} scale={4}>
+      <group position={[756.73, 13.03, 57.07]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-862.5, 23, 1868.75]} scale={4}>
+      <group position={[-1340.15, -38.16, 3285.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1396.88, 70, -1425]} scale={4}>
+      <group position={[919.23, 8.84, -8.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2075, 23, 856.25]} scale={4}>
+      <group position={[1597.35, -38.16, 2272.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[893.75, 9.75, -1759.38]} scale={4}>
+      <group position={[416.1, -51.41, -342.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-725, 7, 218.75]} scale={4}>
+      <group position={[-1202.65, -54.16, 1635.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[200, 21, -906.25]} scale={4}>
+      <group position={[-277.65, -40.16, 510.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[65.63, 23.25, -1293.75]} scale={4}>
+      <group position={[-412.02, -37.91, 122.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1800, 39, -1506.25]} scale={4}>
+      <group position={[1322.35, -22.16, -89.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[18.75, 5.5, -1843.75]} scale={4}>
+      <group position={[-461.78, -50.07, 1634.02]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-209.38, 6, -1843.75]} scale={4}>
+      <group position={[-145.78, -44.05, 392.47]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1778.13, 6, -1696.88]} scale={4}>
+      <group position={[943.56, -30.64, 3405.13]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2012.5, 33, 956.25]} scale={4}>
+      <group position={[1534.85, -28.16, 2372.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[137.5, 27, -1318.75]} scale={4}>
+      <group position={[-340.15, -34.16, 97.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2006.25, 14, -1262.5]} scale={4}>
+      <group position={[1528.6, -47.16, 153.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-787.5, 24, 1668.75]} scale={4}>
+      <group position={[-1265.15, -37.16, 3085.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[562.5, 52, 2056.25]} scale={4}>
+      <group position={[84.85, -9.16, 3472.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[343.75, 79, -1468.75]} scale={4}>
+      <group position={[-133.9, 17.84, -52.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[234.38, 27, -1281.25]} scale={4}>
+      <group position={[-243.27, -34.16, 135.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[437.5, 40.5, -1334.38]} scale={4}>
+      <group position={[-40.15, -20.66, 82.07]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1143.75, 26.75, -1521.88]} scale={4}>
+      <group position={[666.1, -34.41, -105.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1287.5, 53, 1618.75]} scale={4}>
+      <group position={[-1765.15, -8.16, 3035.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1381.25, 86, -1368.75]} scale={4}>
+      <group position={[903.6, 24.84, 47.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1700, 67, 1993.75]} scale={4}>
+      <group position={[1222.35, 5.84, 3410.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[659.38, 74, -1403.13]} scale={4}>
+      <group position={[181.73, 12.84, 13.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1403.13, 31.88, -1137.5]} scale={4}>
+      <group position={[925.48, -29.29, 278.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-412.5, 38, 1681.25]} scale={4}>
+      <group position={[-890.15, -23.16, 3097.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1565.63, 33.38, -1200]} scale={4}>
+      <group position={[1087.98, -27.79, 216.45]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1462.5, 16, 1031.25]} scale={4}>
+      <group position={[-1940.15, -45.16, 2447.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[396.88, 21.94, -1153.13]} scale={4}>
+      <group position={[-80.77, -39.22, 263.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[653.13, 46.5, -1281.25]} scale={4}>
+      <group position={[175.48, -14.66, 135.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[43.75, 19.25, -1228.13]} scale={4}>
+      <group position={[-433.9, -41.91, 188.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1700, 12, 318.75]} scale={4}>
+      <group position={[1222.35, -49.16, 1735.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-275, 14, 56.25]} scale={4}>
+      <group position={[-752.65, -47.16, 1472.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[290.63, 24.25, -1800]} scale={4}>
+      <group position={[-187.02, -36.91, -383.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[553.13, 13.81, -1753.13]} scale={4}>
+      <group position={[75.48, -47.35, -336.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[546.88, 38.56, -1565.63]} scale={4}>
+      <group position={[69.23, -22.6, -149.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2028.13, 31.5, -1537.5]} scale={4}>
+      <group position={[1550.48, -29.66, -121.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1550, 20, 1581.25]} scale={4}>
+      <group position={[1072.35, -41.16, 2997.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[746.88, 54.94, -1590.63]} scale={4}>
+      <group position={[269.23, -6.22, -174.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1843.75, 54.38, -1396.88]} scale={4}>
+      <group position={[1366.1, -6.79, 19.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1737.5, 24, 1643.75]} scale={4}>
+      <group position={[-2215.15, -37.16, 3060.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1425, 24, -1606.25]} scale={4}>
+      <group position={[947.35, -37.16, -189.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[487.5, 8.5, -1871.88]} scale={4}>
+      <group position={[9.85, -52.66, -455.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[409.38, 13.44, -1778.13]} scale={4}>
+      <group position={[-68.27, -47.72, -361.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[200, 10, 281.25]} scale={4}>
+      <group position={[-277.65, -51.16, 1697.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-65.63, 28.5, -1446.88]} scale={4}>
+      <group position={[-543.27, -32.66, -30.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-237.5, 39, 1643.75]} scale={4}>
+      <group position={[-715.15, -22.16, 3060.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1137.5, 8, -381.25]} scale={4}>
+      <group position={[-1615.15, -53.16, 1035.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1615.63, 19, -1593.75]} scale={4}>
+      <group position={[1137.98, -42.16, -177.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-562.5, 26, 1931.25]} scale={4}>
+      <group position={[-1040.15, -35.16, 3347.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[109.38, 83.75, -1606.25]} scale={4}>
+      <group position={[-368.27, 22.59, -189.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1137.5, 22, 893.75]} scale={4}>
+      <group position={[-1615.15, -39.16, 2310.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[209.38, 25.38, -1187.5]} scale={4}>
+      <group position={[-268.27, -35.79, 228.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-350, 13, -1293.75]} scale={4}>
+      <group position={[-827.65, -48.16, 122.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[6.25, 18.75, -1240.63]} scale={4}>
+      <group position={[-471.4, -42.41, 175.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-275, 6, 356.25]} scale={4}>
+      <group position={[-626.83, -46.16, 1875.19]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1050, 21, 1843.75]} scale={4}>
+      <group position={[-1527.65, -40.16, 3260.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1512.5, 19, 2068.75]} scale={4}>
+      <group position={[-1990.15, -42.16, 3485.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[612.5, 9, -1806.25]} scale={4}>
+      <group position={[134.85, -52.16, -389.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-250, 9, -418.75]} scale={4}>
+      <group position={[-727.65, -52.16, 997.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[481.25, 5.25, -1903.13]} scale={4}>
+      <group position={[110.51, -50.11, 1620.51]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[162.5, 30.5, -1765.63]} scale={4}>
+      <group position={[-315.15, -30.66, -349.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-125, 15, -856.25]} scale={4}>
+      <group position={[-602.65, -46.16, 560.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2000, 36, -1525]} scale={4}>
+      <group position={[1522.35, -25.16, -108.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1943.75, 19.7, -1265.63]} scale={4}>
+      <group position={[1466.1, -41.46, 150.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[562.5, 90, 1918.75]} scale={4}>
+      <group position={[84.85, 28.84, 3335.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2015.63, 6.99, -1212.5]} scale={4}>
+      <group position={[1537.98, -54.17, 203.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1250, 94, 1993.75]} scale={4}>
+      <group position={[772.35, 32.84, 3410.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-500, 10, -506.25]} scale={4}>
+      <group position={[-977.65, -51.16, 910.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[596.88, 33.5, -1578.13]} scale={4}>
+      <group position={[119.23, -27.66, -161.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-128.13, 33.56, -1609.38]} scale={4}>
+      <group position={[-605.77, -27.6, -192.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[937.5, 62.27, -1425]} scale={4}>
+      <group position={[459.85, 1.11, -8.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[925, 43, -1240.63]} scale={4}>
+      <group position={[447.35, -18.16, 175.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1871.88, 34.75, -1306.25]} scale={4}>
+      <group position={[1394.23, -26.41, 110.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-6.25, 24.05, -1387.5]} scale={4}>
+      <group position={[-483.9, -37.11, 28.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1284.38, 25.13, -1562.5]} scale={4}>
+      <group position={[806.73, -36.04, -146.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[928.13, 32.25, -1168.75]} scale={4}>
+      <group position={[450.48, -28.91, 247.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[134.38, 62.88, -1675]} scale={4}>
+      <group position={[-343.27, 1.71, -258.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[887.5, 36, -1206.25]} scale={4}>
+      <group position={[409.85, -25.16, 210.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1506.25, 76, -1365.63]} scale={4}>
+      <group position={[1028.6, 14.84, 50.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1509.38, 52.06, -1453.13]} scale={4}>
+      <group position={[1031.73, -9.1, -36.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1912.5, 30, 368.75]} scale={4}>
+      <group position={[-2390.15, -31.16, 1785.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1334.38, 6, -1743.75]} scale={4}>
+      <group position={[-1579.97, 32.65, 2864.02]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-575, 16, -531.25]} scale={4}>
+      <group position={[-1052.65, -45.16, 885.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[687.5, 30, 1593.75]} scale={4}>
+      <group position={[209.85, -31.16, 3010.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[262.5, 11, 218.75]} scale={4}>
+      <group position={[-215.15, -50.16, 1635.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1450, 25, 843.75]} scale={4}>
+      <group position={[972.35, -36.16, 2260.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2003.13, 23, -1303.13]} scale={4}>
+      <group position={[1525.48, -38.16, 113.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-284.38, 11.75, -1418.75]} scale={4}>
+      <group position={[-762.02, -49.41, -2.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1765.63, 57.25, -1393.75]} scale={4}>
+      <group position={[1287.98, -3.91, 22.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[665.63, 6.75, -1821.88]} scale={4}>
+      <group position={[187.98, -54.41, -405.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1943.75, 17.75, -1553.13]} scale={4}>
+      <group position={[1466.1, -43.41, -136.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-225, 10, 656.25]} scale={4}>
+      <group position={[-702.65, -51.16, 2072.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1643.75, 21.5, -1168.75]} scale={4}>
+      <group position={[1166.1, -39.66, 247.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-912.5, 40, 1131.25]} scale={4}>
+      <group position={[-1390.15, -21.16, 2547.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-112.5, 31, 2143.75]} scale={4}>
+      <group position={[-590.15, -30.16, 3560.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[500, 37, -1618.75]} scale={4}>
+      <group position={[22.35, -24.16, -202.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-112.5, 20, -1300]} scale={4}>
+      <group position={[-590.15, -41.16, 116.45]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-100, 22, 1231.25]} scale={4}>
+      <group position={[-577.65, -39.16, 2647.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[190.63, 36.5, -1381.25]} scale={4}>
+      <group position={[-287.02, -24.66, 35.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1150, 6, -1728.13]} scale={4}>
+      <group position={[-1786.45, 26.41, 2918.37]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-2275, 7, 981.25]} scale={4}>
+      <group position={[-2752.65, -54.16, 2397.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1421.88, 39.25, -1528.13]} scale={4}>
+      <group position={[944.23, -21.91, -111.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[250, 14, -118.75]} scale={4}>
+      <group position={[-227.65, -47.16, 1297.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[434.38, 33.75, -1265.63]} scale={4}>
+      <group position={[-43.27, -27.41, 150.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[150, 15, -618.75]} scale={4}>
+      <group position={[-327.65, -46.16, 797.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[21.88, 63.75, -1568.75]} scale={4}>
+      <group position={[-455.77, 2.59, -152.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[237.5, 28, -1081.25]} scale={4}>
+      <group position={[-240.15, -33.16, 335.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[162.5, 6, 1031.25]} scale={4}>
+      <group position={[-292.39, -55.16, 2438.22]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1762.5, 24, 2193.75]} scale={4}>
+      <group position={[1284.85, -37.16, 3610.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1412.5, 38, 1018.75]} scale={4}>
+      <group position={[934.85, -23.16, 2435.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1612.5, 20, 781.25]} scale={4}>
+      <group position={[1134.85, -41.16, 2197.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[281.25, 15.75, -1825]} scale={4}>
+      <group position={[-196.4, -45.41, -408.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[443.75, 27.75, -1225]} scale={4}>
+      <group position={[-33.9, -33.41, 191.45]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1553.13, 56.56, -1334.38]} scale={4}>
+      <group position={[1075.48, -4.6, 82.07]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[259.38, 72, -1681.25]} scale={4}>
+      <group position={[-218.27, 10.84, -264.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-6.25, 12.5, -1137.5]} scale={4}>
+      <group position={[-483.9, -48.66, 278.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-109.38, 19.94, -1309.38]} scale={4}>
+      <group position={[-587.02, -41.22, 107.07]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-562.5, 16, 293.75]} scale={4}>
+      <group position={[-1040.15, -45.16, 1710.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[800, 83.2, -1515.63]} scale={4}>
+      <group position={[322.35, 22.04, -99.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[506.25, 17.63, -1715.63]} scale={4}>
+      <group position={[28.6, -43.54, -299.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1012.5, 11, 156.25]} scale={4}>
+      <group position={[-1490.15, -50.16, 1572.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1750, 65, 1981.25]} scale={4}>
+      <group position={[1272.35, 3.84, 3397.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1084.38, 61.25, -1337.5]} scale={4}>
+      <group position={[606.73, 0.09, 78.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[887.5, 27, 1518.75]} scale={4}>
+      <group position={[409.85, -34.16, 2935.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[700, 10, -368.75]} scale={4}>
+      <group position={[222.35, -51.16, 1047.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-450, 6, -868.75]} scale={4}>
+      <group position={[-899.62, -55.39, 547.72]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-278.13, 14.81, -1465.63]} scale={4}>
+      <group position={[-755.77, -46.35, -49.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1275, 12, 981.25]} scale={4}>
+      <group position={[-1752.65, -49.16, 2397.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[543.75, 29.75, -1253.13]} scale={4}>
+      <group position={[66.1, -31.41, 163.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1631.25, 21.75, -1178.13]} scale={4}>
+      <group position={[1153.6, -39.41, 238.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[668.75, 26.13, -1709.38]} scale={4}>
+      <group position={[191.1, -35.04, -292.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[575, 15, 468.75]} scale={4}>
+      <group position={[97.35, -46.16, 1885.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-21.88, 26.31, -1709.38]} scale={4}>
+      <group position={[-499.52, -34.85, -292.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1212.5, 62, -1390.63]} scale={4}>
+      <group position={[734.85, 0.84, 25.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[606.25, 41, -1537.5]} scale={4}>
+      <group position={[128.6, -20.16, -121.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1850, 14, 506.25]} scale={4}>
+      <group position={[1372.35, -47.16, 1922.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1550, 41, -1231.25]} scale={4}>
+      <group position={[1072.35, -20.16, 185.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[687.5, 55.72, -1568.75]} scale={4}>
+      <group position={[209.85, -5.44, -152.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1528.13, 27.25, -1593.75]} scale={4}>
+      <group position={[1050.48, -33.91, -177.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[896.88, 40, -1571.88]} scale={4}>
+      <group position={[419.23, -21.16, -155.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1115.63, 27.5, -1565.63]} scale={4}>
+      <group position={[637.98, -33.66, -149.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[600, 25, -1093.75]} scale={4}>
+      <group position={[122.35, -36.16, 322.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[918.75, 47, -1253.13]} scale={4}>
+      <group position={[441.1, -14.16, 163.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1525, 37, 1218.75]} scale={4}>
+      <group position={[-2002.65, -24.16, 2635.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[175, 13, 218.75]} scale={4}>
+      <group position={[-302.65, -48.16, 1635.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[912.5, 60.25, -1446.88]} scale={4}>
+      <group position={[434.85, -0.91, -30.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1687.5, 22, 1743.75]} scale={4}>
+      <group position={[-2165.15, -39.16, 3160.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[921.88, 67.56, -1415.63]} scale={4}>
+      <group position={[444.23, 6.4, 0.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1081.25, 60, -1368.75]} scale={4}>
+      <group position={[603.6, -1.16, 47.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[900, 14, -1715.63]} scale={4}>
+      <group position={[422.35, -47.16, -299.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1615.63, 55.25, -1340.63]} scale={4}>
+      <group position={[1137.98, -5.91, 75.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[875, 18, -843.75]} scale={4}>
+      <group position={[397.35, -43.16, 572.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-50, 51, 1756.25]} scale={4}>
+      <group position={[-527.65, -10.16, 3172.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1628.13, 57.4, -1346.88]} scale={4}>
+      <group position={[1150.48, -3.76, 69.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1737.5, 13, 431.25]} scale={4}>
+      <group position={[1259.85, -48.16, 1847.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[112.5, 20, -1193.75]} scale={4}>
+      <group position={[-365.15, -41.16, 222.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1025, 29, 618.75]} scale={4}>
+      <group position={[-1502.65, -32.16, 2035.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1103.13, 12.88, -1675]} scale={4}>
+      <group position={[625.48, -48.29, -258.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[375, 29.5, -1246.88]} scale={4}>
+      <group position={[-102.65, -31.66, 169.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1368.75, 25.38, -1578.13]} scale={4}>
+      <group position={[891.1, -35.79, -161.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[63.76, 77.57, -1571.15]} scale={4}>
+      <group position={[-413.89, 16.41, -154.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1593.75, 48, -1443.75]} scale={4}>
+      <group position={[1116.1, -13.16, -27.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-587.5, 16, -643.75]} scale={4}>
+      <group position={[-1065.15, -45.16, 772.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1475, 20, 531.25]} scale={4}>
+      <group position={[-1952.65, -41.16, 1947.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[162.5, 35, 2056.25]} scale={4}>
+      <group position={[-315.15, -26.16, 3472.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-96.88, 13, -1759.38]} scale={4}>
+      <group position={[-574.52, -48.16, -342.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1971.88, 8.15, -1178.13]} scale={4}>
+      <group position={[1494.23, -53.01, 238.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[509.38, 54.75, -1393.75]} scale={4}>
+      <group position={[31.73, -6.41, 22.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1700, 24, 493.75]} scale={4}>
+      <group position={[-2177.65, -37.16, 1910.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1112.5, 24, 1906.25]} scale={4}>
+      <group position={[-1590.15, -37.16, 3322.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1375, 58, -1265.63]} scale={4}>
+      <group position={[897.35, -3.16, 150.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[150, 46.5, -1428.13]} scale={4}>
+      <group position={[-327.65, -14.66, -11.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[784.38, 56.5, -1281.25]} scale={4}>
+      <group position={[306.73, -4.66, 135.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-887.5, 5, -218.75]} scale={4}>
+      <group position={[-1343.07, -49.52, 1157.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-375, 9, -1006.25]} scale={4}>
+      <group position={[-852.65, -52.16, 410.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-462.5, 15, -581.25]} scale={4}>
+      <group position={[-940.15, -46.16, 835.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-775, 24, 543.75]} scale={4}>
+      <group position={[-1252.65, -37.16, 1960.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1662.5, 5.75, -1684.38]} scale={4}>
+      <group position={[849.13, 11.77, 3441.74]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[856.25, 60, -1284.38]} scale={4}>
+      <group position={[378.6, -1.16, 132.07]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[534.38, 49.38, -1500]} scale={4}>
+      <group position={[56.73, -11.79, -83.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1275, 15, 856.25]} scale={4}>
+      <group position={[-1752.65, -46.16, 2272.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-275, 10.5, -1412.5]} scale={4}>
+      <group position={[-752.65, -50.66, 3.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1300, 18, 2131.25]} scale={4}>
+      <group position={[-1777.65, -43.16, 3547.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2087.5, 28, -1353.13]} scale={4}>
+      <group position={[1609.85, -33.16, 63.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[9.38, 39, -1493.75]} scale={4}>
+      <group position={[-468.27, -22.16, -77.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-700, 23, 293.75]} scale={4}>
+      <group position={[-1177.65, -38.16, 1710.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1096.88, 40.75, -1468.75]} scale={4}>
+      <group position={[619.23, -20.41, -52.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-15.63, 19.25, -1246.88]} scale={4}>
+      <group position={[-493.27, -41.91, 169.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[665.63, 61.44, -1521.88]} scale={4}>
+      <group position={[187.98, 0.28, -105.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1762.5, 20, 543.75]} scale={4}>
+      <group position={[-2240.15, -41.16, 1960.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[287.5, 24, 1418.75]} scale={4}>
+      <group position={[-190.15, -37.16, 2835.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[959.38, 27.69, -1571.88]} scale={4}>
+      <group position={[481.73, -33.47, -155.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[153.13, 22, -1228.13]} scale={4}>
+      <group position={[-324.52, -39.16, 188.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[75, 30, -1375]} scale={4}>
+      <group position={[-402.65, -31.16, 41.45]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[828.13, 7.06, -1834.38]} scale={4}>
+      <group position={[457.39, -42.88, 1689.26]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1425, 26, -931.25]} scale={4}>
+      <group position={[947.35, -35.16, 485.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1762.5, 6, -1675]} scale={4}>
+      <group position={[708.94, 51.04, 3345.5]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[775, 79.95, -1537.5]} scale={4}>
+      <group position={[297.35, 18.79, -121.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[262.5, 99, -1556.25]} scale={4}>
+      <group position={[-215.15, 37.84, -139.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[487.5, 18, -731.25]} scale={4}>
+      <group position={[9.85, -43.16, 685.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1421.88, 40.25, -1184.38]} scale={4}>
+      <group position={[944.23, -20.91, 232.07]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2050, 12, 1831.25]} scale={4}>
+      <group position={[1572.35, -49.16, 3247.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[771.88, 53.56, -1596.88]} scale={4}>
+      <group position={[294.23, -7.6, -180.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-159.38, 22.26, -1475]} scale={4}>
+      <group position={[-637.02, -38.9, -58.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1121.88, 30, -1168.75]} scale={4}>
+      <group position={[644.23, -31.16, 247.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[587.5, 57.25, -1390.63]} scale={4}>
+      <group position={[109.85, -3.91, 25.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-71.88, 18.38, -1362.5]} scale={4}>
+      <group position={[-549.52, -42.79, 53.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[187.5, 28.5, -1775]} scale={4}>
+      <group position={[-290.15, -32.66, -358.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[643.75, 47, -1556.25]} scale={4}>
+      <group position={[166.1, -14.16, -139.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[175, 6, -1915.63]} scale={4}>
+      <group position={[-305.53, -49.57, 1562.14]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[702.7, 83.62, -1416.23]} scale={4}>
+      <group position={[225.05, 22.46, 0.22]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[768.75, 33.25, -1650]} scale={4}>
+      <group position={[291.1, -27.91, -233.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[559.38, 13.37, -1796.88]} scale={4}>
+      <group position={[81.73, -47.79, -380.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[706.25, 73.5, -1512.5]} scale={4}>
+      <group position={[228.6, 12.34, -96.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-137.5, 36, 1393.75]} scale={4}>
+      <group position={[-615.15, -25.16, 2810.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1562.5, 23, 1781.25]} scale={4}>
+      <group position={[-2040.15, -38.16, 3197.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1462.5, 108, 1431.25]} scale={4}>
+      <group position={[-1940.15, 46.84, 2847.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1925, 13.13, -1165.63]} scale={4}>
+      <group position={[1447.35, -48.03, 250.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1487.5, 13, -768.75]} scale={4}>
+      <group position={[1009.85, -48.16, 647.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1600, 12, 368.75]} scale={4}>
+      <group position={[1122.35, -49.16, 1785.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[278.13, 84.25, -1481.25]} scale={4}>
+      <group position={[-199.52, 23.09, -64.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[6.25, 12.76, -1184.38]} scale={4}>
+      <group position={[-471.4, -48.4, 232.07]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-875, 32, 1106.25]} scale={4}>
+      <group position={[-1352.65, -29.16, 2522.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[387.5, 41, 493.75]} scale={4}>
+      <group position={[-90.15, -20.16, 1910.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[400, 15, -6.25]} scale={4}>
+      <group position={[-77.65, -46.16, 1410.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1493.75, 42.5, -1206.25]} scale={4}>
+      <group position={[1016.1, -18.66, 210.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[153.13, 7.56, -1843.75]} scale={4}>
+      <group position={[-324.52, -53.6, -427.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1300, 39, 1168.75]} scale={4}>
+      <group position={[-1777.65, -22.16, 2585.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[100, 16, -493.75]} scale={4}>
+      <group position={[-377.65, -45.16, 922.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[853.13, 86.81, -1353.13]} scale={4}>
+      <group position={[375.48, 25.65, 63.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1165.63, 5, -1693.75]} scale={4}>
+      <group position={[-1772.29, 16.76, 2955.87]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[165.63, 55.5, -1443.75]} scale={4}>
+      <group position={[-312.02, -5.66, -27.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[862.5, 11, -218.75]} scale={4}>
+      <group position={[384.85, -50.16, 1197.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-262.5, 16.75, -1178.13]} scale={4}>
+      <group position={[-740.15, -44.41, 238.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[731.25, 25.88, -1709.38]} scale={4}>
+      <group position={[253.6, -35.29, -292.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2056.25, 23.84, -1328.13]} scale={4}>
+      <group position={[1578.6, -37.32, 88.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1012.5, 20, 1981.25]} scale={4}>
+      <group position={[-1490.15, -41.16, 3397.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1553.13, 40.25, -1231.25]} scale={4}>
+      <group position={[1075.48, -20.91, 185.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1703.13, 48, -1487.5]} scale={4}>
+      <group position={[1225.48, -13.16, -71.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[812.5, 13, -218.75]} scale={4}>
+      <group position={[334.85, -48.16, 1197.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1353.13, 76, -1331.25]} scale={4}>
+      <group position={[875.48, 14.84, 85.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-221.88, 28.63, -1625]} scale={4}>
+      <group position={[-699.52, -32.54, -208.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-215.63, 18.88, -1337.5]} scale={4}>
+      <group position={[-693.27, -42.29, 78.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1462.5, 32, 1631.25]} scale={4}>
+      <group position={[984.85, -29.16, 3047.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2112.5, 6, 331.25]} scale={4}>
+      <group position={[1634.85, -55.16, 1747.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[825, 10, 1231.25]} scale={4}>
+      <group position={[347.35, -51.16, 2647.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1356.25, 73, -1321.88]} scale={4}>
+      <group position={[878.6, 11.84, 94.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[218.75, 6.75, -1878.13]} scale={4}>
+      <group position={[-258.9, -54.41, -461.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1715.63, 36.69, -1246.88]} scale={4}>
+      <group position={[1237.98, -24.47, 169.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-2075, 6, 1793.75]} scale={4}>
+      <group position={[-2383.05, -49.6, 3143.73]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[143.75, 6, -1871.88]} scale={4}>
+      <group position={[-336.78, -49.57, 1605.89]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[62.5, 6, -1881.25]} scale={4}>
+      <group position={[-418.03, -49.57, 1596.52]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1871.88, 37, -1318.75]} scale={4}>
+      <group position={[1394.23, -24.16, 97.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[575, 15, -706.25]} scale={4}>
+      <group position={[97.35, -46.16, 710.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[462.5, 19, 693.75]} scale={4}>
+      <group position={[-15.15, -42.16, 2110.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1534.38, 30.75, -1162.5]} scale={4}>
+      <group position={[1056.73, -30.41, 253.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[100, 14, -6.25]} scale={4}>
+      <group position={[-377.65, -47.16, 1410.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[125, 67.5, -1662.5]} scale={4}>
+      <group position={[-352.65, 6.34, -246.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[659.38, 73.5, -1396.88]} scale={4}>
+      <group position={[181.73, 12.34, 19.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[712.63, 85.13, -1448.61]} scale={4}>
+      <group position={[234.99, 23.97, -32.16]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[325, 23.6, -1806.25]} scale={4}>
+      <group position={[-152.65, -37.56, -389.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1190.63, 33, -1209.38]} scale={4}>
+      <group position={[712.98, -28.16, 207.07]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-512.5, 5, 468.75]} scale={4}>
+      <group position={[-1069.57, -53.5, 1845.71]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1950, 45.5, -1409.38]} scale={4}>
+      <group position={[1472.35, -15.66, 7.07]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[190.33, 97.18, -1556.87]} scale={4}>
+      <group position={[-287.32, 36.02, -140.42]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[400, 17, 718.75]} scale={4}>
+      <group position={[-77.65, -44.16, 2135.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-206.25, 19.5, -1331.25]} scale={4}>
+      <group position={[-683.9, -41.66, 85.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[778.13, 47.25, -1609.38]} scale={4}>
+      <group position={[300.48, -13.91, -192.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1400, 32, 806.25]} scale={4}>
+      <group position={[922.35, -29.16, 2222.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1737.5, 8, 81.25]} scale={4}>
+      <group position={[1259.85, -53.16, 1497.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[612.5, 14, 493.75]} scale={4}>
+      <group position={[134.85, -47.16, 1910.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1550, 33, -1562.5]} scale={4}>
+      <group position={[1072.35, -28.16, -146.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-125, 23, -756.25]} scale={4}>
+      <group position={[-602.65, -38.16, 660.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[112.5, 34, 1468.75]} scale={4}>
+      <group position={[-365.15, -27.16, 2885.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1000, 62.25, -1434.38]} scale={4}>
+      <group position={[522.35, 1.09, -17.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[456.25, 61.75, -1509.38]} scale={4}>
+      <group position={[-21.4, 0.59, -92.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[837.5, 22.5, -1678.13]} scale={4}>
+      <group position={[359.85, -38.66, -261.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[775, 92, -1362.5]} scale={4}>
+      <group position={[297.35, 30.84, 53.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[162.5, 18, 893.75]} scale={4}>
+      <group position={[-315.15, -43.16, 2310.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[156.25, 75, -1656.25]} scale={4}>
+      <group position={[-321.4, 13.84, -239.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1793.75, 56.63, -1409.38]} scale={4}>
+      <group position={[1316.1, -4.54, 7.07]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[68.75, 50, -1696.88]} scale={4}>
+      <group position={[-408.9, -11.16, -280.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1703.13, 13.25, -1650]} scale={4}>
+      <group position={[1225.48, -47.91, -233.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[59.38, 13.24, -1818.75]} scale={4}>
+      <group position={[-418.27, -47.93, -402.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-287.5, 13, 68.75]} scale={4}>
+      <group position={[-765.15, -48.16, 1485.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2375, 12, 981.25]} scale={4}>
+      <group position={[1897.35, -49.16, 2397.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-221.88, 12.5, -1728.13]} scale={4}>
+      <group position={[-699.52, -48.66, -311.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-190.63, 20.75, -1321.88]} scale={4}>
+      <group position={[-668.27, -40.41, 94.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1237.5, 18, -531.25]} scale={4}>
+      <group position={[759.85, -43.16, 885.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[578.13, 36.5, -1312.5]} scale={4}>
+      <group position={[100.48, -24.66, 103.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1912.5, 34, -1303.13]} scale={4}>
+      <group position={[1434.85, -27.16, 113.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[62.5, 69.5, -1637.5]} scale={4}>
+      <group position={[-415.15, 8.34, -221.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1631.25, 9.5, -1634.38]} scale={4}>
+      <group position={[1153.6, -51.66, -217.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1612.5, 17, 456.25]} scale={4}>
+      <group position={[-2090.15, -44.16, 1872.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1750, 15, 206.25]} scale={4}>
+      <group position={[1272.35, -46.16, 1622.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[750, 15, 118.75]} scale={4}>
+      <group position={[272.35, -46.16, 1535.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1396.88, 34, -1150]} scale={4}>
+      <group position={[919.23, -27.16, 266.45]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2100, 31.5, -1387.5]} scale={4}>
+      <group position={[1622.35, -29.66, 28.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1043.75, 6, -1762.5]} scale={4}>
+      <group position={[-1893.62, 30.48, 2887.02]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[371.88, 54, -1400]} scale={4}>
+      <group position={[-105.77, -7.16, 16.45]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1400, 10, -81.25]} scale={4}>
+      <group position={[922.35, -51.16, 1335.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1650, 6, -1712.5]} scale={4}>
+      <group position={[836.63, 23.27, 3413.61]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-115.63, 36, -1581.25]} scale={4}>
+      <group position={[-593.27, -25.16, -164.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1150, 16, 556.25]} scale={4}>
+      <group position={[672.35, -45.16, 1972.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1503.13, 70.63, -1400]} scale={4}>
+      <group position={[1025.48, 9.46, 16.45]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1096.88, 54.75, -1381.25]} scale={4}>
+      <group position={[619.23, -6.41, 35.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-165.63, 22, -1396.88]} scale={4}>
+      <group position={[-643.27, -39.16, 19.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-62.5, 14.75, -1321.88]} scale={4}>
+      <group position={[-540.15, -46.41, 94.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1875, 34.5, -1303.13]} scale={4}>
+      <group position={[1397.35, -26.66, 113.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-209.38, 16.13, -1437.5]} scale={4}>
+      <group position={[-687.02, -45.04, -21.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[315.63, 6, -1909.38]} scale={4}>
+      <group position={[-55.11, -49.36, 1614.26]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1618.75, 43.75, -1475]} scale={4}>
+      <group position={[1141.1, -17.41, -58.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[375, 68.75, -1578.13]} scale={4}>
+      <group position={[-102.65, 7.59, -161.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[75, 67.75, -1528.13]} scale={4}>
+      <group position={[-402.65, 6.59, -111.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[987.5, 110, 1831.25]} scale={4}>
+      <group position={[509.85, 48.84, 3247.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[481.25, 58.25, -1487.5]} scale={4}>
+      <group position={[3.6, -2.91, -71.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[240.63, 29.25, -1168.75]} scale={4}>
+      <group position={[-237.02, -31.91, 247.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-25, 10, -331.25]} scale={4}>
+      <group position={[-502.65, -51.16, 1085.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[728.13, 55.5, -1581.25]} scale={4}>
+      <group position={[250.48, -5.66, -164.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1981.25, 44.5, -1387.5]} scale={4}>
+      <group position={[1503.6, -16.66, 28.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1150, 38, 981.25]} scale={4}>
+      <group position={[672.35, -23.16, 2397.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-59.38, 16.25, -1300]} scale={4}>
+      <group position={[-537.02, -44.91, 116.45]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[850, 10, 1281.25]} scale={4}>
+      <group position={[372.35, -51.16, 2697.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[365.63, 42.25, -1712.5]} scale={4}>
+      <group position={[-112.02, -18.91, -296.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[662.5, 65.5, -1484.38]} scale={4}>
+      <group position={[184.85, 4.34, -67.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[25, 19, -1300]} scale={4}>
+      <group position={[-452.65, -42.16, 116.45]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[918.75, 50.25, -1496.88]} scale={4}>
+      <group position={[441.1, -10.91, -80.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[362.5, 44, -1356.25]} scale={4}>
+      <group position={[-115.15, -17.16, 60.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-300, 15, -1256.25]} scale={4}>
+      <group position={[-777.65, -46.16, 160.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1553.13, 46.69, -1453.13]} scale={4}>
+      <group position={[1075.48, -14.47, -36.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[243.75, 52, -1406.25]} scale={4}>
+      <group position={[-233.9, -9.16, 10.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2071.88, 17, -1550]} scale={4}>
+      <group position={[1594.23, -44.16, -133.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1653.13, 35.25, -1537.5]} scale={4}>
+      <group position={[1175.48, -25.91, -121.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[387.5, 29.75, -1240.63]} scale={4}>
+      <group position={[-90.15, -31.41, 175.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[290.63, 6.25, -1915.63]} scale={4}>
+      <group position={[-80.11, -49.11, 1608.01]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1746.88, 7.75, -1662.5]} scale={4}>
+      <group position={[1269.23, -53.41, -246.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1893.75, 48.75, -1387.5]} scale={4}>
+      <group position={[1416.1, -12.41, 28.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[668.75, 12.54, -1793.75]} scale={4}>
+      <group position={[191.1, -48.62, -377.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1425, 5, 168.75]} scale={4}>
+      <group position={[800.74, -48.36, 1793.12]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1434.38, 35.75, -1162.5]} scale={4}>
+      <group position={[956.73, -25.41, 253.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1387.5, 7, 806.25]} scale={4}>
+      <group position={[-1865.15, -54.16, 2222.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[12.5, 43, -1690.63]} scale={4}>
+      <group position={[-465.15, -18.16, -274.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[287.5, 41, 2068.75]} scale={4}>
+      <group position={[-190.15, -20.16, 3485.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1800, 13, -568.75]} scale={4}>
+      <group position={[1322.35, -48.16, 847.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-312.5, 16, -781.25]} scale={4}>
+      <group position={[-790.15, -45.16, 635.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[362.5, 11, 1056.25]} scale={4}>
+      <group position={[-115.15, -50.16, 2472.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-134.38, 9, -1812.5]} scale={4}>
+      <group position={[-612.02, -52.16, -396.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1312.5, 21, 1956.25]} scale={4}>
+      <group position={[-1790.15, -40.16, 3372.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1350, 37.75, -1209.38]} scale={4}>
+      <group position={[872.35, -23.41, 207.07]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1162.5, 6, -381.25]} scale={4}>
+      <group position={[-1534.14, -51.08, 968.71]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1081.25, 37, -1256.25]} scale={4}>
+      <group position={[603.6, -24.16, 160.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1881.25, 9, -1612.5]} scale={4}>
+      <group position={[1403.6, -52.16, -196.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1509.38, 29.88, -1562.5]} scale={4}>
+      <group position={[1031.73, -31.29, -146.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[718.75, 23.5, -1743.75]} scale={4}>
+      <group position={[241.1, -37.66, -327.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[75, 16, 81.25]} scale={4}>
+      <group position={[-402.65, -45.16, 1497.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-115.63, 23, -1381.25]} scale={4}>
+      <group position={[-593.27, -38.16, 35.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[331.25, 35.75, -1321.88]} scale={4}>
+      <group position={[-146.4, -25.41, 94.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1750, 31, 2131.25]} scale={4}>
+      <group position={[1272.35, -30.16, 3547.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[687.5, 23, 1568.75]} scale={4}>
+      <group position={[209.85, -38.16, 2985.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-350, 11, -1581.25]} scale={4}>
+      <group position={[-827.65, -50.16, -164.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1959.38, 42, -1431.25]} scale={4}>
+      <group position={[1481.73, -19.16, -14.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1887.5, 17, 1243.75]} scale={4}>
+      <group position={[1409.85, -44.16, 2660.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[812.5, 16, -1759.38]} scale={4}>
+      <group position={[334.85, -45.16, -342.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[946.88, 73.75, -1378.13]} scale={4}>
+      <group position={[469.23, 12.59, 38.32]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-3.13, 49.44, -1640.63]} scale={4}>
+      <group position={[-480.77, -11.72, -224.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-125, 18, -793.75]} scale={4}>
+      <group position={[-602.65, -43.16, 622.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[531.25, 37, -1593.75]} scale={4}>
+      <group position={[53.6, -24.16, -177.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[234.38, 30, -1306.25]} scale={4}>
+      <group position={[-243.27, -31.16, 110.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[390.63, 32.31, -1259.38]} scale={4}>
+      <group position={[-87.02, -28.85, 157.07]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[275, 24.25, -1271.88]} scale={4}>
+      <group position={[-202.65, -36.91, 144.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[750, 93.95, -1496.88]} scale={4}>
+      <group position={[272.35, 32.79, -80.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[315.63, 24.75, -1193.75]} scale={4}>
+      <group position={[-162.02, -36.41, 222.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[346.88, 48.75, -1703.13]} scale={4}>
+      <group position={[-130.77, -12.41, -286.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-162.5, 14, 1143.75]} scale={4}>
+      <group position={[-640.15, -47.16, 2560.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[225, 16, 943.75]} scale={4}>
+      <group position={[-252.65, -45.16, 2360.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[871.88, 33.75, -1184.38]} scale={4}>
+      <group position={[394.23, -27.41, 232.07]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1943.75, 11, -1156.25]} scale={4}>
+      <group position={[1466.1, -50.16, 260.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[371.88, 69.5, -1578.13]} scale={4}>
+      <group position={[-105.77, 8.34, -161.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1365.63, 34.38, -1162.5]} scale={4}>
+      <group position={[887.98, -26.79, 253.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1634.38, 7.25, -1653.13]} scale={4}>
+      <group position={[1156.73, -53.91, -236.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1453.13, 83.63, -1362.5]} scale={4}>
+      <group position={[975.48, 22.46, 53.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[850, 33.25, -1146.88]} scale={4}>
+      <group position={[372.35, -27.91, 269.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-812.5, 29, 1243.75]} scale={4}>
+      <group position={[-1290.15, -32.16, 2660.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[31.25, 34.38, -1434.38]} scale={4}>
+      <group position={[-446.4, -26.79, -17.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1987.5, 24, 906.25]} scale={4}>
+      <group position={[1509.85, -37.16, 2322.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[962.5, 15, -643.75]} scale={4}>
+      <group position={[484.85, -46.16, 772.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1062.5, 28, -1031.25]} scale={4}>
+      <group position={[584.85, -33.16, 385.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-2162.5, 9, 431.25]} scale={4}>
+      <group position={[-2640.15, -52.16, 1847.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[390.63, 20.25, -1765.63]} scale={4}>
+      <group position={[-87.02, -40.91, -349.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-84.38, 20.75, -1375]} scale={4}>
+      <group position={[-562.02, -40.41, 41.45]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1971.88, 31, -1515.63]} scale={4}>
+      <group position={[1494.23, -30.16, -99.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1140.63, 29.19, -1159.38]} scale={4}>
+      <group position={[662.98, -31.97, 257.07]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1359.38, 48.75, -1240.63]} scale={4}>
+      <group position={[881.73, -12.41, 175.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-87.5, 13, -1762.5]} scale={4}>
+      <group position={[-565.15, -48.16, -346.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1190.63, 5.5, -1712.5]} scale={4}>
+      <group position={[-1742.31, 27.45, 2927.58]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[768.75, 4.75, -1850]} scale={4}>
+      <group position={[398.01, -45.19, 1673.64]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1596.88, 49.5, -1437.5]} scale={4}>
+      <group position={[1119.23, -11.66, -21.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[665.63, 6.5, -1825]} scale={4}>
+      <group position={[187.98, -54.66, -408.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1256.25, 70.5, -1412.5]} scale={4}>
+      <group position={[778.6, 9.34, 3.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[628.13, 18.75, -1746.88]} scale={4}>
+      <group position={[150.48, -42.41, -330.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1187.5, 14, 256.25]} scale={4}>
+      <group position={[709.85, -47.16, 1672.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1250, 25, -1543.75]} scale={4}>
+      <group position={[772.35, -36.16, -127.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1856.25, 6.38, -1646.88]} scale={4}>
+      <group position={[684.44, 29.82, 3234.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[250, 20, -468.75]} scale={4}>
+      <group position={[-227.65, -41.16, 947.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1715.63, 30, -1568.75]} scale={4}>
+      <group position={[1237.98, -31.16, -152.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[796.88, 48.25, -1256.25]} scale={4}>
+      <group position={[319.23, -12.91, 160.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[312.5, 28, 581.25]} scale={4}>
+      <group position={[-165.15, -33.16, 1997.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[206.25, 28, -1281.25]} scale={4}>
+      <group position={[-271.4, -33.16, 135.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2121.88, 18, -1321.88]} scale={4}>
+      <group position={[1644.23, -43.16, 94.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-287.5, 16, -1656.25]} scale={4}>
+      <group position={[-765.15, -45.16, -239.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[48.64, 73.5, -1600]} scale={4}>
+      <group position={[-429.01, 12.34, -183.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1400, 50.25, -1240.63]} scale={4}>
+      <group position={[922.35, -10.91, 175.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1862.5, 17, 2118.75]} scale={4}>
+      <group position={[-2340.15, -44.16, 3535.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1634.38, 53.75, -1331.25]} scale={4}>
+      <group position={[1156.73, -7.41, 85.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-562.5, 9, 481.25]} scale={4}>
+      <group position={[-1040.15, -52.16, 1897.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[678.13, 30.88, -1662.5]} scale={4}>
+      <group position={[200.48, -30.29, -246.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[243.75, 98.75, -1553.13]} scale={4}>
+      <group position={[-233.9, 37.59, -136.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1818.75, 44.88, -1340.63]} scale={4}>
+      <group position={[1341.1, -16.29, 75.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[450, 11, -1843.75]} scale={4}>
+      <group position={[-27.65, -50.16, -427.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1778.13, 51.63, -1450]} scale={4}>
+      <group position={[1300.48, -9.54, -33.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[175, 14, -493.75]} scale={4}>
+      <group position={[-302.65, -47.16, 922.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[731.25, 77.5, -1525]} scale={4}>
+      <group position={[253.6, 16.34, -108.55]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[887.5, 55.25, -1271.88]} scale={4}>
+      <group position={[409.85, -5.91, 144.57]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1587.5, 15, -406.25]} scale={4}>
+      <group position={[1109.85, -46.16, 1010.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1500, 5, -1696.88]} scale={4}>
+      <group position={[686.63, 11.02, 3429.24]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1153.13, 24.75, -1531.25]} scale={4}>
+      <group position={[675.48, -36.41, -114.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[425, 69.5, -1534.38]} scale={4}>
+      <group position={[-52.65, 8.34, -117.93]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-462.5, 15, -631.25]} scale={4}>
+      <group position={[-940.15, -46.16, 785.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1825, 6, 81.25]} scale={4}>
+      <group position={[1336.92, -53.26, 1506.12]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[396.88, 46.19, -1362.5]} scale={4}>
+      <group position={[-80.77, -14.97, 53.95]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2021.88, 6, -1193.75]} scale={4}>
+      <group position={[1190.97, -41.84, 559.79]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-300, 14, -1418.75]} scale={4}>
+      <group position={[-777.65, -47.16, -2.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1459.38, 51.5, -1250]} scale={4}>
+      <group position={[981.73, -9.66, 166.45]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[337.5, 83.21, -1562.5]} scale={4}>
+      <group position={[-140.15, 22.05, -146.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-2200, 31, 293.75]} scale={4}>
+      <group position={[-2677.65, -30.16, 1710.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[253.13, 8.94, -1853.13]} scale={4}>
+      <group position={[-224.52, -52.22, -436.68]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[378.13, 63.4, -1431.25]} scale={4}>
+      <group position={[-99.52, 2.24, -14.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[15.63, 50.75, -1665.63]} scale={4}>
+      <group position={[-462.02, -10.41, -249.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[934.38, 12, -1756.25]} scale={4}>
+      <group position={[456.73, -49.16, -339.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[350, 74, -1456.25]} scale={4}>
+      <group position={[-127.65, 12.84, -39.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[2109.38, 14.25, -1290.63]} scale={4}>
+      <group position={[1631.73, -46.91, 125.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1209.38, 17.75, -1618.75]} scale={4}>
+      <group position={[731.73, -43.41, -202.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1087.5, 35, -1568.75]} scale={4}>
+      <group position={[609.85, -26.16, -152.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[300, 53, -1393.75]} scale={4}>
+      <group position={[-177.65, -8.16, 22.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1781.25, 29.75, -1546.88]} scale={4}>
+      <group position={[1303.6, -31.41, -130.43]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[34.38, 17.5, -1215.63]} scale={4}>
+      <group position={[-443.27, -43.66, 200.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-462.5, 29, 1831.25]} scale={4}>
+      <group position={[-940.15, -32.16, 3247.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[868.75, 60, -1506.25]} scale={4}>
+      <group position={[391.1, -1.16, -89.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-475, 15, -631.25]} scale={4}>
+      <group position={[-952.65, -46.16, 785.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[993.75, 39.25, -1537.5]} scale={4}>
+      <group position={[516.1, -21.91, -121.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1450, 14, -506.25]} scale={4}>
+      <group position={[972.35, -47.16, 910.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[921.88, 55.75, -1465.63]} scale={4}>
+      <group position={[444.23, -5.41, -49.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[9.38, 13, -1781.25]} scale={4}>
+      <group position={[-468.27, -48.16, -364.8]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[878.13, 86.13, -1375]} scale={4}>
+      <group position={[400.48, 24.97, 41.45]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[731.25, 47, -1612.5]} scale={4}>
+      <group position={[253.6, -14.16, -196.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1996.88, 5.5, -1593.75]} scale={4}>
+      <group position={[875.19, 28.82, 3240.51]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1456.25, 70.75, -1415.63]} scale={4}>
+      <group position={[978.6, 9.59, 0.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1753.13, 56.97, -1400]} scale={4}>
+      <group position={[1275.48, -4.2, 16.45]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-587.5, 17, -431.25]} scale={4}>
+      <group position={[-1065.15, -44.16, 985.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1000, 10.5, -1715.63]} scale={4}>
+      <group position={[522.35, -50.66, -299.18]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-1262.5, 35, 1181.25]} scale={4}>
+      <group position={[-1740.15, -26.16, 2597.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[493.75, 13, -1787.5]} scale={4}>
+      <group position={[16.1, -48.16, -371.05]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-425, 32, 1793.75]} scale={4}>
+      <group position={[-902.65, -29.16, 3210.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1453.13, 5.25, -1681.25]} scale={4}>
+      <group position={[-1481.11, -14.04, 2969.16]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-171.88, 21.44, -1190.63]} scale={4}>
+      <group position={[-649.52, -39.72, 225.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1350, 22, -1006.25]} scale={4}>
+      <group position={[872.35, -39.16, 410.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1375, 39, 781.25]} scale={4}>
+      <group position={[897.35, -22.16, 2197.7]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[-159.38, 22.25, -1468.75]} scale={4}>
+      <group position={[-637.02, -38.91, -52.3]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1100, 6, -1750]} scale={4}>
+      <group position={[-1837.37, 30.48, 2899.52]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[743.75, 45.63, -1240.63]} scale={4}>
+      <group position={[266.1, -15.54, 175.82]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[1228.13, 69.25, -1306.25]} scale={4}>
+      <group position={[750.48, 8.09, 110.2]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[160.01, 92.89, -1553.2]} rotation={[-Math.PI, 0.18, -Math.PI]} scale={4}>
+      <group position={[-317.63, 31.73, -136.75]} rotation={[-Math.PI, 0.18, -Math.PI]} scale={4}>
         <mesh geometry={nodes.AM113_004_Platanus001.geometry} material={materials.AM113_004_Platanus_Bark} />
         <mesh geometry={nodes.AM113_004_Platanus001_1.geometry} material={materials.AM113_004_Platanus} />
       </group>
-      <group position={[112.89, 98.04, -1584.44]} rotation={[0.01, 0, 0]} scale={3.96}>
-        <mesh geometry={nodes['Obj3d66-1273285-7890-17'].geometry} material={materials['Mat3d66-1273285-214-3912']} />
+      <group position={[-364.75, 36.88, -167.99]} rotation={[0.01, 0, 0]} scale={3.96}>
+        <mesh geometry={nodes['Obj3d66-1273285-7890-17'].geometry} material={materials['Mat3d66-1273285-199-8051.001']} />
         <mesh geometry={nodes['Obj3d66-1273285-7890-17_1'].geometry} material={materials['Mat3d66-1273285-211-2838']} />
-        <mesh geometry={nodes['Obj3d66-1273285-7890-17_2'].geometry} material={materials['Mat3d66-1273285-212-3515']} />
+        <mesh geometry={nodes['Obj3d66-1273285-7890-17_2'].geometry} material={materials['Mat3d66-1273285-199-8051.001']} />
         <mesh geometry={nodes['Obj3d66-1273285-7890-17_3'].geometry} material={materials['Mat3d66-1273285-215-2913']} />
         <mesh geometry={nodes['Obj3d66-1273285-7890-17_4'].geometry} material={materials['Mat3d66-1273285-216-6322']} />
         <mesh geometry={nodes['Obj3d66-1273285-7890-17_5'].geometry} material={materials['Mat3d66-1273285-217-4294']} />
         <mesh geometry={nodes['Obj3d66-1273285-7890-17_6'].geometry} material={materials['Mat3d66-1273285-218-2134']} />
       </group>
-      <group position={[112.73, 87.84, -1584.49]} scale={3.61}>
+      <group position={[-364.92, 26.67, -168.04]} scale={3.61}>
         <mesh geometry={nodes['Obj3d66-1273285-7840-371001'].geometry} material={materials['Mat3d66-1273285-200-4520.001']} />
         <mesh geometry={nodes['Obj3d66-1273285-7840-371001_1'].geometry} material={materials['Mat3d66-1273285-198-3636.001']} />
         <mesh geometry={nodes['Obj3d66-1273285-7840-371001_2'].geometry} material={materials['Mat3d66-1273285-199-8051.001']} />
@@ -8046,195 +8046,195 @@ export function Ground(props) {
         <mesh geometry={nodes['Obj3d66-1273285-7840-371001_6'].geometry} material={materials['Mat3d66-1273285-204-6276.001']} />
         <mesh geometry={nodes['Obj3d66-1273285-7840-371001_7'].geometry} material={materials['Mat3d66-1273285-205-4794.001']} />
       </group>
-      <mesh geometry={nodes.牌坊08002.geometry} material={materials['Mat3d66-4700324-16-1654']} position={[111.83, 99.23, -1584.35]} rotation={[-Math.PI / 2, 1.21, Math.PI / 2]} scale={1.86} />
-      <mesh geometry={nodes.Cube061.geometry} material={nodes.Cube061.material} position={[-313.29, 12.27, -464.87]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.37, 0.07, 0.96]} />
-      <mesh geometry={nodes.Cube060.geometry} material={nodes.Cube060.material} position={[-313.29, 12.27, -461.89]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.37, 0.07, 0.96]} />
-      <mesh geometry={nodes.Cube059.geometry} material={nodes.Cube059.material} position={[-317.41, 14.64, -461.09]} rotation={[0, -1.57, 0]} scale={[0.21, 0.05, 1.41]} />
-      <mesh geometry={nodes.Cube058.geometry} material={nodes.Cube058.material} position={[-317.41, 14.64, -466.09]} rotation={[0, -1.57, 0]} scale={[0.21, 0.05, 1.41]} />
-      <mesh geometry={nodes.Cube057.geometry} material={nodes.Cube057.material} position={[-317.27, 14.35, -466.89]} rotation={[0, -1.57, 0]} scale={[0.37, 0.05, 1.82]} />
-      <mesh geometry={nodes.Cube056.geometry} material={nodes.Cube056.material} position={[-317.27, 13.93, -467.71]} rotation={[0, -1.57, 0]} scale={[0.37, 0.05, 1.82]} />
-      <mesh geometry={nodes.Cube055.geometry} material={nodes.Cube055.material} position={[-317.27, 13.5, -468.52]} rotation={[0, -1.57, 0]} scale={[0.37, 0.05, 1.82]} />
-      <mesh geometry={nodes.Cube054.geometry} material={nodes.Cube054.material} position={[-318.9, 13.81, -466.89]} rotation={[0, -1.57, 0]} scale={[0.18, 0.49, 0.06]} />
-      <mesh geometry={nodes.Cube053.geometry} material={nodes.Cube053.material} position={[-315.62, 13.81, -466.89]} rotation={[0, -1.57, 0]} scale={[0.18, 0.49, 0.06]} />
-      <mesh geometry={nodes.Cube052.geometry} material={nodes.Cube052.material} position={[-315.62, 13.62, -467.7]} rotation={[0, -1.57, 0]} scale={[0.18, 0.26, 0.06]} />
-      <mesh geometry={nodes.Cube051.geometry} material={nodes.Cube051.material} position={[-315.62, 13.39, -468.52]} rotation={[0, -1.57, 0]} scale={[0.18, 0.07, 0.06]} />
-      <mesh geometry={nodes.Cube050.geometry} material={nodes.Cube050.material} position={[-318.91, 13.37, -466.85]} rotation={[0, -1.57, 0]} scale={[0.19, 0.04, 0.2]} />
-      <mesh geometry={nodes.Cube049.geometry} material={nodes.Cube049.material} position={[-315.63, 13.37, -466.85]} rotation={[0, -1.57, 0]} scale={[0.19, 0.04, 0.2]} />
-      <mesh geometry={nodes.Plane.geometry} material={nodes.Plane.material} position={[-302.64, 11.32, -463.35]} scale={[23.41, 3.95, 15.45]} />
-      <mesh geometry={nodes.Cube048.geometry} material={nodes.Cube048.material} position={[-313.21, 12.25, -465.25]} rotation={[Math.PI, 0, Math.PI]} scale={[0.29, 0.06, 0.08]} />
-      <mesh geometry={nodes.Torus059.geometry} material={nodes.Torus059.material} position={[-300.77, 15.15, -460.8]} rotation={[Math.PI / 2, 0, Math.PI]} scale={0.17} />
-      <mesh geometry={nodes.Torus058.geometry} material={nodes.Torus058.material} position={[-301.3, 15.15, -465.17]} rotation={[Math.PI / 2, 0, Math.PI]} scale={0.17} />
-      <mesh geometry={nodes.Cube047.geometry} material={nodes.Cube047.material} position={[-298.17, 11.34, -469.1]} rotation={[Math.PI, 0, Math.PI]} scale={[0.19, 0.05, 0.2]} />
-      <mesh geometry={nodes.Cube046.geometry} material={nodes.Cube046.material} position={[-298.17, 11.34, -472.38]} rotation={[Math.PI, 0, Math.PI]} scale={[0.19, 0.05, 0.2]} />
-      <mesh geometry={nodes.Cube045.geometry} material={nodes.Cube045.material} position={[-296.5, 11.36, -469.09]} rotation={[Math.PI, 0, Math.PI]} scale={[0.18, 0.09, 0.06]} />
-      <mesh geometry={nodes.Cube044.geometry} material={nodes.Cube044.material} position={[-297.32, 11.68, -469.09]} rotation={[Math.PI, 0, Math.PI]} scale={[0.18, 0.35, 0.06]} />
-      <mesh geometry={nodes.Cube043.geometry} material={nodes.Cube043.material} position={[-298.13, 11.93, -469.09]} rotation={[Math.PI, 0, Math.PI]} scale={[0.18, 0.67, 0.06]} />
-      <mesh geometry={nodes.Cube042.geometry} material={nodes.Cube042.material} position={[-298.13, 11.93, -472.37]} rotation={[Math.PI, 0, Math.PI]} scale={[0.18, 0.67, 0.06]} />
-      <mesh geometry={nodes.Cube041.geometry} material={nodes.Cube041.material} position={[-296.49, 11.51, -470.74]} rotation={[Math.PI, 0, Math.PI]} scale={[0.37, 0.07, 1.82]} />
-      <mesh geometry={nodes.Cube040.geometry} material={nodes.Cube040.material} position={[-297.31, 12.09, -470.74]} rotation={[Math.PI, 0, Math.PI]} scale={[0.37, 0.07, 1.82]} />
-      <mesh geometry={nodes.Cube039.geometry} material={nodes.Cube039.material} position={[-298.13, 12.66, -470.74]} rotation={[Math.PI, 0, Math.PI]} scale={[0.37, 0.07, 1.82]} />
-      <mesh geometry={nodes.Torus051.geometry} material={nodes.Torus051.material} position={[-299.01, 15.15, -469.4]} rotation={[Math.PI / 2, 0, Math.PI / 2]} scale={0.17} />
-      <mesh geometry={nodes.Torus057.geometry} material={nodes.Torus057.material} position={[-323.38, 15.15, -472.32]} rotation={[Math.PI / 2, 0, Math.PI]} scale={0.17} />
-      <mesh geometry={nodes.Torus056.geometry} material={nodes.Torus056.material} position={[-318.84, 15.15, -472.32]} rotation={[Math.PI / 2, 0, Math.PI]} scale={0.17} />
-      <mesh geometry={nodes.Torus055.geometry} material={nodes.Torus055.material} position={[-314.38, 15.15, -472.32]} rotation={[Math.PI / 2, 0, Math.PI]} scale={0.17} />
-      <mesh geometry={nodes.Torus054.geometry} material={nodes.Torus054.material} position={[-309.88, 15.15, -472.32]} rotation={[Math.PI / 2, 0, Math.PI]} scale={0.17} />
-      <mesh geometry={nodes.Torus053.geometry} material={nodes.Torus053.material} position={[-305.36, 15.15, -472.32]} rotation={[Math.PI / 2, 0, Math.PI]} scale={0.17} />
-      <mesh geometry={nodes.Torus052.geometry} material={nodes.Torus052.material} position={[-300.86, 15.15, -472.32]} rotation={[Math.PI / 2, 0, Math.PI]} scale={0.17} />
-      <mesh geometry={nodes.Torus050.geometry} material={nodes.Torus050.material} position={[-327.77, 15.15, -470.34]} rotation={[Math.PI / 2, 0, Math.PI / 2]} scale={0.17} />
-      <mesh geometry={nodes.Torus049.geometry} material={nodes.Torus049.material} position={[-298.7, 15.15, -456.41]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.17} />
-      <mesh geometry={nodes.Torus048.geometry} material={nodes.Torus048.material} position={[-327.79, 15.15, -456.41]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.17} />
-      <mesh geometry={nodes.Torus047.geometry} material={nodes.Torus047.material} position={[-325.6, 15.15, -454.43]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus046.geometry} material={nodes.Torus046.material} position={[-321.11, 15.15, -454.43]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus045.geometry} material={nodes.Torus045.material} position={[-316.58, 15.15, -454.43]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus044.geometry} material={nodes.Torus044.material} position={[-312.08, 15.15, -454.43]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus043.geometry} material={nodes.Torus043.material} position={[-307.63, 15.15, -454.43]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus042.geometry} material={nodes.Torus042.material} position={[-303.09, 15.15, -454.43]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Cube038.geometry} material={nodes.Cube038.material} position={[-313.29, 13.3, -468.77]} rotation={[Math.PI, 0, Math.PI]} scale={[0.37, 0.07, 3.95]} />
-      <mesh geometry={nodes.Cube037.geometry} material={nodes.Cube037.material} position={[-313.21, 12.25, -468.79]} rotation={[Math.PI, 0, Math.PI]} scale={[0.29, 0.06, 0.08]} />
-      <mesh geometry={nodes.Cube034.geometry} material={nodes.Cube034.material} position={[-313.29, 12.27, -472.69]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.37, 0.07, 0.96]} />
-      <mesh geometry={nodes.Cube036.geometry} material={nodes.Cube036.material} position={[-313.24, 12.27, -454.08]} rotation={[Math.PI / 2, 0, 0]} scale={[0.37, 0.07, 0.96]} />
-      <mesh geometry={nodes.Cube035.geometry} material={nodes.Cube035.material} position={[-313.31, 12.25, -457.99]} scale={[0.29, 0.06, 0.08]} />
-      <mesh geometry={nodes.Torus041.geometry} material={nodes.Torus041.material} position={[-281.07, 13.11, -452.61]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.17} />
-      <mesh geometry={nodes.Torus040.geometry} material={nodes.Torus040.material} position={[-281.07, 13.11, -457.13]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.17} />
-      <mesh geometry={nodes.Torus039.geometry} material={nodes.Torus039.material} position={[-281.07, 13.11, -461.64]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.17} />
-      <mesh geometry={nodes.Torus038.geometry} material={nodes.Torus038.material} position={[-281.07, 13.11, -466.17]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.17} />
-      <mesh geometry={nodes.Torus037.geometry} material={nodes.Torus037.material} position={[-281.07, 13.11, -470.72]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.17} />
-      <mesh geometry={nodes.Torus036.geometry} material={nodes.Torus036.material} position={[-353.5, 13.11, -470.72]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.17} />
-      <mesh geometry={nodes.Torus035.geometry} material={nodes.Torus035.material} position={[-353.5, 13.11, -466.17]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.17} />
-      <mesh geometry={nodes.Torus034.geometry} material={nodes.Torus034.material} position={[-353.5, 13.11, -461.64]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.17} />
-      <mesh geometry={nodes.Torus033.geometry} material={nodes.Torus033.material} position={[-353.5, 13.11, -457.13]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.17} />
-      <mesh geometry={nodes.Torus032.geometry} material={nodes.Torus032.material} position={[-353.5, 13.11, -452.61]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.17} />
-      <mesh geometry={nodes.Torus031.geometry} material={nodes.Torus031.material} position={[-321.62, 13.11, -475.17]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus030.geometry} material={nodes.Torus030.material} position={[-326.17, 13.11, -475.17]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus029.geometry} material={nodes.Torus029.material} position={[-330.7, 13.11, -475.17]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus028.geometry} material={nodes.Torus028.material} position={[-335.22, 13.11, -475.17]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus027.geometry} material={nodes.Torus027.material} position={[-339.83, 13.11, -475.17]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus026.geometry} material={nodes.Torus026.material} position={[-344.4, 13.11, -475.17]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus025.geometry} material={nodes.Torus025.material} position={[-348.94, 13.11, -475.17]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus024.geometry} material={nodes.Torus024.material} position={[-353.5, 13.11, -475.17]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus023.geometry} material={nodes.Torus023.material} position={[-317.06, 13.11, -475.17]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus022.geometry} material={nodes.Torus022.material} position={[-312.55, 13.11, -475.17]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus021.geometry} material={nodes.Torus021.material} position={[-308.02, 13.11, -475.17]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus020.geometry} material={nodes.Torus020.material} position={[-303.47, 13.11, -475.17]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus019.geometry} material={nodes.Torus019.material} position={[-285.3, 13.11, -475.17]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus017.geometry} material={nodes.Torus017.material} position={[-294.38, 13.11, -475.17]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus008.geometry} material={nodes.Torus008.material} position={[-298.9, 13.11, -475.17]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus016.geometry} material={nodes.Torus016.material} position={[-298.9, 13.11, -452.26]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus015.geometry} material={nodes.Torus015.material} position={[-294.38, 13.11, -452.26]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus014.geometry} material={nodes.Torus014.material} position={[-289.85, 13.11, -452.26]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus009.geometry} material={nodes.Torus009.material} position={[-285.3, 13.11, -452.26]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus013.geometry} material={nodes.Torus013.material} position={[-303.47, 13.11, -452.26]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus012.geometry} material={nodes.Torus012.material} position={[-308.02, 13.11, -452.26]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus011.geometry} material={nodes.Torus011.material} position={[-312.55, 13.11, -452.26]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus010.geometry} material={nodes.Torus010.material} position={[-317.06, 13.11, -452.26]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus007.geometry} material={nodes.Torus007.material} position={[-353.5, 13.11, -452.26]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus006.geometry} material={nodes.Torus006.material} position={[-348.94, 13.11, -452.26]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus005.geometry} material={nodes.Torus005.material} position={[-344.4, 13.11, -452.26]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus004.geometry} material={nodes.Torus004.material} position={[-339.83, 13.11, -452.26]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus003.geometry} material={nodes.Torus003.material} position={[-335.22, 13.11, -452.26]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus002.geometry} material={nodes.Torus002.material} position={[-330.7, 13.11, -452.26]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus001.geometry} material={nodes.Torus001.material} position={[-326.17, 13.11, -452.26]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Torus.geometry} material={nodes.Torus.material} position={[-321.62, 13.11, -452.26]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
-      <mesh geometry={nodes.Cube033.geometry} material={nodes.Cube033.material} position={[-313.24, 13.3, -458.01]} scale={[0.37, 0.07, 3.95]} />
-      <mesh geometry={nodes.Cube031.geometry} material={nodes.Cube031.material} position={[-352.55, 45.93, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cylinder032.geometry} material={nodes.Cylinder032.material} position={[-354.32, 46.19, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Cylinder031.geometry} material={nodes.Cylinder031.material} position={[-352.18, 39.16, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Cube030.geometry} material={nodes.Cube030.material} position={[-350.41, 38.9, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cube029.geometry} material={nodes.Cube029.material} position={[-346.91, 32.39, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cylinder029.geometry} material={nodes.Cylinder029.material} position={[-348.69, 32.65, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Circle030.geometry} material={materials.材质} position={[-348.69, 31.36, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Circle029.geometry} material={materials.材质} position={[-344.01, 25.65, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Cylinder028.geometry} material={nodes.Cylinder028.material} position={[-344.01, 26.94, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Cube028.geometry} material={nodes.Cube028.material} position={[-342.23, 26.68, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cube027.geometry} material={nodes.Cube027.material} position={[-336.55, 22.02, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cylinder027.geometry} material={nodes.Cylinder027.material} position={[-338.32, 22.28, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Circle028.geometry} material={materials.材质} position={[-338.32, 20.99, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Circle027.geometry} material={materials.材质} position={[-331.81, 17.52, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Cylinder026.geometry} material={nodes.Cylinder026.material} position={[-331.81, 18.81, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Cube026.geometry} material={nodes.Cube026.material} position={[-330.03, 18.55, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cube025.geometry} material={nodes.Cube025.material} position={[-322.99, 16.39, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cylinder025.geometry} material={nodes.Cylinder025.material} position={[-324.77, 16.64, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Circle026.geometry} material={materials.材质} position={[-324.77, 15.35, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Circle025.geometry} material={materials.材质} position={[-317.42, 14.65, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Cylinder024.geometry} material={nodes.Cylinder024.material} position={[-317.42, 15.94, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Cube024.geometry} material={nodes.Cube024.material} position={[-315.65, 15.68, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cube023.geometry} material={nodes.Cube023.material} position={[-308.31, 16.4, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cylinder023.geometry} material={nodes.Cylinder023.material} position={[-310.09, 16.66, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Circle024.geometry} material={materials.材质} position={[-310.09, 15.37, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Circle023.geometry} material={materials.材质} position={[-303.05, 17.54, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Cylinder022.geometry} material={nodes.Cylinder022.material} position={[-303.05, 18.83, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Cube022.geometry} material={nodes.Cube022.material} position={[-301.28, 18.57, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cube021.geometry} material={nodes.Cube021.material} position={[-294.77, 22.03, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cylinder021.geometry} material={nodes.Cylinder021.material} position={[-296.55, 22.29, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Circle022.geometry} material={materials.材质} position={[-296.55, 20.99, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Circle021.geometry} material={materials.材质} position={[-290.86, 25.67, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Cylinder020.geometry} material={nodes.Cylinder020.material} position={[-290.86, 26.96, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Cube020.geometry} material={nodes.Cube020.material} position={[-289.08, 26.7, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cube019.geometry} material={nodes.Cube019.material} position={[-284.41, 32.4, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cylinder019.geometry} material={nodes.Cylinder019.material} position={[-286.18, 32.66, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Circle020.geometry} material={materials.材质} position={[-286.18, 31.37, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Circle019.geometry} material={materials.材质} position={[-282.72, 37.88, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Cylinder018.geometry} material={nodes.Cylinder018.material} position={[-282.72, 39.17, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Cube018.geometry} material={nodes.Cube018.material} position={[-280.94, 38.91, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cube017.geometry} material={nodes.Cube017.material} position={[-278.78, 45.92, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cylinder017.geometry} material={nodes.Cylinder017.material} position={[-280.56, 46.18, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Circle018.geometry} material={materials.材质} position={[-280.56, 44.89, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Circle017.geometry} material={materials.材质} position={[-279.8, 52.25, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Cylinder016.geometry} material={nodes.Cylinder016.material} position={[-279.8, 53.54, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Cube016.geometry} material={nodes.Cube016.material} position={[-278.02, 53.28, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cube015.geometry} material={nodes.Cube015.material} position={[-278.75, 60.6, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cylinder015.geometry} material={nodes.Cylinder015.material} position={[-280.53, 60.86, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Circle016.geometry} material={materials.材质} position={[-280.53, 59.57, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Circle015.geometry} material={materials.材质} position={[-282.7, 66.65, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Cylinder014.geometry} material={nodes.Cylinder014.material} position={[-282.7, 67.94, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Cube014.geometry} material={nodes.Cube014.material} position={[-280.92, 67.68, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cube013.geometry} material={nodes.Cube013.material} position={[-284.37, 74.15, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cylinder013.geometry} material={nodes.Cylinder013.material} position={[-286.15, 74.41, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Circle014.geometry} material={materials.材质} position={[-286.15, 73.12, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Circle013.geometry} material={materials.材质} position={[-290.82, 78.84, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Cylinder012.geometry} material={nodes.Cylinder012.material} position={[-290.82, 80.13, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Cube012.geometry} material={nodes.Cube012.material} position={[-289.04, 79.87, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cube011.geometry} material={nodes.Cube011.material} position={[-294.73, 84.58, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cylinder011.geometry} material={nodes.Cylinder011.material} position={[-296.51, 84.84, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Circle012.geometry} material={materials.材质} position={[-296.51, 83.55, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Circle011.geometry} material={materials.材质} position={[-303.05, 87.02, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Cylinder010.geometry} material={nodes.Cylinder010.material} position={[-303.05, 88.31, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Cube010.geometry} material={nodes.Cube010.material} position={[-301.27, 88.05, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cube009.geometry} material={nodes.Cube009.material} position={[-308.31, 90.18, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cylinder009.geometry} material={nodes.Cylinder009.material} position={[-310.09, 90.44, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Circle010.geometry} material={materials.材质} position={[-310.09, 89.15, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Circle009.geometry} material={materials.材质} position={[-317.46, 89.88, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Cylinder008.geometry} material={nodes.Cylinder008.material} position={[-317.46, 91.17, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Cube008.geometry} material={nodes.Cube008.material} position={[-315.68, 90.91, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cube007.geometry} material={nodes.Cube007.material} position={[-323.01, 90.17, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cylinder007.geometry} material={nodes.Cylinder007.material} position={[-324.79, 90.43, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Circle008.geometry} material={materials.材质} position={[-324.79, 89.14, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Circle007.geometry} material={materials.材质} position={[-331.82, 87.02, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Cylinder006.geometry} material={nodes.Cylinder006.material} position={[-331.82, 88.31, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Cube006.geometry} material={nodes.Cube006.material} position={[-330.05, 88.05, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cube005.geometry} material={nodes.Cube005.material} position={[-336.58, 84.56, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cylinder005.geometry} material={nodes.Cylinder005.material} position={[-338.36, 84.82, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Circle006.geometry} material={materials.材质} position={[-338.36, 83.53, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Circle005.geometry} material={materials.材质} position={[-344.04, 78.84, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Cylinder004.geometry} material={nodes.Cylinder004.material} position={[-344.04, 80.13, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Cube004.geometry} material={nodes.Cube004.material} position={[-342.27, 79.87, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cube003.geometry} material={nodes.Cube003.material} position={[-346.92, 74.17, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cylinder002.geometry} material={nodes.Cylinder002.material} position={[-348.7, 74.43, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Circle004.geometry} material={materials.材质} position={[-348.7, 73.14, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Circle003.geometry} material={materials.材质} position={[-352.18, 66.63, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Cylinder001.geometry} material={nodes.Cylinder001.material} position={[-352.18, 67.92, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Cube002.geometry} material={nodes.Cube002.material} position={[-350.4, 67.66, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cube001.geometry} material={nodes.Cube001.material} position={[-352.55, 60.61, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cylinder000.geometry} material={nodes.Cylinder000.material} position={[-354.33, 60.87, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Circle002.geometry} material={materials.材质} position={[-354.33, 59.58, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Circle000.geometry} material={materials.材质} position={[-355.02, 52.26, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Cylinder045.geometry} material={nodes.Cylinder045.material} position={[-317.42, 58.14, -461.2]} rotation={[-Math.PI / 2, 0, 0]} scale={1.17} />
-      <mesh geometry={nodes.Cylinder030.geometry} material={materials['材质.002']} position={[-317.42, 58.14, -466.55]} rotation={[Math.PI / 2, 1.37, Math.PI / 2]} scale={[0.16, 37.79, 0.16]} />
-      <mesh geometry={nodes.Cylinder003.geometry} material={nodes.Cylinder003.material} position={[-355.02, 53.55, -463.63]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
-      <mesh geometry={nodes.Cube.geometry} material={nodes.Cube.material} position={[-353.24, 53.3, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
-      <mesh geometry={nodes.Cube032.geometry} material={materials['材质.006']} position={[-317.42, 11.08, -459.98]} rotation={[0, -Math.PI / 2, 0]} scale={[0.41, 0.16, 1.14]} />
-      <mesh geometry={nodes.Circle032.geometry} material={materials.材质} position={[-354.32, 44.9, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
-      <mesh geometry={nodes.Circle031.geometry} material={materials.材质} position={[-352.18, 37.87, -463.6]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.牌坊08002.geometry} material={materials['Mat3d66-4700324-16-1654']} position={[-365.82, 38.07, -167.9]} rotation={[-Math.PI / 2, 1.21, Math.PI / 2]} scale={1.86} />
+      <mesh geometry={nodes.Cube061.geometry} material={nodes.Cube061.material} position={[-759.12, -45.59, 441.23]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.37, 0.07, 0.96]} />
+      <mesh geometry={nodes.Cube060.geometry} material={nodes.Cube060.material} position={[-759.12, -45.59, 444.21]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.37, 0.07, 0.96]} />
+      <mesh geometry={nodes.Cube059.geometry} material={nodes.Cube059.material} position={[-763.25, -43.22, 445.01]} rotation={[0, -1.57, 0]} scale={[0.21, 0.05, 1.41]} />
+      <mesh geometry={nodes.Cube058.geometry} material={nodes.Cube058.material} position={[-763.25, -43.22, 440.02]} rotation={[0, -1.57, 0]} scale={[0.21, 0.05, 1.41]} />
+      <mesh geometry={nodes.Cube057.geometry} material={nodes.Cube057.material} position={[-763.1, -43.52, 439.21]} rotation={[0, -1.57, 0]} scale={[0.37, 0.05, 1.82]} />
+      <mesh geometry={nodes.Cube056.geometry} material={nodes.Cube056.material} position={[-763.1, -43.93, 438.39]} rotation={[0, -1.57, 0]} scale={[0.37, 0.05, 1.82]} />
+      <mesh geometry={nodes.Cube055.geometry} material={nodes.Cube055.material} position={[-763.1, -44.36, 437.58]} rotation={[0, -1.57, 0]} scale={[0.37, 0.05, 1.82]} />
+      <mesh geometry={nodes.Cube054.geometry} material={nodes.Cube054.material} position={[-764.73, -44.05, 439.21]} rotation={[0, -1.57, 0]} scale={[0.18, 0.49, 0.06]} />
+      <mesh geometry={nodes.Cube053.geometry} material={nodes.Cube053.material} position={[-761.45, -44.05, 439.21]} rotation={[0, -1.57, 0]} scale={[0.18, 0.49, 0.06]} />
+      <mesh geometry={nodes.Cube052.geometry} material={nodes.Cube052.material} position={[-761.45, -44.24, 438.41]} rotation={[0, -1.57, 0]} scale={[0.18, 0.26, 0.06]} />
+      <mesh geometry={nodes.Cube051.geometry} material={nodes.Cube051.material} position={[-761.45, -44.47, 437.58]} rotation={[0, -1.57, 0]} scale={[0.18, 0.07, 0.06]} />
+      <mesh geometry={nodes.Cube050.geometry} material={nodes.Cube050.material} position={[-764.74, -44.49, 439.26]} rotation={[0, -1.57, 0]} scale={[0.19, 0.04, 0.2]} />
+      <mesh geometry={nodes.Cube049.geometry} material={nodes.Cube049.material} position={[-761.46, -44.49, 439.26]} rotation={[0, -1.57, 0]} scale={[0.19, 0.04, 0.2]} />
+      <mesh geometry={nodes.Plane.geometry} material={nodes.Plane.material} position={[-748.47, -46.55, 442.75]} scale={[23.41, 3.95, 15.45]} />
+      <mesh geometry={nodes.Cube048.geometry} material={nodes.Cube048.material} position={[-759.05, -45.61, 440.85]} rotation={[Math.PI, 0, Math.PI]} scale={[0.29, 0.06, 0.08]} />
+      <mesh geometry={nodes.Torus059.geometry} material={nodes.Torus059.material} position={[-746.6, -42.71, 445.31]} rotation={[Math.PI / 2, 0, Math.PI]} scale={0.17} />
+      <mesh geometry={nodes.Torus058.geometry} material={nodes.Torus058.material} position={[-747.13, -42.71, 440.93]} rotation={[Math.PI / 2, 0, Math.PI]} scale={0.17} />
+      <mesh geometry={nodes.Cube047.geometry} material={nodes.Cube047.material} position={[-744, -46.53, 437]} rotation={[Math.PI, 0, Math.PI]} scale={[0.19, 0.05, 0.2]} />
+      <mesh geometry={nodes.Cube046.geometry} material={nodes.Cube046.material} position={[-744, -46.53, 433.73]} rotation={[Math.PI, 0, Math.PI]} scale={[0.19, 0.05, 0.2]} />
+      <mesh geometry={nodes.Cube045.geometry} material={nodes.Cube045.material} position={[-742.33, -46.5, 437.01]} rotation={[Math.PI, 0, Math.PI]} scale={[0.18, 0.09, 0.06]} />
+      <mesh geometry={nodes.Cube044.geometry} material={nodes.Cube044.material} position={[-743.15, -46.19, 437.01]} rotation={[Math.PI, 0, Math.PI]} scale={[0.18, 0.35, 0.06]} />
+      <mesh geometry={nodes.Cube043.geometry} material={nodes.Cube043.material} position={[-743.96, -45.93, 437.01]} rotation={[Math.PI, 0, Math.PI]} scale={[0.18, 0.67, 0.06]} />
+      <mesh geometry={nodes.Cube042.geometry} material={nodes.Cube042.material} position={[-743.96, -45.93, 433.74]} rotation={[Math.PI, 0, Math.PI]} scale={[0.18, 0.67, 0.06]} />
+      <mesh geometry={nodes.Cube041.geometry} material={nodes.Cube041.material} position={[-742.33, -46.36, 435.37]} rotation={[Math.PI, 0, Math.PI]} scale={[0.37, 0.07, 1.82]} />
+      <mesh geometry={nodes.Cube040.geometry} material={nodes.Cube040.material} position={[-743.14, -45.77, 435.37]} rotation={[Math.PI, 0, Math.PI]} scale={[0.37, 0.07, 1.82]} />
+      <mesh geometry={nodes.Cube039.geometry} material={nodes.Cube039.material} position={[-743.96, -45.21, 435.37]} rotation={[Math.PI, 0, Math.PI]} scale={[0.37, 0.07, 1.82]} />
+      <mesh geometry={nodes.Torus051.geometry} material={nodes.Torus051.material} position={[-744.84, -42.71, 436.7]} rotation={[Math.PI / 2, 0, Math.PI / 2]} scale={0.17} />
+      <mesh geometry={nodes.Torus057.geometry} material={nodes.Torus057.material} position={[-769.21, -42.71, 433.79]} rotation={[Math.PI / 2, 0, Math.PI]} scale={0.17} />
+      <mesh geometry={nodes.Torus056.geometry} material={nodes.Torus056.material} position={[-764.67, -42.71, 433.79]} rotation={[Math.PI / 2, 0, Math.PI]} scale={0.17} />
+      <mesh geometry={nodes.Torus055.geometry} material={nodes.Torus055.material} position={[-760.21, -42.71, 433.79]} rotation={[Math.PI / 2, 0, Math.PI]} scale={0.17} />
+      <mesh geometry={nodes.Torus054.geometry} material={nodes.Torus054.material} position={[-755.71, -42.71, 433.79]} rotation={[Math.PI / 2, 0, Math.PI]} scale={0.17} />
+      <mesh geometry={nodes.Torus053.geometry} material={nodes.Torus053.material} position={[-751.19, -42.71, 433.79]} rotation={[Math.PI / 2, 0, Math.PI]} scale={0.17} />
+      <mesh geometry={nodes.Torus052.geometry} material={nodes.Torus052.material} position={[-746.69, -42.71, 433.79]} rotation={[Math.PI / 2, 0, Math.PI]} scale={0.17} />
+      <mesh geometry={nodes.Torus050.geometry} material={nodes.Torus050.material} position={[-773.6, -42.71, 435.76]} rotation={[Math.PI / 2, 0, Math.PI / 2]} scale={0.17} />
+      <mesh geometry={nodes.Torus049.geometry} material={nodes.Torus049.material} position={[-744.53, -42.71, 449.69]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.17} />
+      <mesh geometry={nodes.Torus048.geometry} material={nodes.Torus048.material} position={[-773.62, -42.71, 449.69]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.17} />
+      <mesh geometry={nodes.Torus047.geometry} material={nodes.Torus047.material} position={[-771.44, -42.71, 451.67]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus046.geometry} material={nodes.Torus046.material} position={[-766.94, -42.71, 451.67]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus045.geometry} material={nodes.Torus045.material} position={[-762.41, -42.71, 451.67]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus044.geometry} material={nodes.Torus044.material} position={[-757.92, -42.71, 451.67]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus043.geometry} material={nodes.Torus043.material} position={[-753.46, -42.71, 451.67]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus042.geometry} material={nodes.Torus042.material} position={[-748.92, -42.71, 451.67]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Cube038.geometry} material={nodes.Cube038.material} position={[-759.12, -44.57, 437.34]} rotation={[Math.PI, 0, Math.PI]} scale={[0.37, 0.07, 3.95]} />
+      <mesh geometry={nodes.Cube037.geometry} material={nodes.Cube037.material} position={[-759.05, -45.61, 437.32]} rotation={[Math.PI, 0, Math.PI]} scale={[0.29, 0.06, 0.08]} />
+      <mesh geometry={nodes.Cube034.geometry} material={nodes.Cube034.material} position={[-759.12, -45.59, 433.42]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.37, 0.07, 0.96]} />
+      <mesh geometry={nodes.Cube036.geometry} material={nodes.Cube036.material} position={[-759.07, -45.59, 452.02]} rotation={[Math.PI / 2, 0, 0]} scale={[0.37, 0.07, 0.96]} />
+      <mesh geometry={nodes.Cube035.geometry} material={nodes.Cube035.material} position={[-759.14, -45.61, 448.12]} scale={[0.29, 0.06, 0.08]} />
+      <mesh geometry={nodes.Torus041.geometry} material={nodes.Torus041.material} position={[-726.9, -44.75, 453.49]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.17} />
+      <mesh geometry={nodes.Torus040.geometry} material={nodes.Torus040.material} position={[-726.9, -44.75, 448.97]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.17} />
+      <mesh geometry={nodes.Torus039.geometry} material={nodes.Torus039.material} position={[-726.9, -44.75, 444.46]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.17} />
+      <mesh geometry={nodes.Torus038.geometry} material={nodes.Torus038.material} position={[-726.9, -44.75, 439.93]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.17} />
+      <mesh geometry={nodes.Torus037.geometry} material={nodes.Torus037.material} position={[-726.9, -44.75, 435.38]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.17} />
+      <mesh geometry={nodes.Torus036.geometry} material={nodes.Torus036.material} position={[-799.33, -44.75, 435.38]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.17} />
+      <mesh geometry={nodes.Torus035.geometry} material={nodes.Torus035.material} position={[-799.33, -44.75, 439.93]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.17} />
+      <mesh geometry={nodes.Torus034.geometry} material={nodes.Torus034.material} position={[-799.33, -44.75, 444.46]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.17} />
+      <mesh geometry={nodes.Torus033.geometry} material={nodes.Torus033.material} position={[-799.33, -44.75, 448.97]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.17} />
+      <mesh geometry={nodes.Torus032.geometry} material={nodes.Torus032.material} position={[-799.33, -44.75, 453.49]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.17} />
+      <mesh geometry={nodes.Torus031.geometry} material={nodes.Torus031.material} position={[-767.45, -44.75, 430.94]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus030.geometry} material={nodes.Torus030.material} position={[-772, -44.75, 430.94]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus029.geometry} material={nodes.Torus029.material} position={[-776.53, -44.75, 430.94]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus028.geometry} material={nodes.Torus028.material} position={[-781.05, -44.75, 430.94]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus027.geometry} material={nodes.Torus027.material} position={[-785.66, -44.75, 430.94]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus026.geometry} material={nodes.Torus026.material} position={[-790.23, -44.75, 430.94]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus025.geometry} material={nodes.Torus025.material} position={[-794.77, -44.75, 430.94]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus024.geometry} material={nodes.Torus024.material} position={[-799.33, -44.75, 430.94]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus023.geometry} material={nodes.Torus023.material} position={[-762.9, -44.75, 430.94]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus022.geometry} material={nodes.Torus022.material} position={[-758.38, -44.75, 430.94]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus021.geometry} material={nodes.Torus021.material} position={[-753.85, -44.75, 430.94]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus020.geometry} material={nodes.Torus020.material} position={[-749.3, -44.75, 430.94]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus019.geometry} material={nodes.Torus019.material} position={[-731.13, -44.75, 430.94]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus017.geometry} material={nodes.Torus017.material} position={[-740.21, -44.75, 430.94]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus008.geometry} material={nodes.Torus008.material} position={[-744.73, -44.75, 430.94]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus016.geometry} material={nodes.Torus016.material} position={[-744.73, -44.75, 453.84]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus015.geometry} material={nodes.Torus015.material} position={[-740.21, -44.75, 453.84]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus014.geometry} material={nodes.Torus014.material} position={[-735.68, -44.75, 453.84]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus009.geometry} material={nodes.Torus009.material} position={[-731.13, -44.75, 453.84]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus013.geometry} material={nodes.Torus013.material} position={[-749.3, -44.75, 453.84]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus012.geometry} material={nodes.Torus012.material} position={[-753.85, -44.75, 453.84]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus011.geometry} material={nodes.Torus011.material} position={[-758.38, -44.75, 453.84]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus010.geometry} material={nodes.Torus010.material} position={[-762.9, -44.75, 453.84]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus007.geometry} material={nodes.Torus007.material} position={[-799.33, -44.75, 453.84]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus006.geometry} material={nodes.Torus006.material} position={[-794.77, -44.75, 453.84]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus005.geometry} material={nodes.Torus005.material} position={[-790.23, -44.75, 453.84]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus004.geometry} material={nodes.Torus004.material} position={[-785.66, -44.75, 453.84]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus003.geometry} material={nodes.Torus003.material} position={[-781.05, -44.75, 453.84]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus002.geometry} material={nodes.Torus002.material} position={[-776.53, -44.75, 453.84]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus001.geometry} material={nodes.Torus001.material} position={[-772, -44.75, 453.84]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Torus.geometry} material={nodes.Torus.material} position={[-767.45, -44.75, 453.84]} rotation={[Math.PI / 2, 0, 0]} scale={0.17} />
+      <mesh geometry={nodes.Cube033.geometry} material={nodes.Cube033.material} position={[-759.07, -44.57, 448.1]} scale={[0.37, 0.07, 3.95]} />
+      <mesh geometry={nodes.Cube031.geometry} material={nodes.Cube031.material} position={[-798.38, -11.94, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cylinder032.geometry} material={nodes.Cylinder032.material} position={[-800.15, -11.68, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Cylinder031.geometry} material={nodes.Cylinder031.material} position={[-798.02, -18.7, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Cube030.geometry} material={nodes.Cube030.material} position={[-796.24, -18.96, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cube029.geometry} material={nodes.Cube029.material} position={[-792.74, -25.47, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cylinder029.geometry} material={nodes.Cylinder029.material} position={[-794.52, -25.22, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Circle030.geometry} material={materials.材质} position={[-794.52, -26.51, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Circle029.geometry} material={materials.材质} position={[-789.84, -32.21, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Cylinder028.geometry} material={nodes.Cylinder028.material} position={[-789.84, -30.92, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Cube028.geometry} material={nodes.Cube028.material} position={[-788.06, -31.18, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cube027.geometry} material={nodes.Cube027.material} position={[-782.38, -35.84, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cylinder027.geometry} material={nodes.Cylinder027.material} position={[-784.16, -35.58, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Circle028.geometry} material={materials.材质} position={[-784.16, -36.87, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Circle027.geometry} material={materials.材质} position={[-777.64, -40.34, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Cylinder026.geometry} material={nodes.Cylinder026.material} position={[-777.64, -39.05, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Cube026.geometry} material={nodes.Cube026.material} position={[-775.86, -39.31, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cube025.geometry} material={nodes.Cube025.material} position={[-768.82, -41.48, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cylinder025.geometry} material={nodes.Cylinder025.material} position={[-770.6, -41.22, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Circle026.geometry} material={materials.材质} position={[-770.6, -42.51, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Circle025.geometry} material={materials.材质} position={[-763.25, -43.22, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Cylinder024.geometry} material={nodes.Cylinder024.material} position={[-763.25, -41.93, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Cube024.geometry} material={nodes.Cube024.material} position={[-761.48, -42.19, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cube023.geometry} material={nodes.Cube023.material} position={[-754.14, -41.46, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cylinder023.geometry} material={nodes.Cylinder023.material} position={[-755.92, -41.2, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Circle024.geometry} material={materials.材质} position={[-755.92, -42.49, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Circle023.geometry} material={materials.材质} position={[-748.89, -40.32, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Cylinder022.geometry} material={nodes.Cylinder022.material} position={[-748.89, -39.03, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Cube022.geometry} material={nodes.Cube022.material} position={[-747.11, -39.29, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cube021.geometry} material={nodes.Cube021.material} position={[-740.6, -35.84, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cylinder021.geometry} material={nodes.Cylinder021.material} position={[-742.38, -35.58, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Circle022.geometry} material={materials.材质} position={[-742.38, -36.87, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Circle021.geometry} material={materials.材质} position={[-736.69, -32.2, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Cylinder020.geometry} material={nodes.Cylinder020.material} position={[-736.69, -30.91, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Cube020.geometry} material={nodes.Cube020.material} position={[-734.91, -31.16, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cube019.geometry} material={nodes.Cube019.material} position={[-730.24, -25.47, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cylinder019.geometry} material={nodes.Cylinder019.material} position={[-732.02, -25.21, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Circle020.geometry} material={materials.材质} position={[-732.02, -26.5, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Circle019.geometry} material={materials.材质} position={[-728.55, -19.98, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Cylinder018.geometry} material={nodes.Cylinder018.material} position={[-728.55, -18.69, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Cube018.geometry} material={nodes.Cube018.material} position={[-726.77, -18.95, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cube017.geometry} material={nodes.Cube017.material} position={[-724.62, -11.94, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cylinder017.geometry} material={nodes.Cylinder017.material} position={[-726.39, -11.68, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Circle018.geometry} material={materials.材质} position={[-726.39, -12.97, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Circle017.geometry} material={materials.材质} position={[-725.63, -5.62, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Cylinder016.geometry} material={nodes.Cylinder016.material} position={[-725.63, -4.33, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Cube016.geometry} material={nodes.Cube016.material} position={[-723.85, -4.59, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cube015.geometry} material={nodes.Cube015.material} position={[-724.58, 2.73, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cylinder015.geometry} material={nodes.Cylinder015.material} position={[-726.36, 2.99, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Circle016.geometry} material={materials.材质} position={[-726.36, 1.7, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Circle015.geometry} material={materials.材质} position={[-728.53, 8.78, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Cylinder014.geometry} material={nodes.Cylinder014.material} position={[-728.53, 10.07, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Cube014.geometry} material={nodes.Cube014.material} position={[-726.76, 9.81, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cube013.geometry} material={nodes.Cube013.material} position={[-730.21, 16.28, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cylinder013.geometry} material={nodes.Cylinder013.material} position={[-731.98, 16.54, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Circle014.geometry} material={materials.材质} position={[-731.98, 15.25, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Circle013.geometry} material={materials.材质} position={[-736.65, 20.97, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Cylinder012.geometry} material={nodes.Cylinder012.material} position={[-736.65, 22.26, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Cube012.geometry} material={nodes.Cube012.material} position={[-734.88, 22.01, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cube011.geometry} material={nodes.Cube011.material} position={[-740.56, 26.72, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cylinder011.geometry} material={nodes.Cylinder011.material} position={[-742.34, 26.98, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Circle012.geometry} material={materials.材质} position={[-742.34, 25.69, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Circle011.geometry} material={materials.材质} position={[-748.88, 29.16, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Cylinder010.geometry} material={nodes.Cylinder010.material} position={[-748.88, 30.45, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Cube010.geometry} material={nodes.Cube010.material} position={[-747.1, 30.19, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cube009.geometry} material={nodes.Cube009.material} position={[-754.14, 32.32, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cylinder009.geometry} material={nodes.Cylinder009.material} position={[-755.92, 32.58, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Circle010.geometry} material={materials.材质} position={[-755.92, 31.29, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Circle009.geometry} material={materials.材质} position={[-763.29, 32.02, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Cylinder008.geometry} material={nodes.Cylinder008.material} position={[-763.29, 33.31, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Cube008.geometry} material={nodes.Cube008.material} position={[-761.51, 33.05, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cube007.geometry} material={nodes.Cube007.material} position={[-768.84, 32.3, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cylinder007.geometry} material={nodes.Cylinder007.material} position={[-770.62, 32.56, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Circle008.geometry} material={materials.材质} position={[-770.62, 31.27, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Circle007.geometry} material={materials.材质} position={[-777.66, 29.16, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Cylinder006.geometry} material={nodes.Cylinder006.material} position={[-777.66, 30.45, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Cube006.geometry} material={nodes.Cube006.material} position={[-775.88, 30.19, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cube005.geometry} material={nodes.Cube005.material} position={[-782.41, 26.7, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cylinder005.geometry} material={nodes.Cylinder005.material} position={[-784.19, 26.96, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Circle006.geometry} material={materials.材质} position={[-784.19, 25.67, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Circle005.geometry} material={materials.材质} position={[-789.88, 20.98, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Cylinder004.geometry} material={nodes.Cylinder004.material} position={[-789.88, 22.27, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Cube004.geometry} material={nodes.Cube004.material} position={[-788.1, 22.01, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cube003.geometry} material={nodes.Cube003.material} position={[-792.75, 16.31, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cylinder002.geometry} material={nodes.Cylinder002.material} position={[-794.53, 16.57, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Circle004.geometry} material={materials.材质} position={[-794.53, 15.28, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Circle003.geometry} material={materials.材质} position={[-798.01, 8.77, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Cylinder001.geometry} material={nodes.Cylinder001.material} position={[-798.01, 10.06, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Cube002.geometry} material={nodes.Cube002.material} position={[-796.23, 9.8, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cube001.geometry} material={nodes.Cube001.material} position={[-798.38, 2.74, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cylinder000.geometry} material={nodes.Cylinder000.material} position={[-800.16, 3, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Circle002.geometry} material={materials.材质} position={[-800.16, 1.71, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Circle000.geometry} material={materials.材质} position={[-800.85, -5.6, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Cylinder045.geometry} material={nodes.Cylinder045.material} position={[-763.25, 0.28, 444.9]} rotation={[-Math.PI / 2, 0, 0]} scale={1.17} />
+      <mesh geometry={nodes.Cylinder030.geometry} material={materials['材质.002']} position={[-763.25, 0.28, 439.55]} rotation={[Math.PI / 2, 1.37, Math.PI / 2]} scale={[0.16, 37.79, 0.16]} />
+      <mesh geometry={nodes.Cylinder003.geometry} material={nodes.Cylinder003.material} position={[-800.85, -4.31, 442.48]} rotation={[Math.PI / 2, 0, Math.PI]} scale={[0.02, 0.01, 0.02]} />
+      <mesh geometry={nodes.Cube.geometry} material={nodes.Cube.material} position={[-799.07, -4.57, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[0.29, 0.02, 0.07]} />
+      <mesh geometry={nodes.Cube032.geometry} material={materials['材质.006']} position={[-763.25, -46.79, 446.13]} rotation={[0, -Math.PI / 2, 0]} scale={[0.41, 0.16, 1.14]} />
+      <mesh geometry={nodes.Circle032.geometry} material={materials.材质} position={[-800.15, -12.97, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
+      <mesh geometry={nodes.Circle031.geometry} material={materials.材质} position={[-798.02, -19.99, 442.5]} rotation={[0, Math.PI / 2, 0]} scale={[2.15, 2.08, 2.15]} />
     </group>
   )
 }
