@@ -13,14 +13,13 @@ export function Compass(props) {
 
   const [declRot, setDeclRot] = useState(6);
 
-  // TODO
   useEffect(() => {
     // let v1 = new THREE.Vector3([0, 0, 0]);
     // decl.current.getWorldDirection(v1);
     // let q1 = new THREE.Quaternion(-1, -1, 0, 0);
     // console.log(decl.current.quaternion);
     console.log(decl.current.rotation);
-    
+
     // 当 declRot = 10 时，磁偏角为 5 度，校正成功
     console.log(declRot);
   }, [declRot]);
@@ -28,13 +27,13 @@ export function Compass(props) {
   return (
     <group {...props} dispose={null}>
       <group rotation={[1.55, -0.01, -3.14]}>
-        {/* TODO: Magnetic Declination */}
+        {/* DONE: Magnetic Declination */}
         <mesh
           geometry={nodes.compass_circle_steklo.geometry}
           material={materials.steklo}
           position={[0, 0, -1.31]}
           scale={[1.73, 1.73, 0.01]}
-          rotation={[0, 0, Math.PI / 360 * declRot]}
+          rotation={[0, 0, (Math.PI / 360) * declRot]}
         />
         <mesh
           geometry={nodes.compass_needle_met_gl2.geometry}
@@ -66,17 +65,17 @@ export function Compass(props) {
           position={[0.23, -0.94, -0.97]}
           scale={[0.16, 0.14, 0.12]}
         />
-        {/* TODO: Magnetic Declination*/}
+        {/* DONE: Magnetic Declination*/}
         <mesh
           ref={decl}
-          onClick={(e) => setDeclRot(rot => rot + 0.5)}
-          onContextMenu={(e) => setDeclRot(rot => rot - 0.5)}
+          onClick={(e) => setDeclRot((rot) => rot + 0.5)}
+          onContextMenu={(e) => setDeclRot((rot) => rot - 0.5)}
           geometry={nodes.magnetic_declination_blekc_gl.geometry}
           material={materials.blekc_gl}
           position={[1.62, 1.65, -1.03]}
           rotation={[-Math.PI / declRot, -Math.PI / declRot, 0]}
         >
-          <Html distanceFactor={5}>
+          <Html center distanceFactor={3}>
             <div class="content">左键逆转 <br /> 右键正转</div>
           </Html>
         </mesh>
