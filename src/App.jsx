@@ -9,8 +9,8 @@ import { Page } from "./components/Page";
 import Layout, { Content } from "antd/es/layout/layout";
 import Sider from "antd/es/layout/Sider";
 import { ConfigProvider, theme } from "antd";
-// TODO: steper
-import { Steper } from "./components/Steper";
+// DONE: stepper
+import { Stepper } from "./components/Stepper";
 
 // function GuiControl() {
 //   const { toggleMap, toggleView } = useControls({ Map: false, FPV: true });
@@ -21,20 +21,8 @@ function App() {
     <ConfigProvider theme={{ algorithm: theme.darkAlgorithm }}>
       <Layout style={{ minHeight: "100vh" }}>
         {/* TODO: sider */}
-        <Sider width={"23vw"}>
-          <div
-            style={{
-              height: "100%",
-              padding: "5px",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "space-between",
-            }}
-          >
-            <Page />
-            <Page />
-          </div>
-          {/* <Stepper /> */}
+        <Sider width={"23vw"} style={{ padding: 10 }}>
+          <Stepper />
         </Sider>
         <Layout>
           <Content>

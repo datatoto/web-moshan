@@ -14,7 +14,7 @@ export function Compass(props) {
   const { nodes, materials } = useGLTF("/compass.glb");
   const decl = useRef();
 
-  const [declRot, setDeclRot] = useState(6);
+  const [declRot, setDeclRot] = useState(8);
 
   useEffect(() => {
     // let v1 = new THREE.Vector3([0, 0, 0]);
