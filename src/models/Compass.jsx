@@ -4,11 +4,7 @@ Command: npx gltfjsx@6.1.4 public/compass.glb
 */
 
 import React, { useEffect, useRef, useState } from "react";
-import {
-  Html,
-  useGLTF,
-  TransformControls,
-} from "@react-three/drei";
+import { Html, useGLTF, TransformControls } from "@react-three/drei";
 import { Alert, Typography } from "antd";
 // import * as THREE from "three";
 
@@ -91,13 +87,15 @@ export function Compass(props) {
             rotation={[-Math.PI / declRot, -Math.PI / declRot, 0]}
           >
             {/* DONE: Alert */}
-            <Html distanceFactor={3}>
-              <Alert
-                type="info"
-                message="单击旋转"
-                style={{ minWidth: "65px", padding: 0 }}
-              />
-            </Html>
+            {props.isDecl && (
+              <Html distanceFactor={3}>
+                <Alert
+                  type="info"
+                  message="单击旋转"
+                  style={{ minWidth: "65px", padding: 0 }}
+                />
+              </Html>
+            )}
           </mesh>
           <group
             position={[0, 2.24, -1.53]}

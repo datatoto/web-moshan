@@ -25,13 +25,13 @@ export default function Scene() {
     <>
       <Foo />
       <Suspense fallback={null}>
-        <Compass />
+        <Compass isDecl />
         <Ground />
       </Suspense>
       <Environment files="background.hdr" background />
       {/* <spotLight intensity={1.2} position={[0, 30, 40]} /> */}
-      <PerspectiveCamera makeDefault position={[-2, 1.2, -3]} rotation={[0, Math.PI, 0]} fov={40}/>
-      {/* <OrbitControls makeDefault /> */}
+      <PerspectiveCamera makeDefault position={[0, 10, 10]} />
+      <OrbitControls makeDefault />
     </>
   );
 }
