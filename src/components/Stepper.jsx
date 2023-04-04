@@ -25,7 +25,7 @@ export function Stepper() {
       <div>
         {current < steps.length - 1 && (
           <Button type="primary" onClick={() => next()}>
-            Next
+            下一步
           </Button>
         )}
         {current === steps.length - 1 && (
@@ -33,12 +33,12 @@ export function Stepper() {
             type="primary"
             onClick={() => message.success("Processing complete!")}
           >
-            Done
+            完成
           </Button>
         )}
         {current > 0 && (
           <Button style={{ margin: "0 8px" }} onClick={() => prev()}>
-            Previous
+            上一步
           </Button>
         )}
       </div>
