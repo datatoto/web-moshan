@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { steps } from "../stores";
-import { Button, message, Steps } from "antd";
+import { Button, Divider, message, Steps } from "antd";
 import { Page } from "./Page";
 
 export function Stepper() {
@@ -19,9 +19,11 @@ export function Stepper() {
   return (
     <div>
       <Steps direction="vertical" current={current} items={items} />
+      <Divider />
       <div>
         <Page title={steps[current].title} content={steps[current].content} />
       </div>
+      <Divider />
       <div>
         {current < steps.length - 1 && (
           <Button type="primary" onClick={() => next()}>
