@@ -4,7 +4,11 @@ Command: npx gltfjsx@6.1.4 public/compass.glb
 */
 
 import React, { useEffect, useRef, useState } from "react";
-import { Html, useGLTF, TransformControls } from "@react-three/drei";
+import {
+  Html,
+  useGLTF,
+  TransformControls,
+} from "@react-three/drei";
 import { Alert, Typography } from "antd";
 // import * as THREE from "three";
 
@@ -16,6 +20,7 @@ export function Compass(props) {
 
   const [declRot, setDeclRot] = useState(8);
 
+  // Debug
   useEffect(() => {
     // let v1 = new THREE.Vector3([0, 0, 0]);
     // decl.current.getWorldDirection(v1);
@@ -56,7 +61,6 @@ export function Compass(props) {
             material={materials.hrom}
             rotation={[0, 0, -0.01]}
           />
-
           <group position={[0, -5.79, -1.34]} rotation={[1.3, 0, 0.01]}>
             <mesh geometry={nodes.Mesh017.geometry} material={materials.hrom} />
             <mesh
@@ -90,8 +94,8 @@ export function Compass(props) {
             <Html distanceFactor={3}>
               <Alert
                 type="info"
-                message="左键逆转"
-                style={{ minWidth: "90px" }}
+                message="单击旋转"
+                style={{ minWidth: "65px", padding: 0 }}
               />
             </Html>
           </mesh>
