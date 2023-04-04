@@ -5,7 +5,10 @@ Command: npx gltfjsx@6.1.4 public/compass.glb
 
 import React, { useEffect, useRef, useState } from "react";
 import { Html, TransformControls, useGLTF } from "@react-three/drei";
+import { Space, Typography } from "antd";
 // import * as THREE from "three";
+
+const { Text } = Typography;
 
 export function Compass(props) {
   const { nodes, materials } = useGLTF("/compass.glb");
@@ -75,8 +78,13 @@ export function Compass(props) {
           position={[1.62, 1.65, -1.03]}
           rotation={[-Math.PI / declRot, -Math.PI / declRot, 0]}
         >
+          {/* TODO: Alert */}
           <Html center distanceFactor={3}>
-            <div class="content">左键逆转 <br /> 右键正转</div>
+            <Typography style={{ minWidth: "60px" }}>
+              <Text style={{ color: "ActiveCaption" }}>
+                左键逆转 <br /> 右键正转
+              </Text>
+            </Typography>
           </Html>
         </mesh>
         <group
