@@ -8,7 +8,8 @@ import { Html, useGLTF, TransformControls } from "@react-three/drei";
 import { Alert, Typography } from "antd";
 import useStore from "../stores";
 
-// import * as THREE from "three";
+import * as THREE from "three";
+import { useFrame } from "@react-three/fiber";
 
 // const { Text } = Typography;
 
@@ -24,16 +25,23 @@ export function Compass(props) {
     state.updateCurrentStep,
   ]);
 
+  const north = useRef();
+
   // Debug
   useEffect(() => {
     // 当 declRot = 10 时，磁偏角为 5 度，校正成功
-    console.log(declRot);
+    // console.log(declRot);
     declRot === 10 && updateCurrentStep(currentStep + 1);
 
     // 当 cirlPos = -0.61 时，校正成功
-    console.log(cirlPos);
+    // console.log(cirlPos);
     cirlPos <= -0.5 && updateCurrentStep(currentStep + 1);
   }, [declRot, cirlPos]);
+
+  // useFrame((state, delta) => {
+  //   const v1 = new THREE.Vector3();
+  //   console.log(north.current.getWorldDirection(v1));
+  // });
 
   return (
     <group {...props} dispose={null}>
@@ -60,6 +68,7 @@ export function Compass(props) {
             rotation={[0, 0, (Math.PI / 360) * declRot]}
           />
           <mesh
+            ref={north}
             geometry={nodes.compass_north_hrom.geometry}
             material={materials.hrom}
             rotation={[0, 0, -0.01]}

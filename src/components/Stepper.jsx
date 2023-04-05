@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { steps } from "../stores/steps";
+import { steps } from "../stores/constants";
 import { Button, Divider, message, Steps } from "antd";
 import { Page } from "./Page";
 import useStore from "../stores";
+import Test from "./Test";
 
 export function Stepper() {
   const [current, setCurrent] = useStore((state) => [
@@ -27,6 +28,9 @@ export function Stepper() {
       <Steps direction="vertical" current={current} items={items} />
       <Divider />
       <div>
+        {current === steps.length - 1 && (
+          <Test />
+        )}
         <Page title={steps[current].title} content={steps[current].content} />
       </div>
       <Divider />
@@ -37,10 +41,7 @@ export function Stepper() {
           </Button>
         )}
         {current === steps.length - 1 && (
-          <Button
-            type="primary"
-            onClick={() => message.success("Processing complete!")}
-          >
+          <Button type="primary" onClick={() => message.success("完成本章!")}>
             完成
           </Button>
         )}

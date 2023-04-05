@@ -14,7 +14,7 @@ import { Suspense, useEffect, useRef, useState } from "react";
 import { Compass } from "./models/Compass";
 import { Ground } from "./models/Ground";
 import useStore from "./stores";
-import { steps } from "./stores/steps";
+import { steps } from "./stores/constants";
 
 // function Foo() {
 //   const camera = useThree((state) => state.camera);

@@ -29,9 +29,12 @@ const { Title } = Typography;
 function App() {
   return (
     <ConfigProvider theme={{ algorithm: theme.darkAlgorithm }}>
-      <Layout style={{ minHeight: "100vh" }}>
+      <Layout>
         {/* TODO: sider */}
-        <Sider width={"23vw"} style={{ padding: "5px 10px", overflow: "auto" }}>
+        <Sider
+          width={"25vw"}
+          style={{ height: "100vh", padding: "5px 10px", overflowY: "scroll" }}
+        >
           <Title
             level={3}
             style={{
