@@ -8,7 +8,7 @@ import { Html, useGLTF, TransformControls } from "@react-three/drei";
 import { Alert, Typography } from "antd";
 // import * as THREE from "three";
 
-const { Text } = Typography;
+// const { Text } = Typography;
 
 export function Compass(props) {
   const { nodes, materials } = useGLTF("/compass.glb");
@@ -17,7 +17,7 @@ export function Compass(props) {
   const [declRot, setDeclRot] = useState(8);
 
   // Debug
-  useEffect(() => {
+  // useEffect(() => {
     // let v1 = new THREE.Vector3([0, 0, 0]);
     // decl.current.getWorldDirection(v1);
     // let q1 = new THREE.Quaternion(-1, -1, 0, 0);
@@ -25,8 +25,8 @@ export function Compass(props) {
     // console.log(decl.current.rotation);
 
     // 当 declRot = 10 时，磁偏角为 5 度，校正成功
-    console.log(declRot);
-  }, [declRot]);
+    // console.log(declRot);
+  // }, [declRot]);
 
   return (
     <group {...props} dispose={null}>
