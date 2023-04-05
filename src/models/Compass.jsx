@@ -91,8 +91,8 @@ export function Compass(props) {
               <Html distanceFactor={3}>
                 <Alert
                   type="info"
-                  message="单击旋转"
-                  style={{ minWidth: "65px", padding: 0 }}
+                  message="刻度螺旋"
+                  style={{ minWidth: "70px", padding: 5 }}
                 />
               </Html>
             )}

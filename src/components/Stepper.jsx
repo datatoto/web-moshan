@@ -1,10 +1,16 @@
 import { useState } from "react";
-import { steps } from "../stores";
+import { steps } from "../stores/steps";
 import { Button, Divider, message, Steps } from "antd";
 import { Page } from "./Page";
+import useStore from "../stores";
 
 export function Stepper() {
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useStore((state) => [
+    state.currentStep,
+    state.updateCurrentStep,
+  ]);
+
+  // const [current, setCurrent] = useState(0);
 
   const next = () => {
     setCurrent(current + 1);
