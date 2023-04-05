@@ -6,27 +6,34 @@ Command: npx gltfjsx@6.1.4 public/compass.glb
 import React, { useEffect, useRef, useState } from "react";
 import { Html, useGLTF, TransformControls } from "@react-three/drei";
 import { Alert, Typography } from "antd";
+import useStore from "../stores";
+
 // import * as THREE from "three";
 
 // const { Text } = Typography;
 
 export function Compass(props) {
   const { nodes, materials } = useGLTF("/compass.glb");
-  const decl = useRef();
+  const [cirlPos, setCirlPos] = useState(-0.46);
 
+  // const decl = useRef();
   const [declRot, setDeclRot] = useState(8);
 
-  // Debug
-  // useEffect(() => {
-    // let v1 = new THREE.Vector3([0, 0, 0]);
-    // decl.current.getWorldDirection(v1);
-    // let q1 = new THREE.Quaternion(-1, -1, 0, 0);
-    // console.log(decl.current.quaternion);
-    // console.log(decl.current.rotation);
+  const [currentStep, updateCurrentStep] = useStore((state) => [
+    state.currentStep,
+    state.updateCurrentStep,
+  ]);
 
+  // Debug
+  useEffect(() => {
     // 当 declRot = 10 时，磁偏角为 5 度，校正成功
-    // console.log(declRot);
-  // }, [declRot]);
+    console.log(declRot);
+    declRot === 10 && updateCurrentStep(currentStep + 1);
+
+    // 当 cirlPos = -0.61 时，校正成功
+    console.log(cirlPos);
+    cirlPos <= -0.5 && updateCurrentStep(currentStep + 1);
+  }, [declRot, cirlPos]);
 
   return (
     <group {...props} dispose={null}>
@@ -65,29 +72,52 @@ export function Compass(props) {
             />
           </group>
           <mesh
+            onClick={() => setCirlPos((pos) => pos - 0.05)}
             geometry={nodes.level_circular_steklo.geometry}
             material={materials.trans}
-            position={[0.84, -0.46, -1.02]}
+            position={[0.84, cirlPos, -1.02]}
             scale={[0.14, 0.14, 0.12]}
-          />
+          >
+            {/* DONE: Alert */}
+            {currentStep === 1 && (
+              <Html distanceFactor={3}>
+                <Alert
+                  type="info"
+                  message="圆水准仪"
+                  style={{ minWidth: "70px", padding: 5 }}
+                />
+              </Html>
+            )}
+          </mesh>
           <mesh
             geometry={nodes.level_tubular_steklo.geometry}
             material={materials.trans}
-            position={[0.23, -0.94, -0.97]}
+            position={[0.56 + cirlPos, -0.94, -0.97]}
             scale={[0.16, 0.14, 0.12]}
-          />
+          >
+            {/* DONE: Alert */}
+            {currentStep === 1 && (
+              <Html distanceFactor={3}>
+                <Alert
+                  type="info"
+                  message="长水准仪"
+                  style={{ minWidth: "70px", padding: 5 }}
+                />
+              </Html>
+            )}
+          </mesh>
           {/* DONE: Magnetic Declination*/}
           <mesh
-            ref={decl}
-            onClick={(e) => setDeclRot((rot) => rot + 0.5)}
-            onContextMenu={(e) => setDeclRot((rot) => rot - 0.5)}
+            // ref={decl}
+            onClick={() => setDeclRot((rot) => rot + 0.5)}
+            onContextMenu={() => setDeclRot((rot) => rot - 0.5)}
             geometry={nodes.magnetic_declination_blekc_gl.geometry}
             material={materials.blekc_gl}
             position={[1.62, 1.65, -1.03]}
             rotation={[-Math.PI / declRot, -Math.PI / declRot, 0]}
           >
             {/* DONE: Alert */}
-            {props.isDecl && (
+            {currentStep === 0 && (
               <Html distanceFactor={3}>
                 <Alert
                   type="info"
