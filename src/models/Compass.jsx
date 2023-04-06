@@ -8,35 +8,12 @@ import { Html, useGLTF, TransformControls } from "@react-three/drei";
 import { Alert, Typography } from "antd";
 import useStore from "../stores";
 
-import * as THREE from "three";
-import { useFrame } from "@react-three/fiber";
+// import { useFrame } from "@react-three/fiber";
 
 // const { Text } = Typography;
 
 export function Compass(props) {
   const { nodes, materials } = useGLTF("/compass.glb");
-  const [cirlPos, setCirlPos] = useState(-0.46);
-
-  // const decl = useRef();
-  const [declRot, setDeclRot] = useState(8);
-
-  const [currentStep, updateCurrentStep] = useStore((state) => [
-    state.currentStep,
-    state.updateCurrentStep,
-  ]);
-
-  const north = useRef();
-
-  // Debug
-  useEffect(() => {
-    // 当 declRot = 10 时，磁偏角为 5 度，校正成功
-    // console.log(declRot);
-    declRot === 10 && updateCurrentStep(currentStep + 1);
-
-    // 当 cirlPos = -0.61 时，校正成功
-    // console.log(cirlPos);
-    cirlPos <= -0.5 && updateCurrentStep(currentStep + 1);
-  }, [declRot, cirlPos]);
 
   // useFrame((state, delta) => {
   //   const v1 = new THREE.Vector3();
@@ -65,10 +42,9 @@ export function Compass(props) {
             material={materials.steklo}
             position={[0, 0, -1.31]}
             scale={[1.73, 1.73, 0.01]}
-            rotation={[0, 0, (Math.PI / 360) * declRot]}
+            rotation={[0, 0, (Math.PI / 360) * props.declRot]}
           />
           <mesh
-            ref={north}
             geometry={nodes.compass_north_hrom.geometry}
             material={materials.hrom}
             rotation={[0, 0, -0.01]}
@@ -81,14 +57,14 @@ export function Compass(props) {
             />
           </group>
           <mesh
-            onClick={() => setCirlPos((pos) => pos - 0.05)}
+            onClick={props.setCirlPos}
             geometry={nodes.level_circular_steklo.geometry}
             material={materials.trans}
-            position={[0.84, cirlPos, -1.02]}
+            position={[0.84, props.cirlPos, -1.02]}
             scale={[0.14, 0.14, 0.12]}
           >
             {/* DONE: Alert */}
-            {currentStep === 1 && (
+            {/* {currentStep === 1 && (
               <Html distanceFactor={3}>
                 <Alert
                   type="info"
@@ -96,16 +72,16 @@ export function Compass(props) {
                   style={{ minWidth: "70px", padding: 5 }}
                 />
               </Html>
-            )}
+            )} */}
           </mesh>
           <mesh
             geometry={nodes.level_tubular_steklo.geometry}
             material={materials.trans}
-            position={[0.56 + cirlPos, -0.94, -0.97]}
+            position={[0.56 + props.cirlPos, -0.94, -0.97]}
             scale={[0.16, 0.14, 0.12]}
           >
             {/* DONE: Alert */}
-            {currentStep === 1 && (
+            {/* {currentStep === 1 && (
               <Html distanceFactor={3}>
                 <Alert
                   type="info"
@@ -113,20 +89,19 @@ export function Compass(props) {
                   style={{ minWidth: "70px", padding: 5 }}
                 />
               </Html>
-            )}
+            )} */}
           </mesh>
           {/* DONE: Magnetic Declination*/}
           <mesh
             // ref={decl}
-            onClick={() => setDeclRot((rot) => rot + 0.5)}
-            onContextMenu={() => setDeclRot((rot) => rot - 0.5)}
+            onClick={props.setDeclRot}
             geometry={nodes.magnetic_declination_blekc_gl.geometry}
             material={materials.blekc_gl}
             position={[1.62, 1.65, -1.03]}
-            rotation={[-Math.PI / declRot, -Math.PI / declRot, 0]}
+            rotation={[-Math.PI / props.declRot, -Math.PI / props.declRot, 0]}
           >
             {/* DONE: Alert */}
-            {currentStep === 0 && (
+            {/* {currentStep === 0 && (
               <Html distanceFactor={3}>
                 <Alert
                   type="info"
@@ -134,7 +109,7 @@ export function Compass(props) {
                   style={{ minWidth: "70px", padding: 5 }}
                 />
               </Html>
-            )}
+            )} */}
           </mesh>
           <group
             position={[0, 2.24, -1.53]}

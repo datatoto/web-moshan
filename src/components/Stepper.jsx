@@ -26,14 +26,14 @@ export function Stepper() {
   return (
     <div>
       <Steps direction="vertical" current={current} items={items} />
-      <Divider />
+      <Divider style={{ backgroundColor: "black" }} />
       <div>
         {current === steps.length - 1 && (
           <Test />
         )}
         <Page title={steps[current].title} content={steps[current].content} />
       </div>
-      <Divider />
+      <Divider style={{ backgroundColor: "black" }} />
       <div>
         {current < steps.length - 1 && (
           <Button type="primary" onClick={() => next()}>

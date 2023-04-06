@@ -7,8 +7,7 @@ export default function Test() {
   return (
     <Space direction="vertical" style={{ width: "100%" }}>
       {tests.map((t) => (
-        <Choice test={t} />
-        // <li key={t.title}>{t.title}</li>
+        <Choice test={t} key={t.title} />
       ))}
     </Space>
   );

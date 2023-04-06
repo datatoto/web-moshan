@@ -13,7 +13,7 @@ export default function Choice({ test }) {
   return (
     <Card style={{ width: "100%" }}>
       <h3>{test.title}</h3>
-      <Divider />
+      <Divider style={{ backgroundColor: "black" }} />
       <Radio.Group onChange={onChange} value={value}>
         {test.radios.map((r, i) => (
           <Radio value={i} key={i} style={{ padding: "5px 0" }}>
@@ -21,7 +21,6 @@ export default function Choice({ test }) {
           </Radio>
         ))}
       </Radio.Group>
-      <Divider />
       {value === test.answer && <Alert message="正确" type="success" />}
     </Card>
   );

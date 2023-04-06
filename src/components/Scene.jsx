@@ -9,12 +9,13 @@ import {
   TransformControls,
   Stats,
   CameraControls,
+  MapControls,
 } from "@react-three/drei";
 import { Suspense, useEffect, useRef, useState } from "react";
-import { Compass } from "./models/Compass";
-import { Ground } from "./models/Ground";
-import useStore from "./stores";
-import { steps } from "./stores/constants";
+import { Compass } from "../models/Compass";
+import { Ground } from "../models/Ground";
+import useStore from "../stores";
+import { steps } from "../stores/constants";
 
 // function Foo() {
 //   const camera = useThree((state) => state.camera);
@@ -26,17 +27,20 @@ import { steps } from "./stores/constants";
 //   }, [camera]);
 // }
 
-function Target() {
+function PanelCamera() {
+  return (
+    <OrthographicCamera
+      makeDefault
+      position={[0, 2.7, 0]}
+      rotation={[0, -Math / 2, 0]}
+      zoom={80}
+    />
+  );
+}
+
+function View1() {
   const cameraControlsRef = useRef();
   const currentStep = useStore((state) => state.currentStep);
-  // const [cameraPosition, updateCameraPosition] = useStore((state) => [
-  //   state.cameraPosition,
-  //   state.updateCameraPosition,
-  // ]);
-  // const [cameraLookAt, updateCameraLookAt] = useStore((state) => [
-  //   state.cameraLookAt,
-  //   state.updateCameraLookAt,
-  // ]);
 
   const cameraInfo = steps.map((step) => ({
     pos: step.cameraPosition,
@@ -65,26 +69,64 @@ function Target() {
 
   return (
     <>
-      <Suspense fallback={null}>
-        <Compass isDecl={true} />
-        <Ground />
-      </Suspense>
-      <CameraControls ref={cameraControlsRef} />
+      <Scene />
+      <CameraControls ref={cameraControlsRef} makeDefault />
       <Environment files="background.hdr" background />
     </>
   );
 }
 
-export default function Scene() {
+function View2() {
   return (
-    <Canvas>
-      {/* <PerspectiveCamera makeDefault position={[0, 20, 0]} /> */}
-      <Target />
-      {/* <OrbitControls makeDefault /> */}
-      <Stats showPanel={0} className="stats" />
-    </Canvas>
+    <>
+      <PanelCamera />
+      <Scene />
+      <MapControls makeDefault screenSpacePanning enableRotate={false} />
+      <Environment files="background.hdr" background />
+    </>
   );
 }
+
+function Scene() {
+  const [current, setCurrent] = useStore((state) => [
+    state.currentStep,
+    state.updateCurrentStep,
+  ]);
+
+  const [cirlPos, setCirlPos] = useStore((state) => [
+    state.currentCirlPos,
+    state.updateCurrentCirlPos,
+  ]);
+
+  // const decl = useRef();
+  const [declRot, setDeclRot] = useStore((state) => [
+    state.currentDeclRot,
+    state.updateCurrentDeclRot,
+  ]);
+
+  useEffect(() => {
+    // 当 declRot = 10 时，磁偏角为 5 度，校正成功
+    console.log(declRot);
+    current === 0 && declRot === 10 && setCurrent(current + 1);
+
+    console.log(cirlPos);
+    current === 1 && cirlPos <= -0.6 && setCurrent(current + 1);
+  }, [declRot, cirlPos]);
+
+  return (
+    <Suspense fallback={null}>
+      <Compass
+        declRot={declRot}
+        cirlPos={cirlPos}
+        setDeclRot={setDeclRot}
+        setCirlPos={setCirlPos}
+      />
+      <Ground />
+    </Suspense>
+  );
+}
+
+export { View1, View2 };
 
 // export default function Scene() {
 //   return (
