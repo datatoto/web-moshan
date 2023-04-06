@@ -4,8 +4,7 @@ Command: npx gltfjsx@6.1.4 public/compass.glb
 */
 
 import React, { useEffect, useRef, useState } from "react";
-import { Html, useGLTF, TransformControls } from "@react-three/drei";
-import { Alert, Typography } from "antd";
+import { Html, useGLTF } from "@react-three/drei";
 import useStore from "../stores";
 
 // import { useFrame } from "@react-three/fiber";
@@ -19,6 +18,7 @@ export function Compass(props) {
   //   const v1 = new THREE.Vector3();
   //   console.log(north.current.getWorldDirection(v1));
   // });
+  const rot = useStore((state) => [state.currentRot]);
 
   return (
     <group {...props} dispose={null}>
@@ -31,12 +31,13 @@ export function Compass(props) {
         />
         {/* DONE: Magnetic Declination */}
         {/* DONE: Compass Rotation */}
-        <TransformControls
+        {/* <TransformControls
           mode="rotate"
           showX={false}
           showY={true}
           showZ={false}
-        >
+        > */}
+        <group rotation={[0, 0, (Math.PI / 180) * rot]}>
           <mesh
             geometry={nodes.compass_circle_steklo.geometry}
             material={materials.steklo}
@@ -196,7 +197,8 @@ export function Compass(props) {
             position={[0, -0.02, 0.03]}
             rotation={[0.01, 0, 0]}
           />
-        </TransformControls>
+          {/* </TransformControls> */}
+        </group>
       </group>
     </group>
   );

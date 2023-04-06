@@ -69,7 +69,9 @@ function View1() {
 
   return (
     <>
-      <Scene />
+      <Scene>
+        <Ground />
+      </Scene>
       <CameraControls ref={cameraControlsRef} makeDefault />
       <Environment files="background.hdr" background />
     </>
@@ -79,10 +81,11 @@ function View1() {
 function CompassView() {
   return (
     <>
+      <color attach="background" args={["black"]} />
       <PanelCamera />
       <Scene />
-      <MapControls makeDefault screenSpacePanning enableRotate={false} />
-      <Environment files="background.hdr" background />
+      <MapControls makeDefault screenSpacePanning enableRotate={false} minZoom={65} />
+      <ambientLight intensity={1} />
     </>
   );
 }
@@ -108,7 +111,7 @@ function MiniMapView() {
   );
 }
 
-function Scene() {
+function Scene({ children }) {
   const [current, setCurrent] = useStore((state) => [
     state.currentStep,
     state.updateCurrentStep,
@@ -123,6 +126,12 @@ function Scene() {
   const [declRot, setDeclRot] = useStore((state) => [
     state.currentDeclRot,
     state.updateCurrentDeclRot,
+  ]);
+
+  // const [rot, setRot] = useState(20);
+  const [rot, setRot] = useStore((state) => [
+    state.currentRot,
+    state.updateCurrentRot,
   ]);
 
   useEffect(() => {
@@ -141,9 +150,15 @@ function Scene() {
         cirlPos={cirlPos}
         setDeclRot={setDeclRot}
         setCirlPos={setCirlPos}
+        rot={rot}
+        onClick={() => {
+          setRot(rot + 1);
+        }}
+        onContextMenu={() => {
+          setRot(rot - 1);
+        }}
       />
-      {/* {children} */}
-      <Ground />
+      {children}
     </Suspense>
   );
 }
