@@ -16,7 +16,7 @@ const MainPanel = forwardRef((props, fref) => {
   );
 });
 
-const SidePanel = forwardRef((props, fref) => {
+const CompassHud = forwardRef((props, fref) => {
   return (
     <div
       ref={fref}
@@ -32,4 +32,21 @@ const SidePanel = forwardRef((props, fref) => {
   );
 });
 
-export { MainPanel, SidePanel };
+const MiniMapHud = forwardRef((props, fref) => {
+  return (
+    <div
+      ref={fref}
+      className="panel"
+      style={{
+        position: "absolute",
+        bottom: "10px",
+        right: "10px",
+        width: "300px",
+        height: "300px",
+        // backgroundColor: "black",
+      }}
+    ></div>
+  );
+});
+
+export { MainPanel, CompassHud, MiniMapHud };

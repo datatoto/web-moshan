@@ -76,11 +76,32 @@ function View1() {
   );
 }
 
-function View2() {
+function CompassView() {
   return (
     <>
       <PanelCamera />
       <Scene />
+      <MapControls makeDefault screenSpacePanning enableRotate={false} />
+      <Environment files="background.hdr" background />
+    </>
+  );
+}
+
+function MiniMapView() {
+  return (
+    <>
+      <OrthographicCamera
+        makeDefault
+        position={[0, 200, 0]}
+        rotation={[-Math.PI / 2, 0, 0]}
+        left={-1000}
+        right={1000}
+        top={1000}
+        bottom={-1000}
+        near={100}
+        far={1000}
+      />
+      <Ground />
       <MapControls makeDefault screenSpacePanning enableRotate={false} />
       <Environment files="background.hdr" background />
     </>
@@ -121,12 +142,13 @@ function Scene() {
         setDeclRot={setDeclRot}
         setCirlPos={setCirlPos}
       />
+      {/* {children} */}
       <Ground />
     </Suspense>
   );
 }
 
-export { View1, View2 };
+export { View1, CompassView, MiniMapView };
 
 // export default function Scene() {
 //   return (
