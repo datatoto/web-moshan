@@ -43,7 +43,7 @@ const asideData = [
       {
         title: "平持罗盘",
         content: "与上述步骤一致",
-        cameraPosition: [0, 4, 0],
+        cameraPosition: [4, 4, 4],
         cameraLookAt: [0, 0, 0],
       },
       {

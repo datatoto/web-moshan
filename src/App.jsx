@@ -11,7 +11,7 @@ import {
 } from "@react-three/drei";
 // import { useControls } from "leva";
 
-import { CompassView, MiniMapView, View1 } from "./components/Scene";
+import { CompassView, MiniMapView, MainView } from "./components/Views";
 // import Layout, { Content } from "antd/es/layout/layout";
 // import Sider from "antd/es/layout/Sider";
 import { Divider } from "antd";
@@ -42,7 +42,7 @@ function App() {
           eventSource={document.getElementById("root")}
         >
           <View index={1} track={view1}>
-            <View1 steps={asideData[currentCh].steps} />
+            <MainView steps={asideData[currentCh].steps} />
           </View>
           <View index={2} track={view2}>
             <CompassView />

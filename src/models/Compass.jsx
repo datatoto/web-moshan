@@ -14,11 +14,22 @@ import useStore from "../stores";
 export function Compass(props) {
   const { nodes, materials } = useGLTF("/compass.glb");
 
-  // useFrame((state, delta) => {
-  //   const v1 = new THREE.Vector3();
-  //   console.log(north.current.getWorldDirection(v1));
-  // });
-  const rot = useStore((state) => [state.currentRot]);
+  const [cirlPos, setCirlPos] = useStore((state) => [
+    state.currentCirlPos,
+    state.updateCurrentCirlPos,
+  ]);
+
+  // const decl = useRef();
+  const [declRot, setDeclRot] = useStore((state) => [
+    state.currentDeclRot,
+    state.updateCurrentDeclRot,
+  ]);
+
+  // const [rot, setRot] = useState(20);
+  const [rot, setRot] = useStore((state) => [
+    state.currentRot,
+    state.updateCurrentRot,
+  ]);
 
   return (
     <group {...props} dispose={null}>
@@ -43,7 +54,13 @@ export function Compass(props) {
             material={materials.steklo}
             position={[0, 0, -1.31]}
             scale={[1.73, 1.73, 0.01]}
-            rotation={[0, 0, (Math.PI / 360) * props.declRot]}
+            rotation={[0, 0, (Math.PI / 360) * declRot]}
+            onClick={() => {
+              setRot(rot + 1);
+            }}
+            onContextMenu={() => {
+              setRot(rot - 1);
+            }}
           />
           <mesh
             geometry={nodes.compass_north_hrom.geometry}
@@ -58,10 +75,10 @@ export function Compass(props) {
             />
           </group>
           <mesh
-            onClick={props.setCirlPos}
+            onClick={setCirlPos}
             geometry={nodes.level_circular_steklo.geometry}
             material={materials.trans}
-            position={[0.84, props.cirlPos, -1.02]}
+            position={[0.84, cirlPos, -1.02]}
             scale={[0.14, 0.14, 0.12]}
           >
             {/* DONE: Alert */}
@@ -78,7 +95,7 @@ export function Compass(props) {
           <mesh
             geometry={nodes.level_tubular_steklo.geometry}
             material={materials.trans}
-            position={[0.56 + props.cirlPos, -0.94, -0.97]}
+            position={[0.56 + cirlPos, -0.94, -0.97]}
             scale={[0.16, 0.14, 0.12]}
           >
             {/* DONE: Alert */}
@@ -95,11 +112,11 @@ export function Compass(props) {
           {/* DONE: Magnetic Declination*/}
           <mesh
             // ref={decl}
-            onClick={props.setDeclRot}
+            onClick={setDeclRot}
             geometry={nodes.magnetic_declination_blekc_gl.geometry}
             material={materials.blekc_gl}
             position={[1.62, 1.65, -1.03]}
-            rotation={[-Math.PI / props.declRot, -Math.PI / props.declRot, 0]}
+            rotation={[-Math.PI / declRot, -Math.PI / declRot, 0]}
           >
             {/* DONE: Alert */}
             {/* {currentStep === 0 && (
