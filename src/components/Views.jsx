@@ -17,7 +17,7 @@ import { Compass } from "../models/Compass";
 import { Ground } from "../models/Ground";
 import { Player } from "../models/Player";
 import useStore from "../stores";
-import { Debug, Physics, useBox, usePlane } from "@react-three/cannon";
+// import { Debug, useBox, usePlane, useSphere } from "@react-three/cannon";
 // import { steps } from "../stores/constants";
 
 // function Foo() {
@@ -40,27 +40,24 @@ function ChapterOneView() {
 }
 
 function ChapterTwoView(props) {
-  const [gref] = usePlane(() => ({ type: "Static", ...props }));
-  const [pref] = useBox(() => ({ mass: 40, ...props }));
+  // Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?
 
   return (
     <>
-      <Debug scale={1.1} color="black">
-        <Player ref={pref} />
-        <Ground ref={gref} />
-      </Debug>
+      <Player />
+      <Ground />
     </>
   );
 }
 
 function MainView({ steps }) {
-  const map = useMemo(() => [
-    { name: "forward", keys: ["ArrowUp", "KeyW"] },
-    { name: "backward", keys: ["ArrowDown", "KeyS"] },
-    { name: "left", keys: ["ArrowLeft", "KeyA"] },
-    { name: "right", keys: ["ArrowRight", "KeyD"] },
-    { name: "jump", keys: ["Space"] },
-  ]);
+  // const map = useMemo(() => [
+  //   { name: "forward", keys: ["ArrowUp", "KeyW"] },
+  //   { name: "backward", keys: ["ArrowDown", "KeyS"] },
+  //   { name: "left", keys: ["ArrowLeft", "KeyA"] },
+  //   { name: "right", keys: ["ArrowRight", "KeyD"] },
+  //   { name: "jump", keys: ["Space"] },
+  // ]);
 
   const cameraControlsRef = useRef();
   const currentStep = useStore((state) => state.currentStep);
@@ -92,18 +89,14 @@ function MainView({ steps }) {
   }, [currentStep]);
 
   return (
-    <KeyboardControls map={map}>
+    <>
       <Suspense fallback={null}>
         {currentCh === 0 && <ChapterOneView />}
-        {currentCh === 1 && (
-          <Physics>
-            <ChapterTwoView />
-          </Physics>
-        )}
+        {currentCh === 1 && <ChapterTwoView />}
       </Suspense>
       <CameraControls ref={cameraControlsRef} makeDefault />
       <Environment files="background.hdr" background />
-    </KeyboardControls>
+    </>
   );
 }
 

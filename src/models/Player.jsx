@@ -6,6 +6,13 @@ Command: npx gltfjsx@6.1.4 public/character.glb
 import React, { useEffect, useRef } from "react";
 import { useGLTF, useAnimations, useKeyboardControls } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
+// import {
+//   useBox,
+//   useCompoundBody,
+//   useCylinder,
+//   usePlane,
+//   useSphere,
+// } from "@react-three/cannon";
 
 // import * as THREE from "three";
 
@@ -16,9 +23,18 @@ import { useFrame } from "@react-three/fiber";
 // const rotation = new THREE.Vector3();
 
 export function Player(props) {
-  const group = useRef();
+  // const [ref, api] = useSphere(
+  //   () => ({
+  //     args: [1, 2, 2],
+  //     position: [0, 5, 3],
+  //     mass: 40,
+  //     ...props,
+  //   }),
+  //   useRef(null)
+  // );
+
   const { nodes, materials, animations } = useGLTF("/character.glb");
-  const { actions } = useAnimations(animations, group);
+  const { actions } = useAnimations(animations, ref);
 
   // TODO: Keyboard
   // const [sub, get] = useKeyboardControls();
@@ -38,17 +54,15 @@ export function Player(props) {
   // });
 
   return (
-    <group ref={group} {...props} dispose={null}>
-      <group name="Scene">
-        <group name="Armature" rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
-          <primitive object={nodes.mixamorigHips} />
-          <skinnedMesh
-            name="Ch46"
-            geometry={nodes.Ch46.geometry}
-            material={materials.Ch46_body}
-            skeleton={nodes.Ch46.skeleton}
-          />
-        </group>
+    <group {...props} dispose={null}>
+      <group name="Armature" scale={0.01}>
+        <primitive object={nodes.mixamorigHips} />
+        <skinnedMesh
+          name="Ch46"
+          geometry={nodes.Ch46.geometry}
+          material={materials.Ch46_body}
+          skeleton={nodes.Ch46.skeleton}
+        />
       </group>
     </group>
   );
