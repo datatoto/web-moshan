@@ -15,7 +15,7 @@ import { Suspense, useEffect, useRef, useState } from "react";
 import { Compass } from "../models/Compass";
 import { Ground } from "../models/Ground";
 import useStore from "../stores";
-import { steps } from "../stores/constants";
+// import { steps } from "../stores/constants";
 
 // function Foo() {
 //   const camera = useThree((state) => state.camera);
@@ -38,7 +38,7 @@ function PanelCamera() {
   );
 }
 
-function View1() {
+function View1({ steps }) {
   const cameraControlsRef = useRef();
   const currentStep = useStore((state) => state.currentStep);
 
@@ -84,7 +84,12 @@ function CompassView() {
       <color attach="background" args={["black"]} />
       <PanelCamera />
       <Scene />
-      <MapControls makeDefault screenSpacePanning enableRotate={false} minZoom={65} />
+      <MapControls
+        makeDefault
+        screenSpacePanning
+        enableRotate={false}
+        minZoom={65}
+      />
       <ambientLight intensity={1} />
     </>
   );

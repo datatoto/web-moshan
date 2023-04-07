@@ -1,14 +1,17 @@
-import { useState } from "react";
-import { steps } from "../stores/constants";
+// import { useState } from "react";
 import { Button, Divider, message, Steps } from "antd";
-import { Page } from "./Page";
 import useStore from "../stores";
 import Test from "./Test";
 
-export function Stepper() {
+export function Stepper({ steps }) {
   const [current, setCurrent] = useStore((state) => [
     state.currentStep,
     state.updateCurrentStep,
+  ]);
+
+  const [currentCh, setCurrentCh] = useStore((state) => [
+    state.currentCh,
+    state.updateCurrentCh,
   ]);
 
   // const [current, setCurrent] = useState(0);
@@ -21,17 +24,22 @@ export function Stepper() {
     setCurrent(current - 1);
   };
 
-  const items = steps.map((item) => ({ key: item.title, title: item.title }));
+  const nextCh = () => {
+    setCurrentCh(currentCh + 1);
+    setCurrent(0);
+    console.log(currentCh);
+  };
+
+  const items = steps.map((step) => ({ key: step.title, title: step.title }));
 
   return (
     <div>
       <Steps direction="vertical" current={current} items={items} />
       <Divider style={{ backgroundColor: "black" }} />
       <div>
-        {current === steps.length - 1 && (
-          <Test />
-        )}
-        <Page title={steps[current].title} content={steps[current].content} />
+        {current === steps.length - 1 && <Test />}
+        <p>{steps[current].content}</p>
+        {/* <Page content={steps[current].content} /> */}
       </div>
       <Divider style={{ backgroundColor: "black" }} />
       <div>
@@ -40,9 +48,9 @@ export function Stepper() {
             下一步
           </Button>
         )}
-        {current === steps.length - 1 && (
-          <Button type="primary" onClick={() => message.success("完成本章!")}>
-            完成
+        {currentCh < 4 && current === steps.length - 1 && (
+          <Button type="primary" onClick={() => nextCh()}>
+            下一章
           </Button>
         )}
         {current > 0 && (

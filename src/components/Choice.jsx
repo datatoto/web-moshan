@@ -11,9 +11,8 @@ export default function Choice({ test }) {
   };
 
   return (
-    <Card style={{ width: "100%" }}>
+    <Card style={{ width: "100%" }} className="glass">
       <h3>{test.title}</h3>
-      <Divider style={{ backgroundColor: "black" }} />
       <Radio.Group onChange={onChange} value={value}>
         {test.radios.map((r, i) => (
           <Radio value={i} key={i} style={{ padding: "5px 0" }}>

@@ -17,12 +17,11 @@ import { CompassView, MiniMapView, View1 } from "./components/Scene";
 import { Divider } from "antd";
 // DONE: stepper
 import { Stepper } from "./components/Stepper";
-import Typography from "antd/es/typography/Typography";
 import { Canvas } from "@react-three/fiber";
 import { MainPanel, CompassHud, MiniMapHud } from "./components/Panels";
 import { useRef } from "react";
-
-const { Title } = Typography;
+import { asideData } from "./stores/constants";
+import useStore from "./stores";
 
 // function GuiControl() {
 //   const { toggleMap, toggleView } = useControls({ Map: false, FPV: true });
@@ -33,6 +32,8 @@ function App() {
   const view2 = useRef();
   const view3 = useRef();
 
+  const currentCh = useStore((state) => state.currentCh);
+
   return (
     <>
       <div className="container">
@@ -41,7 +42,7 @@ function App() {
           eventSource={document.getElementById("root")}
         >
           <View index={1} track={view1}>
-            <View1 />
+            <View1 steps={asideData[currentCh].steps} />
           </View>
           <View index={2} track={view2}>
             <CompassView />
@@ -74,16 +75,15 @@ function App() {
           margin: "10px",
         }}
       >
-        <Title
-          level={3}
+        <h3
           style={{
             textAlign: "center",
           }}
         >
-          判别方位
-        </Title>
-        <Divider />
-        <Stepper />
+          {asideData[currentCh].title}
+        </h3>
+        {/* <Divider style={{ backgroundColor: "black" }} /> */}
+        <Stepper steps={asideData[currentCh].steps} />
       </aside>
     </>
   );
