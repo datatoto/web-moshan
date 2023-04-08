@@ -29,6 +29,8 @@ import { Way } from "../models/Way";
 // import { Debug, useBox, usePlane, useSphere } from "@react-three/cannon";
 // import { steps } from "../stores/constants";
 
+import * as THREE from "three";
+
 // function Foo() {
 //   const camera = useThree((state) => state.camera);
 //   const set = useThree((state) => state.set);
@@ -40,14 +42,49 @@ import { Way } from "../models/Way";
 // }
 
 function Map() {
+  const plane = useRef(null);
+  const v = new THREE.Vector3([1, 0, 0]);
+  const p1 = new THREE.Plane(v);
+  const v1 = new THREE.Vector3();
+
   const scale = useAspect(8266, 5849, 0.1);
   const image = useTexture("/topo.jpg");
 
+  const { scene } = useThree();
+
+  const clickPlane = (ray) => {
+    console.log(ray);
+    const raycaster = new THREE.Raycaster(ray.origin, ray.direction);
+    const intersects = raycaster.intersectObject(plane.current, false);
+    console.log(intersects[0].point);
+
+    const rollOverGeo = new THREE.BoxGeometry(0.05, 0.05, 0.05);
+    const rollOverMaterial = new THREE.MeshBasicMaterial({ color: 0xff0000 });
+    const rollOverMesh = new THREE.Mesh(rollOverGeo, rollOverMaterial);
+
+    rollOverMesh.position
+      .copy(intersects[0].point)
+      // .add(intersects[0].face.normal);
+
+    scene.add(rollOverMesh);
+    // console.log(ray.intersectsPlane(p1));
+    // ray.intersectPlane(p1, v1);
+    // console.log(v1);
+  };
+
   return (
-    <mesh scale={scale} rotation={[-Math.PI / 2, 0, 0]} position={[1.5, 1.5, 0]}>
-      <planeGeometry />
-      <meshBasicMaterial map={image} />
-    </mesh>
+    <>
+      <mesh
+        ref={plane}
+        scale={scale}
+        rotation={[-Math.PI / 2, 0, 0]}
+        position={[1.5, 1.5, 0]}
+        onClick={(e) => clickPlane(e.ray)}
+      >
+        <planeGeometry />
+        <meshBasicMaterial map={image} />
+      </mesh>
+    </>
   );
 }
 
