@@ -19,9 +19,10 @@ import { Divider } from "antd";
 import { Stepper } from "./components/Stepper";
 import { Canvas } from "@react-three/fiber";
 import { MainPanel, CompassHud, MiniMapHud } from "./components/Panels";
-import { useRef } from "react";
+import { Suspense, useRef } from "react";
 import { asideData } from "./stores/constants";
 import useStore from "./stores";
+import { Debug, Physics } from "@react-three/rapier";
 
 // function GuiControl() {
 //   const { toggleMap, toggleView } = useControls({ Map: false, FPV: true });
@@ -47,16 +48,16 @@ function App() {
           <View index={2} track={view2}>
             <CompassView />
           </View>
-          <View index={3} track={view3}>
-            <MiniMapView />
-          </View>
+          {/* <View index={3} track={view3}>
+              <MiniMapView />
+            </View> */}
           {/* <Stats showPanel={0} className="stats" /> */}
         </Canvas>
 
         {/* Tracking div's, regular HTML and made responsive with CSS media-queries ... */}
         <MainPanel ref={view1} />
         <CompassHud ref={view2} />
-        <MiniMapHud ref={view3} />
+        {/* <MiniMapHud ref={view3} /> */}
 
         <Loader />
 

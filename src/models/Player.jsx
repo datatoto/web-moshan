@@ -23,6 +23,7 @@ import { useFrame } from "@react-three/fiber";
 // const rotation = new THREE.Vector3();
 
 export function Player(props) {
+  const ref = useRef();
   // const [ref, api] = useSphere(
   //   () => ({
   //     args: [1, 2, 2],
@@ -55,7 +56,7 @@ export function Player(props) {
 
   return (
     <group {...props} dispose={null}>
-      <group name="Armature" scale={0.01}>
+      <group name="Armature" scale={0.01} rotation={[Math.PI / 2, 0, 0]}>
         <primitive object={nodes.mixamorigHips} />
         <skinnedMesh
           name="Ch46"

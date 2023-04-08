@@ -9,8 +9,6 @@ import useStore from "../stores";
 
 // import { useFrame } from "@react-three/fiber";
 
-// const { Text } = Typography;
-
 export function Compass(props) {
   const { nodes, materials } = useGLTF("/compass.glb");
 
