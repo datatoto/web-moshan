@@ -13,6 +13,7 @@ import {
   KeyboardControls,
   Box,
   useGLTF,
+  useKeyboardControls,
 } from "@react-three/drei";
 import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { Compass } from "../models/Compass";
@@ -46,13 +47,24 @@ function ChapterOneView() {
 function ChapterTwoView() {
   // Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?
   const { nodes, materials } = useGLTF("/way.glb");
+  const ref = useRef();
+
+  const forwardPressed = useKeyboardControls((state) => state.forward);
+
+  useEffect(() => {
+    console.log(forwardPressed, "forward");
+
+    if (forwardPressed && ref.current) {
+      ref.current.applyImpulse({ x: 5, y: 0, z: 0 }, true);
+    }
+  }, [forwardPressed]);
 
   return (
     <Suspense>
       <Physics>
         <Debug />
 
-        <RigidBody colliders={false} position={[0, 4, 0]}>
+        <RigidBody colliders={false} position={[0, 2, 0]} ref={ref}>
           <Player />
           <CuboidCollider args={[1, 1, 1]} position={[0, 1, 0]} />
         </RigidBody>
@@ -71,14 +83,6 @@ function ChapterTwoView() {
 }
 
 function MainView({ steps }) {
-  // const map = useMemo(() => [
-  //   { name: "forward", keys: ["ArrowUp", "KeyW"] },
-  //   { name: "backward", keys: ["ArrowDown", "KeyS"] },
-  //   { name: "left", keys: ["ArrowLeft", "KeyA"] },
-  //   { name: "right", keys: ["ArrowRight", "KeyD"] },
-  //   { name: "jump", keys: ["Space"] },
-  // ]);
-
   const cameraControlsRef = useRef();
   const currentStep = useStore((state) => state.currentStep);
   const currentCh = useStore((state) => state.currentCh);

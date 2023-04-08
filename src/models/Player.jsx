@@ -39,16 +39,6 @@ export function Player(props) {
 
   // TODO: Keyboard
   // const [sub, get] = useKeyboardControls();
-
-  // useEffect(() => {
-  //   return sub(
-  //     (state) => state.forward,
-  //     (pressed) => {
-  //       console.log("forward", pressed);
-  //     }
-  //   );
-  // }, []);
-
   // useFrame((state) => {
   //   // const { forward, backward, left, right, jump } = get();
   //   const pressed = get().back;

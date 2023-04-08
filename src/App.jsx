@@ -2,6 +2,7 @@ import "./App.css";
 
 import {
   Environment,
+  KeyboardControls,
   Loader,
   OrbitControls,
   OrthographicCamera,
@@ -19,7 +20,7 @@ import { Divider } from "antd";
 import { Stepper } from "./components/Stepper";
 import { Canvas } from "@react-three/fiber";
 import { MainPanel, CompassHud, MiniMapHud } from "./components/Panels";
-import { Suspense, useRef } from "react";
+import { Suspense, useMemo, useRef } from "react";
 import { asideData } from "./stores/constants";
 import useStore from "./stores";
 import { Debug, Physics } from "@react-three/rapier";
@@ -35,6 +36,14 @@ function App() {
 
   const currentCh = useStore((state) => state.currentCh);
 
+  const map = useMemo(() => [
+    { name: "forward", keys: ["ArrowUp", "KeyW"] },
+    { name: "backward", keys: ["ArrowDown", "KeyS"] },
+    { name: "left", keys: ["ArrowLeft", "KeyA"] },
+    { name: "right", keys: ["ArrowRight", "KeyD"] },
+    { name: "jump", keys: ["Space"] },
+  ]);
+
   return (
     <>
       <div className="container">
@@ -42,9 +51,11 @@ function App() {
           className="canvas"
           eventSource={document.getElementById("root")}
         >
-          <View index={1} track={view1}>
-            <MainView steps={asideData[currentCh].steps} />
-          </View>
+          <KeyboardControls map={map}>
+            <View index={1} track={view1}>
+              <MainView steps={asideData[currentCh].steps} />
+            </View>
+          </KeyboardControls>
           <View index={2} track={view2}>
             <CompassView />
           </View>
