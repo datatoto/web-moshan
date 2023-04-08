@@ -14,6 +14,10 @@ import {
   Box,
   useGLTF,
   useKeyboardControls,
+  Html,
+  Image,
+  useAspect,
+  useTexture,
 } from "@react-three/drei";
 import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { Compass } from "../models/Compass";
@@ -35,16 +39,38 @@ import { Way } from "../models/Way";
 //   }, [camera]);
 // }
 
+function Map() {
+  const scale = useAspect(8266, 5849, 0.1);
+  const image = useTexture("/topo.jpg");
+
+  return (
+    <mesh scale={scale} rotation={[-Math.PI / 2, 0, 0]} position={[1.5, 1.5, 0]}>
+      <planeGeometry />
+      <meshBasicMaterial map={image} />
+    </mesh>
+  );
+}
+
 function ChapterOneView() {
   return (
     <>
-      <Compass />
+      <Map scale={[0.1, 0.1, 0.1]} />
+      {/* <Image url="/topo.jpg" scale={[8.5, 6]} position={[1.5, 0, 0]} /> */}
+      <Compass scale={[0.1, 0.1, 0.1]} position={[0, 1.5, 0]} />
       <Ground />
     </>
   );
 }
 
 function ChapterTwoView() {
+  return (
+    <>
+      <Ground />
+    </>
+  );
+}
+
+function ChapterThreeView() {
   // Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?
   const { nodes, materials } = useGLTF("/way.glb");
   const ref = useRef();
@@ -94,28 +120,24 @@ function MainView({ steps }) {
 
   // const [cameraPosition, setCameraPosition] = useState([0, 4, 0]);
   // const [cameraLookAt, setCameraLookAt] = useState([0, 0, 0]);
-  // const { camera } = useThree();
 
   useEffect(() => {
-    // console.log(cameraInfo[currentStep]);
-    // updateCameraPosition(cameraInfo[currentStep].pos);
-    // updateCameraLookAt(cameraInfo[currentStep].look);
-
-    // console.log(cameraPosition);
-    // console.log(cameraLookAt);
-
     // cameraControlsRef.current.moveTo(3, 5, 3, true);
     cameraControlsRef.current.setLookAt(
       ...cameraInfo[currentStep].pos,
       ...cameraInfo[currentStep].look,
       true
     );
+
+    cameraControlsRef.current.zoomTo(8);
   }, [currentStep]);
 
   return (
     <>
       {currentCh === 0 && <ChapterOneView />}
       {currentCh === 1 && <ChapterTwoView />}
+      {/* {currentCh === 2 && <ChapterThreeView />}
+      {currentCh === 4 && <ChapterFourView />} */}
       <CameraControls ref={cameraControlsRef} makeDefault />
       <Environment files="background.hdr" background />
     </>
@@ -125,20 +147,8 @@ function MainView({ steps }) {
 function MiniMapView() {
   return (
     <>
-      <OrthographicCamera
-        makeDefault
-        position={[0, 200, 0]}
-        rotation={[-Math.PI / 2, 0, 0]}
-        left={-1000}
-        right={1000}
-        top={1000}
-        bottom={-1000}
-        near={100}
-        far={1000}
-      />
-      <Ground />
-      <MapControls makeDefault screenSpacePanning enableRotate={false} />
-      <Environment files="background.hdr" background />
+      <Image url="/topo.jpg" />
+      <MapControls screenSpacePanning enableRotate={false} minZoom={65} />
     </>
   );
 }

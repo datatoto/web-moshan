@@ -1,7 +1,7 @@
 import { create } from "zustand";
 
 const useStore = create((set) => ({
-  currentCh: 1,
+  currentCh: 0,
   currentStep: 0,
   currentCirlPos: -0.45,
   currentDeclRot: 8,
