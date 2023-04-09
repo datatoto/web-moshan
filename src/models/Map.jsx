@@ -29,7 +29,7 @@ const moveSp = (point) => {
   sp.current.position.z = point.z;
 };
 
-export default function Map({ position, isRot }) {
+export default function Map({ position, isRot, visible }) {
   const plane = useRef();
 
   const scale = useAspect(8266, 5849, 0.2);
@@ -44,7 +44,7 @@ export default function Map({ position, isRot }) {
   ]);
 
   return (
-    <group dispose={null}>
+    <group dispose={null} visible={visible}>
       <mesh
         position={position}
         rotation={[-Math.PI / 2, 0, (Math.PI / 360) * mapRot]}

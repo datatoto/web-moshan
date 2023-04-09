@@ -23,7 +23,7 @@ import { Button, Divider } from "antd";
 // DONE: stepper
 import { Canvas, useThree } from "@react-three/fiber";
 import { Suspense, useEffect, useMemo, useRef } from "react";
-import useStore from "./stores";
+import useStore, { useExploreStore } from "./stores";
 import Aside from "./components/Aside";
 import { Ground } from "./models/Ground";
 import { Stepper } from "./components/ChapterOne";
@@ -31,6 +31,7 @@ import { titles } from "./stores/constants";
 import { Compass } from "./models/Compass";
 import { useState } from "react";
 import Map from "./models/Map";
+import { Player } from "./models/Player";
 
 // function GuiControl() {
 //   const { toggleMap, toggleView } = useControls({ Map: false, FPV: true });
@@ -47,6 +48,7 @@ function App() {
     state.currentCh,
     state.updateCurrentCh,
   ]);
+  const isExplore = useExploreStore((state) => state.isExplore);
 
   const [cameraPos, setCameraPos] = useState([0, 4, 0]);
 
@@ -81,8 +83,13 @@ function App() {
               <PerspectiveCamera makeDefault position={cameraPos} near={0.01} />
               <CameraControls ref={cameraControlsRef} makeDefault />
 
-              <Compass scale={[0.1, 0.1, 0.1]} position={[0, 1.5, 0]} />
-              <Map position={[2, 1.5, 0]} />
+              <Compass
+                scale={[0.1, 0.1, 0.1]}
+                position={[0, 1.5, 0]}
+                visible={!isExplore}
+              />
+              <Map position={[2, 1.5, 0]} visible={!isExplore} />
+              <Player visible={isExplore} />
 
               <Ground />
               <Environment files="background.hdr" background />
