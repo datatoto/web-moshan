@@ -1,3 +1,7 @@
+const titles = ["判别方位", "标定地图", "确定站立点", "确定目标点"];
+
+export { titles };
+
 const asideData = [
   {
     title: "判别方位",
@@ -66,7 +70,8 @@ const asideData = [
     steps: [
       {
         title: "后方交会法",
-        content: "通过直尺或目视，观察显著地物1在站立点的方位，在地图上，对显著地物做该方位的延长线。再对另外一个显著地物做延长线，两点的焦点大概就是该点的位置。",
+        content:
+          "通过直尺或目视，观察显著地物1在站立点的方位，在地图上，对显著地物做该方位的延长线。再对另外一个显著地物做延长线，两点的焦点大概就是该点的位置。",
         cameraPosition: [4, 4, 4],
         cameraLookAt: [0, 1.5, 0],
       },
@@ -109,8 +114,6 @@ const tests = [
     answer: 2,
   },
 ];
-
-export { tests, asideData };
 
 // const data = [
 //   {

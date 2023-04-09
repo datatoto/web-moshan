@@ -1,6 +1,7 @@
 import "./App.css";
 
 import {
+  CameraControls,
   Environment,
   Image,
   KeyboardControls,
@@ -20,11 +21,16 @@ import { CompassView, MiniMapView, MainView } from "./components/Views";
 // import Sider from "antd/es/layout/Sider";
 import { Button, Divider } from "antd";
 // DONE: stepper
-import { Stepper } from "./components/Stepper";
 import { Canvas, useThree } from "@react-three/fiber";
 import { Suspense, useEffect, useMemo, useRef } from "react";
-import { asideData } from "./stores/constants";
 import useStore from "./stores";
+import Aside from "./components/Aside";
+import { Ground } from "./models/Ground";
+import { Stepper } from "./components/ChapterOne";
+import { titles } from "./stores/constants";
+import { Compass } from "./models/Compass";
+import { useState } from "react";
+import Map from "./components/Map";
 
 // function GuiControl() {
 //   const { toggleMap, toggleView } = useControls({ Map: false, FPV: true });
@@ -35,8 +41,14 @@ function App() {
   const compassView = useRef();
   // TODO: mapView
   const mapView = useRef();
+  const cameraControlsRef = useRef();
 
-  const currentCh = useStore((state) => state.currentCh);
+  const [currentCh, setCurrentCh] = useStore((state) => [
+    state.currentCh,
+    state.updateCurrentCh,
+  ]);
+
+  const [cameraPos, setCameraPos] = useState([0, 4, 0]);
 
   // const canvasRef = useRef();
   // useEffect(() => {
@@ -47,13 +59,13 @@ function App() {
   //   context.fillRect(0, 0, context.canvas.width, context.canvas.height);
   // });
 
-  const keymap = useMemo(() => [
-    { name: "forward", keys: ["ArrowUp", "KeyW"] },
-    { name: "backward", keys: ["ArrowDown", "KeyS"] },
-    { name: "left", keys: ["ArrowLeft", "KeyA"] },
-    { name: "right", keys: ["ArrowRight", "KeyD"] },
-    { name: "jump", keys: ["Space"] },
-  ]);
+  // const keymap = useMemo(() => [
+  //   { name: "forward", keys: ["ArrowUp", "KeyW"] },
+  //   { name: "backward", keys: ["ArrowDown", "KeyS"] },
+  //   { name: "left", keys: ["ArrowLeft", "KeyA"] },
+  //   { name: "right", keys: ["ArrowRight", "KeyD"] },
+  //   { name: "jump", keys: ["Space"] },
+  // ]);
 
   return (
     <>
@@ -64,11 +76,18 @@ function App() {
           eventSource={document.getElementById("root")}
         >
           <Suspense fallback={null}>
-            <KeyboardControls map={keymap}>
-              <View index={1} track={mainView}>
-                <MainView steps={asideData[currentCh].steps} />
-              </View>
-            </KeyboardControls>
+            {/* <KeyboardControls map={keymap}> */}
+            <View index={1} track={mainView}>
+              <PerspectiveCamera makeDefault position={cameraPos} near={0.01} />
+              <CameraControls ref={cameraControlsRef} makeDefault />
+
+              <Compass scale={[0.1, 0.1, 0.1]} position={[0, 1.5, 0]} />
+              <Map position={[1, 1.5, 0]} />
+
+              <Ground />
+              <Environment files="background.hdr" background />
+            </View>
+            {/* </KeyboardControls> */}
             <View index={2} track={compassView}>
               <CompassView />
             </View>
@@ -78,6 +97,9 @@ function App() {
           </Suspense>
           <Preload all />
         </Canvas>
+
+        <Loader />
+
         {/* Tracking div's, regular HTML and made responsive with CSS media-queries ... */}
         <div
           ref={mainView}
@@ -90,6 +112,7 @@ function App() {
             height: "100%",
           }}
         ></div>
+
         <div
           ref={compassView}
           className="panel compass"
@@ -101,6 +124,7 @@ function App() {
             height: "300px",
           }}
         ></div>
+
         <div
           ref={mapView}
           className="panel compass"
@@ -112,44 +136,15 @@ function App() {
             height: "300px",
           }}
         ></div>
-
-        <Loader />
       </div>
 
-      <aside
-        className="glass aside"
-        style={{
-          position: "absolute",
-          top: "0px",
-          width: "25vw",
-          height: "98vh",
-          padding: "0 10px",
-          overflowY: "scroll",
-          margin: "10px",
-          zIndex: "5",
-        }}
-      >
-        <h3
-          style={{
-            textAlign: "center",
-          }}
-        >
-          {asideData[currentCh].title}
-        </h3>
-        {/* <Divider style={{ backgroundColor: "black" }} /> */}
-        <Stepper steps={asideData[currentCh].steps} />
-
-        {/* <Button
-          style={{
-            position: "absolute",
-            bottom: "10px",
-            right: "10px",
-          }}
-          onClick={toggleMap}
-        >
-          地图
-        </Button> */}
-      </aside>
+      <Aside title={titles[currentCh]}>
+        {currentCh === 0 && <Stepper />}
+        <Divider />
+        <Button type="primary" disabled>
+          下一章
+        </Button>
+      </Aside>
     </>
   );
 }
