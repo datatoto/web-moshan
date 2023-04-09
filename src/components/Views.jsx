@@ -18,6 +18,10 @@ import {
   Image,
   useAspect,
   useTexture,
+  Point,
+  Points,
+  Sphere,
+  Line,
 } from "@react-three/drei";
 import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { Compass } from "../models/Compass";
@@ -43,48 +47,96 @@ import * as THREE from "three";
 
 function Map() {
   const plane = useRef(null);
-  const v = new THREE.Vector3([1, 0, 0]);
-  const p1 = new THREE.Plane(v);
-  const v1 = new THREE.Vector3();
+  const sp = useRef();
+  const [points, setPoints] = useState([]);
 
   const scale = useAspect(8266, 5849, 0.1);
   const image = useTexture("/topo.jpg");
 
-  const { scene } = useThree();
+  // const { scene } = useThree();
 
-  const clickPlane = (ray) => {
-    console.log(ray);
-    const raycaster = new THREE.Raycaster(ray.origin, ray.direction);
-    const intersects = raycaster.intersectObject(plane.current, false);
-    console.log(intersects[0].point);
+  const calAngle = (p1, p2) => {
+    // console.log(p1, "p1");
+    // console.log(p2, "p2");
+    const dy = p1.z - p2.z;
+    const dx = p1.x - p2.x;
+    const theta = Math.atan2(dy, dx);
+    const degs = (theta * 180) / Math.PI;
+    return Math.ceil(degs);
+  };
 
-    const rollOverGeo = new THREE.BoxGeometry(0.05, 0.05, 0.05);
-    const rollOverMaterial = new THREE.MeshBasicMaterial({ color: 0xff0000 });
-    const rollOverMesh = new THREE.Mesh(rollOverGeo, rollOverMaterial);
+  const moveSp = (point) => {
+    // console.log(point);
+    sp.current.position.x = point.x;
+    sp.current.position.y = point.y;
+    sp.current.position.z = point.z;
+  };
 
-    rollOverMesh.position
-      .copy(intersects[0].point)
-      // .add(intersects[0].face.normal);
+  const clickPlane = (point) => {
+    // console.log(ray);
+    // const raycaster = new THREE.Raycaster(ray.origin, ray.direction);
+    // const intersects = raycaster.intersectObject(plane.current, false);
 
-    scene.add(rollOverMesh);
-    // console.log(ray.intersectsPlane(p1));
-    // ray.intersectPlane(p1, v1);
-    // console.log(v1);
+    // const newPoint = [
+    //   intersects[0].point.x,
+    //   intersects[0].point.y,
+    //   intersects[0].point.z,
+    // ];
+
+    // console.log(intersects[0].point);
+
+    setPoints([...points, point]);
+
+    // console.log(points);
+    // const rollOverGeo = new THREE.BoxGeometry(0.05, 0.05, 0.05);
+    // const rollOverMaterial = new THREE.MeshBasicMaterial({ color: 0xff0000 });
+    // const rollOverMesh = new THREE.Mesh(rollOverGeo, rollOverMaterial);
+
+    // rollOverMesh.position.copy(intersects[0].point);
+    // .add(intersects[0].face.normal);
+
+    // scene.add(rollOverMesh);
   };
 
   return (
-    <>
+    <group>
       <mesh
         ref={plane}
         scale={scale}
         rotation={[-Math.PI / 2, 0, 0]}
         position={[1.5, 1.5, 0]}
-        onClick={(e) => clickPlane(e.ray)}
+        onClick={(e) => clickPlane(e.point)}
+        onContextMenu={setPoints(points.slice(0, -1))}
+        onPointerMove={(e) => moveSp(e.point)}
       >
         <planeGeometry />
         <meshBasicMaterial map={image} />
       </mesh>
-    </>
+      {points.map((p, i) => (
+        <Sphere position={p} key={i} args={[0.01]}>
+          <meshStandardMaterial color="hotpink" />
+        </Sphere>
+      ))}
+      <Sphere ref={sp} args={[0.01]} position={[1.5, 1.5, 0]}>
+        <meshStandardMaterial color="black" />
+      </Sphere>
+      {/* <Points limit={5}>
+        <pointsMaterial vertexColors />
+        <Point position={[1.5, 1.5, 1]} color="red" size={0.1} />
+      </Points> */}
+      {points.map((p, i) => (
+        <Line
+          points={[p, sp.current.position]}
+          color="red"
+          lineWidth={2}
+          key={i}
+        >
+          <Html center position={p}>
+            <span>{calAngle(p, sp.current.position)} 度</span>
+          </Html>
+        </Line>
+      ))}
+    </group>
   );
 }
 
