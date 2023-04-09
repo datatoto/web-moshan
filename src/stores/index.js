@@ -6,11 +6,13 @@ const useStore = create((set) => ({
   currentCirlPos: -0.45,
   currentDeclRot: 8,
   currentRot: 1,
+  currentMapRot: 5,
   //   cameraPosition: [0, 4, 0],
   //   cameraLookAt: [0, 0, 0],
   updateCurrentCh: (c) => set(() => ({ currentCh: c })),
   updateCurrentStep: (s) => set(() => ({ currentStep: s })),
   updateCurrentRot: (r) => set(() => ({ currentRot: r })),
+  updateCurrentMapRot: (m) => set(() => ({ currentMapRot: m })),
   updateCurrentCirlPos: () =>
     set((state) => ({ currentCirlPos: state.currentCirlPos - 0.05 })),
   updateCurrentDeclRot: () =>

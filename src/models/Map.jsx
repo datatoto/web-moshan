@@ -8,7 +8,7 @@ import {
   Point,
 } from "@react-three/drei";
 import { useEffect, useMemo, useRef, useState } from "react";
-// import { create } from "zustand";
+import useStore from "../stores";
 
 // const usePointStore = create(() => ({ x: 0, y: 0, z: 0 }));
 
@@ -29,7 +29,7 @@ const moveSp = (point) => {
   sp.current.position.z = point.z;
 };
 
-export default function Map({ position, rotation }) {
+export default function Map({ position, isRot }) {
   const plane = useRef();
 
   const scale = useAspect(8266, 5849, 0.2);
@@ -38,20 +38,24 @@ export default function Map({ position, rotation }) {
   const [points, setPoints] = useState([]);
   const [movePoint, setMovePoint] = useState();
 
-  const handleClick = (point) => {
-    console.log(point);
-    setPoints([...points, point]);
-  };
+  const [mapRot, setRot] = useStore((state) => [
+    state.currentMapRot,
+    state.updateCurrentMapRot,
+  ]);
 
   return (
     <group dispose={null}>
       <mesh
         position={position}
-        rotation={[-Math.PI / 2, 0, 0]}
+        rotation={[-Math.PI / 2, 0, (Math.PI / 360) * mapRot]}
         scale={scale}
         ref={plane}
-        onClick={(e) => handleClick(e.point)}
-        onContextMenu={() => setPoints(points.slice(0, -1))}
+        onClick={(e) => {
+          isRot ? setRot(mapRot + 5) : setPoints([...points, e.point]);
+        }}
+        onContextMenu={() =>
+          isRot ? setRot(mapRot - 5) : setPoints(points.slice(0, -1))
+        }
         onPointerMove={(e) => setMovePoint(e.point)}
       >
         <planeGeometry />

@@ -30,7 +30,7 @@ import { Stepper } from "./components/ChapterOne";
 import { titles } from "./stores/constants";
 import { Compass } from "./models/Compass";
 import { useState } from "react";
-import Map from "./components/Map";
+import Map from "./models/Map";
 
 // function GuiControl() {
 //   const { toggleMap, toggleView } = useControls({ Map: false, FPV: true });
@@ -82,7 +82,7 @@ function App() {
               <CameraControls ref={cameraControlsRef} makeDefault />
 
               <Compass scale={[0.1, 0.1, 0.1]} position={[0, 1.5, 0]} />
-              <Map position={[1, 1.5, 0]} />
+              <Map position={[2, 1.5, 0]} />
 
               <Ground />
               <Environment files="background.hdr" background />
