@@ -22,7 +22,6 @@ import { Button, Divider } from "antd";
 // DONE: stepper
 import { Stepper } from "./components/Stepper";
 import { Canvas, useThree } from "@react-three/fiber";
-import { MainPanel, CompassHud, MiniMapHud } from "./components/Panels";
 import { Suspense, useEffect, useMemo, useRef } from "react";
 import { asideData } from "./stores/constants";
 import useStore from "./stores";
@@ -32,13 +31,13 @@ import useStore from "./stores";
 // }
 
 function App() {
-  const view1 = useRef();
-  const view2 = useRef();
-  const view3 = useRef();
+  const mainView = useRef();
+  const compassView = useRef();
+  // TODO: mapView
+  const mapView = useRef();
 
-  
   const currentCh = useStore((state) => state.currentCh);
-  
+
   // const canvasRef = useRef();
   // useEffect(() => {
   //   const canvas = canvasRef.current;
@@ -64,37 +63,61 @@ function App() {
           className="canvas"
           eventSource={document.getElementById("root")}
         >
-          {/* <Image url="/topo.jpg" scale={[8.5, 6]} position={[1.5, 0, 0]} /> */}
           <Suspense fallback={null}>
             <KeyboardControls map={keymap}>
-              <View index={1} track={view1}>
+              <View index={1} track={mainView}>
                 <MainView steps={asideData[currentCh].steps} />
               </View>
             </KeyboardControls>
-            <View index={2} track={view2}>
+            <View index={2} track={compassView}>
               <CompassView />
             </View>
             {/* <View index={3} track={view3}>
             </View> */}
-            <Stats showPanel={0} className="stats" />
+            {/* <Stats showPanel={0} className="stats" /> */}
           </Suspense>
           <Preload all />
         </Canvas>
         {/* Tracking div's, regular HTML and made responsive with CSS media-queries ... */}
-        <MainPanel ref={view1} />
-        <CompassHud ref={view2} />
-
-        {/* <MiniMapHud ref={view3} /> */}
+        <div
+          ref={mainView}
+          className="panel main"
+          style={{
+            position: "absolute",
+            top: "0",
+            left: "0",
+            width: "100%",
+            height: "100%",
+          }}
+        ></div>
+        <div
+          ref={compassView}
+          className="panel compass"
+          style={{
+            position: "absolute",
+            top: "10px",
+            right: "10px",
+            width: "300px",
+            height: "300px",
+          }}
+        ></div>
+        <div
+          ref={mapView}
+          className="panel compass"
+          style={{
+            position: "absolute",
+            bottom: "10px",
+            right: "10px",
+            width: "300px",
+            height: "300px",
+          }}
+        ></div>
 
         <Loader />
-
-        {/* <GuiControl /> */}
       </div>
 
-      {/* <canvas id="canvas" ref={canvasRef} /> */}
-
       <aside
-        className="glass"
+        className="glass aside"
         style={{
           position: "absolute",
           top: "0px",
@@ -103,7 +126,7 @@ function App() {
           padding: "0 10px",
           overflowY: "scroll",
           margin: "10px",
-          zIndex: "5"
+          zIndex: "5",
         }}
       >
         <h3

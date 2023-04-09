@@ -34,6 +34,7 @@ import { Way } from "../models/Way";
 // import { steps } from "../stores/constants";
 
 import * as THREE from "three";
+import ChapterOne from "./ChapterOne";
 
 // function Foo() {
 //   const camera = useThree((state) => state.camera);
@@ -140,20 +141,19 @@ function Map() {
   );
 }
 
-function ChapterOneView() {
-  return (
-    <>
-      <Map scale={[0.1, 0.1, 0.1]} />
-      {/* <Image url="/topo.jpg" scale={[8.5, 6]} position={[1.5, 0, 0]} /> */}
-      <Compass scale={[0.1, 0.1, 0.1]} position={[0, 1.5, 0]} />
-      <Ground />
-    </>
-  );
-}
+// function ChapterOneView() {
+//   return (
+//     <>
+//       <Compass scale={[0.1, 0.1, 0.1]} position={[0, 1.5, 0]} />
+//       <Ground />
+//     </>
+//   );
+// }
 
 function ChapterTwoView() {
   return (
     <>
+      <Map scale={[0.1, 0.1, 0.1]} />
       <Ground />
     </>
   );
@@ -223,7 +223,7 @@ function MainView({ steps }) {
 
   return (
     <>
-      {currentCh === 0 && <ChapterOneView />}
+      {currentCh === 0 && <ChapterOne />}
       {currentCh === 1 && <ChapterTwoView />}
       {/* {currentCh === 2 && <ChapterThreeView />}
       {currentCh === 4 && <ChapterFourView />} */}

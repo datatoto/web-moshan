@@ -61,6 +61,30 @@ const asideData = [
       },
     ],
   },
+  {
+    title: "确定站立点",
+    steps: [
+      {
+        title: "后方交会法",
+        content: "通过直尺或目视，观察显著地物1在站立点的方位，在地图上，对显著地物做该方位的延长线。再对另外一个显著地物做延长线，两点的焦点大概就是该点的位置。",
+        cameraPosition: [4, 4, 4],
+        cameraLookAt: [0, 1.5, 0],
+      },
+      {
+        title: "磁方位角交会法",
+        content:
+          "在远处选定两个地图上也有的明显地形点，分别记录明显地形点相对于现在位置的方位角，在已经标定好的地图上，从两个明显地形点沿长尺边画出方向线，两方向线的交点即为站立点的图上位置。",
+        cameraPosition: [0, 4, 0],
+        cameraLookAt: [0, 1.5, 0],
+      },
+      {
+        title: "测验",
+        content: "",
+        cameraPosition: [0, 4, 0],
+        cameraLookAt: [0, 1.5, 0],
+      },
+    ],
+  },
 ];
 
 const tests = [
