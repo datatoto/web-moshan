@@ -5,8 +5,11 @@ Command: npx gltfjsx@6.1.4 public/character.glb
 
 import React, { useEffect, useRef } from "react";
 import { useGLTF, useAnimations, useKeyboardControls } from "@react-three/drei";
-import { useFrame } from "@react-three/fiber";
+import { useFrame, useThree } from "@react-three/fiber";
 import { usePlayerPosStore } from "../stores";
+
+import * as THREE from "three";
+
 // import {
 //   useBox,
 //   useCompoundBody,
@@ -25,23 +28,18 @@ import { usePlayerPosStore } from "../stores";
 
 export function Player(props) {
   const ref = useRef();
-  // const [ref, api] = useSphere(
-  //   () => ({
-  //     args: [1, 2, 2],
-  //     position: [0, 5, 3],
-  //     mass: 40,
-  //     ...props,
-  //   }),
-  //   useRef(null)
-  // );
+  const playerSpeed = 10;
+
+  let upVector = new THREE.Vector3(0, 1, 0);
+  let tempVector = new THREE.Vector3();
 
   const { nodes, materials, animations } = useGLTF("/character.glb");
   const { actions } = useAnimations(animations, ref);
 
-  const [playerPos, setPlayerPos] = usePlayerPosStore((state) => [
-    state.playerPos,
-    state.updatePlayerPos,
-  ]);
+  // const [playerPos, setPlayerPos] = usePlayerPosStore((state) => [
+  //   state.playerPos,
+  //   state.updatePlayerPos,
+  // ]);
 
   // TODO: Keyboard
   const forwardPressed = useKeyboardControls((state) => state.forward);
@@ -49,28 +47,65 @@ export function Player(props) {
   const leftPressed = useKeyboardControls((state) => state.left);
   const rightPressed = useKeyboardControls((state) => state.right);
 
-  useEffect(() => {
-    // console.log(forwardPressed);
+  // const { controls } = useThree();
+  // const angle = controls.azimuthAngle;
 
+  // useEffect(() => {
+  //   // console.log(forwardPressed);
+  //   console.log(angle);
+
+  //   if (forwardPressed) {
+  //     tempVector.set(0, 0, -1).applyAxisAngle(upVector, angle);
+  //     const newPos = playerPos.addScaledVector(tempVector, playerSpeed * delta);
+  //     setPlayerPos(newPos);
+  //   }
+  //   if (backwardPressed) {
+  //     const newPos = [playerPos[0] - 1, playerPos[1], playerPos[2]];
+  //     setPlayerPos(newPos);
+  //   }
+  //   if (leftPressed) {
+  //     const newPos = [playerPos[0], playerPos[1], playerPos[2] + 1];
+  //     setPlayerPos(newPos);
+  //   }
+  //   if (rightPressed) {
+  //     const newPos = [playerPos[0], playerPos[1], playerPos[2] - 1];
+  //     setPlayerPos(newPos);
+  //   }
+
+  //   // console.log(playerPos);
+  // }, [forwardPressed, backwardPressed, leftPressed, rightPressed]);
+
+  useFrame((state, delta) => {
+    // Player Movement
+
+    // ref.current.position.x += delta;
     if (forwardPressed) {
-      const newPos = [playerPos[0] + 1, playerPos[1], playerPos[2]];
-      setPlayerPos(newPos);
+      tempVector
+        .set(0, 0, -1)
+        .applyAxisAngle(upVector, state.controls.azimuthAngle);
+      ref.current.position.addScaledVector(tempVector, playerSpeed * delta);
     }
     if (backwardPressed) {
-      const newPos = [playerPos[0] - 1, playerPos[1], playerPos[2]];
-      setPlayerPos(newPos);
+      tempVector
+        .set(0, 0, 1)
+        .applyAxisAngle(upVector, state.controls.azimuthAngle);
+      ref.current.position.addScaledVector(tempVector, playerSpeed * delta);
     }
     if (leftPressed) {
-      const newPos = [playerPos[0], playerPos[1], playerPos[2] + 1];
-      setPlayerPos(newPos);
+      tempVector
+        .set(-1, 0, 0)
+        .applyAxisAngle(upVector, state.controls.azimuthAngle);
+      ref.current.position.addScaledVector(tempVector, playerSpeed * delta);
     }
     if (rightPressed) {
-      const newPos = [playerPos[0], playerPos[1], playerPos[2] - 1];
-      setPlayerPos(newPos);
+      tempVector
+        .set(1, 0, 0)
+        .applyAxisAngle(upVector, state.controls.azimuthAngle);
+      ref.current.position.addScaledVector(tempVector, playerSpeed * delta);
     }
 
-    // console.log(playerPos);
-  }, [forwardPressed, backwardPressed, leftPressed, rightPressed]);
+    state.controls.moveTo(...ref.current.position, true);
+  });
 
   // const [sub, get] = useKeyboardControls();
   // useFrame((state) => {
@@ -79,7 +114,7 @@ export function Player(props) {
   // });
 
   return (
-    <group {...props} dispose={null} position={playerPos}>
+    <group ref={ref} {...props} dispose={null}>
       <group name="Armature" scale={0.01} rotation={[Math.PI / 2, 0, 0]}>
         <primitive object={nodes.mixamorigHips} />
         <skinnedMesh
