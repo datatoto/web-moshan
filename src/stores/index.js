@@ -24,8 +24,13 @@ const useStore = create((set) => ({
 }));
 
 export const useExploreStore = create((set) => ({
-  isExplore: false,
+  isExplore: true,
   toggleExplore: () => set((state) => ({ isExplore: !state.isExplore })),
+}));
+
+export const usePlayerPosStore = create((set) => ({
+  playerPos: [0, 0, 0],
+  updatePlayerPos: (p) => set(() => ({ playerPos: p })),
 }));
 
 export default useStore;

@@ -6,6 +6,7 @@ Command: npx gltfjsx@6.1.4 public/character.glb
 import React, { useEffect, useRef } from "react";
 import { useGLTF, useAnimations, useKeyboardControls } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
+import { usePlayerPosStore } from "../stores";
 // import {
 //   useBox,
 //   useCompoundBody,
@@ -37,7 +38,40 @@ export function Player(props) {
   const { nodes, materials, animations } = useGLTF("/character.glb");
   const { actions } = useAnimations(animations, ref);
 
+  const [playerPos, setPlayerPos] = usePlayerPosStore((state) => [
+    state.playerPos,
+    state.updatePlayerPos,
+  ]);
+
   // TODO: Keyboard
+  const forwardPressed = useKeyboardControls((state) => state.forward);
+  const backwardPressed = useKeyboardControls((state) => state.backward);
+  const leftPressed = useKeyboardControls((state) => state.left);
+  const rightPressed = useKeyboardControls((state) => state.right);
+
+  useEffect(() => {
+    // console.log(forwardPressed);
+
+    if (forwardPressed) {
+      const newPos = [playerPos[0] + 1, playerPos[1], playerPos[2]];
+      setPlayerPos(newPos);
+    }
+    if (backwardPressed) {
+      const newPos = [playerPos[0] - 1, playerPos[1], playerPos[2]];
+      setPlayerPos(newPos);
+    }
+    if (leftPressed) {
+      const newPos = [playerPos[0], playerPos[1], playerPos[2] + 1];
+      setPlayerPos(newPos);
+    }
+    if (rightPressed) {
+      const newPos = [playerPos[0], playerPos[1], playerPos[2] - 1];
+      setPlayerPos(newPos);
+    }
+
+    // console.log(playerPos);
+  }, [forwardPressed, backwardPressed, leftPressed, rightPressed]);
+
   // const [sub, get] = useKeyboardControls();
   // useFrame((state) => {
   //   // const { forward, backward, left, right, jump } = get();
@@ -45,7 +79,7 @@ export function Player(props) {
   // });
 
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} position={playerPos}>
       <group name="Armature" scale={0.01} rotation={[Math.PI / 2, 0, 0]}>
         <primitive object={nodes.mixamorigHips} />
         <skinnedMesh

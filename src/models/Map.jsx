@@ -61,13 +61,14 @@ export default function Map({ position, isRot, visible }) {
         <planeGeometry />
         <meshBasicMaterial map={image} />
       </mesh>
-      {points.map((p, i) => (
-        <Line points={[p, movePoint]} color="red" lineWidth={2} key={i}>
-          <Html center position={p}>
-            <span>{calAngle(p, movePoint)} 度</span>
-          </Html>
-        </Line>
-      ))}
+      {visible &&
+        points.map((p, i) => (
+          <Line points={[p, movePoint]} color="red" lineWidth={2} key={i}>
+            <Html center position={p}>
+              <span>{calAngle(p, movePoint)} 度</span>
+            </Html>
+          </Line>
+        ))}
     </group>
   );
 }

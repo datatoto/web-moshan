@@ -23,7 +23,7 @@ import { Button, Divider } from "antd";
 // DONE: stepper
 import { Canvas, useThree } from "@react-three/fiber";
 import { Suspense, useEffect, useMemo, useRef } from "react";
-import useStore, { useExploreStore } from "./stores";
+import useStore, { useExploreStore, usePlayerPosStore } from "./stores";
 import Aside from "./components/Aside";
 import { Ground } from "./models/Ground";
 import { Stepper } from "./components/ChapterOne";
@@ -40,8 +40,8 @@ import { Player } from "./models/Player";
 function App() {
   const mainView = useRef();
   const compassView = useRef();
-  // TODO: mapView
   const mapView = useRef();
+
   const cameraControlsRef = useRef();
 
   const [currentCh, setCurrentCh] = useStore((state) => [
@@ -49,8 +49,8 @@ function App() {
     state.updateCurrentCh,
   ]);
   const isExplore = useExploreStore((state) => state.isExplore);
-
   const [cameraPos, setCameraPos] = useState([0, 4, 0]);
+  const playerPos = usePlayerPosStore((state) => state.playerPos);
 
   // const canvasRef = useRef();
   // useEffect(() => {
@@ -61,13 +61,13 @@ function App() {
   //   context.fillRect(0, 0, context.canvas.width, context.canvas.height);
   // });
 
-  // const keymap = useMemo(() => [
-  //   { name: "forward", keys: ["ArrowUp", "KeyW"] },
-  //   { name: "backward", keys: ["ArrowDown", "KeyS"] },
-  //   { name: "left", keys: ["ArrowLeft", "KeyA"] },
-  //   { name: "right", keys: ["ArrowRight", "KeyD"] },
-  //   { name: "jump", keys: ["Space"] },
-  // ]);
+  const keymap = useMemo(() => [
+    { name: "forward", keys: ["ArrowUp", "KeyW"] },
+    { name: "backward", keys: ["ArrowDown", "KeyS"] },
+    { name: "left", keys: ["ArrowLeft", "KeyA"] },
+    { name: "right", keys: ["ArrowRight", "KeyD"] },
+    // { name: "jump", keys: ["Space"] },
+  ]);
 
   return (
     <>
@@ -78,7 +78,6 @@ function App() {
           eventSource={document.getElementById("root")}
         >
           <Suspense fallback={null}>
-            {/* <KeyboardControls map={keymap}> */}
             <View index={1} track={mainView}>
               <PerspectiveCamera makeDefault position={cameraPos} near={0.01} />
               <CameraControls ref={cameraControlsRef} makeDefault />
@@ -89,12 +88,14 @@ function App() {
                 visible={!isExplore}
               />
               <Map position={[2, 1.5, 0]} visible={!isExplore} />
-              <Player visible={isExplore} />
+
+              <KeyboardControls map={keymap}>
+                <Player visible={isExplore} />
+              </KeyboardControls>
 
               <Ground />
               <Environment files="background.hdr" background />
             </View>
-            {/* </KeyboardControls> */}
             <View index={2} track={compassView}>
               <CompassView />
             </View>
@@ -148,6 +149,7 @@ function App() {
       <Aside title={titles[currentCh]}>
         {currentCh === 0 && <Stepper />}
         <Divider />
+        {/* TODO */}
         <Button type="primary" disabled>
           下一章
         </Button>
