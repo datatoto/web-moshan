@@ -1,7 +1,7 @@
 import { create } from "zustand";
 
 const useStore = create((set) => ({
-  currentCh: 0,
+  currentCh: 3,
   currentStep: 0,
 
   currentCirlPos: -0.45,
@@ -24,7 +24,7 @@ const useStore = create((set) => ({
 }));
 
 export const useExploreStore = create((set) => ({
-  isExplore: true,
+  isExplore: false,
   toggleExplore: () => set((state) => ({ isExplore: !state.isExplore })),
 }));
 

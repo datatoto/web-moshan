@@ -46,21 +46,20 @@ export const Scene = (props) => {
 
   return (
     <>
-      <PerspectiveCamera makeDefault position={[1, 3, 1]} near={0.01} />
-      <CameraControls makeDefault minDistance={2} maxDistance={6} maxPolarAngle={Math.PI / 2} />
-
-      <Compass
-        scale={[0.1, 0.1, 0.1]}
-        position={[0, 1.5, 0]}
-        visible={!isExplore}
+      <PerspectiveCamera makeDefault position={[1, 5, 1]} near={0.01} />
+      <CameraControls
+        makeDefault
+        minDistance={2}
+        maxDistance={10}
+        maxPolarAngle={Math.PI / 2}
       />
-      <Map position={[2, 1.5, 0]} visible={!isExplore} />
 
-      <Player ref={player} visible={isExplore} />
+      <Compass scale={[0.1, 0.1, 0.1]} position={[0, 1, 0]} />
+      <Map position={[2, 1, 0]} />
 
-      <Bvh firstHitOnly>
-        <Ground ref={ground} position={[0, -2, 0]} />
-      </Bvh>
+      <Player ref={player} />
+
+      <Ground ref={ground} position={[0, -2, 0]} />
 
       <Environment files="background.hdr" background />
     </>

@@ -93,7 +93,7 @@ export const Player = forwardRef((props, pref) => {
 
   return (
     <group ref={pref} {...props} dispose={null}>
-      <group name="Armature" scale={0.01} rotation={[Math.PI / 2, 0, 0]}>
+      <group name="Armature" scale={0.03} rotation={[Math.PI / 2, 0, 0]}>
         <primitive object={nodes.mixamorigHips} />
         <skinnedMesh
           name="Ch46"

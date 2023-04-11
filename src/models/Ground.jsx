@@ -4,7 +4,7 @@ Command: npx gltfjsx@6.1.4 public/ground.glb
 */
 
 import React, { forwardRef, useRef } from "react";
-import { useGLTF } from "@react-three/drei";
+import { Bvh, useGLTF } from "@react-three/drei";
 
 export const Ground = forwardRef((props, gref) => {
   const { nodes, materials } = useGLTF("/ground.glb");
@@ -30,13 +30,15 @@ export const Ground = forwardRef((props, gref) => {
         rotation={[0, -0.07, 0]}
         scale={-2237.69}
       />
-      <mesh
-        ref={gref}
-        geometry={nodes.研究区域.geometry}
-        material={materials.地面}
-        position={[-573.32, -61.16, 1378.41]}
-        rotation={[0, -0.07, 0]}
-      />
+      <Bvh firstHitOnly>
+        <mesh
+          ref={gref}
+          geometry={nodes.研究区域.geometry}
+          material={materials.地面}
+          position={[-573.32, -61.16, 1378.41]}
+          rotation={[0, -0.07, 0]}
+        />
+      </Bvh>
       <mesh
         geometry={nodes.研究区域水面下部分.geometry}
         material={materials.地面}

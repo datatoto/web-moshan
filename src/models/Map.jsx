@@ -22,13 +22,6 @@ const calAngle = (p1, p2) => {
   return Math.ceil(degs);
 };
 
-const moveSp = (point) => {
-  // console.log(point);
-  sp.current.position.x = point.x;
-  sp.current.position.y = point.y;
-  sp.current.position.z = point.z;
-};
-
 export function Map({ position, isRot, visible }) {
   const plane = useRef();
 

@@ -26,11 +26,11 @@ import { Canvas, useThree } from "@react-three/fiber";
 import { Suspense, useEffect, useMemo, useRef } from "react";
 import useStore, { useExploreStore, usePlayerPosStore } from "./stores";
 import Aside from "./components/Aside";
-import { Stepper } from "./components/ChapterOne";
-import { titles } from "./stores/constants";
+import { Stepper } from "./components/Stepper";
 import { useState } from "react";
 import { Perf } from "r3f-perf";
 import { Scene } from "./components/Scene";
+import { ASIDE } from ".//stores/constants";
 
 // function GuiControl() {
 //   const { toggleMap, toggleView } = useControls({ Map: false, FPV: true });
@@ -41,17 +41,14 @@ function App() {
   const compassView = useRef();
   const mapView = useRef();
 
-  const player = useRef();
-  const ground = useRef();
-
-  const cameraControlsRef = useRef();
-
   const [currentCh, setCurrentCh] = useStore((state) => [
     state.currentCh,
     state.updateCurrentCh,
   ]);
-  const isExplore = useExploreStore((state) => state.isExplore);
-  const [cameraPos, setCameraPos] = useState([0, 4, 0]);
+  const [isExplore, toggleExpolre] = useExploreStore((state) => [
+    state.isExplore,
+    state.toggleExplore,
+  ]);
 
   const keymap = useMemo(() => [
     { name: "forward", keys: ["ArrowUp", "KeyW"] },
@@ -115,7 +112,7 @@ function App() {
 
         <div
           ref={mapView}
-          className="panel compass"
+          className="panel map"
           style={{
             position: "absolute",
             bottom: "10px",
@@ -126,13 +123,9 @@ function App() {
         ></div>
       </div>
 
-      <Aside title={titles[currentCh]}>
-        {currentCh === 0 && <Stepper />}
+      <Aside title={ASIDE[currentCh].title}>
+        <Stepper data={ASIDE[currentCh]} />
         <Divider />
-        {/* TODO */}
-        <Button type="primary" disabled>
-          下一章
-        </Button>
       </Aside>
     </>
   );
