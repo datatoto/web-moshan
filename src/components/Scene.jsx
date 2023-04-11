@@ -24,7 +24,7 @@ export const Scene = (props) => {
   //   const cameraControlsRef = useRef();
 
   const isExplore = useExploreStore((state) => state.isExplore);
-  const [cameraPos, setCameraPos] = useState([0, 4, 1]);
+  // const [cameraPos, setCameraPos] = useState([0, 4, 1]);
 
   const ori = new THREE.Vector3(0, 2, 0);
   const dir = new THREE.Vector3(0, -1, 0);
@@ -46,8 +46,8 @@ export const Scene = (props) => {
 
   return (
     <>
-      <PerspectiveCamera makeDefault position={cameraPos} near={0.01} />
-      <CameraControls makeDefault />
+      <PerspectiveCamera makeDefault position={[1, 3, 1]} near={0.01} />
+      <CameraControls makeDefault minDistance={2} maxDistance={6} maxPolarAngle={Math.PI / 2} />
 
       <Compass
         scale={[0.1, 0.1, 0.1]}

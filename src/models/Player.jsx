@@ -14,30 +14,20 @@ import { useFrame, useThree } from "@react-three/fiber";
 import { usePlayerPosStore } from "../stores";
 
 import * as THREE from "three";
-import { MeshBVHVisualizer } from "three-mesh-bvh";
+// import { MeshBVHVisualizer } from "three-mesh-bvh";
 
-// import {
-//   useBox,
-//   useCompoundBody,
-//   useCylinder,
-//   usePlane,
-//   useSphere,
-// } from "@react-three/cannon";
+// const TAU = Math.PI * 2;
 
-// import * as THREE from "three";
-
-// const SPEED = 5;
-// const direction = new THREE.Vector3();
-// const frontVector = new THREE.Vector3();
-// const sideVector = new THREE.Vector3();
-// const rotation = new THREE.Vector3();
+// function normalizeAngle(angle) {
+//   return THREE.MathUtils.euclideanModulo(angle, TAU);
+// }
 
 export const Player = forwardRef((props, pref) => {
   const playerSpeed = 10;
 
   let upVector = new THREE.Vector3(0, 1, 0);
   let tempVector = new THREE.Vector3();
-  let cameraDir = new THREE.Vector3();
+  // let cameraPos = new THREE.Vector3();
 
   const { nodes, materials, animations } = useGLTF("/character.glb");
   const { actions, names } = useAnimations(animations, pref);
@@ -80,16 +70,19 @@ export const Player = forwardRef((props, pref) => {
       pref.current.position.addScaledVector(tempVector, playerSpeed * delta);
     }
     if (leftPressed) {
-      tempVector.set(-1, 0, 0).applyAxisAngle(upVector, controls.azimuthAngle);
-      pref.current.position.addScaledVector(tempVector, playerSpeed * delta);
+      // tempVector.set(-1, 0, 0).applyAxisAngle(upVector, controls.azimuthAngle);
+      // pref.current.position.addScaledVector(tempVector, playerSpeed * delta);
+      pref.current.rotateY(Math.PI / 18);
     }
     if (rightPressed) {
-      tempVector.set(1, 0, 0).applyAxisAngle(upVector, controls.azimuthAngle);
-      pref.current.position.addScaledVector(tempVector, playerSpeed * delta);
+      // tempVector.set(1, 0, 0).applyAxisAngle(upVector, controls.azimuthAngle);
+      // pref.current.position.addScaledVector(tempVector, playerSpeed * delta);
+      pref.current.rotateY(-Math.PI / 18);
     }
 
     controls.moveTo(...pref.current.position, true);
-    // camera.getWorldDirection(cameraDir);
+    // console.log(camera.position.clone().multiplyScalar(-1));
+    // pref.current.lookAt(camera.position.clone().negate());
   });
 
   // const [sub, get] = useKeyboardControls();

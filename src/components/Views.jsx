@@ -28,7 +28,6 @@ import { Compass } from "../models/Compass";
 import { Ground } from "../models/Ground";
 import { Player } from "../models/Player";
 import useStore from "../stores";
-import { Way } from "../models/Way";
 // import { Debug, useBox, usePlane, useSphere } from "@react-three/cannon";
 // import { steps } from "../stores/constants";
 

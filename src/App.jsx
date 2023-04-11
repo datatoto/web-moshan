@@ -30,7 +30,6 @@ import { Stepper } from "./components/ChapterOne";
 import { titles } from "./stores/constants";
 import { useState } from "react";
 import { Perf } from "r3f-perf";
-import { Way } from "./models/Way";
 import { Scene } from "./components/Scene";
 
 // function GuiControl() {
