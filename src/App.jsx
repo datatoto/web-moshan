@@ -1,6 +1,7 @@
 import "./App.css";
 
 import {
+  Bvh,
   CameraControls,
   Environment,
   Image,
@@ -25,13 +26,12 @@ import { Canvas, useThree } from "@react-three/fiber";
 import { Suspense, useEffect, useMemo, useRef } from "react";
 import useStore, { useExploreStore, usePlayerPosStore } from "./stores";
 import Aside from "./components/Aside";
-import { Ground } from "./models/Ground";
 import { Stepper } from "./components/ChapterOne";
 import { titles } from "./stores/constants";
-import { Compass } from "./models/Compass";
 import { useState } from "react";
-import Map from "./models/Map";
-import { Player } from "./models/Player";
+import { Perf } from "r3f-perf";
+import { Way } from "./models/Way";
+import { Scene } from "./components/Scene";
 
 // function GuiControl() {
 //   const { toggleMap, toggleView } = useControls({ Map: false, FPV: true });
@@ -42,6 +42,9 @@ function App() {
   const compassView = useRef();
   const mapView = useRef();
 
+  const player = useRef();
+  const ground = useRef();
+
   const cameraControlsRef = useRef();
 
   const [currentCh, setCurrentCh] = useStore((state) => [
@@ -50,16 +53,6 @@ function App() {
   ]);
   const isExplore = useExploreStore((state) => state.isExplore);
   const [cameraPos, setCameraPos] = useState([0, 4, 0]);
-  const playerPos = usePlayerPosStore((state) => state.playerPos);
-
-  // const canvasRef = useRef();
-  // useEffect(() => {
-  //   const canvas = canvasRef.current;
-  //   const context = canvas.getContext("2d");
-  //   //Our first draw
-  //   context.fillStyle = "#ffffff";
-  //   context.fillRect(0, 0, context.canvas.width, context.canvas.height);
-  // });
 
   const keymap = useMemo(() => [
     { name: "forward", keys: ["ArrowUp", "KeyW"] },
@@ -78,32 +71,20 @@ function App() {
           eventSource={document.getElementById("root")}
         >
           <Suspense fallback={null}>
-            <View index={1} track={mainView}>
-              <PerspectiveCamera makeDefault position={cameraPos} near={0.01} />
-              <CameraControls ref={cameraControlsRef} makeDefault />
+            <KeyboardControls map={keymap}>
+              <View index={1} track={mainView}>
+                <Scene />
+              </View>
+            </KeyboardControls>
 
-              <Compass
-                scale={[0.1, 0.1, 0.1]}
-                position={[0, 1.5, 0]}
-                visible={!isExplore}
-              />
-              <Map position={[2, 1.5, 0]} visible={!isExplore} />
-
-              <KeyboardControls map={keymap}>
-                <Player visible={isExplore} />
-              </KeyboardControls>
-
-              <Ground />
-              <Environment files="background.hdr" background />
-            </View>
             <View index={2} track={compassView}>
               <CompassView />
             </View>
             {/* <View index={3} track={view3}>
             </View> */}
-            {/* <Stats showPanel={0} className="stats" /> */}
           </Suspense>
           <Preload all />
+          <Perf position="bottom-right" />
         </Canvas>
 
         <Loader />

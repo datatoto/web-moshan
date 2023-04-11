@@ -28,7 +28,6 @@ import { Compass } from "../models/Compass";
 import { Ground } from "../models/Ground";
 import { Player } from "../models/Player";
 import useStore from "../stores";
-import { CuboidCollider, Debug, Physics, RigidBody } from "@react-three/rapier";
 import { Way } from "../models/Way";
 // import { Debug, useBox, usePlane, useSphere } from "@react-three/cannon";
 // import { steps } from "../stores/constants";
@@ -63,43 +62,43 @@ function ChapterTwoView() {
   );
 }
 
-function ChapterThreeView() {
-  // Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?
-  const { nodes, materials } = useGLTF("/way.glb");
-  const ref = useRef();
+// function ChapterThreeView() {
+//   // Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?
+//   const { nodes, materials } = useGLTF("/way.glb");
+//   const ref = useRef();
 
-  const forwardPressed = useKeyboardControls((state) => state.forward);
+//   const forwardPressed = useKeyboardControls((state) => state.forward);
 
-  useEffect(() => {
-    console.log(forwardPressed, "forward");
+//   useEffect(() => {
+//     console.log(forwardPressed, "forward");
 
-    if (forwardPressed && ref.current) {
-      ref.current.applyImpulse({ x: 5, y: 0, z: 0 }, true);
-    }
-  }, [forwardPressed]);
+//     if (forwardPressed && ref.current) {
+//       ref.current.applyImpulse({ x: 5, y: 0, z: 0 }, true);
+//     }
+//   }, [forwardPressed]);
 
-  return (
-    <Suspense>
-      <Physics>
-        <Debug />
+//   return (
+//     <Suspense>
+//       <Physics>
+//         <Debug />
 
-        <RigidBody colliders={false} position={[0, 2, 0]} ref={ref}>
-          <Player />
-          <CuboidCollider args={[1, 1, 1]} position={[0, 1, 0]} />
-        </RigidBody>
+//         <RigidBody colliders={false} position={[0, 2, 0]} ref={ref}>
+//           <Player />
+//           <CuboidCollider args={[1, 1, 1]} position={[0, 1, 0]} />
+//         </RigidBody>
 
-        <RigidBody type="fixed" colliders="trimesh">
-          <mesh
-            geometry={nodes.way.geometry}
-            material={materials.wayMaterial}
-            position={[-0.8, -0.06, -3]}
-            rotation={[0, -0.07, 0]}
-          />
-        </RigidBody>
-      </Physics>
-    </Suspense>
-  );
-}
+//         <RigidBody type="fixed" colliders="trimesh">
+//           <mesh
+//             geometry={nodes.way.geometry}
+//             material={materials.wayMaterial}
+//             position={[-0.8, -0.06, -3]}
+//             rotation={[0, -0.07, 0]}
+//           />
+//         </RigidBody>
+//       </Physics>
+//     </Suspense>
+//   );
+// }
 
 function MainView({ steps }) {
   const cameraControlsRef = useRef();
