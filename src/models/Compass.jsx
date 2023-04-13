@@ -12,8 +12,8 @@ import { Button } from "antd";
 export const Compass = forwardRef((props, cref) => {
   const c = useRef();
 
-  const isCompass = false;
-  const [isCircle, setIsCircle] = useState(true);
+  const { isCompass } = props;
+  const [isCircle, toggleIsCircle] = useState(true);
   const { nodes, materials } = useGLTF("/compass.glb");
 
   const [cirlPos, setCirlPos] = useState(-0.45);
@@ -32,25 +32,51 @@ export const Compass = forwardRef((props, cref) => {
   useFrame((state, delta) => {
     if (isCompass) {
       if (!isCircle) {
-        state.controls.setPosition(
+        state.controls.setLookAt(
           c.current.position.x,
           c.current.position.y + 0.14,
           c.current.position.z - 0.8,
+          ...c.current.position,
           true
         );
-        // console.log(cref.current.rotation);
-        state.controls.rotate(-cref.current.rotation.z, 0, true);
+
+        // state.controls.setPosition(
+        //   c.current.position.x,
+        //   c.current.position.y + 0.14,
+        //   c.current.position.z - 0.8,
+        //   true
+        // );
+        // // console.log(cref.current.rotation);
+        // TODO
+        state.controls.rotate(-(cref.current.rotation.z % Math.PI), 0, true);
+
+        // console.log(cref.current.rotation.z);
+        // console.log(cref.current.rotation.z % Math.PI);
       }
 
       if (isCircle) {
-        state.controls.setPosition(
+        state.controls.setLookAt(
           c.current.position.x,
           c.current.position.y + 0.5,
-          c.current.position.z,
+          c.current.position.z - 0.3,
+          ...c.current.position,
           true
         );
+        // console.log(c.current.position);
+        // state.controls.rotate(-(cref.current.rotation.z % Math.PI), 0, true);
 
-        state.controls.lookInDirectionOf(0, -1, 0.4);
+        // console.log(cref.current.rotation.z);
+        // console.log(cref.current.rotation.z % Math.PI);
+
+        // state.controls.setPosition(
+        //   c.current.position.x,
+        //   c.current.position.y + 0.5,
+        //   c.current.position.z,
+        //   true
+        // );
+
+        // state.controls.lookInDirectionOf(0, -1, 0.4);
+        console.log(c.current.position);
       }
     }
   });
@@ -59,7 +85,7 @@ export const Compass = forwardRef((props, cref) => {
     <group {...props} dispose={null} ref={c}>
       {isCompass && (
         <Html>
-          <Button type="primary" onClick={() => setIsCircle(!isCircle)}>
+          <Button type="primary" onClick={() => toggleIsCircle(!isCircle)}>
             {isCircle ? "观测" : "读数"}
           </Button>
         </Html>

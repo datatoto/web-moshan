@@ -134,7 +134,7 @@ function App() {
         ></div> */}
       </div>
 
-      <Aside title={ASIDE[currentCh].title}>
+      <Aside title={ASIDE[currentCh].title} id="aside">
         <Stepper
           data={ASIDE[currentCh]}
           currentCh={currentCh}

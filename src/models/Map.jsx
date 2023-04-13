@@ -7,7 +7,7 @@ import {
   Points,
   Point,
 } from "@react-three/drei";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { forwardRef, useEffect, useMemo, useRef, useState } from "react";
 import useStore from "../stores";
 import { useFrame } from "@react-three/fiber";
 import { Button } from "antd";
@@ -22,36 +22,37 @@ const calAngle = (p1, p2) => {
   return Math.ceil(degs);
 };
 
-export function Map(props) {
-  const m = useRef(null);
-  const scale = useAspect(8266, 5849, 0.2);
+export const Map = forwardRef((props, mref) => {
+  const scale = useAspect(1111, 662, 0.2);
   const image = useTexture("/topo.jpg");
 
   const [points, setPoints] = useState([]);
   const [movePoint, setMovePoint] = useState();
   const [mapRot, setRot] = useState(0);
 
-  const isMap = false;
-  const [isRot, setIsRot] = useState(true);
+  const { isMap } = props;
+  const [isRot, toggleIsRot] = useState(true);
 
-  useFrame((state, delta) => {
-    if (isMap) {
-      state.controls.setPosition(
-        m.current.position.x,
-        m.current.position.y + 2,
-        m.current.position.z,
-        true
-      );
+  // useFrame((state, delta) => {
+  //   if (isMap) {
+  //     state.controls.setPosition(
+  //       mref.current.position.x,
+  //       mref.current.position.y + 2,
+  //       mref.current.position.z,
+  //       true
+  //     );
 
-      state.controls.lookInDirectionOf(0, -1, 0);
-    }
-  });
+  //     console.log(mref.current.position);
+
+  //     state.controls.lookInDirectionOf(0, -1, 0);
+  //   }
+  // });
 
   return (
-    <group dispose={null} {...props} ref={m}>
+    <group dispose={null} {...props} ref={mref}>
       {isMap && (
-        <Html>
-          <Button type="primary" onClick={() => setIsRot(!isRot)}>
+        <Html distanceFactor={2}>
+          <Button type="primary" onClick={() => toggleIsRot(!isRot)}>
             {isRot ? "标记地图" : "旋转地图"}
           </Button>
         </Html>
@@ -83,4 +84,4 @@ export function Map(props) {
         ))}
     </group>
   );
-}
+});

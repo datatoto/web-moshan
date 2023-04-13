@@ -33,6 +33,7 @@ export const Player = forwardRef((props, pref) => {
   const { nodes, materials, animations } = useGLTF("/character.glb");
   const { actions, names } = useAnimations(animations, pref);
 
+  const { visible } = props;
   // DONE: Keyboard
   const forwardPressed = useKeyboardControls((state) => state.forward);
   const backwardPressed = useKeyboardControls((state) => state.backward);
@@ -42,10 +43,8 @@ export const Player = forwardRef((props, pref) => {
   const { controls } = useThree();
 
   useEffect(() => {
-    if (forwardPressed || backwardPressed || leftPressed || rightPressed) {
+    if (visible) {
       actions[names[0]].reset().fadeIn(1).play();
-    } else {
-      actions[names[0]].fadeOut(2).stop();
     }
   }, [forwardPressed, backwardPressed, leftPressed, rightPressed, names]);
 
@@ -69,9 +68,8 @@ export const Player = forwardRef((props, pref) => {
       // pref.current.position.addScaledVector(tempVector, playerSpeed * delta);
       pref.current.rotateY(-Math.PI / 36);
     }
-
-    if (props.visible) {
-      controls.moveTo(...pref.current.position, true);
+    if (visible) {
+      controls.moveTo(pref.current.position.x + 1, pref.current.position.y + 6, pref.current.position.z + 1, true);
     }
     // console.log(camera.position.clone().multiplyScalar(-1));
     // pref.current.lookAt(camera.position.clone().negate());
