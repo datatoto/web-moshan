@@ -23,7 +23,7 @@ import * as THREE from "three";
 // }
 
 export const Player = forwardRef((props, pref) => {
-  const playerSpeed = 10;
+  const playerSpeed = 8;
 
   let upVector = new THREE.Vector3(0, 1, 0);
   let tempVector = new THREE.Vector3();
@@ -32,32 +32,20 @@ export const Player = forwardRef((props, pref) => {
   const { nodes, materials, animations } = useGLTF("/character.glb");
   const { actions, names } = useAnimations(animations, pref);
 
-  // const [playerPos, setPlayerPos] = usePlayerPosStore((state) => [
-  //   state.playerPos,
-  //   state.updatePlayerPos,
-  // ]);
-
   // DONE: Keyboard
   const forwardPressed = useKeyboardControls((state) => state.forward);
   const backwardPressed = useKeyboardControls((state) => state.backward);
   const leftPressed = useKeyboardControls((state) => state.left);
   const rightPressed = useKeyboardControls((state) => state.right);
 
-  const { camera, controls } = useThree();
+  const { controls } = useThree();
 
   useEffect(() => {
     if (forwardPressed || backwardPressed || leftPressed || rightPressed) {
       actions[names[0]].reset().fadeIn(0.5).play();
+      return () => actions[names[0]].reset();
     }
-    return () => actions[names[0]].fadeOut(0.5);
-  }, [
-    forwardPressed,
-    backwardPressed,
-    leftPressed,
-    rightPressed,
-    actions,
-    names,
-  ]);
+  }, [forwardPressed, backwardPressed, leftPressed, rightPressed, names]);
 
   useFrame((state, delta) => {
     // Player Movement
@@ -93,7 +81,7 @@ export const Player = forwardRef((props, pref) => {
 
   return (
     <group ref={pref} {...props} dispose={null}>
-      <group name="Armature" scale={0.03} rotation={[Math.PI / 2, 0, 0]}>
+      <group name="Armature" scale={0.05} rotation={[Math.PI / 2, 0, 0]}>
         <primitive object={nodes.mixamorigHips} />
         <skinnedMesh
           name="Ch46"

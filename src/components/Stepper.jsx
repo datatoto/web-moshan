@@ -45,11 +45,11 @@ export function Stepper({ data, children }) {
             下一章
           </Button>
         )}
-        {currentCh === 3 && (
+        {/* {currentCh === 3 && (
           <Button type="primary" disabled>
             开始探索
           </Button>
-        )}
+        )} */}
         {current > 0 && (
           <Button style={{ margin: "0 8px" }} onClick={() => prev()}>
             上一步

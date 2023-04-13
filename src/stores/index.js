@@ -1,12 +1,12 @@
 import { create } from "zustand";
 
 const useStore = create((set) => ({
-  currentCh: 3,
+  currentCh: 0,
   currentStep: 0,
 
   currentCirlPos: -0.45,
   currentDeclRot: 8,
-  currentRot: 1,
+  currentRot: 10,
 
   currentMapRot: 5,
   updateCurrentCh: (c) => set(() => ({ currentCh: c })),
