@@ -22,11 +22,12 @@ import * as THREE from "three";
 //   return THREE.MathUtils.euclideanModulo(angle, TAU);
 // }
 
-export const Player = forwardRef((props, pref) => {
-  const playerSpeed = 8;
+const playerSpeed = 8;
 
-  let upVector = new THREE.Vector3(0, 1, 0);
-  let tempVector = new THREE.Vector3();
+const upVector = new THREE.Vector3(0, 1, 0);
+const tempVector = new THREE.Vector3();
+
+export const Player = forwardRef((props, pref) => {
   // let cameraPos = new THREE.Vector3();
 
   const { nodes, materials, animations } = useGLTF("/character.glb");
@@ -42,8 +43,9 @@ export const Player = forwardRef((props, pref) => {
 
   useEffect(() => {
     if (forwardPressed || backwardPressed || leftPressed || rightPressed) {
-      actions[names[0]].reset().fadeIn(0.5).play();
-      return () => actions[names[0]].reset();
+      actions[names[0]].reset().fadeIn(1).play();
+    } else {
+      actions[names[0]].fadeOut(2).stop();
     }
   }, [forwardPressed, backwardPressed, leftPressed, rightPressed, names]);
 
@@ -60,15 +62,17 @@ export const Player = forwardRef((props, pref) => {
     if (leftPressed) {
       // tempVector.set(-1, 0, 0).applyAxisAngle(upVector, controls.azimuthAngle);
       // pref.current.position.addScaledVector(tempVector, playerSpeed * delta);
-      pref.current.rotateY(Math.PI / 18);
+      pref.current.rotateY(Math.PI / 36);
     }
     if (rightPressed) {
       // tempVector.set(1, 0, 0).applyAxisAngle(upVector, controls.azimuthAngle);
       // pref.current.position.addScaledVector(tempVector, playerSpeed * delta);
-      pref.current.rotateY(-Math.PI / 18);
+      pref.current.rotateY(-Math.PI / 36);
     }
 
-    controls.moveTo(...pref.current.position, true);
+    if (props.visible) {
+      controls.moveTo(...pref.current.position, true);
+    }
     // console.log(camera.position.clone().multiplyScalar(-1));
     // pref.current.lookAt(camera.position.clone().negate());
   });

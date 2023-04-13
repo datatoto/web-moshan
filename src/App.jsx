@@ -31,6 +31,7 @@ import { useState } from "react";
 import { Perf } from "r3f-perf";
 import { Scene } from "./components/Scene";
 import { ASIDE } from ".//stores/constants";
+import { Ground } from "./models/Ground";
 
 // function GuiControl() {
 //   const { toggleMap, toggleView } = useControls({ Map: false, FPV: true });
@@ -38,24 +39,18 @@ import { ASIDE } from ".//stores/constants";
 
 function App() {
   const mainView = useRef();
-  const compassView = useRef();
-  const mapView = useRef();
+  // const compassView = useRef();
+  // const mapView = useRef();
+  const ground = useRef(null);
 
-  const [currentCh, setCurrentCh] = useStore((state) => [
-    state.currentCh,
-    state.updateCurrentCh,
-  ]);
+  const [currentCh, setCurrentCh] = useState(0);
+  // const [currentCh, setCurrentCh] = useStore((state) => [
+  //   state.currentCh,
+  //   state.updateCurrentCh,
+  // ]);
   const [isExplore, toggleExpolre] = useExploreStore((state) => [
     state.isExplore,
     state.toggleExplore,
-  ]);
-
-  const keymap = useMemo(() => [
-    { name: "forward", keys: ["ArrowUp", "KeyW"] },
-    { name: "backward", keys: ["ArrowDown", "KeyS"] },
-    { name: "left", keys: ["ArrowLeft", "KeyA"] },
-    { name: "right", keys: ["ArrowRight", "KeyD"] },
-    // { name: "jump", keys: ["Space"] },
   ]);
 
   return (
@@ -67,15 +62,31 @@ function App() {
           eventSource={document.getElementById("root")}
         >
           <Suspense fallback={null}>
-            <KeyboardControls map={keymap}>
-              <View index={1} track={mainView}>
-                <Scene />
-              </View>
-            </KeyboardControls>
-
-            <View index={2} track={compassView}>
-              <CompassView />
+            <View index={1} track={mainView}>
+              <Environment files="background.hdr" background />
+              <Bvh firstHitOnly>
+                <Ground ref={ground} />
+              </Bvh>
+              <Scene ground={ground} />
             </View>
+
+            {/* <View index={2} track={compassView}>
+                    <color attach="background" args={["black"]} />
+      <OrthographicCamera
+        makeDefault
+        position={[0, 2.7, 0]}
+        rotation={[0, -Math / 2, 0]}
+        zoom={80}
+      />
+      <Compass />
+      <MapControls
+        makeDefault
+        screenSpacePanning
+        enableRotate={false}
+        minZoom={65}
+      />
+      <ambientLight intensity={1} />
+            </View> */}
             {/* <View index={3} track={view3}>
             </View> */}
           </Suspense>
@@ -98,7 +109,7 @@ function App() {
           }}
         ></div>
 
-        <div
+        {/* <div
           ref={compassView}
           className="panel compass"
           style={{
@@ -120,12 +131,19 @@ function App() {
             width: "300px",
             height: "300px",
           }}
-        ></div>
+        ></div> */}
       </div>
 
       <Aside title={ASIDE[currentCh].title}>
-        <Stepper data={ASIDE[currentCh]} />
+        <Stepper
+          data={ASIDE[currentCh]}
+          currentCh={currentCh}
+          setCurrentCh={setCurrentCh}
+        />
         <Divider />
+        <Button type="primary" onClick={() => setCurrentCh(currentCh + 1)}>
+          下一章
+        </Button>
       </Aside>
     </>
   );

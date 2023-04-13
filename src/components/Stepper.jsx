@@ -5,12 +5,12 @@ import { useState } from "react";
 import Test from "./Test";
 import useStore from "../stores";
 
-export function Stepper({ data, children }) {
+export function Stepper({ data, currentCh, setCurrentCh }) {
   const [current, setCurrent] = useState(0);
-  const [currentCh, setCurrentCh] = useStore((state) => [
-    state.currentCh,
-    state.updateCurrentCh,
-  ]);
+  // const [currentCh, setCurrentCh] = useStore((state) => [
+  //   state.currentCh,
+  //   state.updateCurrentCh,
+  // ]);
 
   const next = () => {
     setCurrent(current + 1);

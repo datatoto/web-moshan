@@ -6,27 +6,64 @@ Command: npx gltfjsx@6.1.4 public/compass.glb
 import React, { forwardRef, useEffect, useRef, useState } from "react";
 import { Html, TransformControls, useGLTF } from "@react-three/drei";
 import useStore from "../stores";
-
-// import { useFrame } from "@react-three/fiber";
+import { useFrame } from "@react-three/fiber";
+import { Button } from "antd";
 
 export const Compass = forwardRef((props, cref) => {
+  const c = useRef();
+
+  const isCompass = false;
+  const [isCircle, setIsCircle] = useState(true);
   const { nodes, materials } = useGLTF("/compass.glb");
 
-  const [cirlPos, setCirlPos] = useStore((state) => [
-    state.currentCirlPos,
-    state.updateCurrentCirlPos,
-  ]);
+  const [cirlPos, setCirlPos] = useState(-0.45);
+  const [declRot, setDeclRot] = useState(8);
+  // const [cirlPos, setCirlPos] = useStore((state) => [
+  //   state.currentCirlPos,
+  //   state.updateCurrentCirlPos,
+  // ]);
 
   // const decl = useRef();
-  const [declRot, setDeclRot] = useStore((state) => [
-    state.currentDeclRot,
-    state.updateCurrentDeclRot,
-  ]);
+  // const [declRot, setDeclRot] = useStore((state) => [
+  //   state.currentDeclRot,
+  //   state.updateCurrentDeclRot,
+  // ]);
 
-  // const [rot, setRot] = useState(20);
+  useFrame((state, delta) => {
+    if (isCompass) {
+      if (!isCircle) {
+        state.controls.setPosition(
+          c.current.position.x,
+          c.current.position.y + 0.14,
+          c.current.position.z - 0.8,
+          true
+        );
+        // console.log(cref.current.rotation);
+        state.controls.rotate(-cref.current.rotation.z, 0, true);
+      }
+
+      if (isCircle) {
+        state.controls.setPosition(
+          c.current.position.x,
+          c.current.position.y + 0.5,
+          c.current.position.z,
+          true
+        );
+
+        state.controls.lookInDirectionOf(0, -1, 0.4);
+      }
+    }
+  });
 
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} ref={c}>
+      {isCompass && (
+        <Html>
+          <Button type="primary" onClick={() => setIsCircle(!isCircle)}>
+            {isCircle ? "观测" : "读数"}
+          </Button>
+        </Html>
+      )}
       <group rotation={[1.55, 0, 0]}>
         <mesh
           geometry={nodes.compass_needle_met_gl2.geometry}
@@ -61,7 +98,7 @@ export const Compass = forwardRef((props, cref) => {
             />
           </group>
           <mesh
-            onClick={setCirlPos}
+            onClick={() => setCirlPos(cirlPos - 0.05)}
             geometry={nodes.level_circular_steklo.geometry}
             material={materials.trans}
             position={[0.84, cirlPos, -1.02]}
@@ -98,7 +135,7 @@ export const Compass = forwardRef((props, cref) => {
           {/* DONE: Magnetic Declination*/}
           <mesh
             // ref={decl}
-            onClick={setDeclRot}
+            onClick={() => setDeclRot(declRot + 0.5)}
             geometry={nodes.magnetic_declination_blekc_gl.geometry}
             material={materials.blekc_gl}
             position={[1.62, 1.65, -1.03]}
