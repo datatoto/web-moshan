@@ -9,7 +9,7 @@ import { Bvh, useGLTF } from "@react-three/drei";
 export const Ground = forwardRef((props, gref) => {
   const { nodes, materials } = useGLTF("/ground.glb");
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} ref={gref}>
       <mesh
         geometry={nodes.水面.geometry}
         material={materials["材质.005"]}
@@ -20,7 +20,7 @@ export const Ground = forwardRef((props, gref) => {
       <group
         position={[-586.32, -61.16, 1372.67]}
         rotation={[0, -0.01, 0]}
-        ref={gref}
+        // ref={gref}
       >
         <mesh geometry={nodes.DEM002.geometry} material={materials.地面} />
         <mesh

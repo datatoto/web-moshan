@@ -21,12 +21,13 @@ import {
 // import Layout, { Content } from "antd/es/layout/layout";
 // import Sider from "antd/es/layout/Sider";
 import { Canvas } from "@react-three/fiber";
-import { Suspense, useRef } from "react";
+import { Suspense, useRef, useState } from "react";
 // import useStore, { useExploreStore, usePlayerPosStore } from "./stores";
 import Aside from "./components/Aside";
 import { Perf } from "r3f-perf";
 import { Scene } from "./components/Scene";
 import { Ground } from "./models/Ground";
+import { useIsDome } from "./stores";
 
 // function GuiControl() {
 //   const { toggleMap, toggleView } = useControls({ Map: false, FPV: true });
@@ -37,6 +38,8 @@ function App() {
   // const compassView = useRef();
   // const mapView = useRef();
   const ground = useRef(null);
+
+  // const isDome = useIsDome((state) => state.isDome);
 
   // const [currentCh, setCurrentCh] = useState(0);
   // const [currentCh, setCurrentCh] = useStore((state) => [
@@ -54,7 +57,6 @@ function App() {
         >
           <Suspense fallback={null}>
             <View index={1} track={mainView}>
-              <Environment files="background.hdr" background />
               <Bvh firstHitOnly>
                 <Ground ref={ground} />
               </Bvh>

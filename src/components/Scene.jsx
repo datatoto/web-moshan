@@ -21,7 +21,8 @@ import { Map } from "../models/Map";
 import * as THREE from "three";
 import { useFrame, useThree } from "@react-three/fiber";
 import { Button } from "antd";
-import { useIsCompass, useIsMap } from "../stores";
+import { useIsCompass, useIsDome, useIsMap } from "../stores";
+import { Dome } from "./Dome";
 
 const ori = new THREE.Vector3(0, 2, 0);
 const dir = new THREE.Vector3(0, -1, 0);
@@ -29,7 +30,7 @@ const raycaster = new THREE.Raycaster(ori, dir);
 
 // const playerPosition = new THREE.Vector3();
 // const compassDirection = new THREE.Vector3();
-const playerRotation = new THREE.Vector3();
+const playerDirection = new THREE.Vector3();
 const cameraRotation = new THREE.Vector2();
 
 export const Scene = ({ ground }) => {
@@ -45,10 +46,16 @@ export const Scene = ({ ground }) => {
   const map = useRef();
 
   const [isPlayer, togglePlayer] = useState(true);
+  // const [isDome, toggleDome] = useState(false);
   // const [isCompass, toggleCompass] = useState(false);
   // const [isMap, toggleMap] = useState(false);
   const isCompass = useIsCompass((state) => state.isCompass);
   const isMap = useIsMap((state) => state.isMap);
+  const isDome = useIsDome((state) => state.isDome);
+
+  useEffect(() => {
+    ground.current.visible = !isDome;
+  }, [isDome]);
 
   // const [compassPosition, setCompassPosition] = useState(
   //   new THREE.Vector3(2, 0, 2)
@@ -74,19 +81,23 @@ export const Scene = ({ ground }) => {
   //   toggleMap(!isMap);
   // }
 
-  useEffect(() => {
-    if (isMap || isCompass) {
-      togglePlayer(false);
-    } else {
-      togglePlayer(true);
-    }
-  }, [isMap, isCompass]);
+  // useEffect(() => {
+  //   if (isMap || isCompass) {
+  //     togglePlayer(false);
+  //   } else {
+  //     togglePlayer(true);
+  //   }
+  // }, [isMap, isCompass]);
 
   useFrame((state, delta) => {
     if (map.current && compass.current && player.current && ground.current) {
-      player.current.getWorldDirection(playerRotation);
-      cameraRotation.set(playerRotation.x, playerRotation.z);
+      player.current.getWorldDirection(playerDirection);
+      cameraRotation.set(playerDirection.x, playerDirection.z);
       compass.current.rotation.set(0, 0, cameraRotation.angle() - Math.PI / 2);
+      // if (isCompass) {
+      // state.controls.rotate(cameraRotation.angle() / 2, 0, true);
+      // console.log(cameraRotation.angle());
+      // }
 
       raycaster.set(player.current.position.addScaledVector(dir, -1.5), dir);
       const inters = raycaster.intersectObject(ground.current, true);
@@ -116,8 +127,8 @@ export const Scene = ({ ground }) => {
 
       if (isPlayer) {
         state.controls.moveTo(
-          player.current.position.x + 1,
-          player.current.position.y + 6,
+          player.current.position.x,
+          player.current.position.y + 8,
           player.current.position.z + 1,
           true
         );
@@ -138,7 +149,9 @@ export const Scene = ({ ground }) => {
     // console.log(map.current.position);
   });
 
-  return (
+  return isDome ? (
+    <Dome />
+  ) : (
     <>
       <KeyboardControls map={keymap}>
         <PerspectiveCamera makeDefault near={0.01} position={[1, 4, 2]} />
@@ -161,14 +174,7 @@ export const Scene = ({ ground }) => {
         />
         <Map visible={isMap} isMap={isMap} ref={map} />
       </KeyboardControls>
-      {/* <Html>
-        <Button type="primary" onClick={handleCompass} disabled={isCompass}>
-          使用罗盘
-        </Button>
-        <Button type="primary" onClick={handleMap} disabled={isMap}>
-          使用地图
-        </Button>
-      </Html> */}
+      <Environment files="background.hdr" background />
     </>
   );
 };

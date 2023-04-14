@@ -1,7 +1,7 @@
 import { Button, Divider, Space } from "antd";
 import { DesOne } from "./DesOne";
 import { ASIDE } from "../stores/constants";
-import { useCurrent, useCurrentCh, useIsCompass, useIsMap } from "../stores";
+import { useCurrent, useCurrentCh, useIsCompass, useIsDome, useIsMap } from "../stores";
 import { useEffect, useState } from "react";
 
 export default function Aside(props) {
@@ -27,6 +27,10 @@ export default function Aside(props) {
   const [isCompass, toggleCompass] = useIsCompass((state) => [
     state.isCompass,
     state.toggleCompass,
+  ]);
+  const [isDome, toggleDome] = useIsDome((state) => [
+    state.isDome,
+    state.toggleDome,
   ]);
 
   return (
@@ -66,6 +70,9 @@ export default function Aside(props) {
         </Button>
         <Button type="primary" onClick={() => toggleCompass()}>
           {isCompass ? "关闭罗盘" : "使用罗盘"}
+        </Button>
+        <Button type="primary" onClick={() => toggleDome()}>
+          {isDome ? "关闭全景" : "使用全景"}
         </Button>
       </Space>
     </aside>

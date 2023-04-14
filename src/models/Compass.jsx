@@ -45,15 +45,25 @@ export const Compass = forwardRef((props, cref) => {
           true
         );
 
+        // console.log(cref.current.rotation.z);
+        if (Math.abs(cref.current.rotation.z) < Math.PI) {
+          state.controls.rotate(-cref.current.rotation.z, 0, true);
+        } 
+        // else {
+        //   state.controls.rotate(-Math.abs(cref.current.rotation.z) + Math.PI / 2, 0, true);
+        // }
+
+        // state.controls.rotate()
+
         // state.controls.setPosition(
         //   c.current.position.x,
         //   c.current.position.y + 0.14,
         //   c.current.position.z - 0.8,
         //   true
         // );
-        // // console.log(cref.current.rotation);
         // TODO
-        state.controls.rotate(-(cref.current.rotation.z % Math.PI), 0, true);
+        // state.controls.rotate(-(cref.current.rotation.z % Math.PI), 0, true);
+        // state.controls.rotateTo(cref.current.rotation.z, 0, true);
 
         // console.log(cref.current.rotation.z);
         // console.log(cref.current.rotation.z % Math.PI);
@@ -67,16 +77,24 @@ export const Compass = forwardRef((props, cref) => {
           ...c.current.position,
           true
         );
-        // console.log(c.current.position);
-        // state.controls.rotate(-(cref.current.rotation.z % Math.PI), 0, true);
 
+        // console.log(c.current.position);
+        // state.controls.rotate(
+        //   Math.abs(cref.current.rotation.z) % Math.PI,
+        //   0,
+        //   true
+        // );
+        // console.log(Math.abs(cref.current.rotation.z) % Math.PI);
+        if (Math.abs(cref.current.rotation.z) < Math.PI) {
+          state.controls.rotate(-cref.current.rotation.z, 0, true);
+        }
         // console.log(cref.current.rotation.z);
         // console.log(cref.current.rotation.z % Math.PI);
 
         // state.controls.setPosition(
         //   c.current.position.x,
         //   c.current.position.y + 0.5,
-        //   c.current.position.z,
+        //   c.current.position.z - 0.3,
         //   true
         // );
 

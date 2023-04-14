@@ -40,6 +40,11 @@ const useIsCompass = create((set) => ({
   toggleCompass: () => set((state) => ({ isCompass: !state.isCompass })),
 }));
 
+const useIsDome = create((set) => ({
+  isDome: true,
+  toggleDome: () => set((state) => ({ isDome: !state.isDome })),
+}));
+
 // export const useExploreStore = create((set) => ({
 //   isExplore: false,
 //   toggleExplore: () => set((state) => ({ isExplore: !state.isExplore })),
@@ -50,4 +55,4 @@ const useIsCompass = create((set) => ({
 //   updatePlayerPos: (p) => set(() => ({ playerPos: p })),
 // }));
 
-export { useCurrent, useCurrentCh, useIsMap, useIsCompass };
+export { useCurrent, useCurrentCh, useIsMap, useIsCompass, useIsDome };
