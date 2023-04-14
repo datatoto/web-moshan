@@ -21,7 +21,7 @@ import { Map } from "../models/Map";
 import * as THREE from "three";
 import { useFrame, useThree } from "@react-three/fiber";
 import { Button } from "antd";
-import { useIsCompass, useIsDome, useIsMap } from "../stores";
+import { useIsCompass, useIsDome, useIsMap, useIsPlayer } from "../stores";
 import { Dome } from "./Dome";
 
 const ori = new THREE.Vector3(0, 2, 0);
@@ -45,10 +45,8 @@ export const Scene = ({ ground }) => {
   const compass = useRef();
   const map = useRef();
 
-  const [isPlayer, togglePlayer] = useState(true);
-  // const [isDome, toggleDome] = useState(false);
-  // const [isCompass, toggleCompass] = useState(false);
-  // const [isMap, toggleMap] = useState(false);
+  // const [isPlayer, togglePlayer] = useState(true);
+  const isPlayer = useIsPlayer((state) => state.isPlayer);
   const isCompass = useIsCompass((state) => state.isCompass);
   const isMap = useIsMap((state) => state.isMap);
   const isDome = useIsDome((state) => state.isDome);
@@ -60,9 +58,6 @@ export const Scene = ({ ground }) => {
   // const [compassPosition, setCompassPosition] = useState(
   //   new THREE.Vector3(2, 0, 2)
   // );
-
-  // const isExplore = useExploreStore((state) => state.isExplore);
-  // const { camera, controls } = useThree();
 
   // function handleCompass() {
   //   toggleMap(false);
@@ -111,9 +106,9 @@ export const Scene = ({ ground }) => {
 
       if (isMap) {
         map.current.position.set(
-          player.current.position.x,
+          player.current.position.x + 1,
           player.current.position.y + 4,
-          player.current.position.z
+          player.current.position.z + 1
         );
 
         state.controls.setLookAt(

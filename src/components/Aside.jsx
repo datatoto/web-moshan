@@ -63,7 +63,7 @@ export default function Aside(props) {
           <Button type="primary">进行测验</Button>
         ))
       } */}
-      <Divider />
+      {/* <Divider /> */}
       <Space>
         <Button type="primary" onClick={() => toggleMap()}>
           {isMap ? "关闭地图" : "使用地图"}

@@ -4,19 +4,25 @@ Command: npx gltfjsx@6.1.4 public/compass.glb
 */
 
 import React, { forwardRef, useEffect, useRef, useState } from "react";
-import { Html, TransformControls, useGLTF } from "@react-three/drei";
+import { Edges, Html, TransformControls, useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
-import { Button } from "antd";
+import { Button, Tag, Tooltip } from "antd";
+import { useCurrentCh } from "../stores";
 
 export const Compass = forwardRef((props, cref) => {
   const c = useRef();
-
-  const { isCompass, player } = props;
-  const [isCircle, toggleIsCircle] = useState(true);
   const { nodes, materials } = useGLTF("/compass.glb");
+  const { isCompass, player } = props;
 
+  const [isCircle, toggleIsCircle] = useState(true);
   const [cirlPos, setCirlPos] = useState(-0.45);
   const [declRot, setDeclRot] = useState(8);
+
+  // const [tag, setTag] = useState("");
+  // const [tagX, setTagX] = useState(0);
+  // const [tagY, setTagY] = useState(0);
+
+  // const currentCh = useCurrentCh((state) => state.currentCh);
   // const [cirlPos, setCirlPos] = useStore((state) => [
   //   state.currentCirlPos,
   //   state.updateCurrentCirlPos,
@@ -28,11 +34,19 @@ export const Compass = forwardRef((props, cref) => {
   //   state.updateCurrentDeclRot,
   // ]);
 
+  // function handleEnter(e, tag) {
+  //   console.log(e.eventObject.material);
+  //   setTag(tag);
+  //   setTagX(e.pointer.x + 0.3);
+  //   setTagY(e.pointer.y + 0.3);
+  //   // e.eventObject.material.color = 0xff0000;
+  // }
+
   useFrame((state, delta) => {
     if (isCompass) {
       c.current.position.set(
         player.current.position.x + 0.5,
-        player.current.position.y + 4,
+        player.current.position.y + 3,
         player.current.position.z + 0.5
       );
 
@@ -48,7 +62,7 @@ export const Compass = forwardRef((props, cref) => {
         // console.log(cref.current.rotation.z);
         if (Math.abs(cref.current.rotation.z) < Math.PI) {
           state.controls.rotate(-cref.current.rotation.z, 0, true);
-        } 
+        }
         // else {
         //   state.controls.rotate(-Math.abs(cref.current.rotation.z) + Math.PI / 2, 0, true);
         // }
@@ -67,9 +81,7 @@ export const Compass = forwardRef((props, cref) => {
 
         // console.log(cref.current.rotation.z);
         // console.log(cref.current.rotation.z % Math.PI);
-      }
-
-      if (isCircle) {
+      } else {
         state.controls.setLookAt(
           c.current.position.x,
           c.current.position.y + 0.5,
@@ -107,11 +119,23 @@ export const Compass = forwardRef((props, cref) => {
   return (
     <group {...props} dispose={null} ref={c}>
       {isCompass && (
-        <Html>
-          <Button type="primary" onClick={() => toggleIsCircle(!isCircle)}>
-            {isCircle ? "观测" : "读数"}
-          </Button>
-        </Html>
+        <>
+          <Html>
+            <Button type="primary" onClick={() => toggleIsCircle(!isCircle)}>
+              {isCircle ? "观测" : "读数"}
+            </Button>
+          </Html>
+          {/* <Html
+            transform
+            sprite
+            distanceFactor={0.4}
+            position={[tagX, 0, tagY]}
+          >
+            <Tag bordered={false} className="compass-tag">
+              {tag}
+            </Tag>
+          </Html> */}
+        </>
       )}
       <group rotation={[1.55, 0, 0]}>
         <mesh
@@ -119,7 +143,8 @@ export const Compass = forwardRef((props, cref) => {
           material={materials.met_gl2}
           position={[0, -0.02, -1.17]}
           rotation={[-0.02, -0.03, -1.58]}
-        />
+          // onPointerMove={(e) => handleEnter(e, "北针")}
+        ></mesh>
         <group ref={cref}>
           <mesh
             geometry={nodes.compass_circle_steklo.geometry}
@@ -127,13 +152,14 @@ export const Compass = forwardRef((props, cref) => {
             position={[0, 0, -1.31]}
             scale={[1.73, 1.73, 0.01]}
             rotation={[0, 0, (Math.PI / 360) * declRot]}
+            // onPointerOver={(e) => handleEnter(e, "刻度")}
             // onClick={() => {
             //   props.setRot(props.rot + 5);
             // }}
             // onContextMenu={() => {
             //   props.setRot(props.rot - 5);
             // }}
-          />
+          ></mesh>
           <mesh
             geometry={nodes.compass_north_hrom.geometry}
             material={materials.hrom}
@@ -152,46 +178,45 @@ export const Compass = forwardRef((props, cref) => {
             material={materials.trans}
             position={[0.84, cirlPos, -1.02]}
             scale={[0.14, 0.14, 0.12]}
+            // onPointerOver={(e) => handleEnter(e, "方位水准器")}
           >
-            {/* DONE: Alert */}
-            {/* {currentStep === 1 && (
-              <Html distanceFactor={3}>
-                <Alert
-                  type="info"
-                  message="圆水准仪"
-                  style={{ minWidth: "70px", padding: 5 }}
-                />
-              </Html>
-            )} */}
+            {/* <Edges scale={1.1}>
+              <meshBasicMaterial transparent color="#f33" depthTest={false} />
+            </Edges> */}
           </mesh>
+          {/* {currentCh === 0 && (
+              <Html distanceFactor={0.5}>
+                <Tag bordered={false} className="compass-tag">
+                  方位水准器
+                </Tag>
+              </Html>
+            )}
+          </mesh> */}
           <mesh
             geometry={nodes.level_tubular_steklo.geometry}
             material={materials.trans}
             position={[0.56 + cirlPos, -0.94, -0.97]}
             scale={[0.16, 0.14, 0.12]}
-          >
-            {/* DONE: Alert */}
-            {/* {currentStep === 1 && (
-              <Html distanceFactor={3}>
-                <Alert
-                  type="info"
-                  message="长水准仪"
-                  style={{ minWidth: "70px", padding: 5 }}
-                />
+            onPointerOver={(e) => handleEnter(e, "倾角水准器")}
+          />
+          {/* {currentCh === 0 && (
+              <Html distanceFactor={0.5}>
+                <Tag bordered={false} className="compass-tag">
+                  倾角水准器
+                </Tag>
               </Html>
-            )} */}
-          </mesh>
+            )}
+          </mesh> */}
           {/* DONE: Magnetic Declination*/}
           <mesh
-            // ref={decl}
             onClick={() => setDeclRot(declRot + 0.5)}
             geometry={nodes.magnetic_declination_blekc_gl.geometry}
             material={materials.blekc_gl}
             position={[1.62, 1.65, -1.03]}
             rotation={[-Math.PI / declRot, -Math.PI / declRot, 0]}
-          >
-            {/* DONE: Alert */}
-            {/* {currentStep === 0 && (
+          />
+          {/* DONE: Alert */}
+          {/* {currentStep === 0 && (
               <Html distanceFactor={3}>
                 <Alert
                   type="info"
@@ -200,7 +225,7 @@ export const Compass = forwardRef((props, cref) => {
                 />
               </Html>
             )} */}
-          </mesh>
+          {/* </mesh> */}
           <group
             position={[0, 2.24, -1.53]}
             rotation={[1.46, 1.56, -2.27]}

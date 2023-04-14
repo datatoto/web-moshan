@@ -30,18 +30,23 @@ const useCurrentCh = create((set) => ({
   preCurrentCh: () => set((state) => ({ currentCh: state.currentCh - 1 })),
 }));
 
+const useIsPlayer = create((set) => ({
+  isPlayer: false,
+  togglePlayer: () => set((state) => ({ isPlayer: !state.isPlayer })),
+}));
+
 const useIsMap = create((set) => ({
   isMap: false,
   toggleMap: () => set((state) => ({ isMap: !state.isMap })),
 }));
 
 const useIsCompass = create((set) => ({
-  isCompass: false,
+  isCompass: true,
   toggleCompass: () => set((state) => ({ isCompass: !state.isCompass })),
 }));
 
 const useIsDome = create((set) => ({
-  isDome: true,
+  isDome: false,
   toggleDome: () => set((state) => ({ isDome: !state.isDome })),
 }));
 
@@ -55,4 +60,11 @@ const useIsDome = create((set) => ({
 //   updatePlayerPos: (p) => set(() => ({ playerPos: p })),
 // }));
 
-export { useCurrent, useCurrentCh, useIsMap, useIsCompass, useIsDome };
+export {
+  useCurrent,
+  useCurrentCh,
+  useIsPlayer,
+  useIsMap,
+  useIsCompass,
+  useIsDome,
+};
