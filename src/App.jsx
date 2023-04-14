@@ -20,17 +20,12 @@ import {
 // import { CompassView, MiniMapView, MainView } from "./components/Views";
 // import Layout, { Content } from "antd/es/layout/layout";
 // import Sider from "antd/es/layout/Sider";
-import { Button, Divider } from "antd";
-// DONE: stepper
-import { Canvas, useThree } from "@react-three/fiber";
-import { Suspense, useEffect, useMemo, useRef } from "react";
+import { Canvas } from "@react-three/fiber";
+import { Suspense, useRef } from "react";
 // import useStore, { useExploreStore, usePlayerPosStore } from "./stores";
 import Aside from "./components/Aside";
-import { Stepper } from "./components/Stepper";
-import { useState } from "react";
 import { Perf } from "r3f-perf";
 import { Scene } from "./components/Scene";
-import { ASIDE } from ".//stores/constants";
 import { Ground } from "./models/Ground";
 
 // function GuiControl() {

@@ -1,16 +1,20 @@
 import { Button, Divider, Space } from "antd";
-import { Stepper } from "./Stepper";
+import { DesOne } from "./DesOne";
 import { ASIDE } from "../stores/constants";
-import { useCurrentCh, useIsCompass, useIsMap } from "../stores";
+import { useCurrent, useCurrentCh, useIsCompass, useIsMap } from "../stores";
 import { useEffect, useState } from "react";
 
 export default function Aside(props) {
+  const [current, nextCurrent] = useCurrent((state) => [
+    state.current,
+    state.nextCurrent,
+  ]);
+
   const [currentCh, nextCurrentCh] = useCurrentCh((state) => [
     state.currentCh,
     state.nextCurrentCh,
   ]);
 
-  const [current, setCurrent] = useState(0);
   function handleNextCh() {
     setCurrent(0);
     nextCurrentCh();
@@ -39,20 +43,9 @@ export default function Aside(props) {
         zIndex: "5",
       }}
     >
-      <h3
-        style={{
-          textAlign: "center",
-        }}
-      >
-        {ASIDE[currentCh].title}
-      </h3>
-      <Stepper
-        data={ASIDE[currentCh]}
-        current={current}
-        setCurrent={setCurrent}
-      />
+      <DesOne current={current} nextCurrent={nextCurrent} />
       <Divider />
-      {currentCh < ASIDE.length - 1 && (
+      {/* {currentCh < ASIDE.length - 1 && (
         <Button
           type="primary"
           onClick={handleNextCh}
@@ -60,7 +53,12 @@ export default function Aside(props) {
         >
           下一章
         </Button>
-      )}
+      )} */}
+      {/* {
+        (current === ASIDE[currentCh].steps.length && (
+          <Button type="primary">进行测验</Button>
+        ))
+      } */}
       <Divider />
       <Space>
         <Button type="primary" onClick={() => toggleMap()}>
