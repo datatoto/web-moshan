@@ -67,9 +67,9 @@ export const Player = forwardRef((props, pref) => {
       // pref.current.position.addScaledVector(tempVector, playerSpeed * delta);
       pref.current.rotateY(-Math.PI / 36);
     }
-    if (visible) {
-      controls.moveTo(pref.current.position.x + 1, pref.current.position.y + 6, pref.current.position.z + 1, true);
-    }
+    // if (visible) {
+    //   controls.moveTo(pref.current.position.x + 1, pref.current.position.y + 6, pref.current.position.z + 1, true);
+    // }
     // console.log(camera.position.clone().multiplyScalar(-1));
     // pref.current.lookAt(camera.position.clone().negate());
   });

@@ -1,7 +1,7 @@
-import { Button, Divider } from "antd";
+import { Button, Divider, Space } from "antd";
 import { Stepper } from "./Stepper";
 import { ASIDE } from "../stores/constants";
-import { useCurrentCh } from "../stores";
+import { useCurrentCh, useIsCompass, useIsMap } from "../stores";
 import { useEffect, useState } from "react";
 
 export default function Aside(props) {
@@ -11,23 +11,19 @@ export default function Aside(props) {
   ]);
 
   const [current, setCurrent] = useState(0);
-
-  const next = () => {
-    setCurrent(current + 1);
-  };
-
-  const prev = () => {
-    setCurrent(current - 1);
-  };
-
   function handleNextCh() {
     setCurrent(0);
     nextCurrentCh();
   }
 
-  useEffect(() => {
-    console.log(ASIDE[currentCh].length);
-  });
+  const [isMap, toggleMap] = useIsMap((state) => [
+    state.isMap,
+    state.toggleMap,
+  ]);
+  const [isCompass, toggleCompass] = useIsCompass((state) => [
+    state.isCompass,
+    state.toggleCompass,
+  ]);
 
   return (
     <aside
@@ -65,6 +61,15 @@ export default function Aside(props) {
           下一章
         </Button>
       )}
+      <Divider />
+      <Space>
+        <Button type="primary" onClick={() => toggleMap()}>
+          {isMap ? "关闭地图" : "使用地图"}
+        </Button>
+        <Button type="primary" onClick={() => toggleCompass()}>
+          {isCompass ? "关闭罗盘" : "使用罗盘"}
+        </Button>
+      </Space>
     </aside>
   );
 }

@@ -24,6 +24,16 @@ const useCurrentCh = create((set) => ({
   preCurrentCh: () => set((state) => ({ currentCh: state.currentCh - 1 })),
 }));
 
+const useIsMap = create((set) => ({
+  isMap: false,
+  toggleMap: () => set((state) => ({ isMap: !state.isMap })),
+}));
+
+const useIsCompass = create((set) => ({
+  isCompass: false,
+  toggleCompass: () => set((state) => ({ isCompass: !state.isCompass })),
+}));
+
 // export const useExploreStore = create((set) => ({
 //   isExplore: false,
 //   toggleExplore: () => set((state) => ({ isExplore: !state.isExplore })),
@@ -34,4 +44,4 @@ const useCurrentCh = create((set) => ({
 //   updatePlayerPos: (p) => set(() => ({ playerPos: p })),
 // }));
 
-export { useStore, useCurrentCh };
+export { useStore, useCurrentCh, useIsMap, useIsCompass };

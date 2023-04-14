@@ -21,13 +21,13 @@ import { Map } from "../models/Map";
 import * as THREE from "three";
 import { useFrame, useThree } from "@react-three/fiber";
 import { Button } from "antd";
+import { useIsCompass, useIsMap } from "../stores";
 
 const ori = new THREE.Vector3(0, 2, 0);
 const dir = new THREE.Vector3(0, -1, 0);
 const raycaster = new THREE.Raycaster(ori, dir);
 
-const playerPosition = new THREE.Vector3();
-// const compassPosition = new THREE.Vector3(2, 0, 2);
+// const playerPosition = new THREE.Vector3();
 // const compassDirection = new THREE.Vector3();
 const playerRotation = new THREE.Vector3();
 const cameraRotation = new THREE.Vector2();
@@ -44,38 +44,46 @@ export const Scene = ({ ground }) => {
   const compass = useRef();
   const map = useRef();
 
-  const [isPlayer, toggleIsPlayer] = useState(true);
-  // TODO
-  const [isCompass, toggleIsCompass] = useState(false);
-  // DONE
-  const [isMap, toggleIsMap] = useState(false);
+  const [isPlayer, togglePlayer] = useState(true);
+  // const [isCompass, toggleCompass] = useState(false);
+  // const [isMap, toggleMap] = useState(false);
+  const isCompass = useIsCompass((state) => state.isCompass);
+  const isMap = useIsMap((state) => state.isMap);
 
-  const [compassPosition, setCompassPosition] = useState(
-    new THREE.Vector3(2, 0, 2)
-  );
+  // const [compassPosition, setCompassPosition] = useState(
+  //   new THREE.Vector3(2, 0, 2)
+  // );
 
   // const isExplore = useExploreStore((state) => state.isExplore);
   // const { camera, controls } = useThree();
 
-  function handleCompass() {
-    toggleIsMap(false);
-    toggleIsPlayer(!isPlayer);
-    setCompassPosition([
-      player.current.position.x,
-      player.current.position.y + 4,
-      player.current.position.z,
-    ]);
-    toggleIsCompass(!isCompass);
-  }
+  // function handleCompass() {
+  //   toggleMap(false);
+  //   toggleIsPlayer(!isPlayer);
+  //   setCompassPosition([
+  //     player.current.position.x,
+  //     player.current.position.y + 4,
+  //     player.current.position.z,
+  //   ]);
+  //   toggleCompass(!isCompass);
+  // }
 
-  function handleMap() {
-    toggleIsCompass(false);
-    toggleIsPlayer(!isPlayer);
-    toggleIsMap(!isMap);
-  }
+  // function handleMap() {
+  //   toggleIsCompass(false);
+  //   toggleIsPlayer(!isPlayer);
+  //   toggleMap(!isMap);
+  // }
+
+  useEffect(() => {
+    if (isMap || isCompass) {
+      togglePlayer(false);
+    } else {
+      togglePlayer(true);
+    }
+  }, [isMap, isCompass]);
 
   useFrame((state, delta) => {
-    if (compass.current && player.current && ground.current) {
+    if (map.current && compass.current && player.current && ground.current) {
       player.current.getWorldDirection(playerRotation);
       cameraRotation.set(playerRotation.x, playerRotation.z);
       compass.current.rotation.set(0, 0, cameraRotation.angle() - Math.PI / 2);
@@ -90,19 +98,27 @@ export const Scene = ({ ground }) => {
         player.current.position.y = inter.y + 0.2;
       }
 
-      // map.current.position.set(0, 2, 2)
-      map.current.position.set(
-        player.current.position.x,
-        player.current.position.y + 3,
-        player.current.position.z
-      );
-
       if (isMap) {
+        map.current.position.set(
+          player.current.position.x,
+          player.current.position.y + 4,
+          player.current.position.z
+        );
+
         state.controls.setLookAt(
           map.current.position.x,
           map.current.position.y + 2,
           map.current.position.z,
           ...map.current.position,
+          true
+        );
+      }
+
+      if (isPlayer) {
+        state.controls.moveTo(
+          player.current.position.x + 1,
+          player.current.position.y + 6,
+          player.current.position.z + 1,
           true
         );
       }
@@ -135,23 +151,24 @@ export const Scene = ({ ground }) => {
         <Player ref={player} visible={isPlayer} />
 
         <Compass
-          position={compassPosition}
+          // position={compassPosition}
           ref={compass}
           visible={isCompass}
-          isCompass={isCompass}
           scale={[0.1, 0.1, 0.1]}
+          isCompass={isCompass}
+          player={player}
           // position={[1, -3, 2]}
         />
-        <Map visible={isMap} isMap={isMap} ref={map} player={player} />
+        <Map visible={isMap} isMap={isMap} ref={map} />
       </KeyboardControls>
-      <Html>
+      {/* <Html>
         <Button type="primary" onClick={handleCompass} disabled={isCompass}>
           使用罗盘
         </Button>
         <Button type="primary" onClick={handleMap} disabled={isMap}>
           使用地图
         </Button>
-      </Html>
+      </Html> */}
     </>
   );
 };

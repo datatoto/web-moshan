@@ -11,7 +11,7 @@ import { Button } from "antd";
 export const Compass = forwardRef((props, cref) => {
   const c = useRef();
 
-  const { isCompass } = props;
+  const { isCompass, player } = props;
   const [isCircle, toggleIsCircle] = useState(true);
   const { nodes, materials } = useGLTF("/compass.glb");
 
@@ -30,6 +30,12 @@ export const Compass = forwardRef((props, cref) => {
 
   useFrame((state, delta) => {
     if (isCompass) {
+      c.current.position.set(
+        player.current.position.x + 0.5,
+        player.current.position.y + 4,
+        player.current.position.z + 0.5
+      );
+
       if (!isCircle) {
         state.controls.setLookAt(
           c.current.position.x,
@@ -75,7 +81,7 @@ export const Compass = forwardRef((props, cref) => {
         // );
 
         // state.controls.lookInDirectionOf(0, -1, 0.4);
-        console.log(c.current.position);
+        // console.log(c.current.position);
       }
     }
   });
