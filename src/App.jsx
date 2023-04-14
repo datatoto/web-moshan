@@ -17,14 +17,14 @@ import {
 } from "@react-three/drei";
 // import { useControls } from "leva";
 
-import { CompassView, MiniMapView, MainView } from "./components/Views";
+// import { CompassView, MiniMapView, MainView } from "./components/Views";
 // import Layout, { Content } from "antd/es/layout/layout";
 // import Sider from "antd/es/layout/Sider";
 import { Button, Divider } from "antd";
 // DONE: stepper
 import { Canvas, useThree } from "@react-three/fiber";
 import { Suspense, useEffect, useMemo, useRef } from "react";
-import useStore, { useExploreStore, usePlayerPosStore } from "./stores";
+// import useStore, { useExploreStore, usePlayerPosStore } from "./stores";
 import Aside from "./components/Aside";
 import { Stepper } from "./components/Stepper";
 import { useState } from "react";
@@ -43,15 +43,11 @@ function App() {
   // const mapView = useRef();
   const ground = useRef(null);
 
-  const [currentCh, setCurrentCh] = useState(0);
+  // const [currentCh, setCurrentCh] = useState(0);
   // const [currentCh, setCurrentCh] = useStore((state) => [
   //   state.currentCh,
   //   state.updateCurrentCh,
   // ]);
-  const [isExplore, toggleExpolre] = useExploreStore((state) => [
-    state.isExplore,
-    state.toggleExplore,
-  ]);
 
   return (
     <>
@@ -134,17 +130,7 @@ function App() {
         ></div> */}
       </div>
 
-      <Aside title={ASIDE[currentCh].title} id="aside">
-        <Stepper
-          data={ASIDE[currentCh]}
-          currentCh={currentCh}
-          setCurrentCh={setCurrentCh}
-        />
-        <Divider />
-        <Button type="primary" onClick={() => setCurrentCh(currentCh + 1)}>
-          下一章
-        </Button>
-      </Aside>
+      <Aside />
     </>
   );
 }

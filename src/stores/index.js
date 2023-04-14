@@ -1,16 +1,11 @@
 import { create } from "zustand";
 
 const useStore = create((set) => ({
-  currentCh: 0,
-  currentStep: 0,
-
   // currentCirlPos: -0.45,
   // currentDeclRot: 8,
   currentRot: 10,
 
   currentMapRot: 5,
-  updateCurrentCh: (c) => set(() => ({ currentCh: c })),
-  updateCurrentStep: (s) => set(() => ({ currentStep: s })),
   updateCurrentRot: (r) => set(() => ({ currentRot: r })),
   updateCurrentMapRot: (m) => set(() => ({ currentMapRot: m })),
   // updateCurrentCirlPos: () =>
@@ -23,14 +18,20 @@ const useStore = create((set) => ({
   //     set(() => ({ cameraLookAt: cameraLookAt })),
 }));
 
-export const useExploreStore = create((set) => ({
-  isExplore: false,
-  toggleExplore: () => set((state) => ({ isExplore: !state.isExplore })),
+const useCurrentCh = create((set) => ({
+  currentCh: 0,
+  nextCurrentCh: () => set((state) => ({ currentCh: state.currentCh + 1 })),
+  preCurrentCh: () => set((state) => ({ currentCh: state.currentCh - 1 })),
 }));
 
-export const usePlayerPosStore = create((set) => ({
-  playerPos: [0, 0, 0],
-  updatePlayerPos: (p) => set(() => ({ playerPos: p })),
-}));
+// export const useExploreStore = create((set) => ({
+//   isExplore: false,
+//   toggleExplore: () => set((state) => ({ isExplore: !state.isExplore })),
+// }));
 
-export default useStore;
+// export const usePlayerPosStore = create((set) => ({
+//   playerPos: [0, 0, 0],
+//   updatePlayerPos: (p) => set(() => ({ playerPos: p })),
+// }));
+
+export { useStore, useCurrentCh };

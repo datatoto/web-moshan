@@ -5,7 +5,6 @@ Command: npx gltfjsx@6.1.4 public/compass.glb
 
 import React, { forwardRef, useEffect, useRef, useState } from "react";
 import { Html, TransformControls, useGLTF } from "@react-three/drei";
-import useStore from "../stores";
 import { useFrame } from "@react-three/fiber";
 import { Button } from "antd";
 

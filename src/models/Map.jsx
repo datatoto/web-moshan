@@ -8,7 +8,6 @@ import {
   Point,
 } from "@react-three/drei";
 import { forwardRef, useEffect, useMemo, useRef, useState } from "react";
-import useStore from "../stores";
 import { useFrame } from "@react-three/fiber";
 import { Button } from "antd";
 

@@ -11,7 +11,6 @@ import {
   useHelper,
 } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
-import { usePlayerPosStore } from "../stores";
 
 import * as THREE from "three";
 // import { MeshBVHVisualizer } from "three-mesh-bvh";
