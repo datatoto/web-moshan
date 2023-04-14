@@ -4,5 +4,7 @@
   - `background.hdr`
   - `compass.glb`
   - `ground.glb`
+  - `character.glb`
+  - `doom1.jpg`
 - 命令行使用 `npm i` 安装依赖
 - 命令行使用 `npm run dev` 启动开发环境
