@@ -14,6 +14,8 @@ export const Compass = forwardRef((props, cref) => {
   const { nodes, materials } = useGLTF("/compass.glb");
   const { isCompass, player } = props;
 
+  const [hovered, setHovered] = useState(false);
+
   const [isCircle, toggleIsCircle] = useState(true);
   const [cirlPos, setCirlPos] = useState(-0.45);
   const [declRot, setDeclRot] = useState(8);
@@ -21,9 +23,9 @@ export const Compass = forwardRef((props, cref) => {
   const current = useCurrent((state) => state.current);
   const currentCh = useCurrentCh((state) => state.currentCh);
 
-  // const [tag, setTag] = useState("");
-  // const [tagX, setTagX] = useState(0);
-  // const [tagY, setTagY] = useState(0);
+  const [tag, setTag] = useState("");
+  const [tagX, setTagX] = useState(0);
+  const [tagY, setTagY] = useState(0);
 
   // const currentCh = useCurrentCh((state) => state.currentCh);
   // const [cirlPos, setCirlPos] = useStore((state) => [
@@ -31,19 +33,13 @@ export const Compass = forwardRef((props, cref) => {
   //   state.updateCurrentCirlPos,
   // ]);
 
-  // const decl = useRef();
-  // const [declRot, setDeclRot] = useStore((state) => [
-  //   state.currentDeclRot,
-  //   state.updateCurrentDeclRot,
-  // ]);
-
-  // function handleEnter(e, tag) {
-  //   console.log(e.eventObject.material);
-  //   setTag(tag);
-  //   setTagX(e.pointer.x + 0.3);
-  //   setTagY(e.pointer.y + 0.3);
-  //   // e.eventObject.material.color = 0xff0000;
-  // }
+  function handleOver(e, tag) {
+    // console.log(e.eventObject.material);
+    setHovered(true);
+    setTag(tag);
+    setTagX(e.pointer.x);
+    setTagY(e.pointer.y);
+  }
 
   const { controls } = useThree();
 
@@ -167,21 +163,24 @@ export const Compass = forwardRef((props, cref) => {
     <group {...props} dispose={null} ref={c}>
       {isCompass && (
         <>
-          <Html distanceFactor={2}>
+          <Html
+            // distanceFactor={0.5}
+            position={[-1, 2.5, 0]}
+          >
             <Button type="primary" onClick={() => toggleIsCircle(!isCircle)}>
               {isCircle ? "观测" : "读数"}
             </Button>
           </Html>
-          {/* <Html
-            transform
-            sprite
-            distanceFactor={0.4}
-            position={[tagX, 0, tagY]}
-          >
-            <Tag bordered={false} className="compass-tag">
-              {tag}
-            </Tag>
-          </Html> */}
+          {hovered && (
+            <Html
+              // transform
+              // sprite
+              // distanceFactor={0.4}
+              position={[tagX, 0, tagY]}
+            >
+              <Tag color="blue">{tag}</Tag>
+            </Html>
+          )}
         </>
       )}
       <group rotation={[1.55, 0, 0]}>
@@ -190,8 +189,13 @@ export const Compass = forwardRef((props, cref) => {
           material={materials.met_gl2}
           position={[0, -0.02, -1.17]}
           rotation={[-0.02, -0.03, -1.58]}
-          // onPointerMove={(e) => handleEnter(e, "北针")}
-        ></mesh>
+          onPointerOver={(e) => (e.stopPropagation(), handleOver(e, "北针"))}
+          onPointerOut={(e) => setHovered(false)}
+        >
+          {hovered && tag === "北针" && (
+            <meshBasicMaterial transparent opacity={0.6} color="blue" />
+          )}
+        </mesh>
         <group ref={cref}>
           <mesh
             geometry={nodes.compass_circle_steklo.geometry}
@@ -199,14 +203,21 @@ export const Compass = forwardRef((props, cref) => {
             position={[0, 0, -1.31]}
             scale={[1.73, 1.73, 0.01]}
             rotation={[0, 0, (Math.PI / 360) * declRot]}
-            // onPointerOver={(e) => handleEnter(e, "刻度")}
+            // onPointerOver={(e) => (
+            //   e.stopPropagation(), handleOver(e, "方位刻度盘")
+            // )}
+            // onPointerOut={(e) => setHovered(false)}
             // onClick={() => {
             //   props.setRot(props.rot + 5);
             // }}
             // onContextMenu={() => {
             //   props.setRot(props.rot - 5);
             // }}
-          ></mesh>
+          >
+            {/* {hovered && tag === "方位刻度盘" && (
+              <meshBasicMaterial transparent opacity={0.6} color="blue" />
+            )} */}
+          </mesh>
           <mesh
             geometry={nodes.compass_north_hrom.geometry}
             material={materials.hrom}
@@ -225,8 +236,14 @@ export const Compass = forwardRef((props, cref) => {
             material={materials.trans}
             position={[0.84, cirlPos, -1.02]}
             scale={[0.14, 0.14, 0.12]}
-            // onPointerOver={(e) => handleEnter(e, "方位水准器")}
+            onPointerOver={(e) => (
+              e.stopPropagation(), handleOver(e, "方位水准器")
+            )}
+            onPointerOut={(e) => setHovered(false)}
           >
+            {hovered && tag === "方位水准器" && (
+              <meshBasicMaterial transparent opacity={0.6} color="blue" />
+            )}
             {/* <Edges scale={1.1}>
               <meshBasicMaterial transparent color="#f33" depthTest={false} />
             </Edges> */}
@@ -244,8 +261,15 @@ export const Compass = forwardRef((props, cref) => {
             material={materials.trans}
             position={[0.56 + cirlPos, -0.94, -0.97]}
             scale={[0.16, 0.14, 0.12]}
-            // onPointerOver={(e) => handleEnter(e, "倾角水准器")}
-          />
+            onPointerOver={(e) => (
+              e.stopPropagation(), handleOver(e, "倾角水准器")
+            )}
+            onPointerOut={(e) => setHovered(false)}
+          >
+            {hovered && tag === "倾角水准器" && (
+              <meshBasicMaterial transparent opacity={0.6} color="blue" />
+            )}
+          </mesh>
           {/* {currentCh === 0 && (
               <Html distanceFactor={0.5}>
                 <Tag bordered={false} className="compass-tag">
