@@ -5,8 +5,9 @@ import {
 } from "@react-three/drei";
 import * as THREE from "three";
 
-export function Dome({ position }) {
-  const texture = useTexture("/doom1.jpg");
+export function Dome({ url }) {
+  // const texture = useTexture("/doom1.jpg");
+  const texture = useTexture(url);
 
   return (
     <>

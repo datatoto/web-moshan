@@ -51,10 +51,13 @@ const useIsEagle = create((set) => ({
   toggleEagle: (isEagle) => set(() => ({ isEagle: isEagle })),
 }));
 
-const useIsDome = create((set) => ({
+const useDome = create((set) => ({
   isDome: false,
+  domeName: "",
   toggleDome: (isDome) => set(() => ({ isDome: isDome })),
+  setDomeName: (domeName) => set(() => ({ domeName: domeName })),
 }));
+
 
 // export const useExploreStore = create((set) => ({
 //   isExplore: false,
@@ -73,5 +76,5 @@ export {
   useIsMap,
   useIsCompass,
   useIsEagle,
-  useIsDome,
+  useDome,
 };

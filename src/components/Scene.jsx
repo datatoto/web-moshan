@@ -23,7 +23,7 @@ import { useFrame, useThree } from "@react-three/fiber";
 import { Button } from "antd";
 import {
   useIsCompass,
-  useIsDome,
+  useDome,
   useIsEagle,
   useIsMap,
   useIsPlayer,
@@ -60,11 +60,13 @@ export const Scene = ({ ground }) => {
   const isMap = useIsMap((state) => state.isMap);
 
   const isEagle = useIsEagle((state) => state.isEagle);
-  const isDome = useIsDome((state) => state.isDome);
+  const [isDome, domeName] = useDome((state) => [state.isDome, state.domeName]);
 
   const { controls } = useThree();
   useEffect(() => {
-    ground.current.visible = !isDome;
+    if (ground.current) {
+      ground.current.visible = !isDome;
+    }
 
     if (isMap || isCompass) {
       togglePlayer(false);
@@ -147,7 +149,7 @@ export const Scene = ({ ground }) => {
   });
 
   return isDome ? (
-    <Dome />
+    <Dome url={"/domes/" + domeName + ".jpg"} />
   ) : (
     <>
       <KeyboardControls map={keymap}>
