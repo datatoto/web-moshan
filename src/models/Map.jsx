@@ -6,10 +6,31 @@ import {
   Line,
   Points,
   Point,
+  Text,
 } from "@react-three/drei";
 import { forwardRef, useEffect, useMemo, useRef, useState } from "react";
 import { useFrame } from "@react-three/fiber";
 import { Button } from "antd";
+import { useIsMap } from "../stores";
+
+const Circle = ({
+  children,
+  opacity = 1,
+  radius = 0.03,
+  segments = 16,
+  color = "#0000ff",
+  ...props
+}) => (
+  <mesh {...props} rotation={[-Math.PI / 2, 0, 0]}>
+    <circleGeometry args={[radius, segments]} />
+    <meshBasicMaterial
+      transparent={opacity < 1}
+      opacity={opacity}
+      color={color}
+    />
+    {children}
+  </mesh>
+);
 
 const calAngle = (p1, p2) => {
   // console.log(p1, "p1");
@@ -22,42 +43,70 @@ const calAngle = (p1, p2) => {
 };
 
 export const Map = forwardRef((props, mref) => {
-  const scale = useAspect(1111, 662, 0.2);
+  const scale = useAspect(1111, 662, 0.3);
   const image = useTexture("/topo.jpg");
 
   const [points, setPoints] = useState([]);
   const [movePoint, setMovePoint] = useState();
   const [mapRot, setRot] = useState(0);
 
-  const { isMap } = props;
+  const { isMap, player } = props;
+
   const [isRot, toggleIsRot] = useState(true);
 
-  // useFrame((state, delta) => {
-  //   if (isMap) {
-  //     state.controls.setPosition(
-  //       mref.current.position.x,
-  //       mref.current.position.y + 2,
-  //       mref.current.position.z,
-  //       true
-  //     );
+  useFrame((state, delta) => {
+    if (isMap) {
+      mref.current.position.set(
+        player.current.position.x + 1,
+        player.current.position.y + 4,
+        player.current.position.z + 1
+      );
 
-  //     console.log(mref.current.position);
+      state.controls.setLookAt(
+        mref.current.position.x,
+        mref.current.position.y + 2,
+        mref.current.position.z,
+        ...mref.current.position,
+        true
+      );
 
-  //     state.controls.lookInDirectionOf(0, -1, 0);
-  //   }
-  // });
+      // console.log(mref.current.position);
+      // console.log(gref.current.position);
+    }
+  });
 
   return (
-    <group dispose={null} {...props} ref={mref}>
-      {isMap && (
-        <Html distanceFactor={2}>
-          <Button type="primary" onClick={() => toggleIsRot(!isRot)}>
-            {isRot ? "标记地图" : "旋转地图"}
-          </Button>
-        </Html>
-      )}
+    <group dispose={null} {...props}>
+      {isMap &&
+        !isRot &&
+        points.map((p, i) => (
+          <>
+            <Circle position={p}>
+              <Text fontSize={0.02}>{calAngle(p, movePoint)} ° </Text>
+            </Circle>
+            <Line points={[p, movePoint]} color="red" lineWidth={2} key={i}>
+              {/* <Html center position={p}>
+              <span>{calAngle(p, movePoint)} 度</span>
+            </Html> */}
+            </Line>
+          </>
+        ))}
+      {/*
+      <group>
+        {isMap &&
+          !isRot &&
+          points.map((p, i) => (
+            <Circle>
+              <Html center position={p}>
+                <span>{calAngle(p, movePoint)} 度</span>
+              </Html>
+            </Circle>
+          ))}
+      </group> */}
 
       <mesh
+        ref={mref}
+        // position={[0, 1, 1]}
         rotation={[-Math.PI / 2, 0, (Math.PI / 360) * mapRot]}
         scale={scale}
         onClick={(e) => {
@@ -70,17 +119,14 @@ export const Map = forwardRef((props, mref) => {
       >
         <planeGeometry />
         <meshBasicMaterial map={image} />
+        {isMap && (
+          <Html distanceFactor={2} position={[0.3, 0.3, 0]}>
+            <Button type="primary" onClick={() => toggleIsRot(!isRot)}>
+              {isRot ? "标记地图" : "旋转地图"}
+            </Button>
+          </Html>
+        )}
       </mesh>
-
-      {isMap &&
-        !isRot &&
-        points.map((p, i) => (
-          <Line points={[p, movePoint]} color="red" lineWidth={2} key={i}>
-            <Html center position={p}>
-              <span>{calAngle(p, movePoint)} 度</span>
-            </Html>
-          </Line>
-        ))}
     </group>
   );
 });
