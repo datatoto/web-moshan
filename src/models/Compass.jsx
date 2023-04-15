@@ -165,7 +165,7 @@ export const Compass = forwardRef((props, cref) => {
 
   return (
     <group {...props} dispose={null} ref={c}>
-      {currentCh > 1 && isCompass && (
+      {isCompass && (
         <>
           <Html distanceFactor={2}>
             <Button type="primary" onClick={() => toggleIsCircle(!isCircle)}>

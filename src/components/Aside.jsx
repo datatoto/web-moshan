@@ -58,8 +58,21 @@ export default function Aside(props) {
     togglePlayer(!isPlayer);
     toggleCompass(false);
     toggleMap(false);
-    toggleDome(false);
     toggleEagle(!isEagle);
+  }
+
+  function handleMap() {
+    togglePlayer(!isPlayer);
+    toggleCompass(false);
+    toggleMap(!isMap);
+    toggleEagle(false);
+  }
+
+  function handleCompass() {
+    togglePlayer(!isPlayer);
+    toggleCompass(!isCompass);
+    toggleMap(false);
+    toggleEagle(false);
   }
 
   return (
@@ -110,27 +123,38 @@ export default function Aside(props) {
         ))
       } */}
         {/* <Divider /> */}
-        <Space>
-          <Button type="primary" onClick={() => toggleMap()}>
+        {/* <Space> */}
+        {/* <Button type="primary" onClick={() => toggleMap(!isMap)}>
             {isMap ? "关闭地图" : "使用地图"}
           </Button>
-          <Button type="primary" onClick={() => toggleCompass()}>
+          <Button type="primary" onClick={() => toggleCompass(!isCompass)}>
             {isCompass ? "关闭罗盘" : "使用罗盘"}
-          </Button>
-          {/* <Button type="primary" onClick={handleEagle}>
+          </Button> */}
+        {/* <Button type="primary" onClick={handleEagle}>
             {isEagle ? "关闭鸟瞰" : "开启鸟瞰"}
           </Button> */}
-          {/* <Button type="primary" onClick={() => toggleDome()}>
+        {/* <Button type="primary" onClick={() => toggleDome()}>
           {isDome ? "关闭全景" : "使用全景"}
         </Button> */}
-        </Space>
+        {/* </Space> */}
       </aside>
-      <FloatButton
-        shape="square"
-        type={isEagle ? "primary" : "default"}
-        description="鸟瞰"
-        onClick={handleEagle}
-      />
+      <FloatButton.Group shape="square">
+        <FloatButton
+          type={isEagle ? "primary" : "default"}
+          description="鸟瞰"
+          onClick={handleEagle}
+        />
+        <FloatButton
+          type={isMap ? "primary" : "default"}
+          description="地图"
+          onClick={handleMap}
+        />
+        <FloatButton
+          type={isCompass ? "primary" : "default"}
+          description="罗盘"
+          onClick={handleCompass}
+        />
+      </FloatButton.Group>
     </>
   );
 }

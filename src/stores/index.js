@@ -32,7 +32,7 @@ const useCurrentCh = create((set) => ({
 }));
 
 const useIsPlayer = create((set) => ({
-  isPlayer: true,
+  isPlayer: false,
   togglePlayer: (isPlayer) => set(() => ({ isPlayer: isPlayer })),
 }));
 
