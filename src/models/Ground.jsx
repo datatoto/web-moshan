@@ -4,10 +4,18 @@ Command: npx gltfjsx@6.1.4 public/ground.glb
 */
 
 import React, { forwardRef, useRef } from "react";
-import { Bvh, useGLTF } from "@react-three/drei";
+import { Bvh, Html, useGLTF } from "@react-three/drei";
+import { Button } from "antd";
+import { useIsDome } from "../stores";
 
 export const Ground = forwardRef((props, gref) => {
   const { nodes, materials } = useGLTF("/ground.glb");
+
+  const toggleDome = useIsDome((state) => state.toggleDome);
+  function handleClick() {
+    toggleDome(true);
+  }
+
   return (
     <group {...props} dispose={null} ref={gref}>
       <mesh
@@ -29534,7 +29542,11 @@ export const Ground = forwardRef((props, gref) => {
         position={[191.9, 39.75, -72.23]}
         rotation={[Math.PI, -1.47, Math.PI]}
         scale={13.93}
-      />
+      >
+        <Html>
+          <Button onClick={handleClick}>楚天台全景</Button>
+        </Html>
+      </mesh>
     </group>
   );
 });

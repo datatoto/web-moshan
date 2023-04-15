@@ -21,7 +21,13 @@ import { Map } from "../models/Map";
 import * as THREE from "three";
 import { useFrame, useThree } from "@react-three/fiber";
 import { Button } from "antd";
-import { useIsCompass, useIsDome, useIsMap, useIsPlayer } from "../stores";
+import {
+  useIsCompass,
+  useIsDome,
+  useIsEagle,
+  useIsMap,
+  useIsPlayer,
+} from "../stores";
 import { Dome } from "./Dome";
 
 const ori = new THREE.Vector3(0, 2, 0);
@@ -49,32 +55,31 @@ export const Scene = ({ ground }) => {
   const isPlayer = useIsPlayer((state) => state.isPlayer);
   const isCompass = useIsCompass((state) => state.isCompass);
   const isMap = useIsMap((state) => state.isMap);
+
+  const isEagle = useIsEagle((state) => state.isEagle);
   const isDome = useIsDome((state) => state.isDome);
 
+  const { controls } = useThree();
   useEffect(() => {
     ground.current.visible = !isDome;
-  }, [isDome]);
 
-  // const [compassPosition, setCompassPosition] = useState(
-  //   new THREE.Vector3(2, 0, 2)
-  // );
+    if (controls) {
+      if (isEagle) {
+        controls.setLookAt(100, 300, 600, -500, 40, -200, true);
+      }
 
-  // function handleCompass() {
-  //   toggleMap(false);
-  //   toggleIsPlayer(!isPlayer);
-  //   setCompassPosition([
-  //     player.current.position.x,
-  //     player.current.position.y + 4,
-  //     player.current.position.z,
-  //   ]);
-  //   toggleCompass(!isCompass);
-  // }
+      if (isPlayer && player) {
+        controls.moveTo(
+          player.current.position.x,
+          player.current.position.y + 8,
+          player.current.position.z + 1,
+          true
+        );
 
-  // function handleMap() {
-  //   toggleIsCompass(false);
-  //   toggleIsPlayer(!isPlayer);
-  //   toggleMap(!isMap);
-  // }
+        controls.dollyTo(20, true);
+      }
+    }
+  }, [isDome, isEagle, isPlayer]);
 
   // useEffect(() => {
   //   if (isMap || isCompass) {
@@ -120,14 +125,14 @@ export const Scene = ({ ground }) => {
         );
       }
 
-      if (isPlayer) {
-        state.controls.moveTo(
-          player.current.position.x,
-          player.current.position.y + 8,
-          player.current.position.z + 1,
-          true
-        );
-      }
+      // if (isPlayer) {
+      //   state.controls.moveTo(
+      //     player.current.position.x,
+      //     player.current.position.y + 8,
+      //     player.current.position.z + 1,
+      //     true
+      //   );
+      // }
 
       // player.current.getWorldPosition(playerPosition);
       // console.log(playerPosition);
@@ -138,10 +143,6 @@ export const Scene = ({ ground }) => {
 
       // console.log(compass.current.position);
     }
-    // console.log(map.current.position);
-    // console.log(player.current.position);
-
-    // console.log(map.current.position);
   });
 
   return isDome ? (

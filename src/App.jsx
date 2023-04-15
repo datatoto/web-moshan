@@ -84,7 +84,7 @@ function App() {
             </View> */}
           </Suspense>
           <Preload all />
-          <Perf position="bottom-right" />
+          <Perf position="top-right" />
         </Canvas>
 
         <Loader />

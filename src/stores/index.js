@@ -22,6 +22,7 @@ const useCurrent = create((set) => ({
   current: 0,
   nextCurrent: () => set((state) => ({ current: state.current + 1 })),
   preCurrent: () => set((state) => ({ current: state.current - 1 })),
+  resetCurrent: () => set((state) => ({ current: 0 })),
 }));
 
 const useCurrentCh = create((set) => ({
@@ -31,23 +32,28 @@ const useCurrentCh = create((set) => ({
 }));
 
 const useIsPlayer = create((set) => ({
-  isPlayer: false,
-  togglePlayer: () => set((state) => ({ isPlayer: !state.isPlayer })),
+  isPlayer: true,
+  togglePlayer: (isPlayer) => set(() => ({ isPlayer: isPlayer })),
 }));
 
 const useIsMap = create((set) => ({
   isMap: false,
-  toggleMap: () => set((state) => ({ isMap: !state.isMap })),
+  toggleMap: (isMap) => set(() => ({ isMap: isMap })),
 }));
 
 const useIsCompass = create((set) => ({
-  isCompass: true,
-  toggleCompass: () => set((state) => ({ isCompass: !state.isCompass })),
+  isCompass: false,
+  toggleCompass: (isCompass) => set(() => ({ isCompass: isCompass })),
+}));
+
+const useIsEagle = create((set) => ({
+  isEagle: false,
+  toggleEagle: (isEagle) => set(() => ({ isEagle: isEagle })),
 }));
 
 const useIsDome = create((set) => ({
   isDome: false,
-  toggleDome: () => set((state) => ({ isDome: !state.isDome })),
+  toggleDome: (isDome) => set(() => ({ isDome: isDome })),
 }));
 
 // export const useExploreStore = create((set) => ({
@@ -66,5 +72,6 @@ export {
   useIsPlayer,
   useIsMap,
   useIsCompass,
+  useIsEagle,
   useIsDome,
 };
