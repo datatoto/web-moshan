@@ -12,6 +12,9 @@ import {
 } from "../stores";
 import { useEffect, useState } from "react";
 import { DesTwo } from "./DesTwo";
+import { DesThree } from "./DesThree";
+import { DesFour } from "./DesFour";
+import { Test } from "./Test";
 
 export default function Aside(props) {
   const [current, nextCurrent, preCurrent, resetCurrent] = useCurrent(
@@ -49,9 +52,15 @@ export default function Aside(props) {
     state.toggleDome,
   ]);
 
+  const [isTest, setTest] = useState(false);
+
   function handleNextCh() {
     resetCurrent();
-    nextCurrentCh();
+    if (currentCh < 3) {
+      nextCurrentCh();
+    } else {
+      setTest(true);
+    }
   }
 
   function handleEagle() {
@@ -107,6 +116,23 @@ export default function Aside(props) {
             handleNextCh={handleNextCh}
           />
         )}
+        {currentCh === 2 && (
+          <DesThree
+            current={current}
+            nextCurrent={nextCurrent}
+            preCurrent={preCurrent}
+            handleNextCh={handleNextCh}
+          />
+        )}
+        {currentCh === 3 && (
+          <DesFour
+            current={current}
+            nextCurrent={nextCurrent}
+            preCurrent={preCurrent}
+            handleNextCh={handleNextCh}
+          />
+        )}
+        {isTest && <Test />}
         <Divider />
         {/* {currentCh < 3 && (
         <Button

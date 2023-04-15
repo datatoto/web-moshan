@@ -27,7 +27,6 @@ import Aside from "./components/Aside";
 import { Perf } from "r3f-perf";
 import { Scene } from "./components/Scene";
 import { Ground } from "./models/Ground";
-import { useIsDome } from "./stores";
 
 // function GuiControl() {
 //   const { toggleMap, toggleView } = useControls({ Map: false, FPV: true });
@@ -38,14 +37,6 @@ function App() {
   // const compassView = useRef();
   // const mapView = useRef();
   const ground = useRef(null);
-
-  // const isDome = useIsDome((state) => state.isDome);
-
-  // const [currentCh, setCurrentCh] = useState(0);
-  // const [currentCh, setCurrentCh] = useStore((state) => [
-  //   state.currentCh,
-  //   state.updateCurrentCh,
-  // ]);
 
   return (
     <>
