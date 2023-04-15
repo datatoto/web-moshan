@@ -1,11 +1,11 @@
 import { Button, Divider, FloatButton, Space } from "antd";
 import { DesOne } from "./DesOne";
-import { ASIDE } from "../stores/constants";
 import {
   useCurrent,
   useCurrentCh,
+  useDome,
   useIsCompass,
-  useIsDome,
+  // useIsDome,
   useIsEagle,
   useIsMap,
   useIsPlayer,
@@ -14,7 +14,7 @@ import { useEffect, useState } from "react";
 import { DesTwo } from "./DesTwo";
 import { DesThree } from "./DesThree";
 import { DesFour } from "./DesFour";
-import { Test } from "./Test";
+import Test from "./Test";
 
 export default function Aside(props) {
   const [current, nextCurrent, preCurrent, resetCurrent] = useCurrent(
@@ -47,39 +47,41 @@ export default function Aside(props) {
     state.isEagle,
     state.toggleEagle,
   ]);
-  const [isDome, toggleDome] = useIsDome((state) => [
+  const [isDome, toggleDome] = useDome((state) => [
     state.isDome,
     state.toggleDome,
   ]);
 
-  const [isTest, setTest] = useState(false);
+  // const [isTest, setTest] = useState(false);
 
   function handleNextCh() {
     resetCurrent();
-    if (currentCh < 3) {
-      nextCurrentCh();
-    } else {
-      setTest(true);
-    }
+    nextCurrentCh();
+    // if (currentCh === 3) {
+    //   setTest(true);
+    // }
   }
 
   function handleEagle() {
     togglePlayer(!isPlayer);
     toggleCompass(false);
     toggleMap(false);
+    toggleDome(false);
     toggleEagle(!isEagle);
   }
 
   function handleMap() {
     togglePlayer(!isPlayer);
     toggleCompass(false);
-    toggleMap(!isMap);
+    toggleDome(false);
     toggleEagle(false);
+    toggleMap(!isMap);
   }
 
   function handleCompass() {
     togglePlayer(!isPlayer);
     toggleCompass(!isCompass);
+    toggleDome(false);
     toggleMap(false);
     toggleEagle(false);
   }
@@ -91,7 +93,7 @@ export default function Aside(props) {
         style={{
           position: "absolute",
           top: "0px",
-          width: "25vw",
+          width: currentCh === 4 ? "80vw" : "25vw",
           height: "98vh",
           padding: "0 10px",
           overflowY: "scroll",
@@ -132,7 +134,8 @@ export default function Aside(props) {
             handleNextCh={handleNextCh}
           />
         )}
-        {isTest && <Test />}
+        {currentCh === 4 && <Test />}
+        {/* {isTest && <Test />} */}
         <Divider />
         {/* {currentCh < 3 && (
         <Button
