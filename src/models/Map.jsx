@@ -18,7 +18,7 @@ const Circle = ({
   opacity = 1,
   radius = 0.03,
   segments = 16,
-  color = "#0000ff",
+  color = "#0000aa",
   ...props
 }) => (
   <mesh {...props} rotation={[-Math.PI / 2, 0, 0]}>
@@ -52,7 +52,7 @@ export const Map = forwardRef((props, mref) => {
 
   const { isMap, player } = props;
 
-  const [isRot, toggleIsRot] = useState(true);
+  const [isRot, toggleRot] = useState(true);
 
   useFrame((state, delta) => {
     if (isMap) {
@@ -82,9 +82,9 @@ export const Map = forwardRef((props, mref) => {
         points.map((p, i) => (
           <>
             <Circle position={p}>
-              <Text fontSize={0.02}>{calAngle(p, movePoint)} ° </Text>
+              <Text fontSize={0.025}>{calAngle(p, movePoint)} ° </Text>
             </Circle>
-            <Line points={[p, movePoint]} color="red" lineWidth={2} key={i}>
+            <Line points={[p, movePoint]} color="blue" lineWidth={2} key={i}>
               {/* <Html center position={p}>
               <span>{calAngle(p, movePoint)} 度</span>
             </Html> */}
@@ -121,7 +121,7 @@ export const Map = forwardRef((props, mref) => {
         <meshBasicMaterial map={image} />
         {isMap && (
           <Html distanceFactor={2} position={[0.3, 0.3, 0]}>
-            <Button type="primary" onClick={() => toggleIsRot(!isRot)}>
+            <Button type="primary" onClick={() => toggleRot(!isRot)}>
               {isRot ? "标记地图" : "旋转地图"}
             </Button>
           </Html>
