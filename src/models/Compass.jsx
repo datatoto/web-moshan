@@ -12,7 +12,7 @@ import { useCurrent, useCurrentCh } from "../stores";
 export const Compass = forwardRef((props, cref) => {
   const c = useRef();
   const { nodes, materials } = useGLTF("/compass.glb");
-  const { isCompass, player } = props;
+  const { isMap, isCompass, player } = props;
 
   const [hovered, setHovered] = useState(false);
 
@@ -89,49 +89,32 @@ export const Compass = forwardRef((props, cref) => {
     if (isCompass) {
       c.current.position.set(
         player.current.position.x + 0.5,
-        player.current.position.y + 3,
+        player.current.position.y + 4,
         player.current.position.z + 0.5
       );
 
-      if (!isCircle) {
-        controls.setLookAt(
-          c.current.position.x,
-          c.current.position.y + 0.14,
-          c.current.position.z - 0.8,
-          ...c.current.position,
-          true
-        );
+      if (!isMap) {
+        if (!isCircle) {
+          controls.setLookAt(
+            c.current.position.x,
+            c.current.position.y + 0.14,
+            c.current.position.z - 0.8,
+            ...c.current.position,
+            true
+          );
+        } else {
+          controls.setLookAt(
+            c.current.position.x,
+            c.current.position.y + 0.5,
+            c.current.position.z - 0.2,
+            ...c.current.position,
+            true
+          );
+        }
 
-        // console.log(cref.current.rotation.z);
         if (Math.abs(cref.current.rotation.z) < Math.PI) {
           controls.rotate(-cref.current.rotation.z, 0, true);
         }
-        // else {
-        //   controls.rotate(-Math.abs(cref.current.rotation.z) + Math.PI / 2, 0, true);
-        // }
-
-        // controls.rotate()
-
-        // controls.setPosition(
-        //   c.current.position.x,
-        //   c.current.position.y + 0.14,
-        //   c.current.position.z - 0.8,
-        //   true
-        // );
-        // TODO
-        // controls.rotate(-(cref.current.rotation.z % Math.PI), 0, true);
-        // controls.rotateTo(cref.current.rotation.z, 0, true);
-
-        // console.log(cref.current.rotation.z);
-        // console.log(cref.current.rotation.z % Math.PI);
-      } else {
-        controls.setLookAt(
-          c.current.position.x,
-          c.current.position.y + 0.5,
-          c.current.position.z - 0.3,
-          ...c.current.position,
-          true
-        );
 
         // console.log(c.current.position);
         // controls.rotate(
@@ -140,9 +123,6 @@ export const Compass = forwardRef((props, cref) => {
         //   true
         // );
         // console.log(Math.abs(cref.current.rotation.z) % Math.PI);
-        if (Math.abs(cref.current.rotation.z) < Math.PI) {
-          controls.rotate(-cref.current.rotation.z, 0, true);
-        }
         // console.log(cref.current.rotation.z);
         // console.log(cref.current.rotation.z % Math.PI);
 
@@ -161,11 +141,11 @@ export const Compass = forwardRef((props, cref) => {
 
   return (
     <group {...props} dispose={null} ref={c}>
-      {isCompass && (
+      {isCompass && !isMap && (
         <>
           <Html
             // distanceFactor={0.5}
-            position={[-1, 2.5, 0]}
+            position={[-1.5, 3, 0]}
           >
             <Button type="primary" onClick={() => toggleIsCircle(!isCircle)}>
               {isCircle ? "观测" : "读数"}

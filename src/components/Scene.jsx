@@ -128,10 +128,19 @@ export const Scene = ({ ground }) => {
       // );
       // }
 
+      if (isMap && isCompass) {
+        state.controls.setLookAt(
+          player.current.position.x - 0.5,
+          player.current.position.y + 5,
+          player.current.position.z + 1,
+          ...map.current.position,
+          true
+        );
+      }
       if (isPlayer) {
         state.controls.moveTo(
           player.current.position.x,
-          player.current.position.y + 8,
+          player.current.position.y + 4,
           player.current.position.z + 1,
           true
         );
@@ -163,16 +172,21 @@ export const Scene = ({ ground }) => {
         <Player ref={player} visible={isPlayer} />
 
         <Compass
-          // position={compassPosition}
           ref={compass}
           visible={isCompass}
           scale={[0.1, 0.1, 0.1]}
+          isMap={isMap}
           isCompass={isCompass}
           player={player}
-          // position={[1, -3, 2]}
         />
 
-        <Map visible={isMap} ref={map} isMap={isMap} player={player} />
+        <Map
+          visible={isMap}
+          ref={map}
+          isMap={isMap}
+          isCompass={isCompass}
+          player={player}
+        />
       </KeyboardControls>
       <Environment files="background.hdr" background />
     </>

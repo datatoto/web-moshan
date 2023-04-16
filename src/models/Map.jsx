@@ -43,35 +43,34 @@ const calAngle = (p1, p2) => {
 };
 
 export const Map = forwardRef((props, mref) => {
-  const scale = useAspect(1111, 662, 0.3);
+  const scale = useAspect(1111, 662, 0.2);
   const image = useTexture("/topo.jpg");
 
   const [points, setPoints] = useState([]);
   const [movePoint, setMovePoint] = useState();
   const [mapRot, setRot] = useState(0);
 
-  const { isMap, player } = props;
+  const { isMap, isCompass, player } = props;
 
   const [isRot, toggleRot] = useState(true);
 
   useFrame((state, delta) => {
     if (isMap) {
       mref.current.position.set(
-        player.current.position.x + 1,
+        player.current.position.x,
         player.current.position.y + 4,
-        player.current.position.z + 1
+        player.current.position.z
       );
 
-      state.controls.setLookAt(
-        mref.current.position.x,
-        mref.current.position.y + 2,
-        mref.current.position.z,
-        ...mref.current.position,
-        true
-      );
-
-      // console.log(mref.current.position);
-      // console.log(gref.current.position);
+      if (!isCompass) {
+        state.controls.setLookAt(
+          mref.current.position.x,
+          mref.current.position.y + 2,
+          mref.current.position.z,
+          ...mref.current.position,
+          true
+        );
+      }
     }
   });
 
@@ -120,7 +119,7 @@ export const Map = forwardRef((props, mref) => {
         <planeGeometry />
         <meshBasicMaterial map={image} />
         {isMap && (
-          <Html distanceFactor={2} position={[0.3, 0.3, 0]}>
+          <Html distanceFactor={2} position={[-0.4, 0.4, 0]}>
             <Button type="primary" onClick={() => toggleRot(!isRot)}>
               {isRot ? "标记地图" : "旋转地图"}
             </Button>

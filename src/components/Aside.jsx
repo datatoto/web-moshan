@@ -71,19 +71,19 @@ export default function Aside(props) {
   }
 
   function handleMap() {
-    togglePlayer(!isPlayer);
-    toggleCompass(false);
+    // togglePlayer(false);
+    // toggleCompass(false);
     toggleDome(false);
     toggleEagle(false);
     toggleMap(!isMap);
   }
 
   function handleCompass() {
-    togglePlayer(!isPlayer);
-    toggleCompass(!isCompass);
+    // togglePlayer(false);
+    // toggleMap(false);
     toggleDome(false);
-    toggleMap(false);
     toggleEagle(false);
+    toggleCompass(!isCompass);
   }
 
   return (
