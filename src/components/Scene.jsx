@@ -129,9 +129,9 @@ export const Scene = ({ ground }) => {
 
       if (isMap && isCompass) {
         state.controls.setLookAt(
-          player.current.position.x - 0.5,
+          player.current.position.x - 0.3,
           player.current.position.y + 5,
-          player.current.position.z + 1,
+          player.current.position.z + 0.5,
           ...map.current.position,
           true
         );

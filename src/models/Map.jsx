@@ -10,7 +10,7 @@ import {
 } from "@react-three/drei";
 import { forwardRef, useEffect, useMemo, useRef, useState } from "react";
 import { useFrame } from "@react-three/fiber";
-import { Button } from "antd";
+import { Button, Tag } from "antd";
 import { useIsMap } from "../stores";
 
 const Circle = ({
@@ -18,7 +18,7 @@ const Circle = ({
   opacity = 1,
   radius = 0.03,
   segments = 16,
-  color = "#0000aa",
+  color = "#85a5ff",
   ...props
 }) => (
   <mesh {...props} rotation={[-Math.PI / 2, 0, 0]}>
@@ -81,27 +81,16 @@ export const Map = forwardRef((props, mref) => {
         points.map((p, i) => (
           <>
             <Circle position={p}>
-              <Text fontSize={0.025}>{calAngle(p, movePoint)} ° </Text>
-            </Circle>
-            <Line points={[p, movePoint]} color="blue" lineWidth={2} key={i}>
-              {/* <Html center position={p}>
-              <span>{calAngle(p, movePoint)} 度</span>
-            </Html> */}
-            </Line>
-          </>
-        ))}
-      {/*
-      <group>
-        {isMap &&
-          !isRot &&
-          points.map((p, i) => (
-            <Circle>
-              <Html center position={p}>
-                <span>{calAngle(p, movePoint)} 度</span>
+              <Html center sprite>
+                <Tag bordered={false}>{calAngle(p, movePoint)} ° </Tag>
               </Html>
             </Circle>
-          ))}
-      </group> */}
+            {/* <Line points={[p, movePoint]} color="blue" lineWidth={2} key={i} /> */}
+            {/* <Html center position={p}>
+              <span>{calAngle(p, movePoint)} 度</span>
+            </Html> */}
+          </>
+        ))}
 
       <mesh
         ref={mref}
@@ -121,16 +110,16 @@ export const Map = forwardRef((props, mref) => {
 
         {isMap && (
           <>
-            <Html distanceFactor={2} position={[-0.4, 0.4, 0]}>
+            <Html position={[0.4, 0.4, 0]}>
               <Button type="primary" onClick={() => toggleRot(!isRot)}>
                 {isRot ? "标记地图" : "旋转地图"}
               </Button>
             </Html>
-            <Html distanceFactor={1.5} position={[-0.2, -0.3, 0]}>
-              <span>南望山</span>
+            <Html position={[-0.2, -0.3, 0]}>
+              <Tag>南望山</Tag>
             </Html>
-            <Html distanceFactor={1.5} position={[0.1, -0.3, 0]}>
-              <span>珞珈山</span>
+            <Html position={[0.1, -0.4, 0]}>
+              <Tag>珞珈山</Tag>
             </Html>
           </>
         )}

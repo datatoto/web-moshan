@@ -27,18 +27,70 @@ const useCurrent = create((set) => ({
 
 const useCurrentCh = create((set) => ({
   currentCh: 0,
-  chapterTitles: [
+  chapterInfo: [
     {
       title: "判别方位",
+      steps: [
+        {
+          title: "磁偏角校正",
+        },
+        {
+          title: "平持罗盘",
+        },
+        {
+          title: "对准测物",
+        },
+        {
+          title: "进行读数",
+        },
+      ],
     },
     {
       title: "标定地图",
+      steps: [
+        {
+          title: "旋转地图",
+        },
+        {
+          title: "观察地物",
+        },
+        {
+          title: "实验探索",
+        },
+      ],
     },
     {
       title: "确定站立点",
+      steps: [
+        {
+          title: "实验理论",
+        },
+        {
+          title: "实验探索",
+        },
+      ],
     },
     {
       title: "确定目标点",
+      steps: [
+        {
+          title: "实验理论",
+        },
+        {
+          title: "实验探索",
+        },
+      ],
+    },
+    {
+      title: "综合测验",
+      steps: [
+        {
+          title: "测验答题",
+        },
+        {
+          title: "查看成绩",
+        },
+      ],
     },
   ],
   nextCurrentCh: () => set((state) => ({ currentCh: state.currentCh + 1 })),

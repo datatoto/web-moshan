@@ -15,7 +15,7 @@ const items = STEPS.map((i) => ({ key: i.title, title: i.title }));
 export function DesFour({ current, nextCurrent, preCurrent, handleNextCh }) {
   return (
     <div>
-      <h3
+      {/* <h3
         style={{
           textAlign: "center",
         }}
@@ -23,7 +23,7 @@ export function DesFour({ current, nextCurrent, preCurrent, handleNextCh }) {
         确定站立点
       </h3>
       <Steps direction="vertical" current={current} items={items} />
-      <Divider />
+      <Divider /> */}
       {/* <p>{steps[current].content}</p> */}
       {current === 0 && (
         <>
@@ -55,7 +55,7 @@ export function DesFour({ current, nextCurrent, preCurrent, handleNextCh }) {
         </>
       )}
 
-      <Divider />
+      {/* <Divider />
       <div>
         {current < STEPS.length - 1 && (
           <Button type="primary" onClick={() => nextCurrent()}>
@@ -72,7 +72,7 @@ export function DesFour({ current, nextCurrent, preCurrent, handleNextCh }) {
             进行测验
           </Button>
         )}
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -2,22 +2,22 @@ import { Steps } from "antd";
 import { useCurrentCh } from "../stores";
 
 export default function ProgressSteps(props) {
-  const [currentCh, chapterTitles, setCurrentCh] = useCurrentCh((state) => [
+  const [currentCh, chapterInfo, setCurrentCh] = useCurrentCh((state) => [
     state.currentCh,
-    state.chapterTitles,
+    state.chapterInfo,
     state.setCurrentCh,
   ]);
 
   const onChange = (v) => {
-    setCurrentCh(v)
+    setCurrentCh(v);
   };
 
   return (
     <Steps
+      {...props}
       current={currentCh}
-      items={chapterTitles}
+      items={chapterInfo}
       onChange={onChange}
-      className="progress glass"
     />
   );
 }

@@ -1,4 +1,4 @@
-import { Affix, Button, Divider, FloatButton, Space } from "antd";
+import { Affix, Button, Divider, FloatButton, Space, Steps } from "antd";
 import { DesOne } from "./DesOne";
 import {
   useCurrent,
@@ -15,6 +15,7 @@ import { DesTwo } from "./DesTwo";
 import { DesThree } from "./DesThree";
 import { DesFour } from "./DesFour";
 import Test from "./Test";
+import ProgressSteps from "./ProgressSteps";
 
 export default function Aside(props) {
   const [current, nextCurrent, preCurrent, resetCurrent] = useCurrent(
@@ -26,10 +27,17 @@ export default function Aside(props) {
     ]
   );
 
-  const [currentCh, nextCurrentCh] = useCurrentCh((state) => [
+  const [currentCh, chapterInfo, nextCurrentCh] = useCurrentCh((state) => [
     state.currentCh,
+    state.chapterInfo,
     state.nextCurrentCh,
   ]);
+
+  const title = chapterInfo[currentCh].title;
+  const items = chapterInfo[currentCh].steps.map((i) => ({
+    key: i.title,
+    title: i.title,
+  }));
 
   const [isPlayer, togglePlayer] = useIsPlayer((state) => [
     state.isPlayer,
@@ -93,86 +101,60 @@ export default function Aside(props) {
         style={{
           position: "absolute",
           top: "0px",
-          width: currentCh === 4 ? "80vw" : "16vw",
+          width: currentCh === 4 ? "65vw" : "16vw",
           height: "98vh",
-          padding: "0 10px",
+          padding: "5px 10px",
           overflowY: "scroll",
           margin: "10px",
+          zIndex: "5",
           visibility: asideVis ? "visible" : "hidden",
         }}
       >
-        {currentCh === 0 && (
-          <DesOne
-            current={current}
-            nextCurrent={nextCurrent}
-            preCurrent={preCurrent}
-            handleNextCh={handleNextCh}
-          />
-        )}
-        {currentCh === 1 && (
-          <DesTwo
-            current={current}
-            nextCurrent={nextCurrent}
-            preCurrent={preCurrent}
-            handleNextCh={handleNextCh}
-          />
-        )}
-        {currentCh === 2 && (
-          <DesThree
-            current={current}
-            nextCurrent={nextCurrent}
-            preCurrent={preCurrent}
-            handleNextCh={handleNextCh}
-          />
-        )}
-        {currentCh === 3 && (
-          <DesFour
-            current={current}
-            nextCurrent={nextCurrent}
-            preCurrent={preCurrent}
-            handleNextCh={handleNextCh}
-          />
-        )}
-        {currentCh === 4 && <Test />}
-        {/* {isTest && <Test />} */}
-        <Divider />
-        {/* {currentCh < 3 && (
-        <Button
-          type="primary"
-          onClick={handleNextCh}
-          disabled={current < }
+        <h3
+          style={{
+            textAlign: "center",
+          }}
         >
-          下一章
-        </Button>
-      )} */}
-        {/* {
-        (current === ASIDE[currentCh].steps.length && (
-          <Button type="primary">进行测验</Button>
-        ))
-      } */}
-        {/* <Divider /> */}
-        {/* <Space> */}
-        {/* <Button type="primary" onClick={() => toggleMap(!isMap)}>
-            {isMap ? "关闭地图" : "使用地图"}
-          </Button>
-          <Button type="primary" onClick={() => toggleCompass(!isCompass)}>
-            {isCompass ? "关闭罗盘" : "使用罗盘"}
-          </Button> */}
-        {/* <Button type="primary" onClick={handleEagle}>
-            {isEagle ? "关闭鸟瞰" : "开启鸟瞰"}
-          </Button> */}
-        {/* <Button type="primary" onClick={() => toggleDome()}>
-          {isDome ? "关闭全景" : "使用全景"}
-        </Button> */}
-        {/* </Space> */}
+          {chapterInfo[currentCh].title}
+        </h3>
+        <Steps direction="vertical" current={current} items={items} />
+        {currentCh === 0 && <DesOne current={current} />}
+        {currentCh === 1 && <DesTwo current={current} />}
+        {currentCh === 2 && <DesThree current={current} />}
+        {currentCh === 3 && <DesFour current={current} />}
+        {currentCh === 4 && <Test />}
+        <Divider />
+        <Space>
+          {current < items.length - 1 && (
+            <Button type="primary" onClick={() => nextCurrent()}>
+              {currentCh === 4 ? "查看成绩" : "下一步"}
+            </Button>
+          )}
+          {currentCh < 4 && current > 0 && (
+            <Button onClick={() => preCurrent()}>上一步</Button>
+          )}
+          {currentCh < 4 && current === items.length - 1 && (
+            <Button type="primary" onClick={() => handleNextCh()}>
+              {currentCh === 3 ? "进行测验" : "下一章"}
+            </Button>
+          )}
+          {currentCh === 4 && current === items.length - 1 && (
+            <Button type="primary" onClick={() => setAsideVis(!asideVis)}>
+              探索磨山
+            </Button>
+          )}
+        </Space>
       </aside>
-      <Button
+
+      {asideVis && <ProgressSteps className="progress glass" />}
+
+      {/* <Button
         onClick={() => setAsideVis(!asideVis)}
-        style={{ position: "absolute", bottom: "10px", left: "10px" }}
+        style={{ position: "absolute", bottom: "15px", left: "13vw" }}
         className="glass"
       >
         {asideVis ? "<" : ">"}
-      </Button>
+      </Button> */}
       <FloatButton.Group shape="square">
         <FloatButton
           type={isEagle ? "primary" : "default"}

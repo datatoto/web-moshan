@@ -1,37 +1,12 @@
 import "./App.css";
 
-import {
-  Bvh,
-  CameraControls,
-  Environment,
-  Image,
-  KeyboardControls,
-  Loader,
-  MapControls,
-  OrbitControls,
-  OrthographicCamera,
-  PerspectiveCamera,
-  Preload,
-  Stats,
-  View,
-} from "@react-three/drei";
-// import { useControls } from "leva";
-
-// import { CompassView, MiniMapView, MainView } from "./components/Views";
-// import Layout, { Content } from "antd/es/layout/layout";
-// import Sider from "antd/es/layout/Sider";
+import { Bvh, Loader, Preload, View } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { Suspense, useRef, useState } from "react";
-// import useStore, { useExploreStore, usePlayerPosStore } from "./stores";
+import { Suspense, useRef } from "react";
 import Aside from "./components/Aside";
 import { Perf } from "r3f-perf";
 import { Scene } from "./components/Scene";
 import { Ground } from "./models/Ground";
-import ProgressSteps from "./components/ProgressSteps";
-
-// function GuiControl() {
-//   const { toggleMap, toggleView } = useControls({ Map: false, FPV: true });
-// }
 
 function App() {
   const mainView = useRef();
@@ -120,7 +95,6 @@ function App() {
       </div>
 
       <Aside />
-      <ProgressSteps />
     </>
   );
 }

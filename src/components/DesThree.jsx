@@ -1,16 +1,6 @@
-import { Button, Card, Divider, Image, Steps } from "antd";
+import { Button, Card, Divider, Image, Space, Steps } from "antd";
 import { useState } from "react";
-
-const STEPS = [
-  {
-    title: "实验理论",
-  },
-  {
-    title: "实验示例",
-  },
-];
-
-const items = STEPS.map((i) => ({ key: i.title, title: i.title }));
+import { Blank } from "./Test";
 
 // TODO
 // const ExampleCard = (title, image, exampleData) => {
@@ -34,10 +24,28 @@ const items = STEPS.map((i) => ({ key: i.title, title: i.title }));
 //   );
 // };
 
-export function DesThree({ current, nextCurrent, preCurrent, handleNextCh }) {
+const BLANKS = [
+  {
+    title: "记录摩天轮相对自己的角度",
+    answer: 2,
+    score: 5,
+  },
+  {
+    title: "记录南望山相对自己的角度",
+    answer: 2,
+    score: 5,
+  },
+  {
+    title: "记录喻家山相对自己的角度",
+    answer: 4,
+    score: 5,
+  },
+];
+
+export function DesThree({ current }) {
   return (
     <div>
-      <h3
+      {/* <h3
         style={{
           textAlign: "center",
         }}
@@ -45,7 +53,7 @@ export function DesThree({ current, nextCurrent, preCurrent, handleNextCh }) {
         确定目标点
       </h3>
       <Steps direction="vertical" current={current} items={items} />
-      <Divider />
+      <Divider /> */}
       {/* <p>{steps[current].content}</p> */}
       {current === 0 && (
         <>
@@ -73,20 +81,22 @@ export function DesThree({ current, nextCurrent, preCurrent, handleNextCh }) {
         </>
       )}
       {current === 1 && (
-        <>
-          <p>记录东湖之眼在哪，记录方位。</p>
-        </>
+        <Space direction="vertical" style={{ width: "100%" }}>
+          {BLANKS.map((t) => (
+            <Blank test={t} />
+          ))}
+        </Space>
       )}
 
-      <Divider />
-      <div>
+      {/* <Divider />
+      <Space>
         {current < STEPS.length - 1 && (
           <Button type="primary" onClick={() => nextCurrent()}>
             下一步
           </Button>
         )}
         {current > 0 && (
-          <Button style={{ margin: "0 8px" }} onClick={() => preCurrent()}>
+          <Button onClick={() => preCurrent()}>
             上一步
           </Button>
         )}
@@ -95,7 +105,7 @@ export function DesThree({ current, nextCurrent, preCurrent, handleNextCh }) {
             下一章
           </Button>
         )}
-      </div>
+      </Space> */}
     </div>
   );
 }

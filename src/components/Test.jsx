@@ -1,4 +1,4 @@
-import { Alert, Divider, Radio, Space } from "antd";
+import { Alert, Divider, InputNumber, Radio, Space } from "antd";
 import Card from "antd/es/card/Card";
 import { useState } from "react";
 
@@ -16,10 +16,10 @@ const CHOICES = [
   },
   {
     title: `利用地质罗盘进行定位时的使用步骤？
-    1.记录方位刻度盘读数
-    2.地质罗盘磁偏角校正
-    3.使用地质罗盘进行瞄准
-    4.调整地质罗盘方位水准器，使气泡位于误差范围内
+    1.记录读数
+    2.磁偏角校正
+    3.地质罗盘瞄准
+    4.调整方位水准器，使气泡位于误差范围内
     5.确定待测目标的大致位置
     6.待磁针稳定后，按下磁针制动器
     `,
@@ -55,13 +55,11 @@ function Choice({ test }) {
   const [value, setValue] = useState(null);
 
   const onChange = (e) => {
-    // console.log("radio checked", e.target.value);
     setValue(e.target.value);
   };
 
   return (
-    <Card style={{ width: "100%" }}>
-      <h3>{test.title}</h3>
+    <Card style={{ width: "100%" }} title={test.title}>
       <Radio.Group onChange={onChange} value={value}>
         {test.radios.map((r, i) => (
           <Radio value={i} key={i} style={{ padding: "5px 0" }}>
@@ -81,5 +79,28 @@ export default function Test() {
         <Choice test={t} key={t.title} />
       ))}
     </Space>
+  );
+}
+
+export function Blank({ test }) {
+  const onChange = (v) => {
+    console.log(v);
+    // setValue(e.target.value);
+  };
+  return (
+    <Card style={{ width: "100%" }} title={test.title} className="glass">
+      <InputNumber min={0} max={360} defaultValue={0} addonAfter="度" onChange={onChange} />
+    </Card>
+  );
+}
+export function Mark({ test }) {
+  // const onChange = (v) => {
+  //   console.log(v);
+  //   // setValue(e.target.value);
+  // };
+  return (
+    <Card style={{ width: "100%" }} title={test.title} className="glass">
+      {/* <InputNumber min={0} max={360} defaultValue={0} addonAfter="°" onChange={onChange} /> */}
+    </Card>
   );
 }

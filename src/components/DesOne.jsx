@@ -1,36 +1,9 @@
 import { Button, Divider, Steps } from "antd";
 import { useState } from "react";
 
-const STEPS = [
-  {
-    title: "磁偏角校正",
-  },
-  {
-    title: "平持罗盘",
-  },
-  {
-    title: "对准测物",
-  },
-  {
-    title: "进行读数",
-  },
-];
-
-const items = STEPS.map((i) => ({ key: i.title, title: i.title }));
-
-export function DesOne({ current, nextCurrent, preCurrent, handleNextCh }) {
+export function DesOne({ current }) {
   return (
     <div>
-      <h3
-        style={{
-          textAlign: "center",
-        }}
-      >
-        判别方位
-      </h3>
-      <Steps direction="vertical" current={current} items={items} />
-      <Divider />
-      {/* <p>{steps[current].content}</p> */}
       {current === 0 && (
         <>
           <p>
@@ -57,25 +30,6 @@ export function DesOne({ current, nextCurrent, preCurrent, handleNextCh }) {
         </>
       )}
       {current === 3 && <p>读出在水平度盘上北针的指数。</p>}
-
-      <Divider />
-      <div>
-        {current < STEPS.length - 1 && (
-          <Button type="primary" onClick={() => nextCurrent()}>
-            下一步
-          </Button>
-        )}
-        {current > 0 && (
-          <Button style={{ margin: "0 8px" }} onClick={() => preCurrent()}>
-            上一步
-          </Button>
-        )}
-        {current === STEPS.length - 1 && (
-          <Button type="primary" onClick={() => handleNextCh()}>
-            下一章
-          </Button>
-        )}
-      </div>
     </div>
   );
 }
