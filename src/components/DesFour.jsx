@@ -1,30 +1,18 @@
-import { Button, Card, Divider, Image, Steps } from "antd";
+import { Button, Card, Divider, Image, Space, Steps } from "antd";
 import { useState } from "react";
+import { Mark } from "./Test";
 
-const STEPS = [
+const POINTERS = [
   {
-    title: "实验理论",
-  },
-  {
-    title: "实验示例",
+    title: "作图标记五重塔的位置",
+    answer: 2,
+    score: 10,
   },
 ];
-
-const items = STEPS.map((i) => ({ key: i.title, title: i.title }));
 
 export function DesFour({ current, nextCurrent, preCurrent, handleNextCh }) {
   return (
     <div>
-      {/* <h3
-        style={{
-          textAlign: "center",
-        }}
-      >
-        确定站立点
-      </h3>
-      <Steps direction="vertical" current={current} items={items} />
-      <Divider /> */}
-      {/* <p>{steps[current].content}</p> */}
       {current === 0 && (
         <>
           <p>
@@ -50,29 +38,12 @@ export function DesFour({ current, nextCurrent, preCurrent, handleNextCh }) {
         </>
       )}
       {current === 1 && (
-        <>
-          <p>在地图上标出特殊地物的位置</p>
-        </>
+        <Space direction="vertical" style={{ width: "100%" }}>
+          {POINTERS.map((t) => (
+            <Mark test={t} />
+          ))}
+        </Space>
       )}
-
-      {/* <Divider />
-      <div>
-        {current < STEPS.length - 1 && (
-          <Button type="primary" onClick={() => nextCurrent()}>
-            下一步
-          </Button>
-        )}
-        {current > 0 && (
-          <Button style={{ margin: "0 8px" }} onClick={() => preCurrent()}>
-            上一步
-          </Button>
-        )}
-        {current === STEPS.length - 1 && (
-          <Button type="primary" onClick={() => handleNextCh()}>
-            进行测验
-          </Button>
-        )}
-      </div> */}
     </div>
   );
 }

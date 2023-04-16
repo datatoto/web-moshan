@@ -88,7 +88,7 @@ const useCurrentCh = create((set) => ({
           title: "测验答题",
         },
         {
-          title: "查看成绩",
+          title: "提交成绩",
         },
       ],
     },
@@ -125,6 +125,11 @@ const useDome = create((set) => ({
   setDomeName: (domeName) => set(() => ({ domeName: domeName })),
 }));
 
+const useScore = create((set) => ({
+  score: 0,
+  setScore: (score) => set(() => ({ score: score })),
+}));
+
 // export const useExploreStore = create((set) => ({
 //   isExplore: false,
 //   toggleExplore: () => set((state) => ({ isExplore: !state.isExplore })),
@@ -143,4 +148,5 @@ export {
   useIsCompass,
   useIsEagle,
   useDome,
+  useScore
 };
