@@ -72,7 +72,7 @@ export const Ground = forwardRef((props, gref) => {
       <group position={[-271.53, -15.8, 712.13]} rotation={[0, 0.06, 0]}>
         <Html>
           <Button onClick={() => handleClick("wuchongta")} size="small">
-            五重塔全景
+            五重塔
           </Button>
         </Html>
         <mesh
@@ -191,7 +191,7 @@ export const Ground = forwardRef((props, gref) => {
       >
         <Html>
           <Button onClick={() => handleClick("lisaobei")} size="small">
-            离骚碑全景
+            离骚碑
           </Button>
         </Html>
       </mesh>
@@ -202,7 +202,7 @@ export const Ground = forwardRef((props, gref) => {
       >
         <Html>
           <Button onClick={() => handleClick("chucheng")} size="small">
-            楚城全景
+            楚城
           </Button>
         </Html>
         <mesh
@@ -269,7 +269,7 @@ export const Ground = forwardRef((props, gref) => {
       >
         <Html>
           <Button onClick={() => handleClick("chutiantai")} size="small">
-            楚天台全景
+            楚天台
           </Button>
         </Html>
         <mesh
@@ -418,7 +418,7 @@ export const Ground = forwardRef((props, gref) => {
       >
         <Html>
           <Button onClick={() => handleClick("zhubeiting")} size="small">
-            朱碑亭全景
+            朱碑亭
           </Button>
         </Html>
         <mesh

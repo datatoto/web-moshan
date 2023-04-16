@@ -51,7 +51,6 @@ export const Scene = ({ ground }) => {
   const compass = useRef();
   const map = useRef();
 
-  // const [isPlayer, togglePlayer] = useState(true);
   const [isPlayer, togglePlayer] = useIsPlayer((state) => [
     state.isPlayer,
     state.togglePlayer,
@@ -76,7 +75,7 @@ export const Scene = ({ ground }) => {
 
     if (controls) {
       if (isEagle) {
-        controls.setLookAt(100, 300, 600, -500, 40, -200, true);
+        controls.setLookAt(200, 300, 650, -500, 40, -250, true);
       }
 
       // if (isPlayer && player) {
