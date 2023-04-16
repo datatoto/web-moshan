@@ -1,4 +1,4 @@
-import { Button, Divider, FloatButton, Space } from "antd";
+import { Affix, Button, Divider, FloatButton, Space } from "antd";
 import { DesOne } from "./DesOne";
 import {
   useCurrent,
@@ -52,7 +52,7 @@ export default function Aside(props) {
     state.toggleDome,
   ]);
 
-  // const [isTest, setTest] = useState(false);
+  const [asideVis, setAsideVis] = useState(true);
 
   function handleNextCh() {
     resetCurrent();
@@ -98,8 +98,7 @@ export default function Aside(props) {
           padding: "0 10px",
           overflowY: "scroll",
           margin: "10px",
-          zIndex: "5",
-          visibility: isEagle ? "hidden" : "visible",
+          visibility: asideVis ? "visible" : "hidden",
         }}
       >
         {currentCh === 0 && (
@@ -167,6 +166,13 @@ export default function Aside(props) {
         </Button> */}
         {/* </Space> */}
       </aside>
+      <Button
+        onClick={() => setAsideVis(!asideVis)}
+        style={{ position: "absolute", bottom: "10px", left: "10px" }}
+        className="glass"
+      >
+        {asideVis ? "<" : ">"}
+      </Button>
       <FloatButton.Group shape="square">
         <FloatButton
           type={isEagle ? "primary" : "default"}

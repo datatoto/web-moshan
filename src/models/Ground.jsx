@@ -71,7 +71,7 @@ export const Ground = forwardRef((props, gref) => {
       </group>
       <group position={[-271.53, -15.8, 712.13]} rotation={[0, 0.06, 0]}>
         <Html>
-          <Button onClick={() => handleClick("wuchongta")} size="small">
+          <Button onClick={() => handleClick("wuchongta")} size="small" className="glass">
             五重塔
           </Button>
         </Html>
@@ -190,7 +190,7 @@ export const Ground = forwardRef((props, gref) => {
         scale={[5.44, 11.21, 3.56]}
       >
         <Html>
-          <Button onClick={() => handleClick("lisaobei")} size="small">
+          <Button onClick={() => handleClick("lisaobei")} size="small" className="glass">
             离骚碑
           </Button>
         </Html>
@@ -201,7 +201,7 @@ export const Ground = forwardRef((props, gref) => {
         scale={0.67}
       >
         <Html>
-          <Button onClick={() => handleClick("chucheng")} size="small">
+          <Button onClick={() => handleClick("chucheng")} size="small" className="glass">
             楚城
           </Button>
         </Html>
@@ -268,7 +268,7 @@ export const Ground = forwardRef((props, gref) => {
         scale={[6.29, 6.29, -3.32]}
       >
         <Html>
-          <Button onClick={() => handleClick("chutiantai")} size="small">
+          <Button onClick={() => handleClick("chutiantai")} size="small" className="glass">
             楚天台
           </Button>
         </Html>
@@ -417,7 +417,7 @@ export const Ground = forwardRef((props, gref) => {
         scale={2.09}
       >
         <Html>
-          <Button onClick={() => handleClick("zhubeiting")} size="small">
+          <Button onClick={() => handleClick("zhubeiting")} size="small" className="glass">
             朱碑亭
           </Button>
         </Html>

@@ -118,12 +118,21 @@ export const Map = forwardRef((props, mref) => {
       >
         <planeGeometry />
         <meshBasicMaterial map={image} />
+
         {isMap && (
-          <Html distanceFactor={2} position={[-0.4, 0.4, 0]}>
-            <Button type="primary" onClick={() => toggleRot(!isRot)}>
-              {isRot ? "标记地图" : "旋转地图"}
-            </Button>
-          </Html>
+          <>
+            <Html distanceFactor={2} position={[-0.4, 0.4, 0]}>
+              <Button type="primary" onClick={() => toggleRot(!isRot)}>
+                {isRot ? "标记地图" : "旋转地图"}
+              </Button>
+            </Html>
+            <Html distanceFactor={1.5} position={[-0.2, -0.3, 0]}>
+              <span>南望山</span>
+            </Html>
+            <Html distanceFactor={1.5} position={[0.1, -0.3, 0]}>
+              <span>珞珈山</span>
+            </Html>
+          </>
         )}
       </mesh>
     </group>
