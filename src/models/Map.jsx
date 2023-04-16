@@ -13,26 +13,25 @@ import { useFrame } from "@react-three/fiber";
 import { Button, Tag } from "antd";
 import { useIsMap } from "../stores";
 import { StarOutlined, UpCircleFilled } from "@ant-design/icons";
-import { Protractor } from "./Protractor";
 
-// const Circle = ({
-//   children,
-//   opacity = 1,
-//   radius = 0.03,
-//   segments = 16,
-//   color = "#85a5ff",
-//   ...props
-// }) => (
-//   <mesh {...props} rotation={[-Math.PI / 2, 0, 0]}>
-//     <circleGeometry args={[radius, segments]} />
-//     <meshBasicMaterial
-//       transparent={opacity < 1}
-//       opacity={opacity}
-//       color={color}
-//     />
-//     {children}
-//   </mesh>
-// );
+const Circle = ({
+  children,
+  opacity = 1,
+  radius = 0.03,
+  segments = 16,
+  color = "#85a5ff",
+  ...props
+}) => (
+  <mesh {...props} rotation={[-Math.PI / 2, 0, 0]}>
+    <circleGeometry args={[radius, segments]} />
+    <meshBasicMaterial
+      transparent={opacity < 1}
+      opacity={opacity}
+      color={color}
+    />
+    {children}
+  </mesh>
+);
 
 // const calAngle = (p1, p2) => {
 // console.log(p1, "p1");
@@ -99,23 +98,7 @@ export const Map = forwardRef((props, mref) => {
 
   return (
     <group dispose={null} {...props} ref={mref}>
-      {/* {isMap &&
-        !isRot &&
-        points.map((p, i) => (
-          <>
-            <Circle position={p}>
-              <Html center sprite>
-                <Tag bordered={false}>{calAngle(p, movePoint)} ° </Tag>
-              </Html>
-            </Circle>
-            <Line points={[p, movePoint]} color="blue" lineWidth={2} key={i}>
-              <Html center position={p}>
-                <span>{calAngle(p, movePoint)} 度</span>
-              </Html>
-            </Line>
-          </>
-        ))} */}
-
+      {/* <Circle position={[0.1, 0, 0.1]} /> */}
       <mesh
         rotation={[-Math.PI / 2, 0, (Math.PI / 360) * mapRot]}
         scale={scale}

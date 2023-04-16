@@ -1,6 +1,7 @@
 import { Alert, Divider, InputNumber, Radio, Space } from "antd";
 import Card from "antd/es/card/Card";
 import { useState } from "react";
+import { useScore } from "../stores";
 
 const CHOICES = [
   {
@@ -53,6 +54,7 @@ const CHOICES = [
 
 function Choice({ test }) {
   const [value, setValue] = useState(null);
+  const [score, setScore] = useScore((state) => [state.score, state.setScore]);
 
   const onChange = (e) => {
     setValue(e.target.value);
@@ -67,7 +69,7 @@ function Choice({ test }) {
           </Radio>
         ))}
       </Radio.Group>
-      {value === test.answer && <Alert message="正确" type="success" />}
+      {value === test.answer && setScore(score + test.score)}
     </Card>
   );
 }
@@ -89,15 +91,17 @@ export function Blank({ test }) {
   };
   return (
     <Card style={{ width: "100%" }} title={test.title} className="glass">
-      <InputNumber min={0} max={360} defaultValue={0} addonAfter="度" onChange={onChange} />
+      <InputNumber
+        min={0}
+        max={360}
+        defaultValue={0}
+        addonAfter="度"
+        onChange={onChange}
+      />
     </Card>
   );
 }
 export function Mark({ test }) {
-  // const onChange = (v) => {
-  //   console.log(v);
-  //   // setValue(e.target.value);
-  // };
   return (
     <Card style={{ width: "100%" }} title={test.title} className="glass">
       {/* <InputNumber min={0} max={360} defaultValue={0} addonAfter="°" onChange={onChange} /> */}

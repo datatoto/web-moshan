@@ -1,4 +1,4 @@
-import { Affix, Button, Divider, FloatButton, Space, Steps } from "antd";
+import { Affix, Button, Divider, FloatButton, Result, Space, Steps } from "antd";
 import { DesOne } from "./DesOne";
 import {
   useCurrent,
@@ -122,12 +122,27 @@ export default function Aside(props) {
         {currentCh === 1 && <DesTwo current={current} />}
         {currentCh === 2 && <DesThree current={current} />}
         {currentCh === 3 && <DesFour current={current} />}
-        {currentCh === 4 && <Test />}
+        {currentCh === 4 && current === 0 && <Test />}
+        {currentCh === 4 && current === 1 && (
+          <Result
+            status="success"
+            title="成绩成功提交"
+            extra={[
+              <Button
+                type="primary"
+                key="console"
+                onClick={() => setAsideVis(!asideVis)}
+              >
+                探索磨山
+              </Button>,
+            ]}
+          />
+        )}
         <Divider />
         <Space>
           {current < items.length - 1 && (
             <Button type="primary" onClick={() => nextCurrent()}>
-              {currentCh === 4 ? "查看成绩" : "下一步"}
+              {currentCh === 4 ? "提交成绩" : "下一步"}
             </Button>
           )}
           {currentCh < 4 && current > 0 && (
@@ -138,23 +153,16 @@ export default function Aside(props) {
               {currentCh === 3 ? "进行测验" : "下一章"}
             </Button>
           )}
-          {currentCh === 4 && current === items.length - 1 && (
+          {/* {currentCh === 4 && current === items.length - 1 && (
             <Button type="primary" onClick={() => setAsideVis(!asideVis)}>
               探索磨山
             </Button>
-          )}
+          )} */}
         </Space>
       </aside>
 
       {asideVis && <ProgressSteps className="progress glass" />}
 
-      {/* <Button
-        onClick={() => setAsideVis(!asideVis)}
-        style={{ position: "absolute", bottom: "15px", left: "13vw" }}
-        className="glass"
-      >
-        {asideVis ? "<" : ">"}
-      </Button> */}
       <FloatButton.Group shape="square">
         <FloatButton
           type={isEagle ? "primary" : "default"}
