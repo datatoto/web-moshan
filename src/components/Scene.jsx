@@ -96,36 +96,13 @@ export const Scene = ({ ground }) => {
       player.current.getWorldDirection(playerDirection);
       cameraRotation.set(playerDirection.x, playerDirection.z);
       compass.current.rotation.set(0, 0, cameraRotation.angle() - Math.PI / 2);
-      // if (isCompass) {
-      // state.controls.rotate(cameraRotation.angle() / 2, 0, true);
-      // console.log(cameraRotation.angle());
-      // }
 
       raycaster.set(player.current.position.addScaledVector(dir, -1.5), dir);
       const inters = raycaster.intersectObject(ground.current, true);
       if (inters) {
-        // const ds = inters.map(i => i.distance)
-        // console.log(Math.min(...ds));
         const inter = inters[0].point;
-        // console.log(inter);
         player.current.position.y = inter.y + 0.2;
       }
-
-      // if (isMap) {
-      // map.current.position.set(
-      //   player.current.position.x + 1,
-      //   player.current.position.y + 4,
-      //   player.current.position.z + 1
-      // );
-
-      // state.controls.setLookAt(
-      //   map.current.position.x,
-      //   map.current.position.y + 2,
-      //   map.current.position.z,
-      //   ...map.current.position,
-      //   true
-      // );
-      // }
 
       if (isMap && isCompass) {
         state.controls.setLookAt(
@@ -136,6 +113,7 @@ export const Scene = ({ ground }) => {
           true
         );
       }
+      
       if (isPlayer) {
         state.controls.moveTo(
           player.current.position.x,
@@ -144,15 +122,6 @@ export const Scene = ({ ground }) => {
           true
         );
       }
-
-      // player.current.getWorldPosition(playerPosition);
-      // console.log(playerPosition);
-
-      // Not EQUAL
-      // console.log(compass.current.position);
-      // console.log(compass.current.getWorldPosition(compassPosition));
-
-      // console.log(compass.current.position);
     }
   });
 

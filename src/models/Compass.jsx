@@ -115,26 +115,6 @@ export const Compass = forwardRef((props, cref) => {
         if (Math.abs(cref.current.rotation.z) < Math.PI) {
           controls.rotate(-cref.current.rotation.z, 0, true);
         }
-
-        // console.log(c.current.position);
-        // controls.rotate(
-        //   Math.abs(cref.current.rotation.z) % Math.PI,
-        //   0,
-        //   true
-        // );
-        // console.log(Math.abs(cref.current.rotation.z) % Math.PI);
-        // console.log(cref.current.rotation.z);
-        // console.log(cref.current.rotation.z % Math.PI);
-
-        // state.controls.setPosition(
-        //   c.current.position.x,
-        //   c.current.position.y + 0.5,
-        //   c.current.position.z - 0.3,
-        //   true
-        // );
-
-        // state.controls.lookInDirectionOf(0, -1, 0.4);
-        // console.log(c.current.position);
       }
     }
   });

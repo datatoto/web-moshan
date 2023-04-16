@@ -58,13 +58,9 @@ export const Player = forwardRef((props, pref) => {
       pref.current.position.addScaledVector(tempVector, playerSpeed * delta);
     }
     if (leftPressed) {
-      // tempVector.set(-1, 0, 0).applyAxisAngle(upVector, controls.azimuthAngle);
-      // pref.current.position.addScaledVector(tempVector, playerSpeed * delta);
       pref.current.rotateY(Math.PI / 36);
     }
     if (rightPressed) {
-      // tempVector.set(1, 0, 0).applyAxisAngle(upVector, controls.azimuthAngle);
-      // pref.current.position.addScaledVector(tempVector, playerSpeed * delta);
       pref.current.rotateY(-Math.PI / 36);
     }
     // if (visible) {
@@ -73,12 +69,6 @@ export const Player = forwardRef((props, pref) => {
     // console.log(camera.position.clone().multiplyScalar(-1));
     // pref.current.lookAt(camera.position.clone().negate());
   });
-
-  // const [sub, get] = useKeyboardControls();
-  // useFrame((state) => {
-  //   // const { forward, backward, left, right, jump } = get();
-  //   const pressed = get().back;
-  // });
 
   return (
     <group ref={pref} {...props} dispose={null}>

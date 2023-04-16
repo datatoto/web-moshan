@@ -6,7 +6,6 @@ import {
 import * as THREE from "three";
 
 export function Dome({ url }) {
-  // const texture = useTexture("/doom1.jpg");
   const texture = useTexture(url);
 
   return (
