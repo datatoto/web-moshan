@@ -43,53 +43,44 @@ export const Compass = forwardRef((props, cref) => {
 
   const { controls } = useThree();
 
-  // useEffect(() => {
-  //   if (controls) {
-  //     if (currentCh === 0 && current === 0) {
-  //       controls.setLookAt(
-  //         c.current.position.x + 0.5,
-  //         c.current.position.y + 0.5,
-  //         c.current.position.z + 0.5,
-  //         ...c.current.position,
-  //         true
-  //       );
-  //     }
-  //     if ((currentCh === 0 && current === 1) || current === 3) {
-  //       controls.setLookAt(
-  //         c.current.position.x,
-  //         c.current.position.y + 0.5,
-  //         c.current.position.z - 0.2,
-  //         ...c.current.position,
-  //         true
-  //       );
-  //     }
-  //     if (currentCh === 0 && current === 2) {
-  //       controls.setLookAt(
-  //         c.current.position.x,
-  //         c.current.position.y + 0.14,
-  //         c.current.position.z - 0.8,
-  //         ...c.current.position,
-  //         true
-  //       );
-  //     }
-  //     if (currentCh === 1 && current === 0) {
-  //       controls.setLookAt(
-  //         c.current.position.x,
-  //         c.current.position.y + 0.14,
-  //         c.current.position.z - 0.8,
-  //         ...c.current.position,
-  //         true
-  //       );
-  //     }
-  //   }
-  // }, [currentCh, current]);
+  useEffect(() => {
+    if (controls) {
+      if (currentCh === 0 && current === 0) {
+        controls.setTarget(
+          c.current.position.x + 0.3,
+          c.current.position.y + 0.2,
+          c.current.position.z + 0.3,
+          // ...c.current.position,
+          true
+        );
+      }
+      // if ((currentCh === 0 && current === 1) || current === 3) {
+      //   controls.setTarget(
+      //     c.current.position.x,
+      //     c.current.position.y + 0.5,
+      //     c.current.position.z - 0.2,
+      //     // ...c.current.position,
+      //     true
+      //   );
+      // }
+      if (currentCh === 0 && current === 2) {
+        controls.setLookAt(
+          c.current.position.x,
+          c.current.position.y + 0.14,
+          c.current.position.z - 0.8,
+          ...c.current.position,
+          true
+        );
+      }
+    }
+  }, [currentCh, current]);
 
   useFrame((state, delta) => {
     // if (currentCh > 1 && isCompass) {
-    if (isCompass) {
+    if (currentCh > 0 && isCompass) {
       c.current.position.set(
         player.current.position.x + 0.5,
-        player.current.position.y + 4,
+        player.current.position.y + 2,
         player.current.position.z + 0.5
       );
 
@@ -128,14 +119,14 @@ export const Compass = forwardRef((props, cref) => {
             position={[-1.5, 3, 0]}
           >
             <Button type="primary" onClick={() => toggleIsCircle(!isCircle)}>
-              {isCircle ? "观测" : "读数"}
+              {isCircle ? "观察盘面中" : "观测地物中"}
             </Button>
           </Html>
           {hovered && (
             <Html
               // transform
               // sprite
-              // distanceFactor={0.4}
+              distanceFactor={0.4}
               position={[tagX, 0, tagY]}
             >
               <Tag color="blue">{tag}</Tag>
@@ -163,21 +154,7 @@ export const Compass = forwardRef((props, cref) => {
             position={[0, 0, -1.31]}
             scale={[1.73, 1.73, 0.01]}
             rotation={[0, 0, (Math.PI / 360) * declRot]}
-            // onPointerOver={(e) => (
-            //   e.stopPropagation(), handleOver(e, "方位刻度盘")
-            // )}
-            // onPointerOut={(e) => setHovered(false)}
-            // onClick={() => {
-            //   props.setRot(props.rot + 5);
-            // }}
-            // onContextMenu={() => {
-            //   props.setRot(props.rot - 5);
-            // }}
-          >
-            {/* {hovered && tag === "方位刻度盘" && (
-              <meshBasicMaterial transparent opacity={0.6} color="blue" />
-            )} */}
-          </mesh>
+          ></mesh>
           <mesh
             geometry={nodes.compass_north_hrom.geometry}
             material={materials.hrom}
@@ -245,18 +222,15 @@ export const Compass = forwardRef((props, cref) => {
             material={materials.blekc_gl}
             position={[1.62, 1.65, -1.03]}
             rotation={[-Math.PI / declRot, -Math.PI / declRot, 0]}
-          />
-          {/* DONE: Alert */}
-          {/* {currentStep === 0 && (
-              <Html distanceFactor={3}>
-                <Alert
-                  type="info"
-                  message="刻度螺旋"
-                  style={{ minWidth: "70px", padding: 5 }}
-                />
-              </Html>
-            )} */}
-          {/* </mesh> */}
+            onPointerOver={(e) => (
+              e.stopPropagation(), handleOver(e, "刻度螺旋")
+            )}
+            onPointerOut={(e) => setHovered(false)}
+          >
+            {hovered && tag === "刻度螺旋" && (
+              <meshBasicMaterial transparent opacity={0.6} color="blue" />
+            )}
+          </mesh>
           <group
             position={[0, 2.24, -1.53]}
             rotation={[1.46, 1.56, -2.27]}

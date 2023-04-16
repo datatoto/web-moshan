@@ -1,51 +1,29 @@
-import { Button, Divider, Steps } from "antd";
+import { Alert, Button, Divider, Steps } from "antd";
 import { useState } from "react";
 
 export function DesTwo({ current }) {
   return (
     <div>
-      {/* <h3
-        style={{
-          textAlign: "center",
-        }}
-      >
-        标定地图
-      </h3>
-      <Steps direction="vertical" current={current} items={items} />
-      <Divider /> */}
-      {/* <p>{steps[current].content}</p> */}
       {current === 0 && (
-        <p>旋转东湖磨山地质地图，使得地图的指北针和罗盘北针保持同一个方向。</p>
+        <>
+          <Alert type="info" message="鼠标左键点击地图顺时针旋转地图，右键逆时针旋转。" />
+          <p>
+            旋转东湖磨山地质地图，使得地图的指北针和罗盘北针保持同一个方向。
+          </p>
+        </>
       )}
       {current === 1 && (
         <>
+          <Alert type="info" message="鼠标左键点击地图添加标记点，右键删除标记点。" />
           <p>通过标定好的地图，确定标志性地物之间的相对关系。</p>
         </>
       )}
       {current === 2 && (
         <>
+          <Alert type="info" message="收起地图进入罗盘观测模式，结合地图查看目标地物。" />
           <p>转动视角，查看南望山、喻家山在哪？</p>
         </>
       )}
-      {/* 
-      <Divider />
-      <div>
-        {current < STEPS.length - 1 && (
-          <Button type="primary" onClick={() => nextCurrent()}>
-            下一步
-          </Button>
-        )}
-        {current > 0 && (
-          <Button style={{ margin: "0 8px" }} onClick={() => preCurrent()}>
-            上一步
-          </Button>
-        )}
-        {current === STEPS.length - 1 && (
-          <Button type="primary" onClick={() => handleNextCh()}>
-            下一章
-          </Button>
-        )}
-      </div> */}
     </div>
   );
 }

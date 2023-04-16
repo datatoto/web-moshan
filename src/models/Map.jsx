@@ -33,15 +33,6 @@ const Circle = ({
   </mesh>
 );
 
-// const calAngle = (p1, p2) => {
-// console.log(p1, "p1");
-// console.log(p2, "p2");
-//   const dy = p1.z - p2.z;
-//   const dx = p1.x - p2.x;
-//   const theta = Math.atan2(dy, dx);
-//   const degs = (theta * 180) / Math.PI;
-//   return Math.ceil(degs);
-// };
 
 export const Map = forwardRef((props, mref) => {
   const scale = useAspect(1111, 662, 0.2);
@@ -60,7 +51,7 @@ export const Map = forwardRef((props, mref) => {
     if (isMap) {
       mref.current.position.set(
         player.current.position.x,
-        player.current.position.y + 4,
+        player.current.position.y + 2,
         player.current.position.z
       );
 
@@ -85,17 +76,6 @@ export const Map = forwardRef((props, mref) => {
     return Math.ceil(degs);
   }
 
-  // const href = useRef();
-  // function handleMove(pointer) {
-  //   // console.log(pointer);
-  //   console.log(href.current);
-  //   // href.current.position.set(pointer.x, pointer.y, 0);
-  // }
-
-  useEffect(() => {
-    console.log(points);
-  });
-
   return (
     <group dispose={null} {...props} ref={mref}>
       {/* <Circle position={[0.1, 0, 0.1]} /> */}
@@ -119,7 +99,7 @@ export const Map = forwardRef((props, mref) => {
           <>
             <Html position={[0.4, 0.4, 0]}>
               <Button type="primary" onClick={() => toggleRot(!isRot)}>
-                {isRot ? "标记地图" : "旋转地图"}
+                {isRot ? "旋转地图中" : "标记地图中"}
               </Button>
             </Html>
             <Html position={[-0.2, -0.3, 0]}>

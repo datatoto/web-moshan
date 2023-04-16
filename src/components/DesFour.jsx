@@ -1,4 +1,4 @@
-import { Button, Card, Divider, Image, Space, Steps } from "antd";
+import { Alert, Button, Card, Divider, Image, Space, Steps } from "antd";
 import { useState } from "react";
 import { Mark } from "./Test";
 
@@ -38,11 +38,15 @@ export function DesFour({ current, nextCurrent, preCurrent, handleNextCh }) {
         </>
       )}
       {current === 1 && (
-        <Space direction="vertical" style={{ width: "100%" }}>
-          {POINTERS.map((t) => (
-            <Mark test={t} />
-          ))}
-        </Space>
+        <>
+          <Alert type="info" message="结合罗盘和地图完成下面的探索性实验。" />
+          <Divider />
+          <Space direction="vertical" style={{ width: "100%" }}>
+            {POINTERS.map((t, i) => (
+              <Mark test={t} key={i} />
+            ))}
+          </Space>
+        </>
       )}
     </div>
   );

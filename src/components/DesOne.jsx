@@ -1,4 +1,4 @@
-import { Button, Divider, Steps } from "antd";
+import { Alert, Button, Divider, Steps } from "antd";
 import { useState } from "react";
 
 export function DesOne({ current }) {
@@ -6,6 +6,7 @@ export function DesOne({ current }) {
     <div>
       {current === 0 && (
         <>
+          <Alert type="info" message="点击刻度螺旋，调整盘面刻度。" />
           <p>
             旋动罗盘侧边的刻度螺旋，使水平刻度盘向左或向右转动，(磁偏角东偏则向右，西偏则向左)，使罗盘底盘南北刻度线与水平刻度盘0～180°连线间夹角等于磁偏角。
           </p>
@@ -15,9 +16,12 @@ export function DesOne({ current }) {
         </>
       )}
       {current === 1 && (
-        <p>
-          通过调节倾角使罗盘的长水准器的气泡在红线范围内，再通过调整方位使罗盘的圆水准器里的气泡移动在红圈范围内。
-        </p>
+        <>
+          <Alert type="info" message="点击圆水准器，调整罗盘。" />
+          <p>
+            通过调节倾角使罗盘的长水准器的气泡在红线范围内，再通过调整方位使罗盘的圆水准器里的气泡移动在红圈范围内。
+          </p>
+        </>
       )}
       {current === 2 && (
         <>

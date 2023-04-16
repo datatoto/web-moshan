@@ -27,6 +27,7 @@ import {
   useIsEagle,
   useIsMap,
   useIsPlayer,
+  useCurrentCh,
 } from "../stores";
 import { Dome } from "./Dome";
 
@@ -55,16 +56,28 @@ export const Scene = ({ ground }) => {
     state.isPlayer,
     state.togglePlayer,
   ]);
-  const isCompass = useIsCompass((state) => state.isCompass);
-  const isMap = useIsMap((state) => state.isMap);
+  const [isCompass, toggleCompass] = useIsCompass((state) => [
+    state.isCompass,
+    state.toggleCompass,
+  ]);
+  const [isMap, toggleMap] = useIsMap((state) => [
+    state.isMap,
+    state.toggleMap,
+  ]);
 
   const isEagle = useIsEagle((state) => state.isEagle);
   const [isDome, domeName] = useDome((state) => [state.isDome, state.domeName]);
+
+  const currentCh = useCurrentCh((state) => state.currentCh);
 
   const { controls } = useThree();
   useEffect(() => {
     if (ground.current) {
       ground.current.visible = !isDome;
+    }
+
+    if (currentCh === 0) {
+      toggleCompass(true);
     }
 
     if (isMap || isCompass) {
@@ -77,19 +90,8 @@ export const Scene = ({ ground }) => {
       if (isEagle) {
         controls.setLookAt(200, 300, 650, -500, 40, -250, true);
       }
-
-      // if (isPlayer && player) {
-      //   controls.moveTo(
-      //     player.current.position.x,
-      //     player.current.position.y + 8,
-      //     player.current.position.z + 1,
-      //     true
-      //   );
-
-      //   controls.dollyTo(20, true);
-      // }
     }
-  }, [isDome, isEagle, isPlayer, isMap, isCompass]);
+  }, [isDome, isEagle, isPlayer, isMap, isCompass, currentCh]);
 
   useFrame((state, delta) => {
     if (map.current && compass.current && player.current && ground.current) {
@@ -105,15 +107,15 @@ export const Scene = ({ ground }) => {
       }
 
       if (isMap && isCompass) {
-        state.controls.setLookAt(
+        state.controls.setPosition(
           player.current.position.x - 0.3,
-          player.current.position.y + 5,
+          player.current.position.y + 6,
           player.current.position.z + 0.5,
-          ...map.current.position,
+          // ...map.current.position,
           true
         );
       }
-      
+
       if (isPlayer) {
         state.controls.moveTo(
           player.current.position.x,

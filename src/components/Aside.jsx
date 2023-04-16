@@ -76,6 +76,7 @@ export default function Aside(props) {
     toggleMap(false);
     toggleDome(false);
     toggleEagle(!isEagle);
+    setAsideVis(!asideVis)
   }
 
   function handleMap() {
@@ -101,7 +102,7 @@ export default function Aside(props) {
         style={{
           position: "absolute",
           top: "0px",
-          width: currentCh === 4 ? "65vw" : "16vw",
+          width: "20vw",
           height: "98vh",
           padding: "5px 10px",
           overflowY: "scroll",
@@ -118,6 +119,7 @@ export default function Aside(props) {
           {chapterInfo[currentCh].title}
         </h3>
         <Steps direction="vertical" current={current} items={items} />
+        <Divider />
         {currentCh === 0 && <DesOne current={current} />}
         {currentCh === 1 && <DesTwo current={current} />}
         {currentCh === 2 && <DesThree current={current} />}

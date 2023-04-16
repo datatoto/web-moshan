@@ -30,28 +30,9 @@ function App() {
               <Scene ground={ground} />
             </View>
 
-            {/* <View index={2} track={compassView}>
-                    <color attach="background" args={["black"]} />
-      <OrthographicCamera
-        makeDefault
-        position={[0, 2.7, 0]}
-        rotation={[0, -Math / 2, 0]}
-        zoom={80}
-      />
-      <Compass />
-      <MapControls
-        makeDefault
-        screenSpacePanning
-        enableRotate={false}
-        minZoom={65}
-      />
-      <ambientLight intensity={1} />
-            </View> */}
-            {/* <View index={3} track={view3}>
-            </View> */}
           </Suspense>
           <Preload all />
-          <Perf position="top-right" />
+          {/* <Perf position="top-right" /> */}
         </Canvas>
 
         <Loader />
