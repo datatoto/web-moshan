@@ -27,6 +27,7 @@ import Aside from "./components/Aside";
 import { Perf } from "r3f-perf";
 import { Scene } from "./components/Scene";
 import { Ground } from "./models/Ground";
+import ProgressSteps from "./components/ProgressSteps";
 
 // function GuiControl() {
 //   const { toggleMap, toggleView } = useControls({ Map: false, FPV: true });
@@ -119,6 +120,7 @@ function App() {
       </div>
 
       <Aside />
+      <ProgressSteps />
     </>
   );
 }

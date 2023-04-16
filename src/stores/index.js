@@ -27,8 +27,23 @@ const useCurrent = create((set) => ({
 
 const useCurrentCh = create((set) => ({
   currentCh: 0,
+  chapterTitles: [
+    {
+      title: "判别方位",
+    },
+    {
+      title: "标定地图",
+    },
+    {
+      title: "确定站立点",
+    },
+    {
+      title: "确定目标点",
+    },
+  ],
   nextCurrentCh: () => set((state) => ({ currentCh: state.currentCh + 1 })),
   preCurrentCh: () => set((state) => ({ currentCh: state.currentCh - 1 })),
+  setCurrentCh: (currentCh) => set((state) => ({ currentCh: currentCh })),
 }));
 
 const useIsPlayer = create((set) => ({
@@ -57,7 +72,6 @@ const useDome = create((set) => ({
   toggleDome: (isDome) => set(() => ({ isDome: isDome })),
   setDomeName: (domeName) => set(() => ({ domeName: domeName })),
 }));
-
 
 // export const useExploreStore = create((set) => ({
 //   isExplore: false,

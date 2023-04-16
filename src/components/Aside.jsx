@@ -93,7 +93,7 @@ export default function Aside(props) {
         style={{
           position: "absolute",
           top: "0px",
-          width: currentCh === 4 ? "80vw" : "25vw",
+          width: currentCh === 4 ? "80vw" : "16vw",
           height: "98vh",
           padding: "0 10px",
           overflowY: "scroll",
