@@ -12,42 +12,45 @@ import { forwardRef, useEffect, useMemo, useRef, useState } from "react";
 import { useFrame } from "@react-three/fiber";
 import { Button, Tag } from "antd";
 import { useIsMap } from "../stores";
+import { StarOutlined, UpCircleFilled } from "@ant-design/icons";
+import { Protractor } from "./Protractor";
 
-const Circle = ({
-  children,
-  opacity = 1,
-  radius = 0.03,
-  segments = 16,
-  color = "#85a5ff",
-  ...props
-}) => (
-  <mesh {...props} rotation={[-Math.PI / 2, 0, 0]}>
-    <circleGeometry args={[radius, segments]} />
-    <meshBasicMaterial
-      transparent={opacity < 1}
-      opacity={opacity}
-      color={color}
-    />
-    {children}
-  </mesh>
-);
+// const Circle = ({
+//   children,
+//   opacity = 1,
+//   radius = 0.03,
+//   segments = 16,
+//   color = "#85a5ff",
+//   ...props
+// }) => (
+//   <mesh {...props} rotation={[-Math.PI / 2, 0, 0]}>
+//     <circleGeometry args={[radius, segments]} />
+//     <meshBasicMaterial
+//       transparent={opacity < 1}
+//       opacity={opacity}
+//       color={color}
+//     />
+//     {children}
+//   </mesh>
+// );
 
-const calAngle = (p1, p2) => {
-  // console.log(p1, "p1");
-  // console.log(p2, "p2");
-  const dy = p1.z - p2.z;
-  const dx = p1.x - p2.x;
-  const theta = Math.atan2(dy, dx);
-  const degs = (theta * 180) / Math.PI;
-  return Math.ceil(degs);
-};
+// const calAngle = (p1, p2) => {
+// console.log(p1, "p1");
+// console.log(p2, "p2");
+//   const dy = p1.z - p2.z;
+//   const dx = p1.x - p2.x;
+//   const theta = Math.atan2(dy, dx);
+//   const degs = (theta * 180) / Math.PI;
+//   return Math.ceil(degs);
+// };
 
 export const Map = forwardRef((props, mref) => {
   const scale = useAspect(1111, 662, 0.2);
   const image = useTexture("/topo.jpg");
 
   const [points, setPoints] = useState([]);
-  const [movePoint, setMovePoint] = useState();
+
+  // const [movePoint, setMovePoint] = useState();
   const [mapRot, setRot] = useState(0);
 
   const { isMap, isCompass, player } = props;
@@ -74,9 +77,29 @@ export const Map = forwardRef((props, mref) => {
     }
   });
 
+  const lastPoint = points.at(-1);
+  function calAngle(x, y) {
+    const dy = lastPoint[1] - y;
+    const dx = lastPoint[0] - x;
+    const theta = Math.atan2(dy, dx);
+    const degs = (theta * 180) / Math.PI;
+    return Math.ceil(degs);
+  }
+
+  // const href = useRef();
+  // function handleMove(pointer) {
+  //   // console.log(pointer);
+  //   console.log(href.current);
+  //   // href.current.position.set(pointer.x, pointer.y, 0);
+  // }
+
+  useEffect(() => {
+    console.log(points);
+  });
+
   return (
-    <group dispose={null} {...props}>
-      {isMap &&
+    <group dispose={null} {...props} ref={mref}>
+      {/* {isMap &&
         !isRot &&
         points.map((p, i) => (
           <>
@@ -85,25 +108,26 @@ export const Map = forwardRef((props, mref) => {
                 <Tag bordered={false}>{calAngle(p, movePoint)} ° </Tag>
               </Html>
             </Circle>
-            {/* <Line points={[p, movePoint]} color="blue" lineWidth={2} key={i} /> */}
-            {/* <Html center position={p}>
-              <span>{calAngle(p, movePoint)} 度</span>
-            </Html> */}
+            <Line points={[p, movePoint]} color="blue" lineWidth={2} key={i}>
+              <Html center position={p}>
+                <span>{calAngle(p, movePoint)} 度</span>
+              </Html>
+            </Line>
           </>
-        ))}
+        ))} */}
 
       <mesh
-        ref={mref}
-        // position={[0, 1, 1]}
         rotation={[-Math.PI / 2, 0, (Math.PI / 360) * mapRot]}
         scale={scale}
         onClick={(e) => {
-          isMap && isRot ? setRot(mapRot + 5) : setPoints([...points, e.point]);
+          isMap && isRot
+            ? setRot(mapRot + 5)
+            : setPoints([...points, [e.pointer.x, e.pointer.y]]);
         }}
         onContextMenu={() =>
           isMap && isRot ? setRot(mapRot - 5) : setPoints(points.slice(0, -1))
         }
-        onPointerMove={(e) => setMovePoint(e.point)}
+        // onPointerMove={(e) => handleMove(e.pointer)}
       >
         <planeGeometry />
         <meshBasicMaterial map={image} />
@@ -116,13 +140,26 @@ export const Map = forwardRef((props, mref) => {
               </Button>
             </Html>
             <Html position={[-0.2, -0.3, 0]}>
+              <UpCircleFilled />
               <Tag>南望山</Tag>
             </Html>
             <Html position={[0.1, -0.4, 0]}>
+              <UpCircleFilled />
               <Tag>珞珈山</Tag>
             </Html>
           </>
         )}
+
+        {isMap &&
+          !isRot &&
+          points.map((p, i) => (
+            <Html position={[...p, 0]} key={i}>
+              <StarOutlined />
+              <Tag bordered={false} color="blue">
+                {calAngle(p[0], p[1])} 度
+              </Tag>
+            </Html>
+          ))}
       </mesh>
     </group>
   );
