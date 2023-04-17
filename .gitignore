@@ -24,6 +24,6 @@ dist-ssr
 *.sw?
 
 # assets files
-*.gltf
-*.glb
-*.hdr
+# *.gltf
+# *.glb
+# *.hdr
