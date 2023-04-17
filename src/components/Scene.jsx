@@ -11,8 +11,6 @@ import {
 
 import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 
-// import useStore, { useExploreStore } from "../stores";
-
 import { Player } from "../models/Player";
 import { Compass } from "../models/Compass";
 import { Map } from "../models/Map";

@@ -139,21 +139,6 @@ export function Building(props) {
         />
       </group>
       <group
-        position={[-901.61, -5.6, 244.19]}
-        rotation={[0, 1.56, 0]}
-        scale={[2.15, 2.08, 2.15]}
-      >
-        <mesh geometry={nodes.Circle016.geometry} material={materials.材质} />
-        <mesh
-          geometry={nodes.Circle016_1.geometry}
-          material={materials["材质.002"]}
-        />
-        <mesh
-          geometry={nodes.Circle016_2.geometry}
-          material={materials["材质.006"]}
-        />
-      </group>
-      <group
         position={[-393.4, -46.79, -475.39]}
         rotation={[2.97, 1.31, -2.99]}
         scale={0.67}
@@ -222,10 +207,6 @@ export function Building(props) {
         <mesh
           geometry={nodes["Obj3d66-4700324-16-103001_13"].geometry}
           material={materials["JN_building_001_UV01_Fin.001"]}
-        />
-        <mesh
-          geometry={nodes["Obj3d66-4700324-16-103001_14"].geometry}
-          material={materials["Mat3d66-4700324-16-1654.002"]}
         />
       </group>
       <group
