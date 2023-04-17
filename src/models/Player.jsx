@@ -29,7 +29,7 @@ const tempVector = new THREE.Vector3();
 export const Player = forwardRef((props, pref) => {
   // let cameraPos = new THREE.Vector3();
 
-  const { nodes, materials, animations } = useGLTF("/character.glb");
+  const { nodes, materials, animations } = useGLTF("/player.glb");
   const { actions, names } = useAnimations(animations, pref);
 
   const { visible } = props;
@@ -85,4 +85,4 @@ export const Player = forwardRef((props, pref) => {
   );
 });
 
-useGLTF.preload("/character.glb");
+useGLTF.preload("/player.glb");

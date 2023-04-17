@@ -43,41 +43,41 @@ export const Compass = forwardRef((props, cref) => {
 
   const { controls } = useThree();
 
-  useEffect(() => {
-    if (controls) {
-      if (currentCh === 0 && current === 0) {
-        controls.setTarget(
-          c.current.position.x + 0.3,
-          c.current.position.y + 0.2,
-          c.current.position.z + 0.3,
-          // ...c.current.position,
-          true
-        );
-      }
-      // if ((currentCh === 0 && current === 1) || current === 3) {
-      //   controls.setTarget(
-      //     c.current.position.x,
-      //     c.current.position.y + 0.5,
-      //     c.current.position.z - 0.2,
-      //     // ...c.current.position,
-      //     true
-      //   );
-      // }
-      if (currentCh === 0 && current === 2) {
-        controls.setLookAt(
-          c.current.position.x,
-          c.current.position.y + 0.14,
-          c.current.position.z - 0.8,
-          ...c.current.position,
-          true
-        );
-      }
-    }
-  }, [currentCh, current]);
+  // useEffect(() => {
+  //   if (controls) {
+  //     if (currentCh === 0 && current === 0) {
+  //       controls.setTarget(
+  //         c.current.position.x + 0.3,
+  //         c.current.position.y + 0.2,
+  //         c.current.position.z + 0.3,
+  //         // ...c.current.position,
+  //         true
+  //       );
+  //     }
+  //     // if ((currentCh === 0 && current === 1) || current === 3) {
+  //     //   controls.setTarget(
+  //     //     c.current.position.x,
+  //     //     c.current.position.y + 0.5,
+  //     //     c.current.position.z - 0.2,
+  //     //     // ...c.current.position,
+  //     //     true
+  //     //   );
+  //     // }
+  //     if (currentCh === 0 && current === 2) {
+  //       controls.setLookAt(
+  //         c.current.position.x,
+  //         c.current.position.y + 0.14,
+  //         c.current.position.z - 0.8,
+  //         ...c.current.position,
+  //         true
+  //       );
+  //     }
+  //   }
+  // }, [currentCh, current]);
 
   useFrame((state, delta) => {
     // if (currentCh > 1 && isCompass) {
-    if (currentCh > 0 && isCompass) {
+    if (isCompass) {
       c.current.position.set(
         player.current.position.x + 0.5,
         player.current.position.y + 2,

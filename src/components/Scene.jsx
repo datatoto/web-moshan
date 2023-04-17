@@ -13,14 +13,12 @@ import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 
 // import useStore, { useExploreStore } from "../stores";
 
-import { Ground } from "../models/Ground";
 import { Player } from "../models/Player";
 import { Compass } from "../models/Compass";
 import { Map } from "../models/Map";
 
 import * as THREE from "three";
 import { useFrame, useThree } from "@react-three/fiber";
-import { Button } from "antd";
 import {
   useIsCompass,
   useDome,
@@ -35,8 +33,6 @@ const ori = new THREE.Vector3(0, 2, 0);
 const dir = new THREE.Vector3(0, -1, 0);
 const raycaster = new THREE.Raycaster(ori, dir);
 
-// const playerPosition = new THREE.Vector3();
-// const compassDirection = new THREE.Vector3();
 const playerDirection = new THREE.Vector3();
 const cameraRotation = new THREE.Vector2();
 
@@ -74,10 +70,6 @@ export const Scene = ({ ground }) => {
   useEffect(() => {
     if (ground.current) {
       ground.current.visible = !isDome;
-    }
-
-    if (currentCh === 0) {
-      toggleCompass(true);
     }
 
     if (isMap || isCompass) {

@@ -6,7 +6,9 @@ import { Suspense, useRef } from "react";
 import Aside from "./components/Aside";
 import { Perf } from "r3f-perf";
 import { Scene } from "./components/Scene";
-import { Ground } from "./models/Ground";
+import { Tree } from "./models/Tree";
+import { Building } from "./models/Building";
+import { Plane } from "./models/Plane";
 
 function App() {
   const mainView = useRef();
@@ -25,19 +27,19 @@ function App() {
           <Suspense fallback={null}>
             <View index={1} track={mainView}>
               <Bvh firstHitOnly>
-                <Ground ref={ground} />
+                <Plane ref={ground} />
               </Bvh>
+              <Building />
+              <Tree />
               <Scene ground={ground} />
             </View>
-
           </Suspense>
           <Preload all />
-          {/* <Perf position="top-right" /> */}
+          <Perf position="top-right" />
         </Canvas>
 
         <Loader />
 
-        {/* Tracking div's, regular HTML and made responsive with CSS media-queries ... */}
         <div
           ref={mainView}
           className="panel main"
@@ -49,30 +51,6 @@ function App() {
             height: "100%",
           }}
         ></div>
-
-        {/* <div
-          ref={compassView}
-          className="panel compass"
-          style={{
-            position: "absolute",
-            top: "10px",
-            right: "10px",
-            width: "300px",
-            height: "300px",
-          }}
-        ></div>
-
-        <div
-          ref={mapView}
-          className="panel map"
-          style={{
-            position: "absolute",
-            bottom: "10px",
-            right: "10px",
-            width: "300px",
-            height: "300px",
-          }}
-        ></div> */}
       </div>
 
       <Aside />
