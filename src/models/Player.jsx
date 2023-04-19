@@ -13,13 +13,6 @@ import {
 import { useFrame, useThree } from "@react-three/fiber";
 
 import * as THREE from "three";
-// import { MeshBVHVisualizer } from "three-mesh-bvh";
-
-// const TAU = Math.PI * 2;
-
-// function normalizeAngle(angle) {
-//   return THREE.MathUtils.euclideanModulo(angle, TAU);
-// }
 
 const playerSpeed = 8;
 
@@ -27,13 +20,10 @@ const upVector = new THREE.Vector3(0, 1, 0);
 const tempVector = new THREE.Vector3();
 
 export const Player = forwardRef((props, pref) => {
-  // let cameraPos = new THREE.Vector3();
-
   const { nodes, materials, animations } = useGLTF("/player.glb");
   const { actions, names } = useAnimations(animations, pref);
 
   const { visible } = props;
-  // DONE: Keyboard
   const forwardPressed = useKeyboardControls((state) => state.forward);
   const backwardPressed = useKeyboardControls((state) => state.backward);
   const leftPressed = useKeyboardControls((state) => state.left);
@@ -43,7 +33,10 @@ export const Player = forwardRef((props, pref) => {
 
   useEffect(() => {
     if (visible) {
-      actions[names[0]].reset().fadeIn(1).play();
+      // console.log(names);
+      // actions[names[0]].reset().fadeIn(0.1).play();
+      actions[names[0]].reset().fadeIn(0.1).play();
+      return () => actions[names[1]].fadeOut(2);
     }
   }, [forwardPressed, backwardPressed, leftPressed, rightPressed, names]);
 
@@ -72,13 +65,13 @@ export const Player = forwardRef((props, pref) => {
 
   return (
     <group ref={pref} {...props} dispose={null}>
-      <group name="Armature" scale={0.02} rotation={[Math.PI / 2, 0, 0]}>
+      <group name="Armature003" rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
         <primitive object={nodes.mixamorigHips} />
         <skinnedMesh
-          name="Ch46"
-          geometry={nodes.Ch46.geometry}
-          material={materials.Ch46_body}
-          skeleton={nodes.Ch46.skeleton}
+          name="Ch46001"
+          geometry={nodes.Ch46001.geometry}
+          material={materials["Ch46_body.001"]}
+          skeleton={nodes.Ch46001.skeleton}
         />
       </group>
     </group>

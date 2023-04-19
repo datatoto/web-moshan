@@ -66,10 +66,6 @@ export const Scene = ({ ground }) => {
 
   const { controls } = useThree();
   useEffect(() => {
-    if (ground.current) {
-      ground.current.visible = !isDome;
-    }
-
     if (isMap || isCompass) {
       togglePlayer(false);
     } else {
@@ -134,7 +130,7 @@ export const Scene = ({ ground }) => {
         <Compass
           ref={compass}
           visible={isCompass}
-          scale={[0.1, 0.1, 0.1]}
+          scale={0.1}
           isMap={isMap}
           isCompass={isCompass}
           player={player}
