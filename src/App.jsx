@@ -46,6 +46,14 @@ function App() {
           appearance={{ theme: ThemeSupa }}
           providers={["github"]}
           style={{ width: "500px", padding: "20px" }}
+          localization={{
+            variables: {
+              sign_in: {
+                email_label: "邮箱地址",
+                password_label: "密码",
+              },
+            },
+          }}
         />
       </div>
     );

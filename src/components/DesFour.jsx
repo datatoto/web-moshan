@@ -2,6 +2,8 @@ import { Alert, Button, Card, Divider, Image, Space, Steps } from "antd";
 import { useState } from "react";
 import { Mark } from "./Test";
 
+import cardImage from "../assets/p2.png";
+
 const POINTERS = [
   {
     title: "作图标记五重塔的位置",
@@ -21,7 +23,7 @@ export function DesFour({ current, nextCurrent, preCurrent, handleNextCh }) {
           <Card
             className="glass"
             title="设确定目标点 A 在地图中的位置"
-            cover={<img alt="example" src="src/assets/p2.png" />}
+            cover={<img alt="example" src={cardImage} />}
           >
             <ol>
               <li>

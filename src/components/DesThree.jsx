@@ -2,6 +2,8 @@ import { Alert, Button, Card, Divider, Image, Space, Steps } from "antd";
 import { useState } from "react";
 import { Blank } from "./Test";
 
+import cardImage from "../assets/p1.png";
+
 const BLANKS = [
   {
     title: "记录摩天轮相对自己的角度",
@@ -25,14 +27,17 @@ export function DesThree({ current }) {
     <div>
       {current === 0 && (
         <>
-          <Alert type="info" message="通过键盘 WASD 键控制人物运动；进入罗盘观测模式，使用 WD 键调节罗盘旋转角度。" />
+          <Alert
+            type="info"
+            message="通过键盘 WASD 键控制人物运动；进入罗盘观测模式，使用 WD 键调节罗盘旋转角度。"
+          />
           <p>
             在远处选定两个地图上也有的明显地形点，分别记录明显地形点相对于现在位置的方位角，在已经标定好的地图上，从两个明显地形点沿长尺边画出方向线，两方向线的交点即为站立点的图上位置。
           </p>
           <Card
             className="glass"
             title="设确定站立点 P 在地图中的位置"
-            cover={<img alt="example" src="src/assets/p1.png" />}
+            cover={<img alt="example" src={cardImage} />}
           >
             <ol>
               <li>通过罗盘确定北方；</li>
