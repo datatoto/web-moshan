@@ -74,6 +74,7 @@ function App() {
                 <Building />
                 <Tree />
                 <Scene ground={ground} />
+                
               </View>
             </Suspense>
             <Preload all />

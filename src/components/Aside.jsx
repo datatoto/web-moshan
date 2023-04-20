@@ -76,6 +76,7 @@ export default function Aside(props) {
     toggleMap(false);
     toggleDome(false);
     toggleEagle(!isEagle);
+    
     setAsideVis(!asideVis)
   }
 

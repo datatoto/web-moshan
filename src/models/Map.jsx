@@ -14,24 +14,6 @@ import { Button, Tag } from "antd";
 import { useIsMap } from "../stores";
 import { StarOutlined, UpCircleFilled } from "@ant-design/icons";
 
-const Circle = ({
-  children,
-  opacity = 1,
-  radius = 0.03,
-  segments = 16,
-  color = "#85a5ff",
-  ...props
-}) => (
-  <mesh {...props} rotation={[-Math.PI / 2, 0, 0]}>
-    <circleGeometry args={[radius, segments]} />
-    <meshBasicMaterial
-      transparent={opacity < 1}
-      opacity={opacity}
-      color={color}
-    />
-    {children}
-  </mesh>
-);
 
 
 export const Map = forwardRef((props, mref) => {

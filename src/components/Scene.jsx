@@ -84,7 +84,8 @@ export const Scene = ({ ground }) => {
       player.current.getWorldDirection(playerDirection);
       cameraRotation.set(playerDirection.x, playerDirection.z);
       compass.current.rotation.set(0, 0, cameraRotation.angle() - Math.PI / 2);
-
+      
+      // 碰撞检测
       raycaster.set(player.current.position.addScaledVector(dir, -1.5), dir);
       const inters = raycaster.intersectObject(ground.current, true);
       if (inters) {
