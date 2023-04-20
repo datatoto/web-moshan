@@ -34,11 +34,13 @@ export function DesThree({ current }) {
           <p>
             在远处选定两个地图上也有的明显地形点，分别记录明显地形点相对于现在位置的方位角，在已经标定好的地图上，从两个明显地形点沿长尺边画出方向线，两方向线的交点即为站立点的图上位置。
           </p>
+          <Divider />
           <Card
             className="glass"
-            title="设确定站立点 P 在地图中的位置"
             cover={<img alt="example" src={cardImage} />}
           >
+
+            <h3>设确定站立点 P 在地图中的位置</h3>
             <ol>
               <li>通过罗盘确定北方；</li>
               <li>找到两个明显地物A、B；</li>

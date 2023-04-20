@@ -14,7 +14,7 @@ import { useFrame, useThree } from "@react-three/fiber";
 
 import * as THREE from "three";
 
-const playerSpeed = 8;
+const playerSpeed = 10;
 
 const upVector = new THREE.Vector3(0, 1, 0);
 const tempVector = new THREE.Vector3();
@@ -51,10 +51,10 @@ export const Player = forwardRef((props, pref) => {
       pref.current.position.addScaledVector(tempVector, playerSpeed * delta);
     }
     if (leftPressed) {
-      pref.current.rotateY(Math.PI / 36);
+      pref.current.rotateY(Math.PI / 360);
     }
     if (rightPressed) {
-      pref.current.rotateY(-Math.PI / 36);
+      pref.current.rotateY(-Math.PI / 360);
     }
     // if (visible) {
     //   controls.moveTo(pref.current.position.x + 1, pref.current.position.y + 6, pref.current.position.z + 1, true);

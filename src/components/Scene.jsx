@@ -1,11 +1,13 @@
 import {
   Bvh,
   CameraControls,
+  Center,
   Environment,
   Html,
   KeyboardControls,
   OrbitControls,
   PerspectiveCamera,
+  Text3D,
   TransformControls,
 } from "@react-three/drei";
 
@@ -84,7 +86,7 @@ export const Scene = ({ ground }) => {
       player.current.getWorldDirection(playerDirection);
       cameraRotation.set(playerDirection.x, playerDirection.z);
       compass.current.rotation.set(0, 0, cameraRotation.angle() - Math.PI / 2);
-      
+
       // 碰撞检测
       raycaster.set(player.current.position.addScaledVector(dir, -1.5), dir);
       const inters = raycaster.intersectObject(ground.current, true);
@@ -102,7 +104,7 @@ export const Scene = ({ ground }) => {
           true
         );
       }
-
+      // console.log(player.current.position);人物位置
       if (isPlayer) {
         state.controls.moveTo(
           player.current.position.x,
@@ -118,8 +120,11 @@ export const Scene = ({ ground }) => {
     <Dome url={"/domes/" + domeName + ".jpg"} />
   ) : (
     <>
+      <Html position={[-1838.5581538401154, 59.00115107733737, 2766.717220007931]}>
+        <h1 className="tag" style={{ color: "red" }}>南望山</h1>
+      </Html>
       <KeyboardControls map={keymap}>
-        <PerspectiveCamera makeDefault position={[1, 4, 2]} />
+        <PerspectiveCamera makeDefault position={[1, 4, 2]} far={5000} />
         <CameraControls
           makeDefault
           maxDistance={25}

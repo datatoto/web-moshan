@@ -16,7 +16,8 @@ export const Compass = forwardRef((props, cref) => {
 
   const [hovered, setHovered] = useState(false);
 
-  const [isCircle, toggleIsCircle] = useState(true);
+  // 观察盘面,0代表修改刻度，1代表观察盘面，2观察地物中
+  const [compassState, setCompassState] = useState(3);
   const [cirlPos, setCirlPos] = useState(-0.45);
   const [declRot, setDeclRot] = useState(8);
 
@@ -26,6 +27,8 @@ export const Compass = forwardRef((props, cref) => {
   const [tag, setTag] = useState("");
   const [tagX, setTagX] = useState(0);
   const [tagY, setTagY] = useState(0);
+
+  const [deltaY, setDeltaY] = useState(0);
 
   // const currentCh = useCurrentCh((state) => state.currentCh);
   // const [cirlPos, setCirlPos] = useStore((state) => [
@@ -80,12 +83,12 @@ export const Compass = forwardRef((props, cref) => {
     if (isCompass) {
       c.current.position.set(
         player.current.position.x + 0.5,
-        player.current.position.y + 2,
+        player.current.position.y + 2 + deltaY,
         player.current.position.z + 0.5
       );
 
       if (!isMap) {
-        if (!isCircle) {
+        if (compassState == 2) {
           controls.setLookAt(
             c.current.position.x,
             c.current.position.y + 0.14,
@@ -93,11 +96,19 @@ export const Compass = forwardRef((props, cref) => {
             ...c.current.position,
             true
           );
-        } else {
+        } else if (compassState == 1) {
           controls.setLookAt(
             c.current.position.x,
             c.current.position.y + 0.5,
             c.current.position.z - 0.2,
+            ...c.current.position,
+            true
+          );
+        } else {
+          controls.setLookAt(
+            c.current.position.x + 0.5,
+            c.current.position.y + 0.5,
+            c.current.position.z + 0.2,
             ...c.current.position,
             true
           );
@@ -116,10 +127,16 @@ export const Compass = forwardRef((props, cref) => {
         <>
           <Html
             // distanceFactor={0.5}
-            position={[-1.5, 3, 0]}
+            position={[0, 0, 0]}
           >
-            <Button type="primary" onClick={() => toggleIsCircle(!isCircle)}>
-              {isCircle ? "观察盘面中" : "观测地物中"}
+            <Button type="primary" onClick={() => setCompassState((compassState + 1) % 3)}>
+              {compassState == 1 ? "观察盘面中" : compassState == 2 ? "观测地物中" : "观察刻度中"}
+            </Button>
+            <Button type="dashed" onClick={() => setDeltaY(deltaY + 0.5)}>
+                {"罗盘向上"}
+            </Button>
+            <Button type="dashed" onClick={() => setDeltaY(deltaY - 0.5)}>
+                {"罗盘向下"}
             </Button>
           </Html>
           {hovered && (

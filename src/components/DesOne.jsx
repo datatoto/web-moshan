@@ -1,19 +1,22 @@
-import { Alert, Button, Divider, Steps } from "antd";
+import { Alert, Button, Divider, Steps, Typography } from "antd";
 import { useState } from "react";
+const { Title, Paragraph, Text, Link } = Typography;
 
 export function DesOne({ current }) {
   return (
     <div>
       {current === 0 && (
-        <>
+        <Typography>
           <Alert type="info" message="点击刻度螺旋，调整盘面刻度。" />
-          <p>
+          <Divider />
+          <Paragraph>
             旋动罗盘侧边的刻度螺旋，使水平刻度盘向左或向右转动，(磁偏角东偏则向右，西偏则向左)，使罗盘底盘南北刻度线与水平刻度盘0～180°连线间夹角等于磁偏角。
-          </p>
-          <p>
-            根据Noaa组织提供的数据，磨山地区的磁偏角为-4°56′。使用用户应该向左u逆时针旋转罗盘侧边的刻度螺旋，使得罗盘底盘南北刻度线与水平刻度盘0～180°连线间夹角等于4°56′，也就是水平度盘上的指针从0指向4°56′。
-          </p>
-        </>
+          </Paragraph>
+
+          <Paragraph>
+            根据Noaa组织提供的数据，磨山地区的磁偏角为-4°56′。使用用户应该向左u逆时针旋转罗盘侧边的刻度螺旋，使得罗盘底盘南北刻度线与水平刻度盘0～180°连线间夹角等于4°56′，也就是水平度盘上的指针从0指向<Text mark>4°56′</Text>。
+          </Paragraph>
+        </Typography>
       )}
       {current === 1 && (
         <>

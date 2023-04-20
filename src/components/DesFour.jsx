@@ -22,9 +22,9 @@ export function DesFour({ current, nextCurrent, preCurrent, handleNextCh }) {
           </p>
           <Card
             className="glass"
-            title="设确定目标点 A 在地图中的位置"
             cover={<img alt="example" src={cardImage} />}
           >
+          <h3>设确定目标点 A 在地图中的位置</h3>
             <ol>
               <li>
                 选定现地与图上都有的二至三个明显地形点，如P1、P2点作为测站点；
