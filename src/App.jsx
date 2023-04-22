@@ -12,6 +12,7 @@ import { Scene } from "./components/Scene";
 import { Tree } from "./models/Tree";
 import { Building } from "./models/Building";
 import { Plane } from "./models/Plane";
+// import { Arrow} from "./models/Arrow";
 
 const supabase = createClient(
   "https://wwaxlpjlkaxplnqizoog.supabase.co",
@@ -72,9 +73,9 @@ function App() {
                   <Plane ref={ground} />
                 </Bvh>
                 <Building />
+                {/* <Arrow /> */}
                 <Tree />
-                <Scene ground={ground} />
-                
+                <Scene ground={ground} /> 
               </View>
             </Suspense>
             <Preload all />

@@ -16,6 +16,7 @@ import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { Player } from "../models/Player";
 import { Compass } from "../models/Compass";
 import { Map } from "../models/Map";
+import {Arrow} from "../models/Arrow";
 
 import * as THREE from "three";
 import { useFrame, useThree } from "@react-three/fiber";
@@ -47,6 +48,7 @@ export const Scene = ({ ground }) => {
   const player = useRef();
   const compass = useRef();
   const map = useRef();
+  const arrow = useRef();
 
   const [isPlayer, togglePlayer] = useIsPlayer((state) => [
     state.isPlayer,
@@ -123,6 +125,10 @@ export const Scene = ({ ground }) => {
       <Html position={[-1838.5581538401154, 59.00115107733737, 2766.717220007931]}>
         <h1 className="tag" style={{ color: "red" }}>南望山</h1>
       </Html>
+      <Html position={[283.41265307833675,62.362494317857,3271.180927358178]}>
+        <h1 className="tag" style={{ color: "red" }}>喻家山</h1>
+      </Html>
+
       <KeyboardControls map={keymap}>
         <PerspectiveCamera makeDefault position={[1, 4, 2]} far={5000} />
         <CameraControls
@@ -145,9 +151,15 @@ export const Scene = ({ ground }) => {
         <Map
           visible={isMap}
           ref={map}
+          scale={1}
           isMap={isMap}
           isCompass={isCompass}
           player={player}
+        />
+        <Arrow 
+        ref={arrow}
+        scale = {2}
+        player={player}
         />
       </KeyboardControls>
       <Environment files="background.hdr" background />

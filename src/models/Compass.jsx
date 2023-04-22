@@ -133,10 +133,10 @@ export const Compass = forwardRef((props, cref) => {
               {compassState == 1 ? "观察盘面中" : compassState == 2 ? "观测地物中" : "观察刻度中"}
             </Button>
             <Button type="dashed" onClick={() => setDeltaY(deltaY + 0.5)}>
-                {"罗盘向上"}
+              {"罗盘向上"}
             </Button>
             <Button type="dashed" onClick={() => setDeltaY(deltaY - 0.5)}>
-                {"罗盘向下"}
+              {"罗盘向下"}
             </Button>
           </Html>
           {hovered && (
@@ -151,188 +151,143 @@ export const Compass = forwardRef((props, cref) => {
           )}
         </>
       )}
-      <group rotation={[1.55, 0, 0]}>
-        <mesh
-          geometry={nodes.compass_needle_met_gl2.geometry}
-          material={materials.met_gl2}
-          position={[0, -0.02, -1.17]}
-          rotation={[-0.02, -0.03, -1.58]}
-          onPointerOver={(e) => (e.stopPropagation(), handleOver(e, "北针"))}
-          onPointerOut={(e) => setHovered(false)}
-        >
-          {hovered && tag === "北针" && (
-            <meshBasicMaterial transparent opacity={0.6} color="blue" />
-          )}
-        </mesh>
-        <group ref={cref}>
+      <group {...props} dispose={null} scale={[1, 1, 1]}>
+
+        <group position={[0, 1.2, 0]} rotation={[1.55, 3.14, 5]}>
           <mesh
-            geometry={nodes.compass_circle_steklo.geometry}
-            material={materials.steklo}
-            position={[0, 0, -1.31]}
-            scale={[1.73, 1.73, 0.01]}
-            rotation={[0, 0, (Math.PI / 360) * declRot]}
-          ></mesh>
-          <mesh
-            geometry={nodes.compass_north_hrom.geometry}
-            material={materials.hrom}
-            rotation={[0, 0, -0.01]}
-          />
-          <group position={[0, -5.79, -1.34]} rotation={[1.3, 0, 0.01]}>
-            <mesh geometry={nodes.Mesh017.geometry} material={materials.hrom} />
+            geometry={nodes.Mesh006.geometry}
+            material={materials.met_gl2}
+            onPointerOver={(e) => (e.stopPropagation(), handleOver(e, "北针"))}
+            onPointerOut={(e) => setHovered(false)}
+          >
+            {hovered && tag === "北针" && (
+              <meshBasicMaterial transparent opacity={0.6} color="blue" />
+            )}
+          </mesh>
+          <mesh geometry={nodes.Mesh006_1.geometry} material={materials.Material} />
+          <mesh geometry={nodes.Mesh006_2.geometry} material={materials['材质.002']} />
+        </group>
+
+        <group rotation={[1.55, -0.01, 0.0]}>
+          <group ref={cref}>
             <mesh
-              geometry={nodes.Mesh017_1.geometry}
-              material={materials.blek_mat}
+              geometry={nodes.compass_circle_steklo.geometry}
+              material={materials.steklo}
+              position={[0, 0, -1.31]}
+              scale={[1.73, 1.73, 0.01]}
+              rotation={[0, 0, (Math.PI / 360) * declRot]}
+            ></mesh>
+            <mesh
+              geometry={nodes.compass_north_hrom.geometry}
+              material={materials.hrom}
+              rotation={[0, 0, -0.01]}
             />
-          </group>
-          <mesh
-            onClick={() => setCirlPos(cirlPos - 0.05)}
-            geometry={nodes.level_circular_steklo.geometry}
-            material={materials.trans}
-            position={[0.84, cirlPos, -1.02]}
-            scale={[0.14, 0.14, 0.12]}
-            onPointerOver={(e) => (
-              e.stopPropagation(), handleOver(e, "方位水准器")
-            )}
-            onPointerOut={(e) => setHovered(false)}
-          >
-            {hovered && tag === "方位水准器" && (
-              <meshBasicMaterial transparent opacity={0.6} color="blue" />
-            )}
-            {/* <Edges scale={1.1}>
-              <meshBasicMaterial transparent color="#f33" depthTest={false} />
-            </Edges> */}
-          </mesh>
-          {/* {currentCh === 0 && (
-              <Html distanceFactor={0.5}>
-                <Tag bordered={false} className="compass-tag">
-                  方位水准器
-                </Tag>
-              </Html>
-            )}
-          </mesh> */}
-          <mesh
-            geometry={nodes.level_tubular_steklo.geometry}
-            material={materials.trans}
-            position={[0.56 + cirlPos, -0.94, -0.97]}
-            scale={[0.16, 0.14, 0.12]}
-            onPointerOver={(e) => (
-              e.stopPropagation(), handleOver(e, "倾角水准器")
-            )}
-            onPointerOut={(e) => setHovered(false)}
-          >
-            {hovered && tag === "倾角水准器" && (
-              <meshBasicMaterial transparent opacity={0.6} color="blue" />
-            )}
-          </mesh>
-          {/* {currentCh === 0 && (
-              <Html distanceFactor={0.5}>
-                <Tag bordered={false} className="compass-tag">
-                  倾角水准器
-                </Tag>
-              </Html>
-            )}
-          </mesh> */}
-          {/* DONE: Magnetic Declination*/}
-          <mesh
-            onClick={() => setDeclRot(declRot + 0.5)}
-            geometry={nodes.magnetic_declination_blekc_gl.geometry}
-            material={materials.blekc_gl}
-            position={[1.62, 1.65, -1.03]}
-            rotation={[-Math.PI / declRot, -Math.PI / declRot, 0]}
-            onPointerOver={(e) => (
-              e.stopPropagation(), handleOver(e, "刻度螺旋")
-            )}
-            onPointerOut={(e) => setHovered(false)}
-          >
-            {hovered && tag === "刻度螺旋" && (
-              <meshBasicMaterial transparent opacity={0.6} color="blue" />
-            )}
-          </mesh>
-          <group
-            position={[0, 2.24, -1.53]}
-            rotation={[1.46, 1.56, -2.27]}
-            scale={[0.05, 0.05, 1.02]}
-          >
-            <mesh geometry={nodes.Mesh020.geometry} material={materials.hrom} />
+            <group position={[0, -5.79, -1.34]} rotation={[1.3, 0, 0.01]}>
+              <mesh geometry={nodes.Mesh017.geometry} material={materials.hrom} />
+              <mesh
+                geometry={nodes.Mesh017_1.geometry}
+                material={materials.blek_mat}
+              />
+            </group>
+
+            <group position={[0, -5.79, -1.34]} rotation={[1.3, 0, 0.01]}>
+              <mesh geometry={nodes.Mesh017.geometry} material={materials.hrom} />
+              <mesh geometry={nodes.Mesh017_1.geometry} material={materials.blek_mat} />
+            </group>
+            
             <mesh
-              geometry={nodes.Mesh020_1.geometry}
+              onClick={() => setCirlPos(cirlPos - 0.05)}
+              geometry={nodes.level_circular_steklo.geometry}
+              material={materials.trans}
+              position={[0.84, cirlPos, -1.02]}
+              scale={[0.14, 0.14, 0.12]}
+              onPointerOver={(e) => (
+                e.stopPropagation(), handleOver(e, "方位水准器")
+              )}
+              onPointerOut={(e) => setHovered(false)}
+            >
+              {hovered && tag === "方位水准器" && (
+                <meshBasicMaterial transparent opacity={0.6} color="blue" />
+              )}
+            </mesh>
+
+            <mesh
+              geometry={nodes.level_tubular_steklo.geometry}
+              material={materials.trans}
+              position={[0.23 + cirlPos, -0.94, -0.97]}
+              scale={[0.16, 0.14, 0.12]}
+              onPointerOver={(e) => (
+                e.stopPropagation(), handleOver(e, "倾角水准器")
+              )}
+              onPointerOut={(e) => setHovered(false)}
+            >
+              {hovered && tag === "倾角水准器" && (
+                <meshBasicMaterial transparent opacity={0.6} color="blue" />
+              )}
+            </mesh>
+            <mesh
+              onClick={() => setDeclRot(declRot + 0.5)}
+              geometry={nodes.magnetic_declination_blekc_gl.geometry}
               material={materials.blekc_gl}
-            />
+              position={[1.62, 1.65, -1.03]}
+              rotation={[-Math.PI / declRot, -Math.PI / declRot, 0]}
+              onPointerOver={(e) => (
+                e.stopPropagation(), handleOver(e, "刻度螺旋")
+              )}
+              onPointerOut={(e) => setHovered(false)}
+            >
+              {hovered && tag === "刻度螺旋" && (
+                <meshBasicMaterial transparent opacity={0.6} color="blue" />
+              )}
+            </mesh>
+            <group position={[0, 2.24, -1.53]} rotation={[1.46, 1.56, -2.27]} scale={[0.05, 0.05, 1.02]}>
+              <mesh geometry={nodes.Mesh020.geometry} material={materials.hrom} />
+              <mesh geometry={nodes.Mesh020_1.geometry} material={materials.blekc_gl} />
+              <mesh geometry={nodes.Mesh020_2.geometry} material={materials.zerkalo} />
+              <mesh geometry={nodes.Mesh020_3.geometry} material={materials.blek_mat} />
+              <mesh geometry={nodes.Mesh020_4.geometry} material={materials.haki} />
+            </group>
+            <mesh geometry={nodes.pCylinder37_hrom_0.geometry} material={materials.hrom} position={[0, -2.31, -1.51]} rotation={[0.01, Math.PI / 2, 0]} scale={[0.05, 0.05, 0.96]} />
+            
             <mesh
-              geometry={nodes.Mesh020_2.geometry}
-              material={materials.zerkalo}
-            />
+              geometry={nodes.pCylinder55_hrom_0.geometry}
+              material={materials.trans}
+              position={[1.61, 1.27, -1.39]}
+              scale={[0.11, 0.11, 0.21]}
+              onPointerOver={(e) => (
+                e.stopPropagation(), handleOver(e, "磁针制动器")
+              )}
+              onPointerOut={(e) => setHovered(false)}
+            >
+              {hovered && tag === "磁针制动器" && (
+                <meshBasicMaterial transparent opacity={0.6} color="blue" />
+              )}
+            </mesh>
+
+            <mesh geometry={nodes.pCylinder57_hrom_0.geometry} material={materials.hrom} position={[0, 0, 0.08]} />
+            <mesh geometry={nodes.pCylinder61_hrom_0.geometry} material={materials.hrom} />
+            <mesh geometry={nodes.polySurface217_blek_mat_0.geometry} material={materials.blek_mat} />
+            <mesh geometry={nodes.polySurface253_lambert1_0.geometry} material={materials.lambert1} position={[0, -0.17, 0]} />
+            <mesh geometry={nodes.polySurface267_blek_mat_0.geometry} material={materials.blek_mat} />
+            <mesh geometry={nodes.polySurface267_haki_0.geometry} material={materials.haki} />
+            <mesh geometry={nodes.polySurface267_met_gl2_0.geometry} material={nodes.polySurface267_met_gl2_0.material} />
+            <mesh geometry={nodes.polySurface267_salatov_0.geometry} material={materials.salatov} />
+            <mesh geometry={nodes.polySurface267_steklo_0.geometry} material={materials.steklo} />
             <mesh
-              geometry={nodes.Mesh020_3.geometry}
+              geometry={nodes.polySurface64_blek_mat_0.geometry}
               material={materials.blek_mat}
-            />
-            <mesh
-              geometry={nodes.Mesh020_4.geometry}
-              material={materials.haki}
-            />
+              position={[0, -0.02, 0.03]}
+              rotation={[0.01, 0, 0]}
+              onPointerOver={(e) => (
+                e.stopPropagation(), handleOver(e, "瞄准板")
+              )}
+              onPointerOut={(e) => setHovered(false)}
+            >
+              {hovered && tag === "瞄准板" && (
+                <meshBasicMaterial transparent opacity={0.6} color="blue" />
+              )}
+            </mesh>
           </group>
-          <mesh
-            geometry={nodes.pCylinder37_hrom_0.geometry}
-            material={materials.hrom}
-            position={[0, -2.31, -1.51]}
-            rotation={[0.01, Math.PI / 2, 0]}
-            scale={[0.05, 0.05, 0.96]}
-          />
-          <mesh
-            geometry={nodes.pCylinder55_hrom_0.geometry}
-            material={materials.hrom}
-            position={[1.61, 1.27, -1.39]}
-            scale={[0.11, 0.11, 0.21]}
-          />
-          <mesh
-            geometry={nodes.pCylinder57_hrom_0.geometry}
-            material={materials.hrom}
-            position={[0, 0, 0.08]}
-          />
-          <mesh
-            geometry={nodes.pCylinder61_hrom_0.geometry}
-            material={materials.hrom}
-          />
-          <mesh
-            geometry={nodes.polySurface217_blek_mat_0.geometry}
-            material={materials.blek_mat}
-          />
-          <mesh
-            geometry={nodes.polySurface253_lambert1_0.geometry}
-            material={materials.lambert1}
-            position={[0, -0.17, 0]}
-          />
-          <mesh
-            geometry={nodes.polySurface253_met_gl2_0.geometry}
-            material={materials.met_gl2}
-            position={[0, -0.17, 0]}
-          />
-          <mesh
-            geometry={nodes.polySurface267_blek_mat_0.geometry}
-            material={materials.blek_mat}
-          />
-          <mesh
-            geometry={nodes.polySurface267_haki_0.geometry}
-            material={materials.haki}
-          />
-          <mesh
-            geometry={nodes.polySurface267_met_gl2_0.geometry}
-            material={materials.met_gl2}
-          />
-          <mesh
-            geometry={nodes.polySurface267_salatov_0.geometry}
-            material={materials.salatov}
-          />
-          <mesh
-            geometry={nodes.polySurface267_steklo_0.geometry}
-            material={materials.steklo}
-          />
-          <mesh
-            geometry={nodes.polySurface64_blek_mat_0.geometry}
-            material={materials.blek_mat}
-            position={[0, -0.02, 0.03]}
-            rotation={[0.01, 0, 0]}
-          />
         </group>
       </group>
     </group>
