@@ -16,7 +16,7 @@ import { Plane } from "./models/Plane";
 
 const supabase = createClient(
   "https://wwaxlpjlkaxplnqizoog.supabase.co",
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind3YXhscGpsa2F4cGxucWl6b29nIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODE3MjE3MTYsImV4cCI6MTk5NzI5NzcxNn0.1_h9mH-yh3wBZ70fbNRv76DD6F24TkmlmrVhDZnEWcA"
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind3YXhscGpsa2F4cGxucWl6b29nIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODE3MjE3MTYsImV4cCI6MTk5NzI5NzcxNn0.1_h9mH-yh3wBZ70fbNRv76DD6F24TkmlmrVhDZnEWcA"
 );
 
 function App() {

@@ -240,7 +240,7 @@ export const Compass = forwardRef((props, cref) => {
                 <meshBasicMaterial transparent opacity={0.6} color="blue" />
               )}
             </mesh>
-            <group position={[0, 2.24, -1.53]} rotation={[1.46, 1.56, -2.27]} scale={[0.05, 0.05, 1.02]}>
+            <group position={[0, 2.24, -1.53]} rotation={[2, 1.56, -2.27]} scale={[0.05, 0.05, 1.02]}>
               <mesh geometry={nodes.Mesh020.geometry} material={materials.hrom} />
               <mesh geometry={nodes.Mesh020_1.geometry} material={materials.blekc_gl} />
               <mesh geometry={nodes.Mesh020_2.geometry} material={materials.zerkalo} />

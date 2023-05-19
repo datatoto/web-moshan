@@ -16,7 +16,7 @@ import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { Player } from "../models/Player";
 import { Compass } from "../models/Compass";
 import { Map } from "../models/Map";
-import {Arrow} from "../models/Arrow";
+import {Arrow} from "../models/arrow";
 
 import * as THREE from "three";
 import { useFrame, useThree } from "@react-three/fiber";
